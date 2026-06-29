@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pak Lee — Message Templates</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --orange:#E8640A;
+  --navy:#1A1A2E;
+  --green:#2D9B4E;
+  --gold:#F5C842;
+  --cream:#FFFBF5;
+  --white:#fff;
+  --gray:#6B7280;
+  --radius:14px;
+}
+body{font-family:'Noto Sans',sans-serif;background:#F0F2F5;min-height:100vh;padding-bottom:2rem}
+
+/* HEADER */
+.header{background:var(--navy);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.header-logo{display:flex;align-items:center;gap:.6rem}
+.header-logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.header-logo span{font-family:'Poppins',sans-serif;font-weight:700;font-size:.95rem;color:var(--white)}
+.lang-toggle{display:flex;background:rgba(255,255,255,.12);border-radius:50px;overflow:hidden}
+.lang-toggle button{padding:.3rem .75rem;font-size:.82rem;font-weight:700;font-family:'Poppins',sans-serif;background:transparent;border:none;color:rgba(255,255,255,.6);cursor:pointer;transition:all .2s}
+.lang-toggle button.active{background:var(--gold);color:var(--navy);border-radius:50px}
+
+/* MAIN */
+.main{max-width:600px;margin:0 auto;padding:1.25rem}
+
+/* SECTION TITLE */
+.section-title{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray);margin:1.5rem 0 .6rem;padding-left:.25rem}
+
+/* TEMPLATE CARD */
+.tpl-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07);margin-bottom:1rem}
+.tpl-header{padding:.85rem 1.1rem;display:flex;align-items:center;justify-content:space-between}
+.tpl-header.orange{background:var(--orange)}
+.tpl-header.green{background:var(--green)}
+.tpl-header.navy{background:var(--navy)}
+.tpl-title{font-family:'Poppins',sans-serif;font-weight:700;font-size:.95rem;color:var(--white);display:flex;align-items:center;gap:.5rem}
+.copy-btn{background:rgba(255,255,255,.2);border:1.5px solid rgba(255,255,255,.5);color:var(--white);border-radius:50px;padding:.3rem .9rem;font-size:.8rem;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;transition:all .2s;white-space:nowrap}
+.copy-btn:hover,.copy-btn.copied{background:rgba(255,255,255,.35)}
+.copy-btn.copied{background:rgba(255,255,255,.9);color:var(--navy)}
+.tpl-body{padding:1rem 1.1rem}
+.tpl-text{font-size:.88rem;line-height:1.75;color:#374151;white-space:pre-wrap;word-break:break-word;font-family:'Noto Sans',sans-serif}
+
+/* FOOTER NOTE */
+.footer-note{text-align:center;font-size:.75rem;color:var(--gray);margin-top:2rem;padding:.75rem;background:var(--white);border-radius:var(--radius)}
+.footer-note a{color:var(--orange);font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">
+    <img src="logo.jpg" alt="Pak Lee" onerror="this.style.display='none'">
+    <span>Pak. Lee's Templates</span>
+  </div>
+  <div class="lang-toggle">
+    <button class="active" id="btn-id" onclick="setLang('id')">🇮🇩 ID</button>
+    <button id="btn-en" onclick="setLang('en')">🇺🇸 EN</button>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- TEMPLATE 1: GREETING -->
+  <div class="section-title" data-id="1. Pesan Sambutan" data-en="1. Greeting Message">1. Pesan Sambutan</div>
+  <div class="tpl-card">
+    <div class="tpl-header orange">
+      <div class="tpl-title">👋 <span data-id="Salam Pertama" data-en="First Greeting">Salam Pertama</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl1')">📋 <span data-id="Salin" data-en="Copy">Salin</span></button>
+    </div>
+    <div class="tpl-body">
+      <div class="tpl-text" id="tpl1"></div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 2: PRICING -->
+  <div class="section-title" data-id="2. Info Harga" data-en="2. Pricing Info">2. Info Harga</div>
+  <div class="tpl-card">
+    <div class="tpl-header green">
+      <div class="tpl-title">💰 <span data-id="Harga & Layanan" data-en="Rates & Services">Harga & Layanan</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl2')">📋 <span data-id="Salin" data-en="Copy">Salin</span></button>
+    </div>
+    <div class="tpl-body">
+      <div class="tpl-text" id="tpl2"></div>
+    </div>
+  </div>
+
+  <!-- TEMPLATE 3: BOOKING REQUEST -->
+  <div class="section-title" data-id="3. Permintaan Info Pemesanan" data-en="3. Booking Info Request">3. Permintaan Info Pemesanan</div>
+  <div class="tpl-card">
+    <div class="tpl-header navy">
+      <div class="tpl-title">📝 <span data-id="Form Reservasi" data-en="Booking Form">Form Reservasi</span></div>
+      <button class="copy-btn" onclick="copyTemplate('tpl3')">📋 <span data-id="Salin" data-en="Copy">Salin</span></button>
+    </div>
+    <div class="tpl-body">
+      <div class="tpl-text" id="tpl3"></div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Pak. Lee's Car 🇰🇷 — <a href="https://pakleecar.vercel.app" target="_blank">pakleecar.vercel.app</a>
+  </div>
+
+</div>
+
+<script>
+const templates = {
+  id: {
+    tpl1: `Halo! 👋
+
+Terima kasih sudah menghubungi Pak Lee's Car! 🚐🇰🇷
+
+Saya Pak Lee, driver pribadi di Korea. Dengan senang hati siap membantu perjalananmu!
+
+Untuk bisa membantu lebih lanjut, boleh saya tahu:
+
+📅 Tanggal perjalanan?
+👥 Berapa orang?
+📍 Dijemput dari mana? (hotel / bandara)
+🗺️ Mau ke mana saja?
+
+Saya balas secepat mungkin ya! 😊
+- Pak Lee`,
+
+    tpl2: `Halo! Ini info harga kami 😊
+
+🚐 Hyundai Staria Lounge (maks. 8 orang)
+
+━━━━━━━━━━━━━━━
+💰 HARGA
+━━━━━━━━━━━━━━━
+• All Day Tour Seoul (10 jam): ₩300,000
+• Nami Island + Petite France + Garden (10 jam): ₩400,000
+• Jemput / Antar Bandara Incheon: ₩150,000
+
+📍 Surcharge area luar Seoul:
+• Gangwon (Ski, Gangneung, Sokcho): +₩200,000
+• Gyeonggi / DMZ: +₩50,000
+
+━━━━━━━━━━━━━━━
+✅ SUDAH TERMASUK
+━━━━━━━━━━━━━━━
+Bensin • Asuransi • Tol
+
+❌ TIDAK TERMASUK
+Parkir • Jam tambahan
+
+Tidak ada biaya tersembunyi lainnya! 🙌
+Sisa pembayaran dibayar tunai di hari H.
+
+Ada pertanyaan? Langsung tanya aja! 😊
+- Pak Lee`,
+
+    tpl3: `Halo! Untuk memproses reservasimu, boleh saya minta info berikut? 😊
+
+📝 FORM RESERVASI
+
+1️⃣ Nama lengkap:
+2️⃣ No. WhatsApp:
+3️⃣ Tanggal perjalanan (boleh berubah, no problem! 😊):
+4️⃣ Jumlah orang:
+5️⃣ Dijemput dari mana? (nama hotel / bandara):
+6️⃣ Mau ke mana / tour apa yang diinginkan?:
+7️⃣ Perkiraan jam mulai? (fleksibel OK!):
+
+Terima kasih! Setelah info masuk, saya konfirmasi segera 🙏
+- Pak Lee`
+  },
+
+  en: {
+    tpl1: `Hello! 👋
+
+Thank you for contacting Pak Lee's Car! 🚐🇰🇷
+
+I'm Pak Lee, your private driver in Korea. Happy to help plan your trip!
+
+To assist you better, could you share:
+
+📅 Travel date?
+👥 How many people?
+📍 Pickup location? (hotel name / airport)
+🗺️ Where would you like to go?
+
+I'll reply as soon as possible! 😊
+- Pak Lee`,
+
+    tpl2: `Hello! Here's our pricing info 😊
+
+🚐 Hyundai Staria Lounge (max. 8 people)
+
+━━━━━━━━━━━━━━━
+💰 RATES
+━━━━━━━━━━━━━━━
+• All Day Tour Seoul (10 hrs): ₩300,000
+• Nami Island + Petite France + Garden (10 hrs): ₩400,000
+• Airport Pickup / Drop (Incheon): ₩150,000
+
+📍 Surcharge (outside Seoul):
+• Gangwon (Ski, Gangneung, Sokcho): +₩200,000
+• Gyeonggi / DMZ: +₩50,000
+
+━━━━━━━━━━━━━━━
+✅ INCLUDED
+━━━━━━━━━━━━━━━
+Fuel • Insurance • Toll
+
+❌ NOT INCLUDED
+Parking • Extra hours
+
+No other hidden charges! 🙌
+Balance paid in cash on the day.
+
+Any questions? Feel free to ask! 😊
+- Pak Lee`,
+
+    tpl3: `Hello! To process your reservation, could you share the following? 😊
+
+📝 BOOKING FORM
+
+1️⃣ Full name:
+2️⃣ WhatsApp number:
+3️⃣ Travel date (can change, no problem! 😊):
+4️⃣ Number of people:
+5️⃣ Pickup location (hotel name / airport):
+6️⃣ Where to / which tour are you interested in?:
+7️⃣ Approx. start time? (flexible is OK!):
+
+Thank you! I'll confirm once I receive your details 🙏
+- Pak Lee`
+  }
+};
+
+let lang = 'id';
+
+function setLang(l) {
+  lang = l;
+  document.getElementById('btn-id').classList.toggle('active', l === 'id');
+  document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  document.querySelectorAll('[data-id]').forEach(el => {
+    el.innerHTML = el.dataset[l];
+  });
+  document.getElementById('tpl1').textContent = templates[l].tpl1;
+  document.getElementById('tpl2').textContent = templates[l].tpl2;
+  document.getElementById('tpl3').textContent = templates[l].tpl3;
+}
+
+function copyTemplate(id) {
+  const text = templates[lang][id];
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector(`[onclick="copyTemplate('${id}')"]`);
+    const original = btn.innerHTML;
+    btn.innerHTML = '✅ <span>' + (lang === 'id' ? 'Tersalin!' : 'Copied!') + '</span>';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.innerHTML = original; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// Init
+setLang('id');
+</script>
+</body>
+</html>
