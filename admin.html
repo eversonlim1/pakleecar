@@ -69,6 +69,10 @@ th,td{padding:.5rem;text-align:left;border-bottom:1px solid #F3F4F6}
 function getToken() { return sessionStorage.getItem('adminToken'); }
 function setToken(t) { sessionStorage.setItem('adminToken', t); }
 function clearToken() { sessionStorage.removeItem('adminToken'); }
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+}
 
 async function login() {
   document.getElementById('loginErr').classList.add('hidden');
@@ -108,10 +112,10 @@ async function loadBookings() {
   for (const b of bookings) {
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td>${b.tour_date}</td>
-      <td>${b.route}</td>
-      <td>${b.pax}</td>
-      <td>${b.note || ''}</td>
+      <td>${escapeHtml(b.tour_date)}</td>
+      <td>${escapeHtml(b.route)}</td>
+      <td>${escapeHtml(b.pax)}</td>
+      <td>${escapeHtml(b.note || '')}</td>
       <td class="row-actions">
         <button onclick="deleteBooking('${b.id}')" class="danger">Delete</button>
       </td>
