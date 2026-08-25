@@ -49,7 +49,8 @@ th,td{padding:.5rem;text-align:left;border-bottom:1px solid #F3F4F6}
       <input type="number" id="f-pax" min="1" value="1">
       <label for="f-note">Note (customer name / phone, optional)</label>
       <input type="text" id="f-note">
-      <button onclick="createBooking()">Add</button>
+      <button id="saveBtn" onclick="createBooking()">Add</button>
+      <button class="secondary hidden" id="cancelEditBtn" onclick="cancelEdit()">Cancel</button>
       <div class="err hidden" id="createErr"></div>
     </div>
 
@@ -103,9 +104,17 @@ async function showApp() {
   await loadBookings();
 }
 
+let editingId = null;
+
 async function loadBookings() {
   const res = await fetch('/api/admin-bookings', { headers: { 'x-admin-token': getToken() } });
   if (res.status === 401) { logout(); return; }
+  if (!res.ok) {
+    const el = document.getElementById('createErr');
+    el.textContent = 'Failed to load bookings.';
+    el.classList.remove('hidden');
+    return;
+  }
   const { bookings } = await res.json();
   const body = document.getElementById('bookingsBody');
   body.innerHTML = '';
@@ -117,11 +126,31 @@ async function loadBookings() {
       <td>${escapeHtml(b.pax)}</td>
       <td>${escapeHtml(b.note || '')}</td>
       <td class="row-actions">
-        <button onclick="deleteBooking('${b.id}')" class="danger">Delete</button>
+        <button onclick="editBooking('${escapeHtml(b.id)}', '${escapeHtml(b.tour_date)}', '${escapeHtml(b.route)}', ${Number(b.pax)}, '${escapeHtml((b.note || '').replace(/'/g, "\\'"))}')">Edit</button>
+        <button onclick="deleteBooking('${escapeHtml(b.id)}')" class="danger">Delete</button>
       </td>
     `;
     body.appendChild(tr);
   }
+}
+
+function editBooking(id, tour_date, route, pax, note) {
+  editingId = id;
+  document.getElementById('f-date').value = tour_date;
+  document.getElementById('f-route').value = route;
+  document.getElementById('f-pax').value = pax;
+  document.getElementById('f-note').value = note;
+  document.getElementById('saveBtn').textContent = 'Save Edit';
+  document.getElementById('cancelEditBtn').classList.remove('hidden');
+}
+
+function cancelEdit() {
+  editingId = null;
+  document.getElementById('f-date').value = '';
+  document.getElementById('f-pax').value = '1';
+  document.getElementById('f-note').value = '';
+  document.getElementById('saveBtn').textContent = 'Add';
+  document.getElementById('cancelEditBtn').classList.add('hidden');
 }
 
 async function createBooking() {
@@ -130,8 +159,11 @@ async function createBooking() {
   const route = document.getElementById('f-route').value;
   const pax = parseInt(document.getElementById('f-pax').value, 10);
   const note = document.getElementById('f-note').value;
-  const res = await fetch('/api/admin-bookings', {
-    method: 'POST',
+
+  const url = editingId ? '/api/admin-bookings/' + editingId : '/api/admin-bookings';
+  const method = editingId ? 'PUT' : 'POST';
+  const res = await fetch(url, {
+    method,
     headers: { 'Content-Type': 'application/json', 'x-admin-token': getToken() },
     body: JSON.stringify({ tour_date, route, pax, note })
   });
@@ -143,9 +175,15 @@ async function createBooking() {
     el.classList.remove('hidden');
     return;
   }
+  const wasEditing = editingId;
+  editingId = null;
   document.getElementById('f-date').value = '';
   document.getElementById('f-pax').value = '1';
   document.getElementById('f-note').value = '';
+  if (wasEditing) {
+    document.getElementById('saveBtn').textContent = 'Add';
+    document.getElementById('cancelEditBtn').classList.add('hidden');
+  }
   await loadBookings();
 }
 

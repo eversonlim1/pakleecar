@@ -1323,8 +1323,8 @@ function renderCalendar(route, monthStr, days) {
     const dateStr = `${monthStr}-${String(day).padStart(2, '0')}`;
     const info = byDate[dateStr];
     const statusClass = info ? info.status : '';
-    const label = info ? `<span class="n">${info.pax}</span>` : day;
-    cellsHtml += `<div class="mini-cal-day ${statusClass}" data-date="${dateStr}" data-route="${route}" onclick="calDayClick(this)">${label || day}</div>`;
+    const badge = info ? `<span class="n">${info.pax}</span>` : '';
+    cellsHtml += `<div class="mini-cal-day ${statusClass}" data-date="${dateStr}" data-route="${route}" onclick="calDayClick(this)">${day}${badge}</div>`;
   }
 
   container.innerHTML = `
@@ -1353,10 +1353,7 @@ function calNav(route, delta) {
 }
 
 function calDayClick(el) {
-  const status = el.classList.contains('confirmed') ? 'confirmed'
-    : el.classList.contains('full') ? 'full'
-    : el.classList.contains('pending') ? 'pending' : null;
-  if (!status) return; // empty days aren't clickable
+  if (!el.classList.contains('confirmed')) return; // only confirmed days invite joining
   const date = el.dataset.date;
   const route = el.dataset.route;
   const routeNames = { seoul: 'Seoul Kota', nami: 'Nami Island', dmz: 'DMZ' };

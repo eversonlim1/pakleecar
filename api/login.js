@@ -1,4 +1,13 @@
+const crypto = require('crypto');
 const { makeToken } = require('../lib/auth');
+
+function passwordsMatch(password, expected) {
+  if (!password || typeof password !== 'string') return false;
+  const a = Buffer.from(password);
+  const b = Buffer.from(expected);
+  if (a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
+}
 
 module.exports = (req, res) => {
   if (req.method !== 'POST') {
@@ -6,7 +15,7 @@ module.exports = (req, res) => {
     return;
   }
   const password = req.body && req.body.password;
-  if (!password || password !== process.env.ADMIN_PASSWORD) {
+  if (!passwordsMatch(password, process.env.ADMIN_PASSWORD)) {
     res.status(401).json({ error: 'Invalid password' });
     return;
   }

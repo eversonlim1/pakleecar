@@ -46,5 +46,6 @@ module.exports = async (req, res) => {
     .sort()
     .map((date) => ({ date, pax: totals[date], status: statusFor(totals[date]) }));
 
+  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
   res.status(200).json({ days });
 };

@@ -26,8 +26,8 @@ module.exports = async (req, res) => {
 
   if (req.method === 'POST') {
     const { tour_date, route, pax, note } = req.body || {};
-    if (!tour_date || !ROUTES.includes(route) || !Number.isInteger(pax) || pax < 1) {
-      res.status(400).json({ error: 'tour_date, route (seoul|nami|dmz), pax (positive integer) are required' });
+    if (!tour_date || !ROUTES.includes(route) || !Number.isInteger(pax) || pax < 1 || pax > 8) {
+      res.status(400).json({ error: 'tour_date, route (seoul|nami|dmz), pax (integer 1-8) are required' });
       return;
     }
     const { data, error } = await supabase
