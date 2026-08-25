@@ -269,6 +269,20 @@ a{text-decoration:none;color:inherit}
 .shared-price-table td{padding:.5rem .6rem;text-align:center;border-top:1px solid #F3F4F6}
 .shared-price-table .amount{font-family:'Poppins',sans-serif;font-weight:800;color:var(--orange)}
 .shared-min-note{font-size:.72rem;color:var(--gray);margin-top:.5rem;font-style:italic}
+.mini-cal{margin-top:1rem;border-top:1px solid #F3F4F6;padding-top:1rem}
+.mini-cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem;font-size:.82rem;font-weight:700;color:var(--navy);font-family:'Poppins',sans-serif}
+.mini-cal-head button{background:var(--gray-light);border:none;border-radius:6px;width:24px;height:24px;cursor:pointer;font-size:.8rem}
+.mini-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font-size:.68rem;text-align:center}
+.mini-cal-grid .dow{color:var(--gray);font-weight:600;padding-bottom:.25rem}
+.mini-cal-day{padding:.35rem 0;border-radius:6px;cursor:default;position:relative}
+.mini-cal-day.empty{visibility:hidden}
+.mini-cal-day.pending{background:#FFFBEB;color:#92400E}
+.mini-cal-day.confirmed{background:#F0FDF4;color:#166534;cursor:pointer}
+.mini-cal-day.full{background:#FEF2F2;color:#991B1B}
+.mini-cal-day .n{display:block;font-weight:700}
+.mini-cal-legend{display:flex;gap:.75rem;font-size:.68rem;color:var(--gray);margin-top:.5rem;flex-wrap:wrap}
+.mini-cal-legend span{display:inline-flex;align-items:center;gap:.25rem}
+.mini-cal-legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
 
 /* ── CANCELLATION ── */
 .cancel{background:var(--white)}
@@ -1260,6 +1274,97 @@ function switchStaria(thumb, src) {
   document.querySelectorAll('.staria-thumb').forEach(t => t.classList.remove('active'));
   thumb.classList.add('active');
 }
+
+// ── SHARED TOUR CALENDAR ──
+const CAL_ROUTES = ['seoul', 'nami', 'dmz'];
+const calState = {};
+CAL_ROUTES.forEach(r => {
+  const now = new Date();
+  calState[r] = { year: now.getFullYear(), month: now.getMonth() + 1 }; // month: 1-12
+});
+
+function calMonthStr(route) {
+  const s = calState[route];
+  return `${s.year}-${String(s.month).padStart(2, '0')}`;
+}
+
+async function loadCalendar(route) {
+  const container = document.getElementById('shared-calendar-' + route);
+  if (!container) return;
+  const monthStr = calMonthStr(route);
+  let days = [];
+  try {
+    const res = await fetch(`/api/bookings?route=${route}&month=${monthStr}`);
+    if (res.ok) {
+      const data = await res.json();
+      days = data.days || [];
+    }
+  } catch (e) {
+    // Network/API unavailable — render an empty calendar rather than breaking the page.
+  }
+  renderCalendar(route, monthStr, days);
+}
+
+function renderCalendar(route, monthStr, days) {
+  const container = document.getElementById('shared-calendar-' + route);
+  const byDate = {};
+  days.forEach(d => { byDate[d.date] = d; });
+
+  const [year, month] = monthStr.split('-').map(Number);
+  const firstDow = new Date(year, month - 1, 1).getDay();
+  const daysInMonth = new Date(year, month, 0).getDate();
+
+  const dowLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  let cellsHtml = dowLabels.map(d => `<div class="dow">${d}</div>`).join('');
+  for (let i = 0; i < firstDow; i++) {
+    cellsHtml += '<div class="mini-cal-day empty"></div>';
+  }
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${monthStr}-${String(day).padStart(2, '0')}`;
+    const info = byDate[dateStr];
+    const statusClass = info ? info.status : '';
+    const label = info ? `<span class="n">${info.pax}</span>` : day;
+    cellsHtml += `<div class="mini-cal-day ${statusClass}" data-date="${dateStr}" data-route="${route}" onclick="calDayClick(this)">${label || day}</div>`;
+  }
+
+  container.innerHTML = `
+    <div class="mini-cal">
+      <div class="mini-cal-head">
+        <button onclick="calNav('${route}', -1)">‹</button>
+        <span>${monthStr}</span>
+        <button onclick="calNav('${route}', 1)">›</button>
+      </div>
+      <div class="mini-cal-grid">${cellsHtml}</div>
+      <div class="mini-cal-legend">
+        <span><i style="background:#F0FDF4;border:1px solid #86EFAC"></i>Confirmed</span>
+        <span><i style="background:#FFFBEB;border:1px solid #FCD34D"></i>Pending (&lt;4)</span>
+        <span><i style="background:#FEF2F2;border:1px solid #FCA5A5"></i>Full</span>
+      </div>
+    </div>
+  `;
+}
+
+function calNav(route, delta) {
+  const s = calState[route];
+  s.month += delta;
+  if (s.month < 1) { s.month = 12; s.year -= 1; }
+  if (s.month > 12) { s.month = 1; s.year += 1; }
+  loadCalendar(route);
+}
+
+function calDayClick(el) {
+  const status = el.classList.contains('confirmed') ? 'confirmed'
+    : el.classList.contains('full') ? 'full'
+    : el.classList.contains('pending') ? 'pending' : null;
+  if (!status) return; // empty days aren't clickable
+  const date = el.dataset.date;
+  const route = el.dataset.route;
+  const routeNames = { seoul: 'Seoul Kota', nami: 'Nami Island', dmz: 'DMZ' };
+  const msg = `Halo Pak Lee! Saya lihat Share Tour ${routeNames[route]} tanggal ${date} ada rombongan. Boleh info detail & gabung? 🇰🇷`;
+  window.open(`https://wa.me/821094157859?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+CAL_ROUTES.forEach(loadCalendar);
 
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver(entries => {
