@@ -195,6 +195,7 @@ a{text-decoration:none;color:inherit}
 .tour-stops{list-style:none;margin-bottom:1rem}
 .tour-stops li{font-size:.82rem;color:var(--gray);padding:.15rem 0;display:flex;gap:.4rem}
 .tour-stops li::before{content:'📍';font-size:.75rem;flex-shrink:0}
+.tour-stops li.tour-note-li::before{content:'ℹ️'}
 .tour-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #F3F4F6;padding-top:.9rem;margin-top:.5rem}
 .tour-price{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.15rem;color:var(--orange)}
 .tour-price small{font-size:.7rem;font-weight:400;color:var(--gray);display:block;line-height:1.2}
@@ -344,6 +345,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
   .why-grid{grid-template-columns:repeat(3,1fr)}
   .provide-grid{grid-template-columns:repeat(4,1fr)}
   .tour-grid{grid-template-columns:repeat(2,1fr)}
+  .shared-tour-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .nav-links,.nav-right{display:none}
@@ -352,6 +354,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
   .why-grid{grid-template-columns:repeat(2,1fr)}
   .provide-grid{grid-template-columns:repeat(3,1fr)}
   .tour-grid{grid-template-columns:1fr}
+  .shared-tour-grid{grid-template-columns:1fr}
   .cancel-cards{grid-template-columns:repeat(2,1fr)}
   .staria-specs{grid-template-columns:1fr}
   .luggage-cards{grid-template-columns:1fr}
@@ -759,7 +762,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
             <li data-id="Imjingak & Jembatan Kebebasan" data-en="Imjingak & Freedom Bridge" data-th="อิมจินกักและสะพานแห่งอิสรภาพ">Imjingak &amp; Jembatan Kebebasan</li>
             <li data-id="Tunnel ke-3 (Third Infiltration Tunnel)" data-en="3rd Infiltration Tunnel" data-th="อุโมงค์แทรกซึมที่ 3">Tunnel ke-3 (Third Infiltration Tunnel)</li>
             <li data-id="Dora Observatory (Lihat Korea Utara!)" data-en="Dora Observatory (See North Korea!)" data-th="หอสังเกตการณ์โดรา (มองเห็นเกาหลีเหนือ!)">Dora Observatory (Lihat Korea Utara!)</li>
-            <li data-id="Catatan: JSA tidak termasuk" data-en="Note: JSA not included" data-th="หมายเหตุ: ไม่รวม JSA">Catatan: JSA tidak termasuk</li>
+            <li class="tour-note-li" data-id="Catatan: JSA tidak termasuk" data-en="Note: JSA not included" data-th="หมายเหตุ: ไม่รวม JSA">Catatan: JSA tidak termasuk</li>
           </ul>
           <table class="shared-price-table">
             <thead><tr>
@@ -918,7 +921,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
             <li data-id="Imjingak & Jembatan Kebebasan (Freedom Bridge)" data-en="Imjingak & Freedom Bridge" data-th="อิมจินกักและสะพานแห่งอิสรภาพ">Imjingak &amp; Jembatan Kebebasan (Freedom Bridge)</li>
             <li data-id="Tunnel ke-3 (Third Infiltration Tunnel)" data-en="3rd Infiltration Tunnel" data-th="อุโมงค์แทรกซึมที่ 3">Tunnel ke-3 (Third Infiltration Tunnel)</li>
             <li data-id="Dora Observatory (Lihat Korea Utara!)" data-en="Dora Observatory (See North Korea!)" data-th="หอสังเกตการณ์โดรา (มองเห็นเกาหลีเหนือ!)">Dora Observatory (Lihat Korea Utara!)</li>
-            <li data-id="Catatan: JSA tidak termasuk (butuh izin & bus resmi terpisah)" data-en="Note: JSA not included (requires separate permit & official bus)" data-th="หมายเหตุ: ไม่รวม JSA (ต้องขออนุญาตและใช้รถบัสที่ได้รับอนุญาตแยกต่างหาก)">Catatan: JSA tidak termasuk (butuh izin &amp; bus resmi terpisah)</li>
+            <li class="tour-note-li" data-id="Catatan: JSA tidak termasuk (butuh izin & bus resmi terpisah)" data-en="Note: JSA not included (requires separate permit & official bus)" data-th="หมายเหตุ: ไม่รวม JSA (ต้องขออนุญาตและใช้รถบัสที่ได้รับอนุญาตแยกต่างหาก)">Catatan: JSA tidak termasuk (butuh izin &amp; bus resmi terpisah)</li>
           </ul>
           <div class="tour-footer">
             <div class="tour-price">₩350,000<small data-id="10 jam · incl. surcharge Gyeonggi" data-en="10 hrs · incl. Gyeonggi surcharge" data-th="10 ชม. · รวมค่าธรรมเนียมพิเศษเขตคย็องกี">10 jam · incl. surcharge Gyeonggi</small></div>
