@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pak Lee's Car — Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:sans-serif;background:#F3F4F6;color:#1F2937;padding:2rem 1rem}
+.wrap{max-width:900px;margin:0 auto}
+h1{margin-bottom:1.5rem}
+.card{background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:1.5rem}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem;margin-top:.8rem}
+input,select{width:100%;padding:.6rem;border:1px solid #E5E7EB;border-radius:8px;font-size:.95rem}
+button{margin-top:1rem;background:#E8640A;color:#fff;border:none;border-radius:8px;padding:.7rem 1.2rem;font-weight:700;cursor:pointer}
+button.danger{background:#DC2626}
+button.secondary{background:#6B7280}
+table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
+th,td{padding:.5rem;text-align:left;border-bottom:1px solid #F3F4F6}
+.err{color:#DC2626;font-size:.85rem;margin-top:.5rem}
+.hidden{display:none}
+.row-actions button{margin:0 .2rem 0 0;padding:.3rem .6rem;font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pak Lee's Car — Booking Admin</h1>
+
+  <div class="card" id="loginCard">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <button onclick="login()">Login</button>
+    <div class="err hidden" id="loginErr">Invalid password.</div>
+  </div>
+
+  <div id="appCard" class="hidden">
+    <div class="card">
+      <h2>Add booking</h2>
+      <label for="f-date">Date</label>
+      <input type="date" id="f-date">
+      <label for="f-route">Route</label>
+      <select id="f-route">
+        <option value="seoul">Seoul</option>
+        <option value="nami">Nami Island</option>
+        <option value="dmz">DMZ</option>
+      </select>
+      <label for="f-pax">Pax</label>
+      <input type="number" id="f-pax" min="1" value="1">
+      <label for="f-note">Note (customer name / phone, optional)</label>
+      <input type="text" id="f-note">
+      <button id="saveBtn" onclick="createBooking()">Add</button>
+      <button class="secondary hidden" id="cancelEditBtn" onclick="cancelEdit()">Cancel</button>
+      <div class="err hidden" id="createErr"></div>
+    </div>
+
+    <div class="card">
+      <h2>All bookings</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Route</th><th>Pax</th><th>Note</th><th></th></tr></thead>
+        <tbody id="bookingsBody"></tbody>
+      </table>
+    </div>
+
+    <button class="secondary" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<script>
+function getToken() { return sessionStorage.getItem('adminToken'); }
+function setToken(t) { sessionStorage.setItem('adminToken', t); }
+function clearToken() { sessionStorage.removeItem('adminToken'); }
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+}
+
+async function login() {
+  document.getElementById('loginErr').classList.add('hidden');
+  const password = document.getElementById('password').value;
+  const res = await fetch('/api/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password })
+  });
+  if (!res.ok) {
+    document.getElementById('loginErr').classList.remove('hidden');
+    return;
+  }
+  const { token } = await res.json();
+  setToken(token);
+  showApp();
+}
+
+function logout() {
+  clearToken();
+  document.getElementById('appCard').classList.add('hidden');
+  document.getElementById('loginCard').classList.remove('hidden');
+}
+
+async function showApp() {
+  document.getElementById('loginCard').classList.add('hidden');
+  document.getElementById('appCard').classList.remove('hidden');
+  await loadBookings();
+}
+
+let editingId = null;
+
+async function loadBookings() {
+  const res = await fetch('/api/admin-bookings', { headers: { 'x-admin-token': getToken() } });
+  if (res.status === 401) { logout(); return; }
+  if (!res.ok) {
+    const el = document.getElementById('createErr');
+    el.textContent = 'Failed to load bookings.';
+    el.classList.remove('hidden');
+    return;
+  }
+  const { bookings } = await res.json();
+  const body = document.getElementById('bookingsBody');
+  body.innerHTML = '';
+  for (const b of bookings) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${escapeHtml(b.tour_date)}</td>
+      <td>${escapeHtml(b.route)}</td>
+      <td>${escapeHtml(b.pax)}</td>
+      <td>${escapeHtml(b.note || '')}</td>
+      <td class="row-actions">
+        <button onclick="editBooking('${escapeHtml(b.id)}', '${escapeHtml(b.tour_date)}', '${escapeHtml(b.route)}', ${Number(b.pax)}, '${escapeHtml((b.note || '').replace(/'/g, "\\'"))}')">Edit</button>
+        <button onclick="deleteBooking('${escapeHtml(b.id)}')" class="danger">Delete</button>
+      </td>
+    `;
+    body.appendChild(tr);
+  }
+}
+
+function editBooking(id, tour_date, route, pax, note) {
+  editingId = id;
+  document.getElementById('f-date').value = tour_date;
+  document.getElementById('f-route').value = route;
+  document.getElementById('f-pax').value = pax;
+  document.getElementById('f-note').value = note;
+  document.getElementById('saveBtn').textContent = 'Save Edit';
+  document.getElementById('cancelEditBtn').classList.remove('hidden');
+}
+
+function cancelEdit() {
+  editingId = null;
+  document.getElementById('f-date').value = '';
+  document.getElementById('f-pax').value = '1';
+  document.getElementById('f-note').value = '';
+  document.getElementById('saveBtn').textContent = 'Add';
+  document.getElementById('cancelEditBtn').classList.add('hidden');
+}
+
+async function createBooking() {
+  document.getElementById('createErr').classList.add('hidden');
+  const tour_date = document.getElementById('f-date').value;
+  const route = document.getElementById('f-route').value;
+  const pax = parseInt(document.getElementById('f-pax').value, 10);
+  const note = document.getElementById('f-note').value;
+
+  const url = editingId ? '/api/admin-bookings/' + editingId : '/api/admin-bookings';
+  const method = editingId ? 'PUT' : 'POST';
+  const res = await fetch(url, {
+    method,
+    headers: { 'Content-Type': 'application/json', 'x-admin-token': getToken() },
+    body: JSON.stringify({ tour_date, route, pax, note })
+  });
+  if (res.status === 401) { logout(); return; }
+  if (!res.ok) {
+    const { error } = await res.json();
+    const el = document.getElementById('createErr');
+    el.textContent = error;
+    el.classList.remove('hidden');
+    return;
+  }
+  const wasEditing = editingId;
+  editingId = null;
+  document.getElementById('f-date').value = '';
+  document.getElementById('f-pax').value = '1';
+  document.getElementById('f-note').value = '';
+  if (wasEditing) {
+    document.getElementById('saveBtn').textContent = 'Add';
+    document.getElementById('cancelEditBtn').classList.add('hidden');
+  }
+  await loadBookings();
+}
+
+async function deleteBooking(id) {
+  if (!confirm('Delete this booking?')) return;
+  const res = await fetch('/api/admin-bookings/' + id, {
+    method: 'DELETE',
+    headers: { 'x-admin-token': getToken() }
+  });
+  if (res.status === 401) { logout(); return; }
+  await loadBookings();
+}
+
+if (getToken()) showApp();
+</script>
+</body>
+</html>
