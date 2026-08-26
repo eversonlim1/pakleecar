@@ -393,7 +393,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
     <a href="#about" data-id="Tentang" data-en="About" data-th="เกี่ยวกับเรา">Tentang</a>
     <a href="#tours" data-id="Ide Perjalanan" data-en="Tour Ideas" data-th="ไอเดียทัวร์">Ide Perjalanan</a>
     <a href="#pricing" data-id="Harga" data-en="Pricing" data-th="ราคา">Harga</a>
-    <a href="#shared-tours" data-id="Share Tour" data-en="Shared Tour" data-th="ทัวร์ร่วมคัน">Share Tour</a>
+    <a href="share-tour.html" data-id="Share Tour" data-en="Shared Tour" data-th="ทัวร์ร่วมคัน">Share Tour</a>
     <a href="#faq" data-id="FAQ" data-en="FAQ" data-th="คำถามที่พบบ่อย">FAQ</a>
     <a href="#contact" data-id="Hubungi Kami" data-en="Contact" data-th="ติดต่อเรา">Hubungi Kami</a>
   </div>
@@ -414,7 +414,7 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
   <a href="#about" onclick="toggleMobile()" data-id="Tentang" data-en="About" data-th="เกี่ยวกับเรา">Tentang</a>
   <a href="#tours" onclick="toggleMobile()" data-id="Ide Perjalanan" data-en="Tour Ideas" data-th="ไอเดียทัวร์">Ide Perjalanan</a>
   <a href="#pricing" onclick="toggleMobile()" data-id="Harga" data-en="Pricing" data-th="ราคา">Harga</a>
-  <a href="#shared-tours" onclick="toggleMobile()" data-id="Share Tour" data-en="Shared Tour" data-th="ทัวร์ร่วมคัน">Share Tour</a>
+  <a href="share-tour.html" data-id="Share Tour" data-en="Shared Tour" data-th="ทัวร์ร่วมคัน">Share Tour</a>
   <a href="#faq" onclick="toggleMobile()" data-id="FAQ" data-en="FAQ" data-th="คำถามที่พบบ่อย">FAQ</a>
   <a href="#contact" onclick="toggleMobile()" data-id="Hubungi Kami" data-en="Contact" data-th="ติดต่อเรา">Hubungi Kami</a>
   <a href="https://wa.me/821094157859" target="_blank" style="color:var(--gold)">📱 WhatsApp</a>
@@ -721,10 +721,8 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
             </tr></tbody>
           </table>
           <p class="shared-min-note" data-id="Harga per tim · 10 jam · min. 4 orang berangkat" data-en="Price per team · 10 hrs · min. 4 pax to depart" data-th="ราคาต่อทีม · 10 ชม. · ขั้นต่ำ 4 คนออกเดินทาง">Harga per tim · 10 jam · min. 4 orang berangkat</p>
-          <div id="shared-calendar-seoul"></div>
           <div class="tour-footer">
-            <div></div>
-            <button class="btn-discuss" onclick="discussTour('Share Tour Seoul Kota')" data-id="Tanya Jadwal →" data-en="Ask Schedule →" data-th="สอบถามวันว่าง →">Tanya Jadwal →</button>
+            <a href="share-tour.html#route-seoul" class="btn-discuss" style="text-decoration:none;display:inline-block" data-id="📅 Lihat Kalender & Detail →" data-en="📅 View Calendar & Details →" data-th="📅 ดูปฏิทินและรายละเอียด →">📅 Lihat Kalender &amp; Detail →</a>
           </div>
         </div>
       </div>
@@ -756,10 +754,8 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
             </tr></tbody>
           </table>
           <p class="shared-min-note" data-id="Harga per tim · 10 jam · min. 4 orang berangkat" data-en="Price per team · 10 hrs · min. 4 pax to depart" data-th="ราคาต่อทีม · 10 ชม. · ขั้นต่ำ 4 คนออกเดินทาง">Harga per tim · 10 jam · min. 4 orang berangkat</p>
-          <div id="shared-calendar-nami"></div>
           <div class="tour-footer">
-            <div></div>
-            <button class="btn-discuss" onclick="discussTour('Share Tour Nami Island')" data-id="Tanya Jadwal →" data-en="Ask Schedule →" data-th="สอบถามวันว่าง →">Tanya Jadwal →</button>
+            <a href="share-tour.html#route-nami" class="btn-discuss" style="text-decoration:none;display:inline-block" data-id="📅 Lihat Kalender & Detail →" data-en="📅 View Calendar & Details →" data-th="📅 ดูปฏิทินและรายละเอียด →">📅 Lihat Kalender &amp; Detail →</a>
           </div>
         </div>
       </div>
@@ -791,14 +787,15 @@ footer{background:#0D1118;padding:2.5rem 1.5rem 1.5rem;text-align:center}
             </tr></tbody>
           </table>
           <p class="shared-min-note" data-id="Harga per tim · 10 jam · min. 4 orang berangkat" data-en="Price per team · 10 hrs · min. 4 pax to depart" data-th="ราคาต่อทีม · 10 ชม. · ขั้นต่ำ 4 คนออกเดินทาง">Harga per tim · 10 jam · min. 4 orang berangkat</p>
-          <div id="shared-calendar-dmz"></div>
           <div class="tour-footer">
-            <div></div>
-            <button class="btn-discuss" onclick="discussTour('Share Tour DMZ')" data-id="Tanya Jadwal →" data-en="Ask Schedule →" data-th="สอบถามวันว่าง →">Tanya Jadwal →</button>
+            <a href="share-tour.html#route-dmz" class="btn-discuss" style="text-decoration:none;display:inline-block" data-id="📅 Lihat Kalender & Detail →" data-en="📅 View Calendar & Details →" data-th="📅 ดูปฏิทินและรายละเอียด →">📅 Lihat Kalender &amp; Detail →</a>
           </div>
         </div>
       </div>
 
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="share-tour.html" class="btn-wa" style="text-decoration:none" data-id="🚐 Halaman Lengkap Share Tour →" data-en="🚐 Full Share Tour Page →" data-th="🚐 หน้าเต็มทัวร์ร่วมคัน →">🚐 Halaman Lengkap Share Tour →</a>
     </div>
   </div>
 </section>
@@ -1274,94 +1271,6 @@ function switchStaria(thumb, src) {
   document.querySelectorAll('.staria-thumb').forEach(t => t.classList.remove('active'));
   thumb.classList.add('active');
 }
-
-// ── SHARED TOUR CALENDAR ──
-const CAL_ROUTES = ['seoul', 'nami', 'dmz'];
-const calState = {};
-CAL_ROUTES.forEach(r => {
-  const now = new Date();
-  calState[r] = { year: now.getFullYear(), month: now.getMonth() + 1 }; // month: 1-12
-});
-
-function calMonthStr(route) {
-  const s = calState[route];
-  return `${s.year}-${String(s.month).padStart(2, '0')}`;
-}
-
-async function loadCalendar(route) {
-  const container = document.getElementById('shared-calendar-' + route);
-  if (!container) return;
-  const monthStr = calMonthStr(route);
-  let days = [];
-  try {
-    const res = await fetch(`/api/bookings?route=${route}&month=${monthStr}`);
-    if (res.ok) {
-      const data = await res.json();
-      days = data.days || [];
-    }
-  } catch (e) {
-    // Network/API unavailable — render an empty calendar rather than breaking the page.
-  }
-  renderCalendar(route, monthStr, days);
-}
-
-function renderCalendar(route, monthStr, days) {
-  const container = document.getElementById('shared-calendar-' + route);
-  const byDate = {};
-  days.forEach(d => { byDate[d.date] = d; });
-
-  const [year, month] = monthStr.split('-').map(Number);
-  const firstDow = new Date(year, month - 1, 1).getDay();
-  const daysInMonth = new Date(year, month, 0).getDate();
-
-  const dowLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-  let cellsHtml = dowLabels.map(d => `<div class="dow">${d}</div>`).join('');
-  for (let i = 0; i < firstDow; i++) {
-    cellsHtml += '<div class="mini-cal-day empty"></div>';
-  }
-  for (let day = 1; day <= daysInMonth; day++) {
-    const dateStr = `${monthStr}-${String(day).padStart(2, '0')}`;
-    const info = byDate[dateStr];
-    const statusClass = info ? info.status : '';
-    const badge = info ? `<span class="n">${info.pax}</span>` : '';
-    cellsHtml += `<div class="mini-cal-day ${statusClass}" data-date="${dateStr}" data-route="${route}" onclick="calDayClick(this)">${day}${badge}</div>`;
-  }
-
-  container.innerHTML = `
-    <div class="mini-cal">
-      <div class="mini-cal-head">
-        <button onclick="calNav('${route}', -1)">‹</button>
-        <span>${monthStr}</span>
-        <button onclick="calNav('${route}', 1)">›</button>
-      </div>
-      <div class="mini-cal-grid">${cellsHtml}</div>
-      <div class="mini-cal-legend">
-        <span><i style="background:#F0FDF4;border:1px solid #86EFAC"></i>Confirmed</span>
-        <span><i style="background:#FFFBEB;border:1px solid #FCD34D"></i>Pending (&lt;4)</span>
-        <span><i style="background:#FEF2F2;border:1px solid #FCA5A5"></i>Full</span>
-      </div>
-    </div>
-  `;
-}
-
-function calNav(route, delta) {
-  const s = calState[route];
-  s.month += delta;
-  if (s.month < 1) { s.month = 12; s.year -= 1; }
-  if (s.month > 12) { s.month = 1; s.year += 1; }
-  loadCalendar(route);
-}
-
-function calDayClick(el) {
-  if (!el.classList.contains('confirmed')) return; // only confirmed days invite joining
-  const date = el.dataset.date;
-  const route = el.dataset.route;
-  const routeNames = { seoul: 'Seoul Kota', nami: 'Nami Island', dmz: 'DMZ' };
-  const msg = `Halo Pak Lee! Saya lihat Share Tour ${routeNames[route]} tanggal ${date} ada rombongan. Boleh info detail & gabung? 🇰🇷`;
-  window.open(`https://wa.me/821094157859?text=${encodeURIComponent(msg)}`, '_blank');
-}
-
-CAL_ROUTES.forEach(loadCalendar);
 
 // ── SCROLL REVEAL ──
 const observer = new IntersectionObserver(entries => {
