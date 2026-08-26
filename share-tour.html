@@ -143,10 +143,13 @@ a{text-decoration:none;color:inherit}
 .badge-custom{background:rgba(255,255,255,.95);color:var(--green);border-radius:50px;padding:.2rem .65rem;font-size:.7rem;font-weight:700;font-family:'Poppins',sans-serif}
 .tour-body{padding:1.2rem}
 .tour-body h3{font-size:1rem;color:var(--navy);margin-bottom:.6rem}
-.tour-stops{list-style:none;margin-bottom:1rem}
-.tour-stops li{font-size:.82rem;color:var(--gray);padding:.15rem 0;display:flex;gap:.4rem}
-.tour-stops li::before{content:'📍';font-size:.75rem;flex-shrink:0}
-.tour-stops li.tour-note-li::before{content:'ℹ️'}
+.tour-stops{list-style:none;margin-bottom:1rem;counter-reset:stop}
+.tour-stops li{font-size:.82rem;color:var(--gray);padding:.15rem 0 .15rem 1.6rem;position:relative;min-height:1.3rem}
+.tour-stops li:not(.tour-note-li){counter-increment:stop}
+.tour-stops li:not(.tour-note-li)::before{content:counter(stop);position:absolute;left:0;top:.05rem;width:1.15rem;height:1.15rem;border-radius:50%;background:var(--orange);color:var(--white);font-size:.62rem;font-weight:700;font-family:'Poppins',sans-serif;display:flex;align-items:center;justify-content:center;line-height:1}
+.tour-stops li:not(.tour-note-li):not(:last-child)::after{content:'';position:absolute;left:.57rem;top:1.2rem;bottom:-.15rem;width:1px;background:#E5E7EB}
+.tour-stops li.tour-note-li{padding-left:1.6rem}
+.tour-stops li.tour-note-li::before{content:'ℹ️';position:absolute;left:0;top:.05rem;font-size:.75rem}
 .tour-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #F3F4F6;padding-top:.9rem;margin-top:.5rem}
 .btn-discuss{background:var(--orange);color:var(--white);border:none;border-radius:50px;padding:.45rem 1rem;font-size:.8rem;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;transition:all .2s}
 .btn-discuss:hover{background:var(--orange-light)}
