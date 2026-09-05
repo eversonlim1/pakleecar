@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Everland Antar-Jemput Mobil Pribadi | Pak Lee's Car",
+    "description": "Antar-jemput hotel ke Everland di Yongin, sopir menunggu seharian. Tidak perlu kejar bus terakhir. ₩350.000 per mobil.",
+    "ogImage": "/assets/img/og/everland-id.jpg"
+  },
+  "hero": {
+    "h1": "Everland, dari pintu hotel, mobil menunggu seharian",
+    "lede": "Everland ada di Yongin, sekitar satu jam di selatan Seoul, dan bus shuttle-nya berhenti jauh sebelum parade selesai. Saya antar ke sana, menunggu di area parkir seharian, dan mengantar pulang kapan pun Anda keluar — termasuk anak-anak yang tidur di jalan pulang.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "Perjalanan keluarga bersama Pak Lee",
+    "price": "₩350.000",
+    "amount": "350000",
+    "duration": "Sekitar 12 jam dari pintu ke pintu"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "08:00", "title": "Jemput di hotel",
+      "body": "Everland buka jam sepuluh di hari biasa. Berangkat dari Seoul jam delapan berarti Anda sampai gerbang sebelum antrean panjang — di akhir pekan itu setara satu jam waktu bermain." },
+    { "time": "09:15", "title": "Perjalanan ke selatan",
+      "body": "Sekitar satu jam lewat tol kalau lancar. Beli tiketnya online malam sebelumnya; antre di loket adalah bagian paling lama dari pagi itu, dan itu sebenarnya bisa dihindari." },
+    { "time": "10:00", "title": "Langsung ke T Express",
+      "body": "Antrean roller coaster kayu itu naik dari sepuluh menit jadi sembilan puluh menit menjelang siang. Kalau rombongan Anda mau naik, lakukan paling awal, panda-nya belakangan — jangan dibalik." },
+    { "time": "13:00", "title": "Makan siang, saya masih di sini",
+      "body": "Makanan di dalam taman lumayan tapi tidak murah. Kalau ada yang perlu tidur sebentar, cas ponsel, atau menitipkan tas, kirim pesan dan keluar ke mobil — masuk lagi diperbolehkan dengan tiket Anda." },
+    { "time": "17:00", "title": "Parade dan malam hari",
+      "body": "Parade utamanya sore menjelang petang, lampu dan kembang api setelah gelap, tergantung musim. Bagian inilah yang hilang kalau Anda harus mengejar bus shuttle terakhir." },
+    { "time": "21:00", "title": "Pulang kalau sudah selesai",
+      "body": "Anda keluar kapan pun Anda mau. Saya di area parkir, bukan di jadwal, dan jalan pulangnya cukup sepi sehingga anak-anak biasanya tidur sampai hotel." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir menunggu seharian", "Jemput dan antar hotel"],
+  "excludes": ["Tiket Everland", "Parkir taman", "Makan", "Q-Pass atau tiket cepat"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Tiket taman dibelikan Pak Lee?",
+      "a": "Tidak — Anda lebih untung beli online, di situ diskonnya. Pesan malam sebelumnya lalu langsung ke gerbang masuk, bukan ke loket." },
+    { "q": "Benar menunggu sampai seharian?",
+      "a": "Benar. Memang itu isi pesanannya. Saya tetap di Everland bersama mobil, jadi Anda tidak perlu menghitung mundur ke jam bus." },
+    { "q": "Kalau lewat dari dua belas jam bagaimana?",
+      "a": "Kirim pesan saja, kita atur. Lebih satu jam biasanya tidak masalah; saya hanya minta dikabari, jangan sampai saya menebak-nebak di gerbang." },
+    { "q": "Caribbean Bay termasuk?",
+      "a": "Tiketnya terpisah dan tamannya berbeda, tapi area parkirnya sama. Sebutkan Anda mau yang mana; cara harinya berjalan tetap sama." },
+    { "q": "Bisa mampir di jalan pulang?",
+      "a": "Bisa, meski setelah seharian di taman hampir tidak ada yang masih mau. Korean Folk Village dekat dari situ kalau Anda memang merencanakan hari yang lebih pendek." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "muslim-friendly-korea-tour", "label": "Korea ramah muslim" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari perjalanan keluarga.", "all": "Lihat semua video" },
+  "cta": { "h2": "Mau ke Everland bersama keluarga?",
+           "body": "Kirim tanggal dan jumlah kursinya, termasuk kalau perlu kursi anak. Saya konfirmasi hari itu juga.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

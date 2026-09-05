@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Tur Lokasi K-Drama dan K-Pop | Pak Lee's Car",
+    "description": "Lokasi syuting, gedung HYBE, kafe Seongsu dan toko album, dengan mobil sendiri. 10 jam sesuai rencana Anda. ₩300.000 per mobil.",
+    "ogImage": "/assets/img/og/kdrama-kpop-id.jpg"
+  },
+  "hero": {
+    "h1": "Lokasi syuting dan gedung agensi, dalam satu hari",
+    "lede": "Tempat-tempatnya berpencar — Yongsan, Seongsu, Sungai Han, satu tangga di Ihwa-dong — dan masing-masing cuma dua puluh menit untuk foto, bukan setengah hari. Justru hari seperti ini yang paling cocok pakai mobil pribadi, dan paling melelahkan kalau naik kereta.",
+    "heroImage": "/assets/img/reels/Dbw32ZWoFpA.jpg",
+    "heroAlt": "Keliling Seoul dengan mobil Pak Lee",
+    "price": "₩300.000",
+    "amount": "300000",
+    "duration": "Sekitar 10 jam"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "09:30", "title": "Gedung HYBE, Yongsan",
+      "body": "Itu gedung kantor, jadi fotonya dari luar — tidak ada tur dan lobinya tidak dibuka untuk penggemar. Gedung Ador dan Belift hanya beberapa menit dari situ, dan saya putari semuanya." },
+    { "time": "10:30", "title": "Toko album",
+      "body": "Bisa toko di bawah gedung HYBE atau salah satu toko di Myeongdong, tergantung yang Anda cari. Sebutkan nama grupnya di mobil dan saya antar ke toko yang memang menyediakan." },
+    { "time": "12:00", "title": "Seongsu-dong",
+      "body": "Bekas pabrik yang disulap jadi toko, pop-up store yang gantinya tiap bulan, dan kafe-kafe yang sering muncul di video. Makan siang juga di sini. Ini satu-satunya titik yang saya beri dua jam, bukan satu." },
+    { "time": "14:30", "title": "Satu atau dua lokasi syuting",
+      "body": "Sebutkan judul dramanya sebelum harinya dan saya susun rutenya: tangga Ihwa-dong, tembok Taman Naksan, bangku di taman Sungai Han, gang-gang Bukchon, atau Gangnam kalau itu video idol. Sebagian tempat ini dua puluh menit dengan mobil tapi satu jam dengan kereta." },
+    { "time": "17:00", "title": "Sungai Han saat matahari turun",
+      "body": "Banpo atau Ttukseom, ramyeon dari minimarket, jembatan menyala di belakang Anda. Ini biasanya foto yang paling lama disimpan orang dari perjalanan ini." },
+    { "time": "19:00", "title": "Hongdae malam hari",
+      "body": "Musisi jalanan mulai sekitar jam tujuh, dan grup dance kalau akhir pekan. Saya parkir di dekat situ dan menunggu, jadi Anda bisa bertahan sampai selesai, bukan pulang mengejar kereta terakhir." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir 10 jam", "Rute disusun dari daftar Anda"],
+  "excludes": ["Belanja di kafe dan toko", "Tiket pameran berbayar", "Parkir", "Makan"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Bisa masuk ke dalam gedung HYBE atau SM?",
+      "a": "Tidak bisa. Itu kantor yang beroperasi dan penggemar tidak diizinkan masuk. Yang orang cari adalah foto di luar dan tokonya, dan saya antar ke keduanya tanpa jalan kaki jauh." },
+    { "q": "Apa mungkin bertemu idol?",
+      "a": "Hampir pasti tidak, dan saya tidak mau berbohong soal itu. Yang bisa saya janjikan: dalam sehari Anda datangi enam atau tujuh lokasi, bukan tiga." },
+    { "q": "Bisa disusun sesuai satu drama tertentu?",
+      "a": "Bisa, dan hasilnya jauh lebih bagus. Kirim judulnya dan beberapa adegannya, saya susun rutenya sebelum tanggal Anda, bukan sambil jalan." },
+    { "q": "Nami Island masuk rute ini?",
+      "a": "Bisa saja, tapi itu memakan satu hari penuh sendiri karena perjalanannya sembilan puluh menit sekali jalan. Kalau Winter Sonata alasan Anda datang, ambil paket Nami saja." },
+    { "q": "Kami berempat, harganya sama?",
+      "a": "Sama. ₩300.000 itu per mobil, mau berdua atau berdelapan. Dibagi empat biasanya lebih murah daripada empat tiket harian kereta ditambah taksi." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/everland", "label": "Everland pergi-pulang" },
+    { "slug": "tours/nami-island", "label": "Nami Island" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari hari-hari di kota.", "all": "Lihat semua video" },
+  "cta": { "h2": "Sudah punya daftar tempatnya?",
+           "body": "Kirim daftarnya beserta tanggal. Saya bilang mana yang muat dalam sehari dan saya urutkan supaya masuk akal.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

@@ -1,0 +1,61 @@
+{
+  "seo": {
+    "title": "Tur Korea Ramah Muslim | Pak Lee's Car",
+    "description": "Sehari di Seoul yang diatur mengikuti waktu salat dan makanan halal betulan, lewat Masjid Itaewon. ₩300.000 per mobil, sudah dengan sopir.",
+    "ogImage": "/assets/img/og/muslim-friendly-id.jpg"
+  },
+  "hero": {
+    "h1": "Seoul yang diatur mengikuti waktu salat dan makanan halal",
+    "lede": "Bagian sulit di Korea bukan tempat wisatanya, tapi makan siangnya. Banyak tempat memasang tulisan halal tanpa sertifikat di belakangnya. Saya tahu mana yang bersertifikat, mana yang pemiliknya muslim, dan di mana Anda bisa salat tanpa harus mencari-cari tempat.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Di dalam mobil Pak Lee",
+    "price": "₩300.000",
+    "amount": "300000",
+    "duration": "Sekitar 10 jam"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "08:30", "title": "Jemput, dan kita cek waktunya",
+      "body": "Sebelum berangkat saya lihat dulu waktu Zuhur dan Asar hari itu, lalu saya susun perjalanannya supaya Anda berada di dekat tempat yang memungkinkan, bukan sedang terjebak macet." },
+    { "time": "09:30", "title": "Gyeongbokgung",
+      "body": "Pergantian penjaga jam 10:00, dan istana tutup hari Selasa. Areanya datar, sebagian teduh, dan ada sudut tenang di sisi barat yang bisa dipakai kalau waktu salat masuk di sini." },
+    { "time": "12:30", "title": "Itaewon: Masjid Seoul dan makan siang",
+      "body": "Masjidnya di atas bukit di atas jalan utama, terbuka untuk pengunjung di luar waktu salat, dengan ruang jamaah perempuan di lantai atas. Jalan di bawahnya itu deretan rumah makan halal bersertifikat — Turki, Pakistan, Uzbek, dan satu tempat Korea yang menyajikan bulgogi halal." },
+    { "time": "14:30", "title": "Namsan dan N Seoul Tower",
+      "body": "Sepuluh menit dari Itaewon. Saya antar sampai terminal atas, sisanya naik kereta gantung, jadi jalan kakinya pendek, bukan mendaki dari bawah." },
+    { "time": "16:30", "title": "Myeongdong",
+      "body": "Ada mushala kecil dekat area belanja dan beberapa gerobak jajanan bersertifikat halal, tapi tidak semua gerobak begitu. Saya tunjukkan mana yang mana sebelum Anda ikut antre." },
+    { "time": "19:00", "title": "Makan malam, lalu kembali ke hotel",
+      "body": "Balik ke Itaewon untuk makan malam yang tenang, atau BBQ Korea bersertifikat di Jongno kalau Anda ingin merasakan bakar-bakarannya. Setelah itu langsung sampai depan hotel." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir 10 jam", "Rute mengikuti waktu salat", "Rekomendasi rumah makan halal"],
+  "excludes": ["Tiket istana", "Tiket kereta gantung", "Parkir", "Makan"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Dari mana tahu rumah makannya benar-benar halal?",
+      "a": "Korea punya lembaga sertifikasi, dan selain itu ada rumah makan milik muslim yang sudah dikenal komunitasnya. Dua itu yang saya pakai, bukan stiker di jendela. Kalau sebuah tempat hanya 'muslim friendly' — tidak ada babi tapi menjual alkohol — saya bilang terus terang dan Anda yang memutuskan." },
+    { "q": "Di mana bisa salat selama perjalanan?",
+      "a": "Masjid Pusat Seoul di Itaewon yang utama, lalu ada mushala kecil di Myeongdong, di Bandara Incheon, dan di beberapa pusat perbelanjaan. Saya juga menyimpan sajadah di mobil." },
+    { "q": "Bisa jalan saat bulan Ramadan?",
+      "a": "Bisa, dan susunannya beda: berangkat lebih siang, jalan-jalan di jam yang tidak terlalu terik, dan sudah sampai rumah makan sebelum Maghrib. Bilang saja Anda berpuasa, saya atur begitu." },
+    { "q": "Pak Lee sendiri muslim?",
+      "a": "Bukan. Saya sopir orang Korea yang sudah sering membawa keluarga dari Indonesia dan Malaysia, dan saya belajar tempat-tempatnya dari bertanya kepada tamu dan ikut masuk bersama mereka." },
+    { "q": "Bisa ke luar Seoul saja?",
+      "a": "Bisa. Nami Island dan Everland dua-duanya ada pilihan halal di dekatnya dan bisa saya atur dengan cara yang sama. Nami lebih jauh, jadi harganya berbeda." },
+    { "q": "Harganya per orang?",
+      "a": "Bukan, per mobil. ₩300.000 sudah untuk mobil dan saya selama sepuluh jam, mau berdua atau sekeluarga delapan orang." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "airport-transfer", "label": "Jemput Bandara Incheon" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari perjalanan bersama keluarga seperti Anda.", "all": "Lihat semua video" },
+  "cta": { "h2": "Mau jalan dengan tetap menjaga halal?",
+           "body": "Kirim tanggalnya dan sampaikan seketat apa soal makanannya. Saya susun harinya mengikuti itu.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Everland Round Trip by Private Car | Pak Lee's Car",
+    "description": "Door-to-door to Everland in Yongin and back, with the driver waiting all day. No last shuttle to catch. ₩350,000 per vehicle.",
+    "ogImage": "/assets/img/og/everland-en.jpg"
+  },
+  "hero": {
+    "h1": "Everland, door to door, with the car waiting",
+    "lede": "Everland is in Yongin, about an hour south of Seoul, and the shuttle buses stop long before the parade does. I drive you down, wait in the car park all day, and take you home whenever you come out — including the tired children asleep on the way back.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "A family day out with Pak Lee",
+    "price": "₩350,000",
+    "amount": "350000",
+    "duration": "About 12 hours door to door"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "08:00",
+      "title": "Pickup at your hotel",
+      "body": "Everland opens at ten most days. Leaving Seoul at eight puts you at the gate before the queue builds, which on a weekend is worth an hour of your day."
+    },
+    {
+      "time": "09:15",
+      "title": "The drive down",
+      "body": "About an hour on the expressway when it's clear. Buy your tickets online the night before — the gate queue is the slowest part of the morning and it's entirely avoidable."
+    },
+    {
+      "time": "10:00",
+      "title": "Straight to T Express",
+      "body": "The wooden coaster's queue goes from ten minutes to ninety by lunchtime. If your group wants it, do it first and see the pandas afterwards, not the other way round."
+    },
+    {
+      "time": "13:00",
+      "title": "Lunch, and I'm still here",
+      "body": "Food inside the park is fine but not cheap. If someone needs a nap, a charger or a bag dropped off, message me and come out to the car — re-entry is allowed with your ticket."
+    },
+    {
+      "time": "17:00",
+      "title": "The parade and the evening",
+      "body": "The main parade is late afternoon and the lights and fireworks come after dark, seasonally. This is the part the last shuttle bus makes you miss."
+    },
+    {
+      "time": "21:00",
+      "title": "Home when you're done",
+      "body": "You come out when you come out. I'm in the car park, not on a timetable, and the drive back is quiet enough that the children usually sleep through it."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver waiting all day",
+    "Hotel pickup and drop"
+  ],
+  "excludes": [
+    "Everland tickets",
+    "Park parking fee",
+    "Meals",
+    "Q-Pass or express passes"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "Do you buy the park tickets for us?",
+      "a": "No — you'll do better online, where the discounts are. Book the night before and go straight to the entry gate rather than the ticket window."
+    },
+    {
+      "q": "Do you wait the whole day?",
+      "a": "Yes. That's what this booking is. I stay at Everland with the car so you're not counting down to a shuttle departure."
+    },
+    {
+      "q": "What if we stay past twelve hours?",
+      "a": "Message me and we'll sort it. An extra hour or so is usually not a problem; I just ask that you tell me rather than leave me guessing at the gate."
+    },
+    {
+      "q": "Is Caribbean Bay included?",
+      "a": "It's a separate ticket and a separate park next door, but the same car park serves both. Say which one you're doing and the day works the same way."
+    },
+    {
+      "q": "Can we add somewhere on the way back?",
+      "a": "Yes, though after a full day in a theme park almost nobody wants to. Korean Folk Village is nearby if you're doing this as a shorter day."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Muslim-friendly Korea"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from family days out.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Taking the family to Everland?",
+    "body": "Tell me your date and how many seats you need, including car seats. I'll confirm the same day.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

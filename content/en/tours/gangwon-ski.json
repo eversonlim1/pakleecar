@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Gangwon Ski and Coast by Car | Pak Lee's Car",
+    "description": "Gangneung, Sokcho and the Gangwon ski resorts in a private van with driver. Skis and boards fit. ₩400,000 plus a Gangwon surcharge.",
+    "ogImage": "/assets/img/og/gangwon-ski-en.jpg"
+  },
+  "hero": {
+    "h1": "Gangwon: snow in the morning, sea in the afternoon",
+    "lede": "The ski resorts and the east coast are two and a half hours from Seoul and about forty minutes from each other. With a van you can do a half day on the slopes and still eat grilled fish by the water in Sokcho, which no bus schedule will let you do.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "A day out of Seoul with Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "About 12 hours, plus a Gangwon surcharge"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "06:30",
+      "title": "An early start, on purpose",
+      "body": "It's two and a half hours to the coast on a clear morning and closer to four if we leave with everyone else. Leaving before seven is the difference between a day trip and a drive."
+    },
+    {
+      "time": "09:00",
+      "title": "The resort — Yongpyong, Alpensia or Vivaldi",
+      "body": "Tell me which one before the day and I'll set the route. Rental of skis, boots and clothing is done at the resort and takes about forty minutes the first time, so factor that in."
+    },
+    {
+      "time": "09:45",
+      "title": "On the slopes",
+      "body": "Half-day lift passes usually run to 12:30 or 13:00 and are the sensible choice on a trip like this. I wait at the base lodge with the car and your bags — no locker hunting."
+    },
+    {
+      "time": "13:30",
+      "title": "Gangneung and Anmok coffee street",
+      "body": "Forty minutes down to the sea. Anmok is a row of cafés facing the water and it is where Korean coffee culture actually started, which is a better stop than it sounds in winter."
+    },
+    {
+      "time": "15:30",
+      "title": "Sokcho or Jumunjin",
+      "body": "The fish market at Jumunjin for grilled fish and squid, or Sokcho's harbour and the little hand-pulled ferry. One or the other — both in an afternoon is rushing it."
+    },
+    {
+      "time": "18:00",
+      "title": "Back to Seoul",
+      "body": "Two and a half to three hours, and most people sleep the whole way. Sunday evenings on the Yeongdong expressway are the slowest, so I'd rather leave the coast by six."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for the day",
+    "Room for skis and boards"
+  ],
+  "excludes": [
+    "Lift pass and rental",
+    "Parking",
+    "Meals",
+    "Gangwon surcharge"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "What is the Gangwon surcharge?",
+      "a": "Gangwon is roughly 250km each way, so the day is ₩400,000 plus a surcharge for the distance and the longer hours. Message me your date and resort and I'll give you the whole number in advance."
+    },
+    {
+      "q": "When is there actually snow?",
+      "a": "The resorts run from about mid-December to early March, and they make their own snow, so the season is more reliable than the weather. Outside those months this becomes a coast day instead."
+    },
+    {
+      "q": "Do skis and boards fit in the van?",
+      "a": "Yes, with the rear row folded. At six or more passengers plus equipment it gets tight — tell me the headcount and I'll say honestly whether it works."
+    },
+    {
+      "q": "Can we stay overnight and have you return?",
+      "a": "Yes, people do this often. One day up, one day back, priced as two days. It's usually the better plan if you want a full day of skiing."
+    },
+    {
+      "q": "Can you drive us if the road is icy?",
+      "a": "The expressway is cleared and I run winter tyres, but mountain access roads occasionally close in heavy snow. If that happens we change the plan; I won't drive a road I don't like the look of."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "tours/everland",
+      "label": "Everland round trip"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Incheon airport pickup"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from days out of the city.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Thinking about Gangwon?",
+    "body": "Tell me your date and which resort. I'll quote the surcharge before you decide anything.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

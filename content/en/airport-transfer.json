@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Incheon Airport Transfer | Pak Lee's Car",
+    "description": "Private pickup and drop between Incheon Airport and your Seoul hotel. One way, up to eight people with luggage, fixed ₩150,000 per vehicle.",
+    "ogImage": "/assets/img/og/airport-transfer-en.jpg"
+  },
+  "hero": {
+    "h1": "Incheon pickup, with your name on a sign",
+    "lede": "You land after a long flight with luggage, a phone that doesn't work yet, and no won in your pocket. I meet you at the arrivals gate, carry the cases and drive you to your hotel door for a price agreed before you took off.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Inside Pak Lee's van",
+    "price": "₩150,000",
+    "amount": "150000",
+    "duration": "One way, about 70-90 minutes"
+  },
+  "itineraryTitle": "How a pickup works",
+  "itinerary": [
+    {
+      "time": "Before you fly",
+      "title": "Send me the flight number",
+      "body": "Not the landing time — the flight number. I track the actual arrival, so a two-hour delay costs you nothing and there's nobody to phone about it from the air."
+    },
+    {
+      "time": "On landing",
+      "title": "Immigration and bags",
+      "body": "Usually forty minutes to an hour at Terminal 1 or 2, longer on a heavy morning. I'm already parked and waiting; the clock isn't running against you."
+    },
+    {
+      "time": "At the gate",
+      "title": "The sign with your name",
+      "body": "T1 exit gate 5 or 6, T2 exit gate 2, unless we've agreed otherwise. If your phone has no signal yet, just walk out and look — I'll be standing where I said I'd be."
+    },
+    {
+      "time": "The drive",
+      "title": "70 to 90 minutes into Seoul",
+      "body": "Longer in weekday rush hour. Free Wi-Fi in the car, and chargers at every row so you can message home before your SIM is sorted."
+    },
+    {
+      "time": "One stop",
+      "title": "SIM card or cash, if you need it",
+      "body": "The airport SIM counters and the ATMs that take foreign cards are worth five minutes before we leave. Tell me and we'll stop; it's easier here than in the city."
+    },
+    {
+      "time": "Arrival",
+      "title": "Your hotel door",
+      "body": "Not the corner, not the nearest station. Bags out of the boot and up to the entrance, then payment in cash or by transfer — whichever suits you."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Flight tracking",
+    "Meeting you at arrivals",
+    "Up to 8 seats"
+  ],
+  "excludes": [
+    "Parking beyond the free wait",
+    "Child seats unless requested",
+    "Extra city stops"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "What if my flight is delayed?",
+      "a": "Nothing changes. I watch the flight number, not the schedule, and I don't charge for a delay you didn't cause. The same goes for a slow immigration queue."
+    },
+    {
+      "q": "Is ₩150,000 each way?",
+      "a": "Yes — one way, per vehicle. Pickup and drop-off are ₩150,000 each. Book both together and I'll hold the same car for your departure."
+    },
+    {
+      "q": "How much luggage fits?",
+      "a": "Four large cases plus cabin bags is comfortable. Six large cases with eight people is not — tell me the real number of bags and I'll say straight away if it fits."
+    },
+    {
+      "q": "Can you do an early morning departure?",
+      "a": "Yes. A 04:30 pickup for a 07:00 flight is normal for me. Book it the day before rather than the night of, so I can plan the run."
+    },
+    {
+      "q": "Do you have child seats?",
+      "a": "I can bring one or two if you ask in advance, at no extra cost. I can't produce them on the spot, so mention it when you book."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Cash in won at the end, or a bank transfer. No deposit before we've spoken, and no card machine in the car."
+    }
+  ],
+  "relatedTitle": "Other things I drive",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Muslim-friendly Korea"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from pickups and days out.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Need a pickup at Incheon?",
+    "body": "Send me your flight number, the date and how many bags. I'll confirm the price before you fly.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "DMZ Tour by Private Car | Pak Lee's Car",
+    "description": "Imjingak, the Third Tunnel and Dora Observatory in your own van. Passport required and closed Mondays. ₩400,000 plus a Gyeonggi surcharge.",
+    "ogImage": "/assets/img/og/dmz-en.jpg"
+  },
+  "hero": {
+    "h1": "The DMZ, without the coach and the forty-person queue",
+    "lede": "The border area runs on other people's timetables: fixed shuttle departures, a passport check at the control point, and a Monday closure that catches a lot of travellers out. I drive you up, handle the waiting, and have you back in Seoul by mid-afternoon.",
+    "heroImage": "/assets/img/reels/DcP3w5VIoPf.jpg",
+    "heroAlt": "On the road north of Seoul with Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "About 9 hours, plus a Gyeonggi surcharge"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "07:30",
+      "title": "Pickup, and the passport check",
+      "body": "Bring the actual passport, not a photo of it. Every adult needs one and the names are checked at the control point. Without it you will be turned back, and there is nobody I can talk to about that."
+    },
+    {
+      "time": "08:40",
+      "title": "Imjingak Park",
+      "body": "The Freedom Bridge, the rusted train pulled out of the zone, and the ribbons families have tied along the fence. This part is open and free, and it's where tickets for the restricted area are sold."
+    },
+    {
+      "time": "09:30",
+      "title": "Into the controlled area",
+      "body": "Past Imjingak you continue on the official shuttle with a soldier aboard — private cars are not allowed in. I buy your seats, hand you the tickets, and wait at the park with the van."
+    },
+    {
+      "time": "10:15",
+      "title": "The Third Tunnel",
+      "body": "A steep 350-metre ramp down and the same climb back, low ceiling, hard hat on, no phones or cameras below. Skip it if you have bad knees, a stroller or any claustrophobia; the rest of the site still justifies the trip."
+    },
+    {
+      "time": "11:15",
+      "title": "Dora Observatory",
+      "body": "Binoculars pointed at Kaesong and the village across the line. On a hazy summer day you will see very little, and winter mornings are the clearest — I'd rather tell you that now than after you've paid."
+    },
+    {
+      "time": "13:00",
+      "title": "Lunch, then back to Seoul",
+      "body": "A few restaurants around Munsan; the soybean paste stew is the local thing here. You are usually back at the hotel by mid-afternoon, so the evening is still yours."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for the day",
+    "Hotel pickup and drop"
+  ],
+  "excludes": [
+    "Shuttle and site tickets",
+    "Parking",
+    "Meals",
+    "Gyeonggi surcharge"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "What is the Gyeonggi surcharge?",
+      "a": "The border area sits well outside Seoul, so the day is ₩400,000 plus a surcharge for the distance. Send me your hotel and I'll quote the exact figure before you commit — nothing appears at the end."
+    },
+    {
+      "q": "Which days is the DMZ closed?",
+      "a": "Mondays, and some national holidays. It can also close at short notice for military or diplomatic reasons, which is outside anyone's control. If your date is a closure I'll say so and we replan."
+    },
+    {
+      "q": "Do we really need passports?",
+      "a": "Yes — the physical passport for every adult, matching the name registered in advance. This is the one rule of the day I can do nothing about."
+    },
+    {
+      "q": "Can you drive us inside the DMZ yourself?",
+      "a": "No. Beyond the Imjingak checkpoint everyone travels on the military-escorted shuttle. I get you there, buy the tickets and wait with the car."
+    },
+    {
+      "q": "Is the JSA included?",
+      "a": "No. The Joint Security Area is a separate programme with its own registration and it has been suspended more often than open in recent years. What I run is the Imjingak, tunnel and observatory route."
+    },
+    {
+      "q": "Is it suitable for young children?",
+      "a": "The park and the observatory, yes. The tunnel, not really — it's a long steep ramp with nowhere to turn around halfway. Plenty of families do the day and skip that one stop."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Incheon airport pickup"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from the road north.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Thinking about the DMZ?",
+    "body": "Send me your date and I'll check it isn't a closure day before you plan anything around it.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

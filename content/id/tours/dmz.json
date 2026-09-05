@@ -1,0 +1,61 @@
+{
+  "seo": {
+    "title": "Tur DMZ Mobil Pribadi | Pak Lee's Car",
+    "description": "Imjingak, Terowongan Ketiga dan Dora Observatory dengan mobil sendiri. Wajib bawa paspor, tutup hari Senin. ₩400.000 plus tambahan Gyeonggi.",
+    "ogImage": "/assets/img/og/dmz-id.jpg"
+  },
+  "hero": {
+    "h1": "DMZ, tanpa ikut bus besar dan antrean empat puluh orang",
+    "lede": "Kawasan perbatasan punya aturan sendiri: jam keberangkatan shuttle yang tetap, pemeriksaan paspor di pos kontrol, dan tutup setiap hari Senin — yang sering bikin turis kecele. Saya antar ke sana, urus bagian menunggunya, dan Anda sudah kembali di Seoul sore hari.",
+    "heroImage": "/assets/img/reels/DcP3w5VIoPf.jpg",
+    "heroAlt": "Di jalan menuju utara Seoul bersama Pak Lee",
+    "price": "₩400.000",
+    "amount": "400000",
+    "duration": "Sekitar 9 jam, plus tambahan Gyeonggi"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "07:30", "title": "Jemput, dan urusan paspor",
+      "body": "Bawa paspor aslinya, bukan fotonya. Setiap orang dewasa wajib bawa dan namanya dicek di pos kontrol. Tanpa itu Anda dipulangkan, dan tidak ada yang bisa saya bicarakan soal itu." },
+    { "time": "08:40", "title": "Taman Imjingak",
+      "body": "Jembatan Kebebasan, gerbong kereta berkarat yang ditarik keluar dari zona, dan pita-pita yang diikat keluarga di pagar. Bagian ini terbuka dan gratis, dan di sinilah tiket masuk kawasan terbatas dijual." },
+    { "time": "09:30", "title": "Masuk kawasan terkontrol",
+      "body": "Setelah Imjingak, Anda pindah ke shuttle resmi yang ditemani tentara — mobil pribadi tidak boleh masuk. Saya belikan kursinya, serahkan tiketnya, lalu menunggu di taman bersama mobil." },
+    { "time": "10:15", "title": "Terowongan Ketiga",
+      "body": "Turun 350 meter lewat lorong menurun yang curam dan naik lagi lewat jalan yang sama, langit-langit rendah, pakai helm. Ponsel dan kamera tidak boleh dibawa turun. Lewati saja kalau lutut Anda bermasalah, bawa stroller, atau takut ruang sempit — sisa lokasinya tetap layak didatangi." },
+    { "time": "11:15", "title": "Dora Observatory",
+      "body": "Teropong mengarah ke Kaesong dan desa di seberang garis. Kalau musim panas dan berkabut, hampir tidak kelihatan apa-apa; pagi di musim dingin paling jernih. Lebih baik saya bilang sekarang daripada setelah Anda bayar." },
+    { "time": "13:00", "title": "Makan siang, lalu kembali ke Seoul",
+      "body": "Ada beberapa rumah makan di sekitar Munsan; sup pasta kedelai adalah makanan khas daerah sini. Biasanya sudah sampai hotel sore hari, jadi malamnya masih bisa Anda pakai." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir seharian", "Jemput dan antar hotel"],
+  "excludes": ["Tiket shuttle dan lokasi", "Parkir", "Makan", "Tambahan Gyeonggi"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Tambahan Gyeonggi itu apa?",
+      "a": "Kawasan perbatasan jauh di luar Seoul, jadi harganya ₩400.000 plus tambahan untuk jaraknya. Kirim nama hotel Anda dan saya sebutkan angka pastinya sebelum Anda memutuskan — tidak ada biaya yang muncul belakangan." },
+    { "q": "Hari apa DMZ tutup?",
+      "a": "Hari Senin, dan beberapa hari libur nasional. Kadang juga ditutup mendadak karena alasan militer atau diplomatik, dan itu di luar kendali siapa pun. Kalau tanggal Anda kena tutup, saya beri tahu dan kita atur ulang." },
+    { "q": "Paspor benar-benar wajib?",
+      "a": "Wajib. Paspor fisik untuk setiap orang dewasa, dan namanya harus sama dengan yang didaftarkan sebelumnya. Ini satu aturan yang sama sekali tidak bisa saya bantu." },
+    { "q": "Pak Lee bisa antar masuk sampai ke dalam DMZ?",
+      "a": "Tidak bisa. Lewat pos Imjingak, semua orang naik shuttle resmi dengan pengawalan militer. Saya antar sampai sana, belikan tiket, dan menunggu dengan mobil." },
+    { "q": "JSA termasuk?",
+      "a": "Tidak. Joint Security Area itu program terpisah dengan pendaftaran sendiri, dan beberapa tahun terakhir lebih sering ditutup daripada dibuka. Yang saya jalankan adalah rute Imjingak, terowongan dan observatorium." },
+    { "q": "Cocok untuk anak kecil?",
+      "a": "Taman dan observatorium, cocok. Terowongannya kurang — turunannya panjang dan curam, dan tidak ada tempat berbalik di tengah. Banyak keluarga tetap ikut dan cukup melewatkan satu titik itu." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "airport-transfer", "label": "Jemput Bandara Incheon" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari jalan ke arah utara.", "all": "Lihat semua video" },
+  "cta": { "h2": "Berencana ke DMZ?",
+           "body": "Kirim tanggalnya dan saya cek dulu apakah hari itu tutup, sebelum Anda menyusun rencana lain.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

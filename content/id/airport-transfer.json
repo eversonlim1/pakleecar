@@ -1,0 +1,61 @@
+{
+  "seo": {
+    "title": "Antar Jemput Bandara Incheon | Pak Lee's Car",
+    "description": "Jemput dan antar pribadi Bandara Incheon ke hotel Seoul. Sekali jalan, sampai 8 orang dengan koper, harga tetap ₩150.000 per mobil.",
+    "ogImage": "/assets/img/og/airport-transfer-id.jpg"
+  },
+  "hero": {
+    "h1": "Dijemput di Incheon, nama Anda ada di papan",
+    "lede": "Anda mendarat setelah penerbangan panjang, bawa koper, ponsel belum ada sinyal, dan belum pegang won sama sekali. Saya tunggu di pintu kedatangan, bantu bawa koper, dan antar sampai depan hotel dengan harga yang sudah disepakati sebelum Anda terbang.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Di dalam mobil Pak Lee",
+    "price": "₩150.000",
+    "amount": "150000",
+    "duration": "Sekali jalan, sekitar 70-90 menit"
+  },
+  "itineraryTitle": "Cara penjemputannya",
+  "itinerary": [
+    { "time": "Sebelum terbang", "title": "Kirim nomor penerbangan",
+      "body": "Bukan jam mendaratnya — nomor penerbangannya. Saya pantau kedatangan sebenarnya, jadi delay dua jam tidak menambah biaya, dan Anda tidak perlu menelepon siapa pun dari udara." },
+    { "time": "Setelah mendarat", "title": "Imigrasi dan bagasi",
+      "body": "Biasanya empat puluh menit sampai satu jam di Terminal 1 atau 2, lebih lama kalau pagi sedang padat. Saya sudah parkir dan menunggu; waktunya tidak dihitung dari situ." },
+    { "time": "Di pintu keluar", "title": "Papan bertuliskan nama Anda",
+      "body": "T1 pintu keluar 5 atau 6, T2 pintu keluar 2, kecuali kita sepakati lain. Kalau ponsel Anda belum ada sinyal, keluar saja dan cari — saya berdiri persis di tempat yang saya sebutkan." },
+    { "time": "Perjalanan", "title": "70 sampai 90 menit ke Seoul",
+      "body": "Lebih lama kalau jam sibuk hari kerja. Ada Wi-Fi gratis di mobil dan colokan pengisi daya di setiap baris, jadi Anda bisa kabari keluarga sebelum SIM card beres." },
+    { "time": "Satu kali mampir", "title": "Kartu SIM atau tarik uang",
+      "body": "Konter SIM di bandara dan ATM yang menerima kartu luar negeri layak diberi lima menit sebelum berangkat. Bilang saja, kita mampir — di sini lebih gampang daripada di kota." },
+    { "time": "Sampai", "title": "Depan pintu hotel",
+      "body": "Bukan di ujung jalan, bukan di stasiun terdekat. Koper saya turunkan sampai lobi, lalu pembayaran tunai atau transfer, terserah Anda." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Pantau nomor penerbangan", "Dijemput di pintu kedatangan", "Sampai 8 kursi"],
+  "excludes": ["Parkir di luar waktu tunggu gratis", "Kursi anak kalau tidak dipesan", "Mampir tambahan di kota"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Kalau pesawat saya delay?",
+      "a": "Tidak ada yang berubah. Saya pantau nomor penerbangan, bukan jadwalnya, dan saya tidak menagih untuk keterlambatan yang bukan salah Anda. Sama juga kalau antrean imigrasi panjang." },
+    { "q": "₩150.000 itu sekali jalan?",
+      "a": "Ya, sekali jalan, per mobil. Jemput dan antar masing-masing ₩150.000. Kalau dipesan sekaligus, mobil yang sama saya siapkan untuk hari kepulangan Anda." },
+    { "q": "Berapa koper yang muat?",
+      "a": "Empat koper besar plus tas kabin masih nyaman. Enam koper besar dengan delapan orang tidak muat — sebutkan jumlah koper sebenarnya dan saya langsung bilang muat atau tidak." },
+    { "q": "Bisa antar pagi buta untuk penerbangan pagi?",
+      "a": "Bisa. Jemput jam 04:30 untuk pesawat jam 07:00 itu hal biasa buat saya. Pesan sehari sebelumnya, jangan malam itu juga, biar saya bisa atur." },
+    { "q": "Ada kursi anak?",
+      "a": "Saya bisa bawa satu atau dua kalau diminta sebelumnya, tanpa biaya tambahan. Tapi tidak bisa mendadak, jadi sebutkan saat memesan." },
+    { "q": "Bayarnya bagaimana?",
+      "a": "Tunai dalam won di akhir perjalanan, atau transfer bank. Tidak ada DP sebelum kita bicara, dan tidak ada mesin kartu di mobil." }
+  ],
+  "relatedTitle": "Layanan lain",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "muslim-friendly-korea-tour", "label": "Korea ramah muslim" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari penjemputan dan jalan-jalan.", "all": "Lihat semua video" },
+  "cta": { "h2": "Perlu dijemput di Incheon?",
+           "body": "Kirim nomor penerbangan, tanggal, dan jumlah koper. Saya konfirmasi harganya sebelum Anda terbang.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

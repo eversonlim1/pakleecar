@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "Nami Island by Private Car | Pak Lee's Car",
+    "description": "A private van and driver to Nami Island, Petite France and the garden. Ten hours, your pace, fuel and tolls included. ₩400,000 per vehicle.",
+    "ogImage": "/assets/img/og/nami-en.jpg"
+  },
+  "hero": {
+    "h1": "Nami Island, at your own pace",
+    "lede": "Most tours give you ninety minutes on the island. I park and wait — stay two hours or five. On the way back most people add Petite France, or Myeongdong if there's light left.",
+    "heroImage": "/assets/img/reels/DY3AtNlolDz.jpg",
+    "heroAlt": "Guests on a day trip with Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "About 10 hours"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "08:00",
+      "title": "Your hotel",
+      "body": "I text when I'm downstairs. No meeting point and no waiting in a lobby — we leave from wherever you slept."
+    },
+    {
+      "time": "09:40",
+      "title": "Gapyeong",
+      "body": "About ninety minutes from central Seoul without traffic. Leaving at eight puts us ahead of the tour buses at the ferry pier."
+    },
+    {
+      "time": "10:00",
+      "title": "Nami Island",
+      "body": "I park and wait at the pier. The ferry and island entry are your own ticket, about ₩16,000. Stay as long as you like — I'm not going anywhere."
+    },
+    {
+      "time": "13:00",
+      "title": "Lunch",
+      "body": "I know which places near Gapyeong are actually halal and which only say so. If that doesn't matter to you, the dakgalbi here is worth the stop."
+    },
+    {
+      "time": "15:00",
+      "title": "Petite France or the Garden of Morning Calm",
+      "body": "Both are fifteen minutes from the pier. Pick one on the day — you'll know by then whether you want more walking."
+    },
+    {
+      "time": "19:30",
+      "title": "Back — or not",
+      "body": "Most people add Myeongdong on the way home. That's fine by me, as long as we're inside the ten hours."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for 10 hours"
+  ],
+  "excludes": [
+    "Ferry and island entry",
+    "Petite France entry",
+    "Parking",
+    "Meals"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "Can we change the plan on the day?",
+      "a": "Yes. People do it constantly and it costs nothing, as long as we stay within the ten hours."
+    },
+    {
+      "q": "Is the ferry ticket included?",
+      "a": "No. The ferry and island entry are about ₩16,000 per adult and you buy them at the pier. I'll show you where."
+    },
+    {
+      "q": "Will eight people and luggage fit?",
+      "a": "Eight people fit. Eight people with large suitcases do not — at six or more I'd bring cabin bags rather than full-size cases."
+    },
+    {
+      "q": "How long is the drive from Seoul?",
+      "a": "About ninety minutes each way without traffic. Leaving at eight rather than nine usually saves half an hour."
+    },
+    {
+      "q": "Is it worth going in winter?",
+      "a": "The tree-lined paths look best under snow, but the island is exposed and the wind off the river is cold. Bring more layers than you think."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "tours/gangwon-ski",
+      "label": "Gangwon and the ski resorts"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Incheon airport pickup"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from days like this one.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Thinking about Nami Island?",
+    "body": "Tell me your date and how many people. I'll say honestly what else fits that day.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

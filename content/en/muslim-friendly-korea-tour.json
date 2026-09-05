@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Muslim-Friendly Korea Tour | Pak Lee's Car",
+    "description": "A day in Seoul planned around prayer times and genuinely halal food, with the Itaewon mosque on the route. ₩300,000 per vehicle, driver included.",
+    "ogImage": "/assets/img/og/muslim-friendly-en.jpg"
+  },
+  "hero": {
+    "h1": "Seoul planned around prayer times and real halal food",
+    "lede": "The hard part of Korea isn't the sightseeing, it's lunch. Plenty of places put a halal sign in the window without a certificate behind it. I know which ones are certified, which are Muslim-owned, and where you can pray without hunting for somewhere quiet.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Inside Pak Lee's van",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "About 10 hours"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "08:30",
+      "title": "Pickup, and we check the times",
+      "body": "Before we set off I look at today's Zuhur and Asr times and build the driving around them, so you're near somewhere suitable rather than stuck in traffic when they come."
+    },
+    {
+      "time": "09:30",
+      "title": "Gyeongbokgung",
+      "body": "The guard changing is at 10:00, and the palace is closed on Tuesdays. It's flat, shaded in parts, and there is a quiet corner near the west side that works if a prayer falls here."
+    },
+    {
+      "time": "12:30",
+      "title": "Itaewon: Seoul Central Mosque and lunch",
+      "body": "The mosque is on the hill above the main road, open to visitors outside prayer times, with a women's section upstairs. The street below it is where the certified halal restaurants are — Turkish, Pakistani, Uzbek and a Korean place doing halal bulgogi."
+    },
+    {
+      "time": "14:30",
+      "title": "Namsan and N Seoul Tower",
+      "body": "Ten minutes from Itaewon. I drive up to the terminus and you take the cable car for the last stretch, so it's a short walk rather than the full climb."
+    },
+    {
+      "time": "16:30",
+      "title": "Myeongdong",
+      "body": "There's a small prayer room near the shopping streets and several halal-certified street stalls, though not every cart is one. I'll point out which is which before you queue."
+    },
+    {
+      "time": "19:00",
+      "title": "Dinner, then your hotel",
+      "body": "Back to Itaewon for a proper sit-down meal, or a certified Korean barbecue in Jongno if you want the grill experience. Then straight to your door."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for 10 hours",
+    "Route planned around prayer times",
+    "Halal restaurant recommendations"
+  ],
+  "excludes": [
+    "Palace entry",
+    "Cable car ticket",
+    "Parking",
+    "Meals"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "How do you know a restaurant is really halal?",
+      "a": "Korea has a certification scheme, and separately there are Muslim-owned restaurants that everyone in the community knows. I use those two, not the window stickers. Where a place is only 'Muslim-friendly' — no pork, but alcohol served — I'll tell you that plainly and let you decide."
+    },
+    {
+      "q": "Where can we pray during the day?",
+      "a": "Seoul Central Mosque in Itaewon is the main one, and there are small prayer rooms in Myeongdong, at Incheon Airport and in a few department stores. I keep a mat in the car as well."
+    },
+    {
+      "q": "Can you do this during Ramadan?",
+      "a": "Yes, and the day looks different: a later start, sightseeing in the cooler hours, and being at a restaurant before Maghrib rather than after. Tell me you're fasting and I'll plan it that way."
+    },
+    {
+      "q": "Are you Muslim yourself?",
+      "a": "No. I'm a Korean driver who has taken a lot of Indonesian and Malaysian families around, and I've learned where things are by asking my guests and going with them."
+    },
+    {
+      "q": "Can we go somewhere outside Seoul instead?",
+      "a": "Yes. Nami Island and Everland both have halal options nearby and I can plan either the same way. Nami is a longer drive, so the day is priced differently."
+    },
+    {
+      "q": "Is the price per person?",
+      "a": "No, per vehicle. ₩300,000 covers the van and me for ten hours, whether you are a couple or a family of eight."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Incheon airport pickup"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from days with families like yours.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Travelling with halal in mind?",
+    "body": "Tell me your dates and how strict you'd like me to be about the food. I'll plan the day around it.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

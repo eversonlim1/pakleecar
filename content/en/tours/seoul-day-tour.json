@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Seoul in One Day, Private Driver | Pak Lee's Car",
+    "description": "Gyeongbokgung, Bukchon, Myeongdong and Namsan in one day with your own van and driver. Ten hours, no group, fuel and tolls included. ₩300,000.",
+    "ogImage": "/assets/img/og/seoul-day-tour-en.jpg"
+  },
+  "hero": {
+    "h1": "A full day in Seoul, without the walking between",
+    "lede": "The palaces, Bukchon, Myeongdong and Namsan are not far apart on a map, but they are far apart on foot in August or in January. I drive between them and wait outside, so the day costs you your legs instead of your patience.",
+    "heroImage": "/assets/img/reels/DcAjNy9I9L4.jpg",
+    "heroAlt": "A day around Seoul with Pak Lee's van",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "About 10 hours"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "09:00",
+      "title": "Gyeongbokgung",
+      "body": "The changing of the guard is at 10:00 and 14:00, and the palace is closed on Tuesdays. If you rent a hanbok nearby, entry is free — I'll drop you at the rental shop first and pick you up after."
+    },
+    {
+      "time": "11:00",
+      "title": "Bukchon Hanok Village",
+      "body": "It is a real neighbourhood with people sleeping behind those walls, and there are signs asking for quiet. I park at the bottom of the hill so you walk down through it, not up."
+    },
+    {
+      "time": "12:30",
+      "title": "Lunch",
+      "body": "Around Insadong, or Gwangjang Market if you feel braver. Tell me in the car if you need halal or vegetarian and I'll choose accordingly rather than guessing."
+    },
+    {
+      "time": "14:30",
+      "title": "Myeongdong",
+      "body": "Skincare, socks and street food. Two hours is usually enough, though the food carts only really get going after four — we can flip this stop later if that's the point of your day."
+    },
+    {
+      "time": "17:00",
+      "title": "Namsan and N Seoul Tower",
+      "body": "I drive up to the terminus below the tower and you take the cable car or the shuttle for the last stretch. Going up before sunset and coming down after it is the whole trick."
+    },
+    {
+      "time": "19:00",
+      "title": "Dinner, then your hotel",
+      "body": "Korean barbecue around Euljiro, or straight back if the children are finished. Either way I drop you at your door, not at a subway station."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for 10 hours",
+    "Hotel pickup and drop"
+  ],
+  "excludes": [
+    "Palace entry",
+    "Cable car ticket",
+    "Parking",
+    "Meals"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "Do you come inside the palace with us?",
+      "a": "No. I'm a driver, not a licensed guide, and guiding inside the palaces needs a licence I don't hold. I'll tell you what to look for, drop you at the right gate and wait."
+    },
+    {
+      "q": "Which day should we avoid?",
+      "a": "Tuesday. Gyeongbokgung is closed then, and so are several museums. Monday is fine for this route, unlike the DMZ."
+    },
+    {
+      "q": "Can we swap Namsan for something else?",
+      "a": "Yes. The usual swaps are Hongdae in the evening, the Han River parks, or Dongdaemun for late shopping. Say so in the car and we go."
+    },
+    {
+      "q": "Why isn't parking included?",
+      "a": "Central Seoul parking runs about ₩2,000 to ₩5,000 an hour at the places we stop. I pass on exactly what the machine charges, with nothing added."
+    },
+    {
+      "q": "Can we start later than nine?",
+      "a": "Yes. The ten hours start when I pick you up. A midday start puts Myeongdong and Namsan after dark, which some people prefer anyway."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/kdrama-kpop",
+      "label": "K-drama and K-pop spots"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Muslim-friendly Korea"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from days around the city.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Planning your Seoul day?",
+    "body": "Send me your date and how many of you there are. I'll tell you what fits in ten hours and what doesn't.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

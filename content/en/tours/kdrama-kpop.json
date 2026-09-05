@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "K-Drama and K-Pop Spots by Car | Pak Lee's Car",
+    "description": "Filming locations, the HYBE building, Seongsu cafés and the album shops, in your own van. Ten hours at your pace. ₩300,000 per vehicle.",
+    "ogImage": "/assets/img/og/kdrama-kpop-en.jpg"
+  },
+  "hero": {
+    "h1": "Filming locations and label buildings, in one day",
+    "lede": "These places are scattered — Yongsan, Seongsu, the Han River, a staircase in Ihwa-dong — and each one is a twenty-minute photo stop, not an afternoon. That is exactly the day a private car is for, and exactly the day the subway makes miserable.",
+    "heroImage": "/assets/img/reels/Dbw32ZWoFpA.jpg",
+    "heroAlt": "Around Seoul with Pak Lee's van",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "About 10 hours"
+  },
+  "itineraryTitle": "How the day usually runs",
+  "itinerary": [
+    {
+      "time": "09:30",
+      "title": "The HYBE building, Yongsan",
+      "body": "It's an office, so you photograph it from outside — there's no tour and no lobby access for fans. The Ador and Belift buildings are within a few minutes, and I'll drive the loop."
+    },
+    {
+      "time": "10:30",
+      "title": "An album shop",
+      "body": "Either the store under HYBE or one of the Myeongdong shops, depending on what you're hunting. Say the group in the car and I'll take you to the one that actually stocks them."
+    },
+    {
+      "time": "12:00",
+      "title": "Seongsu-dong",
+      "body": "Converted factories, pop-up stores that change monthly, and the cafés everyone films in. Lunch here too. It's the one stop where I'd give you two hours rather than one."
+    },
+    {
+      "time": "14:30",
+      "title": "A filming location or two",
+      "body": "Tell me the drama before the day and I'll plan the route: the Ihwa-dong stairs, Naksan Park wall, the Han River park benches, Bukchon alleys, or Gangnam if it's an idol video. Half of these are twenty minutes apart by car and an hour apart by train."
+    },
+    {
+      "time": "17:00",
+      "title": "The Han River at golden hour",
+      "body": "Banpo or Ttukseom, ramyeon from the convenience store, the bridge lit behind you. This is the shot people actually keep from the day."
+    },
+    {
+      "time": "19:00",
+      "title": "Hongdae in the evening",
+      "body": "Buskers on the main street from about seven, dance crews at the weekend. I park nearby and wait, so you can stay until it ends rather than watch the clock for the last train."
+    }
+  ],
+  "includes": [
+    "Fuel included",
+    "Tolls included",
+    "Insurance included",
+    "Driver for 10 hours",
+    "Route planned around your list"
+  ],
+  "excludes": [
+    "Café and shop spending",
+    "Any paid exhibition",
+    "Parking",
+    "Meals"
+  ],
+  "faqTitle": "Questions people ask",
+  "faqs": [
+    {
+      "q": "Can we go inside the HYBE or SM buildings?",
+      "a": "No. They're working offices and fans are not admitted. What people come for is the photo outside and the shop, and I'll get you to both without a long walk."
+    },
+    {
+      "q": "Will we see an idol?",
+      "a": "Almost certainly not, and I'd be lying if I promised otherwise. What I can promise is that you'll cover six or seven locations in a day instead of three."
+    },
+    {
+      "q": "Can you plan it around one specific drama?",
+      "a": "Yes, and it works much better that way. Send me the title and a couple of scenes and I'll build the route before your date rather than improvising it."
+    },
+    {
+      "q": "Is Nami Island part of this?",
+      "a": "It can be, but it eats the whole day on its own — the drive is ninety minutes each way. If Winter Sonata is the reason you're coming, book the Nami day instead."
+    },
+    {
+      "q": "We're four people. Is the price the same?",
+      "a": "Yes. ₩300,000 is per vehicle, whether there are two of you or eight. Splitting it four ways is usually cheaper than four subway day passes plus taxis."
+    }
+  ],
+  "relatedTitle": "Other days out",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "A full day in Seoul"
+    },
+    {
+      "slug": "tours/everland",
+      "label": "Everland round trip"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    }
+  ],
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "From real trips",
+    "body": "Short clips from days around the city.",
+    "all": "See all videos"
+  },
+  "cta": {
+    "h2": "Got a list of places?",
+    "body": "Send it to me with your date. I'll tell you what fits in one day and put it in a sensible order.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

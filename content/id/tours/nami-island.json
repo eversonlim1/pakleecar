@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Nami Island Sewa Mobil + Sopir | Pak Lee's Car",
+    "description": "Mobil pribadi dan sopir ke Nami Island, Petite France dan taman. 10 jam, bebas atur waktu, bensin dan tol termasuk. ₩400.000 per mobil.",
+    "ogImage": "/assets/img/og/nami-id.jpg"
+  },
+  "hero": {
+    "h1": "Nami Island, tanpa dikejar jadwal",
+    "lede": "Rombongan bus biasanya cuma kasih sembilan puluh menit di pulau. Saya parkir dan menunggu — mau dua jam, mau lima jam, terserah Anda. Pulangnya kebanyakan tamu mampir Petite France, atau Myeongdong kalau hari masih terang.",
+    "heroImage": "/assets/img/reels/DY3AtNlolDz.jpg",
+    "heroAlt": "Tamu Pak Lee dalam perjalanan sehari",
+    "price": "₩400.000",
+    "amount": "400000",
+    "duration": "Sekitar 10 jam"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "08:00", "title": "Jemput di hotel",
+      "body": "Saya kirim pesan waktu sudah di bawah. Tidak ada titik kumpul dan tidak perlu menunggu di lobi — kita berangkat dari tempat Anda menginap." },
+    { "time": "09:40", "title": "Gapyeong",
+      "body": "Sekitar sembilan puluh menit dari pusat Seoul kalau jalanan lancar. Berangkat jam delapan berarti kita sampai dermaga sebelum bus-bus rombongan datang." },
+    { "time": "10:00", "title": "Nami Island",
+      "body": "Saya parkir dan menunggu di dermaga. Tiket feri dan masuk pulau dibayar sendiri, sekitar ₩16.000 per orang. Mau lama di dalam tidak masalah, mobil tetap di situ." },
+    { "time": "13:00", "title": "Makan siang",
+      "body": "Saya tahu rumah makan mana di sekitar Gapyeong yang betul-betul halal dan mana yang cuma pasang tulisan. Kalau itu bukan soal buat Anda, dakgalbi di sini memang layak dicoba." },
+    { "time": "15:00", "title": "Petite France atau Garden of Morning Calm",
+      "body": "Dua-duanya lima belas menit dari dermaga. Pilih saja di hari itu — biasanya sampai jam segini Anda sudah tahu masih kuat jalan atau tidak." },
+    { "time": "19:30", "title": "Pulang, atau belum",
+      "body": "Banyak tamu menambah Myeongdong dalam perjalanan pulang. Buat saya tidak masalah, asal masih di dalam sepuluh jam." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir 10 jam"],
+  "excludes": ["Tiket feri dan masuk pulau", "Tiket Petite France", "Parkir", "Makan"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Boleh ubah rencana di hari H?",
+      "a": "Boleh. Tamu saya sering begitu dan tidak ada biaya tambahan, asal masih dalam sepuluh jam." },
+    { "q": "Tiket feri sudah termasuk?",
+      "a": "Belum. Feri dan tiket masuk pulau sekitar ₩16.000 per orang dewasa, dibeli di loket dermaga. Saya tunjukkan tempatnya." },
+    { "q": "Delapan orang dengan koper muat?",
+      "a": "Delapan orang muat. Delapan orang dengan koper besar tidak. Kalau rombongan enam ke atas, sebaiknya bawa koper kabin, bukan koper besar." },
+    { "q": "Berapa lama dari Seoul?",
+      "a": "Sekitar sembilan puluh menit sekali jalan kalau lancar. Berangkat jam delapan biasanya menghemat setengah jam dibanding jam sembilan." },
+    { "q": "Bagus tidak kalau musim dingin?",
+      "a": "Jalan setapak di bawah deretan pohon paling bagus waktu bersalju, tapi pulaunya terbuka dan angin dari sungai dingin sekali. Bawa jaket lebih tebal dari perkiraan Anda." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/gangwon-ski", "label": "Gangwon dan tempat ski" },
+    { "slug": "airport-transfer", "label": "Jemput Bandara Incheon" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari hari-hari seperti ini.", "all": "Lihat semua video" },
+  "cta": { "h2": "Mau ke Nami Island?",
+           "body": "Kirim tanggal dan jumlah orangnya. Saya bilang jujur apa lagi yang muat di hari itu.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

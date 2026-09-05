@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Gangwon: Main Ski dan Pantai | Pak Lee's Car",
+    "description": "Gangneung, Sokcho dan tempat ski Gangwon dengan mobil dan sopir pribadi. Papan ski muat. ₩400.000 plus tambahan Gangwon.",
+    "ogImage": "/assets/img/og/gangwon-ski-id.jpg"
+  },
+  "hero": {
+    "h1": "Gangwon: pagi main salju, sore lihat laut",
+    "lede": "Tempat ski dan pantai timur berjarak dua setengah jam dari Seoul dan sekitar empat puluh menit satu sama lain. Dengan mobil sendiri, Anda bisa setengah hari di lereng salju lalu makan ikan bakar di tepi laut Sokcho — hal yang tidak mungkin diikuti jadwal bus mana pun.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "Jalan-jalan ke luar Seoul bersama Pak Lee",
+    "price": "₩400.000",
+    "amount": "400000",
+    "duration": "Sekitar 12 jam, plus tambahan Gangwon"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "06:30", "title": "Berangkat pagi sekali, memang sengaja",
+      "body": "Dua setengah jam ke pantai kalau pagi masih lengang, bisa jadi empat jam kalau kita berangkat bersamaan dengan semua orang. Berangkat sebelum jam tujuh itu beda antara jalan-jalan dan sekadar duduk di mobil." },
+    { "time": "09:00", "title": "Resor — Yongpyong, Alpensia atau Vivaldi",
+      "body": "Bilang mau yang mana sebelum harinya, biar saya atur rutenya. Sewa ski, sepatu dan baju dilakukan di resor dan makan waktu sekitar empat puluh menit untuk yang pertama kali." },
+    { "time": "09:45", "title": "Main di lereng",
+      "body": "Tiket lift setengah hari biasanya sampai jam 12:30 atau 13:00, dan itu pilihan paling masuk akal untuk perjalanan sehari. Saya menunggu di bawah bersama mobil dan barang-barang Anda, jadi tidak perlu cari loker." },
+    { "time": "13:30", "title": "Gangneung dan Anmok coffee street",
+      "body": "Empat puluh menit turun ke laut. Anmok itu deretan kafe menghadap pantai, dan dari sinilah budaya kopi Korea sebenarnya dimulai. Di musim dingin, mampir ke sini lebih menyenangkan dari kelihatannya." },
+    { "time": "15:30", "title": "Sokcho atau Jumunjin",
+      "body": "Pasar ikan Jumunjin untuk ikan dan cumi bakar, atau pelabuhan Sokcho dan perahu tarik tangannya yang kecil itu. Pilih salah satu — dua-duanya dalam satu sore terlalu buru-buru." },
+    { "time": "18:00", "title": "Kembali ke Seoul",
+      "body": "Dua setengah sampai tiga jam, dan hampir semua tamu tidur sepanjang jalan. Minggu malam di tol Yeongdong paling padat, jadi saya lebih suka meninggalkan pantai sebelum jam enam." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir seharian", "Muat papan ski"],
+  "excludes": ["Tiket lift dan sewa alat", "Parkir", "Makan", "Tambahan Gangwon"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Tambahan Gangwon itu apa?",
+      "a": "Gangwon sekitar 250 km sekali jalan, jadi harganya ₩400.000 plus tambahan untuk jarak dan jam kerja yang lebih panjang. Kirim tanggal dan nama resornya, saya sebutkan total pastinya di depan." },
+    { "q": "Kapan sebenarnya ada salju?",
+      "a": "Resor buka sekitar pertengahan Desember sampai awal Maret, dan mereka bikin salju sendiri, jadi musimnya lebih pasti daripada cuacanya. Di luar bulan itu, hari ini berubah jadi perjalanan pantai." },
+    { "q": "Papan ski dan snowboard muat di mobil?",
+      "a": "Muat, dengan kursi baris belakang dilipat. Kalau enam orang ke atas ditambah peralatan, jadi sempit — sebutkan jumlah orangnya dan saya bilang jujur muat atau tidak." },
+    { "q": "Bisa menginap semalam dan Pak Lee jemput lagi?",
+      "a": "Bisa, dan banyak yang begitu. Sehari berangkat, sehari pulang, dihitung dua hari. Biasanya ini pilihan lebih baik kalau Anda mau main ski seharian penuh." },
+    { "q": "Kalau jalannya licin bagaimana?",
+      "a": "Jalan tolnya dibersihkan dan mobil saya pakai ban musim dingin, tapi jalan naik ke gunung kadang ditutup saat salju lebat. Kalau itu terjadi, kita ubah rencana. Saya tidak akan memaksa lewat jalan yang saya rasa tidak aman." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "tours/everland", "label": "Everland pergi-pulang" },
+    { "slug": "airport-transfer", "label": "Jemput Bandara Incheon" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari perjalanan ke luar kota.", "all": "Lihat semua video" },
+  "cta": { "h2": "Mau ke Gangwon?",
+           "body": "Kirim tanggal dan resor pilihan Anda. Saya sebutkan tambahannya sebelum Anda memutuskan.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}

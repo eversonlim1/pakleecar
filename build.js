@@ -7,12 +7,13 @@ const S = require('./src/schema');
 const { lightboxMarkup } = require('./templates/partials/reels');
 const cta = require('./templates/partials/cta');
 const home = require('./templates/home');
+const tour = require('./templates/tour');
 const reels = require('./content/reels.json');
 
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
 
-const TEMPLATES = { home };
+const TEMPLATES = { home, tour };
 
 function write(rel, contents) {
   const file = path.join(DIST, rel);
@@ -29,6 +30,13 @@ function schemaFor(type, lang, slug, data) {
   if (type === 'home') {
     list.push(S.localBusiness(data.rates.rows));
     for (const r of reels) list.push(S.videoObject(r, lang));
+  }
+  if (type === 'tour') {
+    list.push(S.touristTrip({
+      lang, slug, name: data.hero.h1, description: data.seo.description,
+      price: data.hero.amount
+    }));
+    list.push(S.faqPage(data.faqs));
   }
   return list;
 }

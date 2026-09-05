@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "node --test \"test/**/*.test.js\"",
+    "test": "node --test --test-concurrency=1 \"test/**/*.test.js\"",
     "build": "node build.js",
     "images": "node scripts/images.js"
   },

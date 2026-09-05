@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Tur Seoul Sehari dengan Sopir | Pak Lee's Car",
+    "description": "Gyeongbokgung, Bukchon, Myeongdong dan Namsan dalam sehari dengan mobil dan sopir sendiri. 10 jam, bensin dan tol termasuk. ₩300.000.",
+    "ogImage": "/assets/img/og/seoul-day-tour-id.jpg"
+  },
+  "hero": {
+    "h1": "Seharian keliling Seoul, tanpa capek jalan kaki di antaranya",
+    "lede": "Di peta, istana, Bukchon, Myeongdong dan Namsan kelihatan berdekatan. Kalau jalan kaki di bulan Agustus atau Januari, rasanya jauh sekali. Saya antar dari satu tempat ke tempat berikutnya dan menunggu di luar, jadi tenaga Anda habis untuk jalan-jalan, bukan untuk pindah tempat.",
+    "heroImage": "/assets/img/reels/DcAjNy9I9L4.jpg",
+    "heroAlt": "Sehari keliling Seoul bersama Pak Lee",
+    "price": "₩300.000",
+    "amount": "300000",
+    "duration": "Sekitar 10 jam"
+  },
+  "itineraryTitle": "Biasanya harinya begini",
+  "itinerary": [
+    { "time": "09:00", "title": "Gyeongbokgung",
+      "body": "Pergantian penjaga jam 10:00 dan 14:00, dan istana tutup setiap hari Selasa. Kalau menyewa hanbok di dekat situ, tiket masuk gratis — saya antar dulu ke tempat sewanya, lalu jemput lagi." },
+    { "time": "11:00", "title": "Bukchon Hanok Village",
+      "body": "Ini kampung sungguhan, ada orang tinggal di balik tembok itu, dan banyak papan minta pengunjung tidak berisik. Saya parkir di bawah bukit supaya Anda jalan menurun, bukan mendaki." },
+    { "time": "12:30", "title": "Makan siang",
+      "body": "Sekitar Insadong, atau Pasar Gwangjang kalau Anda ingin coba yang lebih ramai. Bilang di mobil kalau perlu halal atau vegetarian, biar saya pilihkan yang tepat." },
+    { "time": "14:30", "title": "Myeongdong",
+      "body": "Skincare, kaus kaki, dan jajanan pinggir jalan. Dua jam biasanya cukup. Gerobak makanan baru ramai setelah jam empat, jadi kalau itu tujuannya, kita bisa tukar urutannya." },
+    { "time": "17:00", "title": "Namsan dan N Seoul Tower",
+      "body": "Saya antar sampai terminal di bawah menara, sisanya naik kereta gantung atau shuttle. Naik sebelum matahari terbenam dan turun setelahnya — itu waktu terbaiknya." },
+    { "time": "19:00", "title": "Makan malam, lalu kembali ke hotel",
+      "body": "BBQ Korea di sekitar Euljiro, atau langsung pulang kalau anak-anak sudah lelah. Saya antar sampai depan hotel, bukan sampai stasiun terdekat." }
+  ],
+  "includes": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk", "Sopir 10 jam", "Jemput dan antar hotel"],
+  "excludes": ["Tiket istana", "Tiket kereta gantung", "Parkir", "Makan"],
+  "faqTitle": "Yang sering ditanyakan",
+  "faqs": [
+    { "q": "Pak Lee ikut masuk ke dalam istana?",
+      "a": "Tidak. Saya sopir, bukan pemandu berlisensi, dan memandu di dalam istana butuh lisensi yang tidak saya punya. Saya kasih tahu apa yang perlu dilihat, antar ke gerbang yang benar, lalu menunggu." },
+    { "q": "Hari apa sebaiknya dihindari?",
+      "a": "Selasa. Gyeongbokgung tutup, begitu juga beberapa museum. Hari Senin aman untuk rute ini, beda dengan DMZ." },
+    { "q": "Bisa ganti Namsan dengan tempat lain?",
+      "a": "Bisa. Yang sering diganti: Hongdae malam hari, taman Sungai Han, atau Dongdaemun untuk belanja sampai larut. Bilang saja di mobil." },
+    { "q": "Kenapa parkir tidak termasuk?",
+      "a": "Parkir di pusat Seoul sekitar ₩2.000 sampai ₩5.000 per jam di tempat-tempat yang kita datangi. Saya tagih persis seperti di mesin, tidak saya tambah." },
+    { "q": "Bisa mulai lebih siang dari jam sembilan?",
+      "a": "Bisa. Sepuluh jamnya dihitung dari waktu saya menjemput. Mulai tengah hari berarti Myeongdong dan Namsan kena malam, dan sebagian tamu justru lebih suka begitu." }
+  ],
+  "relatedTitle": "Perjalanan lain",
+  "related": [
+    { "slug": "tours/kdrama-kpop", "label": "Lokasi K-drama dan K-pop" },
+    { "slug": "tours/nami-island", "label": "Nami Island" },
+    { "slug": "muslim-friendly-korea-tour", "label": "Korea ramah muslim" }
+  ],
+  "reels": { "eyebrow": "Di Instagram", "h2": "Dari perjalanan nyata",
+             "body": "Klip pendek dari hari-hari di kota.", "all": "Lihat semua video" },
+  "cta": { "h2": "Sedang menyusun rencana di Seoul?",
+           "body": "Kirim tanggal dan jumlah orangnya. Saya bilang mana yang muat dalam sepuluh jam dan mana yang tidak.",
+           "button": "Chat Pak Lee" },
+  "nav": { "howItWorks": "Cara kerjanya", "videos": "Video", "car": "Mobilnya",
+           "rates": "Harga", "shareTour": "Share Tour", "tagline": "Sopir pribadi · Korea" }
+}
