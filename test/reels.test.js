@@ -1,7 +1,14 @@
 const test = require('node:test');
 const assert = require('node:assert');
+const fs = require('node:fs');
+const path = require('node:path');
 const reels = require('../content/reels.json');
 const { reelStrip, lightboxMarkup } = require('../templates/partials/reels');
+
+const lightboxSrc = fs.readFileSync(
+  path.join(__dirname, '../assets/js/lightbox.js'),
+  'utf8'
+);
 
 const text = { eyebrow: 'On Instagram', h2: 'See a day', body: 'clips', all: 'See all' };
 
@@ -41,4 +48,20 @@ test('lightboxMarkup이 빈 iframe src로 시작한다', () => {
   const out = lightboxMarkup();
   assert.match(out, /<iframe id="lbFrame"/);
   assert.doesNotMatch(out, /src="https/);
+});
+
+test('lightbox.js의 재생목록 쿼리는 .strip으로 범위가 제한된다', () => {
+  assert.match(lightboxSrc, /querySelectorAll\(\s*['"]\.strip \[data-reel\]['"]\s*\)/);
+  assert.doesNotMatch(lightboxSrc, /querySelectorAll\(\s*['"]\[data-reel\]['"]\s*\)/);
+});
+
+test('lightbox.js가 닫힐 때 포커스를 복원한다', () => {
+  assert.match(lightboxSrc, /lastFocused/);
+  assert.match(lightboxSrc, /function close\s*\([\s\S]*?\.focus\(\)/);
+});
+
+test('lightbox.js가 닫힐 때 iframe src를 비운다', () => {
+  const closeFnMatch = lightboxSrc.match(/function close\s*\([^)]*\)\s*\{([\s\S]*?)\n  \}/);
+  assert.ok(closeFnMatch, 'close() 함수를 찾을 수 없음');
+  assert.match(closeFnMatch[1], /fr\.src\s*=\s*['"]['"]/);
 });
