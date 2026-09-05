@@ -6,9 +6,18 @@
    ============================================================ */
 
 /* ── 1. Tokens ── */
+/* Role guide (read before reusing a token):
+   --ink   body text colour ONLY — never a surface background.
+   --g5    decorative / separator use only — too low-contrast for real text.
+   --g6    the small/secondary TEXT colour (use instead of --g5 for labels, captions).
+   --ac    accent for borders, icons, eyebrow text on light grounds — not a background for white text.
+   --ac-strong  background colour wherever white/light text sits on green (buttons).
+   --surface-invert  background of an inverted/dark surface (cards on dark, footer band, filled buttons on ink).
+   --on-invert       text/icon colour on a --surface-invert background. */
 :root{
   --ink:#16211C; --g7:#3C4A44; --g6:#5C6B64; --g5:#8B9A93; --g3:#DCE6E1; --g2:#E9F0EC; --g1:#F3F8F5;
-  --ac:#16A063; --mint:#E7F5EE; --sun:#FFCE52; --peach:#FFE3D2; --coral:#FF8A5B;
+  --ac:#16A063; --ac-strong:#0C7A49; --mint:#E7F5EE; --sun:#FFCE52; --peach:#FFE3D2; --coral:#FF8A5B;
+  --surface-invert:#16211C; --on-invert:#fff;
   --r:20px; --rl:26px;
   --sh:0 1px 2px rgba(16,20,24,.05);
 }
@@ -30,19 +39,39 @@ a{color:inherit;text-decoration:none}
 .mascot{width:38px;height:38px;border-radius:50%;background:var(--mint);flex-shrink:0;
   border:2px solid var(--ac);transition:transform .25s}
 .brand:hover .mascot{transform:rotate(-8deg) scale(1.06)}
-.brand span{font-weight:500;color:var(--g5);margin-left:10px;font-size:13.5px;letter-spacing:-.008em}
+.brand span{font-weight:500;color:var(--g6);margin-left:10px;font-size:13.5px;letter-spacing:-.008em}
 .nav ul{display:flex;gap:32px;list-style:none;font-size:14.5px;font-weight:500;color:var(--g6)}
 .nav ul a:hover{color:var(--ink)}
 .navr{display:flex;align-items:center;gap:20px}
 .lang{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--g6);cursor:pointer}
 
+/* mobile nav: hidden above 920px, shown by the responsive block below */
+.hamburger{display:none;width:44px;height:44px;align-items:center;justify-content:center;
+  border:1px solid var(--g3);border-radius:999px;background:#fff;cursor:pointer;flex-shrink:0}
+.hamburger span,.hamburger span::before,.hamburger span::after{
+  content:'';display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;position:relative}
+.hamburger span::before{position:absolute;top:-6px}
+.hamburger span::after{position:absolute;top:6px}
+
+.mobile-menu{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;
+  background:var(--surface-invert);color:var(--on-invert);padding:28px 28px 40px}
+.mobile-menu.open{display:flex}
+.mobile-menu .mm-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}
+.mobile-menu .mm-close{width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;border:1px solid rgba(255,255,255,.28);background:transparent;color:var(--on-invert);
+  font-size:20px;cursor:pointer}
+.mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.mobile-menu ul a{display:block;padding:14px 6px;font-size:19px;font-weight:600;
+  border-bottom:1px solid rgba(255,255,255,.12);min-height:44px}
+.mobile-menu .btn{margin-top:28px;justify-content:center;padding:16px 24px;font-size:15.5px}
+
 /* ── 4. Buttons ── */
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ac);color:#fff;font-size:14.5px;font-weight:700;
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ac-strong);color:#fff;font-size:14.5px;font-weight:700;
   padding:12px 21px;border-radius:999px;box-shadow:0 4px 0 -1px rgba(13,110,68,.35);transition:transform .16s,box-shadow .16s}
 .btn:hover{transform:translateY(2px);box-shadow:0 2px 0 -1px rgba(13,110,68,.35)}
 
 .cta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.cta .a{background:var(--ink);color:#fff;font-size:16px;font-weight:700;padding:17px 30px;border-radius:999px;
+.cta .a{background:var(--surface-invert);color:var(--on-invert);font-size:16px;font-weight:700;padding:17px 30px;border-radius:999px;
   box-shadow:0 6px 0 -1px rgba(22,33,28,.22);transition:transform .16s,box-shadow .16s}
 .cta .a:hover{transform:translateY(2px);box-shadow:0 3px 0 -1px rgba(22,33,28,.22)}
 .cta .b{font-size:16px;font-weight:600;padding:16px 26px;border-radius:999px;border:2px solid var(--g3);
@@ -65,7 +94,7 @@ a{color:inherit;text-decoration:none}
 .fact:nth-child(3) .ic{background:#FFF3CE}
 .fact:nth-child(4) .ic{background:#E6EEFF}
 .fact b{display:block;font-size:19px;font-weight:700;letter-spacing:-.028em;margin-bottom:1px}
-.fact span{font-size:13.5px;color:var(--g5);font-weight:500}
+.fact span{font-size:13.5px;color:var(--g6);font-weight:500}
 
 /* .frame stays overflow:visible so stickers can hang past its edges;
    the photo itself is clipped by the inner .clipwrap instead. */
@@ -102,7 +131,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .row .who img{width:34px;height:34px;border-radius:50%;margin:0 auto 3px;border:2px solid var(--ac);background:var(--mint)}
 .bub{background:var(--g1);border-radius:24px 24px 24px 8px;padding:12px 16px;font-size:15px;line-height:1.5;
   max-width:76%;color:var(--g7)}
-.row.me .bub{background:var(--ink);color:#fff;border-radius:24px 24px 8px 24px}
+.row.me .bub{background:var(--surface-invert);color:var(--on-invert);border-radius:24px 24px 8px 24px}
 .clip{cursor:pointer;display:flex;align-items:center;gap:13px;background:var(--g1);border-radius:var(--rl);
   padding:11px;margin-left:45px;width:78%}
 .clip .th{width:66px;height:50px;border-radius:14px;overflow:hidden;flex-shrink:0;position:relative;background:var(--ink)}
@@ -110,7 +139,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .clip .th i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;
   font-size:12px;font-style:normal}
 .clip b{display:block;font-size:14px;font-weight:700;line-height:1.35}
-.clip s{font-size:12.5px;color:var(--g5);text-decoration:none}
+.clip s{font-size:12.5px;color:var(--g6);text-decoration:none}
 
 /* ── 8. Car / gallery / specs ── */
 .car .wrap{display:grid;grid-template-columns:1.06fr .94fr;gap:70px;align-items:center}
@@ -136,7 +165,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .incl{display:flex;gap:9px;margin-top:20px;flex-wrap:wrap}
 .chip{font-size:13.5px;font-weight:600;color:var(--g7);background:#fff;border:1px solid var(--g3);
   border-radius:999px;padding:9px 14px}
-.chip.no{color:var(--g5);background:transparent;border-style:dashed}
+.chip.no{color:var(--g6);background:transparent;border-style:dashed}
 
 /* ── 10. Reels strip ── */
 .reels{background:#fff}
@@ -170,7 +199,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .sticker{position:absolute;top:-14px;right:-16px;z-index:3;background:var(--sun);color:var(--ink);
   font-size:13px;font-weight:700;padding:9px 15px;border-radius:999px;transform:rotate(4deg);
   box-shadow:0 6px 18px -6px rgba(22,33,28,.3)}
-.sticker2{position:absolute;left:-34px;bottom:88px;z-index:3;background:#fff;color:var(--ink);
+.sticker2{position:absolute;left:-34px;bottom:88px;z-index:3;background:var(--surface-invert);color:var(--on-invert);
   padding:10px 18px 10px 10px;border-radius:999px;transform:rotate(-4deg);
   box-shadow:0 10px 26px -10px rgba(22,33,28,.4);display:flex;align-items:center;gap:10px}
 .sticker2 img{width:40px;height:40px;border-radius:50%;background:var(--mint)}
@@ -186,7 +215,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 @keyframes pop{from{transform:scale(.94) translateY(8px)}to{transform:scale(1) translateY(0)}}
 .lb-box iframe{width:100%;height:min(78vh,720px);border:0;border-radius:22px;background:#fff;display:block}
 .lb-close{position:absolute;top:-14px;right:-14px;width:40px;height:40px;border-radius:50%;border:0;cursor:pointer;
-  background:#fff;color:var(--ink);font-size:19px;line-height:1;box-shadow:0 8px 22px -8px rgba(0,0,0,.5);transition:transform .2s}
+  background:var(--surface-invert);color:var(--on-invert);font-size:19px;line-height:1;box-shadow:0 8px 22px -8px rgba(0,0,0,.5);transition:transform .2s}
 .lb-close:hover{transform:rotate(90deg)}
 .lb-nav{display:flex;justify-content:space-between;align-items:center;margin-top:14px;color:#fff}
 .lb-nav button{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:#fff;
@@ -195,7 +224,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .lb-nav .ct{font-size:13px;color:rgba(255,255,255,.6)}
 
 /* ── 13. Band (closing CTA) ── */
-.band{background:var(--ink);color:#fff}
+.band{background:var(--surface-invert);color:var(--on-invert)}
 .band .wrap{display:flex;align-items:center;justify-content:space-between;gap:44px;flex-wrap:wrap;
   padding-top:70px;padding-bottom:72px}
 .band h2{margin-bottom:12px}
@@ -205,6 +234,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 /* ── 14. Responsive ── */
 @media(max-width:920px){
   .nav ul{display:none}
+  .hamburger{display:flex}
   .hero .wrap,.msg .wrap,.car .wrap{grid-template-columns:1fr;gap:44px}
   .gal{height:300px}
   .strip{grid-template-columns:repeat(2,1fr)}
@@ -223,6 +253,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
   :root:not([data-theme="light"]){
     --ink:#EAF2ED; --g1:#141A17; --g2:#1B2320; --g3:#28322D; --g5:#7C8B84; --g6:#AAB8B1; --g7:#CDD8D2;
     --mint:#12241C;
+    --surface-invert:#22302A; --on-invert:#EAF2ED;
   }
   body:not([data-theme="light"]){background:#0F1512}
   .nav:not([data-theme="light"]){background:rgba(15,21,18,.86)}
@@ -233,6 +264,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 :root[data-theme="dark"]{
   --ink:#EAF2ED; --g1:#141A17; --g2:#1B2320; --g3:#28322D; --g5:#7C8B84; --g6:#AAB8B1; --g7:#CDD8D2;
   --mint:#12241C;
+  --surface-invert:#22302A; --on-invert:#EAF2ED;
 }
 body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .nav{background:rgba(15,21,18,.86)}
