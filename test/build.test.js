@@ -52,3 +52,9 @@ test('h1이 페이지당 정확히 하나다', () => {
   const h = fs.readFileSync(path.join(DIST, 'en', 'index.html'), 'utf8');
   assert.strictEqual((h.match(/<h1/g) || []).length, 1);
 });
+
+test('site.css의 갤러리 규칙이 img 대상이고 dead anchor 규칙이 없다', () => {
+  const css = fs.readFileSync(path.join(ROOT, 'assets', 'css', 'site.css'), 'utf8');
+  assert.doesNotMatch(css, /\.gal a/);
+  assert.match(css, /\.gal img:first-child/);
+});

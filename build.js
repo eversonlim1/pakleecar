@@ -33,8 +33,22 @@ function schemaFor(type, lang, slug, data) {
   return list;
 }
 
+function clean(dir) {
+  // Remove the directory's contents but not the directory node itself —
+  // some Windows/exFAT setups intermittently EBUSY/EPERM on rmdir of a
+  // just-emptied top-level directory, even though clearing its children
+  // works fine.
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+    return;
+  }
+  for (const entry of fs.readdirSync(dir)) {
+    fs.rmSync(path.join(dir, entry), { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+  }
+}
+
 function build() {
-  fs.rmSync(DIST, { recursive: true, force: true });
+  clean(DIST);
 
   for (const page of PAGES) {
     const tpl = TEMPLATES[page.type];

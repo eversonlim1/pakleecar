@@ -144,11 +144,10 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 /* ── 8. Car / gallery / specs ── */
 .car .wrap{display:grid;grid-template-columns:1.06fr .94fr;gap:70px;align-items:center}
 .gal{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:400px}
-.gal a{border-radius:var(--rl);overflow:hidden;background:var(--g1)}
-.gal a:first-child{grid-row:1/3}
-.gal a:nth-child(2){transform:rotate(1.6deg)}
-.gal a:nth-child(3){transform:rotate(-1.6deg)}
-.gal img{width:100%;height:100%;object-fit:cover}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--rl);background:var(--g1)}
+.gal img:first-child{grid-row:1/3}
+.gal img:nth-child(2){transform:rotate(1.6deg)}
+.gal img:nth-child(3){transform:rotate(-1.6deg)}
 .specs{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:2px 26px}
 .spec{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid var(--g2);align-items:baseline}
 .spec b{font-size:15px;font-weight:700;letter-spacing:-.02em}
@@ -271,7 +270,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
   .nav:not([data-theme="light"]){background:rgba(15,21,18,.86)}
   .chat:not([data-theme="light"]),.tbl:not([data-theme="light"]){background:#161D1A}
   .chip:not([data-theme="light"]){background:#161D1A}
-  .gal a:not([data-theme="light"]),.reel:not([data-theme="light"]){background:#161D1A}
+  .reel:not([data-theme="light"]){background:#161D1A}
 }
 :root[data-theme="dark"]{
   --ink:#EAF2ED; --g1:#141A17; --g2:#1B2320; --g3:#28322D; --g5:#7C8B84; --g6:#AAB8B1; --g7:#CDD8D2;
@@ -281,7 +280,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .nav{background:rgba(15,21,18,.86)}
 [data-theme="dark"] .chat,[data-theme="dark"] .tbl,[data-theme="dark"] .chip,
-[data-theme="dark"] .gal a,[data-theme="dark"] .reel{background:#161D1A}
+[data-theme="dark"] .reel{background:#161D1A}
 
 /* ============================================================
    PAGE-TYPE ADDITIONS
