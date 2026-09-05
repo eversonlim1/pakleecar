@@ -2,6 +2,11 @@
   "name": "pakleecar",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "test": "node --test test/",
+    "build": "node build.js",
+    "images": "node scripts/images.js"
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0"
   }
