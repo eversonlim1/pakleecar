@@ -45,6 +45,34 @@ test('videoObject가 embedUrl과 contentUrl을 만든다', () => {
   assert.match(v.thumbnailUrl, /^https:\/\//);
 });
 
+test('videoObject가 요청 lang과 en이 없으면 다른 언어값을 name으로 쓴다', () => {
+  const v = S.videoObject(
+    { id: 'XYZ789', thumb: '/assets/img/reels/XYZ789.jpg', duration: 'PT10S',
+      uploadDate: '2026-05-27', title: { ja: 'こんにちは' } },
+    'en'
+  );
+  assert.strictEqual(v.name, 'こんにちは');
+});
+
+test('videoObject가 title이 비어있으면 reel id를 포함한 에러를 던진다', () => {
+  assert.throws(
+    () => S.videoObject(
+      { id: 'EMPTY001', thumb: '/x.jpg', duration: 'PT1S', uploadDate: '2026-01-01', title: {} },
+      'en'
+    ),
+    /EMPTY001/
+  );
+});
+
+test('videoObject가 요청 lang이 있으면 en보다 우선한다', () => {
+  const v = S.videoObject(
+    { id: 'ABC123', thumb: '/assets/img/reels/ABC123.jpg', duration: 'PT14S',
+      uploadDate: '2026-05-27', title: { en: 'Hello', ja: 'こんにちは' } },
+    'ja'
+  );
+  assert.strictEqual(v.name, 'こんにちは');
+});
+
 test('breadcrumb이 홈부터 현재 페이지까지 만든다', () => {
   const b = S.breadcrumb('en', 'tours/dmz', 'DMZ');
   assert.strictEqual(b.itemListElement.length, 2);

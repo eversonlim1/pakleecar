@@ -85,12 +85,16 @@ function faqPage(faqs) {
 }
 
 function videoObject(reel, lang) {
+  const name = resolveLocalized(reel.title, lang);
+  if (!name) {
+    throw new Error(`videoObject: reel ${reel.id}에 사용 가능한 title이 없습니다`);
+  }
+  const description = resolveLocalized(reel.description, lang) || name;
   return {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: reel.title[lang] || reel.title.en,
-    description: (reel.description && (reel.description[lang] || reel.description.en)) ||
-      (reel.title[lang] || reel.title.en),
+    name,
+    description,
     thumbnailUrl: abs(reel.thumb),
     uploadDate: reel.uploadDate,
     duration: reel.duration,
@@ -98,6 +102,14 @@ function videoObject(reel, lang) {
     contentUrl: `https://www.instagram.com/reel/${reel.id}/`,
     publisher: { '@type': 'Organization', name: "Pak Lee's Car", url: abs('/') }
   };
+}
+
+function resolveLocalized(map, lang) {
+  if (!map) return undefined;
+  if (map[lang]) return map[lang];
+  if (map.en) return map.en;
+  const first = Object.values(map).find(v => v);
+  return first;
 }
 
 function article({ lang, slug, headline, description, datePublished }) {
