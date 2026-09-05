@@ -1,5 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
+const fs = require('node:fs');
+const path = require('node:path');
 const layout = require('../templates/layout');
 const nav = require('../templates/partials/nav');
 const footer = require('../templates/partials/footer');
@@ -42,4 +44,12 @@ test('footer가 4개 언어 링크를 모두 넣는다', () => {
 
 test('footer의 현재 언어 링크에 aria-current가 붙는다', () => {
   assert.match(footer('ja', navText), /href="\/ja\/" aria-current="true"/);
+});
+
+test('site.css에 footer 스타일 규칙이 존재한다', () => {
+  const css = fs.readFileSync(path.join(__dirname, '..', 'assets/css/site.css'), 'utf8');
+  assert.match(css, /\.foot\{/, '.foot 규칙 누락');
+  assert.match(css, /\.fl\{/, '.fl 규칙 누락');
+  assert.match(css, /\.fc\{/, '.fc 규칙 누락');
+  assert.match(css, /\[aria-current="true"\]/, '[aria-current="true"] 규칙 누락');
 });

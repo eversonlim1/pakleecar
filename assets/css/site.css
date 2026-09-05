@@ -231,6 +231,18 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .band p{color:rgba(255,255,255,.6);font-size:17px;max-width:28em}
 .band .btn{padding:16px 28px;font-size:15.5px}
 
+/* ── 13.5 Footer ── */
+.foot{background:var(--g1);border-top:1px solid var(--g2);color:var(--g6)}
+.foot .wrap{display:flex;flex-direction:column;align-items:center;gap:14px;padding-top:36px;padding-bottom:36px;text-align:center}
+.fl{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
+.fl a{display:flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;
+  font-size:14px;font-weight:600;color:var(--g6)}
+.fl a:hover{color:var(--ink)}
+.fl a[aria-current="true"]{color:var(--ac-strong);background:var(--mint)}
+.fc{font-size:13px;color:var(--g5)}
+.fc a{color:var(--g6);font-weight:600}
+.fc a:hover{color:var(--ink)}
+
 /* ── 14. Responsive ── */
 @media(max-width:920px){
   .nav ul{display:none}

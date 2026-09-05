@@ -1,7 +1,12 @@
-const { esc } = require('../../src/html');
+const { esc, img } = require('../../src/html');
 const { pageUrl } = require('../../build.config');
 
 const WA = 'https://wa.me/821094157859';
+
+const mascot = () => img({
+  src: '/assets/img/paklee-avatar.jpg', alt: 'Pak Lee',
+  width: 38, height: 38, eager: true, className: 'mascot'
+});
 
 module.exports = function nav(lang, t) {
   const l = s => pageUrl(lang, s);
@@ -21,7 +26,7 @@ module.exports = function nav(lang, t) {
 
   return `<nav class="nav"><div class="wrap">
 <a class="brand" href="${l('home')}">
-<img class="mascot" src="/assets/img/paklee-avatar.jpg" alt="Pak Lee" width="38" height="38">
+${mascot()}
 <b>Pak Lee</b><span>${esc(t.tagline)}</span></a>
 <ul>
 ${desktopLinks}
@@ -36,7 +41,7 @@ ${desktopLinks}
 <div class="mobile-menu" id="mobile-menu">
 <div class="mm-top">
 <a class="brand" href="${l('home')}">
-<img class="mascot" src="/assets/img/paklee-avatar.jpg" alt="Pak Lee" width="38" height="38">
+${mascot()}
 <b>Pak Lee</b></a>
 <button type="button" class="mm-close" aria-label="Close menu">&times;</button>
 </div>
