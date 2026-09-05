@@ -4,14 +4,14 @@ const { esc } = require('./html');
 const OG_LOCALE = { id: 'id_ID', en: 'en_US', es: 'es_ES', ja: 'ja_JP' };
 
 function abs(p) {
-  return p.startsWith('http') ? p : SITE_URL + p;
+  return /^https?:\/\//.test(p) ? p : SITE_URL + p;
 }
 
 function hreflangs(slug) {
   const links = LANGS.map(
     l => `<link rel="alternate" hreflang="${l}" href="${abs(pageUrl(l, slug))}">`
   );
-  links.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`);
+  links.push(`<link rel="alternate" hreflang="x-default" href="${abs('/')}">`);
   return links.join('\n');
 }
 

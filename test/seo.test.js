@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert');
-const { head, hreflangs } = require('../src/seo');
+const { head, hreflangs, abs } = require('../src/seo');
 
 const seo = { title: 'T', description: 'D', ogImage: '/a.jpg' };
 
@@ -46,4 +46,17 @@ test('head가 Figtree 폰트를 preconnect와 함께 로드한다', () => {
 test('head가 extraHead를 그대로 이어붙인다', () => {
   const out = head({ lang: 'en', slug: 'home', seo, extraHead: '<script>1</script>' });
   assert.match(out, /<script>1<\/script>/);
+});
+
+test('hreflang이 중첩 slug에서도 4개 언어 경로 + x-default 루트를 만든다', () => {
+  const out = hreflangs('tours/dmz');
+  for (const l of ['id', 'en', 'es', 'ja']) {
+    assert.match(out, new RegExp(`hreflang="${l}" href="https://pakleecar\\.vercel\\.app/${l}/tours/dmz/"`));
+  }
+  assert.match(out, /hreflang="x-default" href="https:\/\/pakleecar\.vercel\.app\/"/);
+});
+
+test('abs가 상대 경로에는 SITE_URL을 붙이고 절대 URL은 그대로 둔다', () => {
+  assert.strictEqual(abs('/http-banner.jpg'), 'https://pakleecar.vercel.app/http-banner.jpg');
+  assert.strictEqual(abs('https://cdn.example.com/a.jpg'), 'https://cdn.example.com/a.jpg');
 });
