@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Private Driver in Korea | Pak Lee's Car",
+    "description": "A private van and driver for the whole day in Korea. No fixed route, no group. Fuel, tolls and insurance included. Message Pak Lee on WhatsApp.",
+    "ogImage": "/assets/img/og/home-en.jpg"
+  },
+  "hero": {
+    "h1": "You plan the day. I'll drive it.",
+    "lede": "A private van and one driver for the whole day — no fixed route, no group to keep up with, and no rush at the places you actually like.",
+    "ctaPrimary": "Message Pak Lee",
+    "ctaSecondary": "See the rates",
+    "sticker": "Free schedule, always",
+    "bubbleTitle": "Halo! Saya Pak Lee",
+    "bubbleText": "Ask me anything",
+    "facts": [
+      { "icon": "🚌", "value": "Up to 8", "label": "Seats, plus luggage" },
+      { "icon": "⏰", "value": "10 hours", "label": "A full day out" },
+      { "icon": "⛽", "value": "All in", "label": "Fuel, tolls, insurance" },
+      { "icon": "💬", "value": "Within an hour", "label": "Typical reply time" }
+    ]
+  },
+  "message": {
+    "eyebrow": "How it works",
+    "h2": "It starts with a message",
+    "body": "No forms, and no deposit before we've spoken. Send me your dates and what you'd like to see. I'll tell you honestly what fits in a day and what doesn't.",
+    "link": "Message Pak Lee",
+    "chat": [
+      { "from": "guest", "name": "Rina", "text": "Six of us, three kids. Nami Island on the 14th — possible?" },
+      { "from": "pak", "name": "Pak Lee", "text": "Yes. Six with luggage fits fine. I'd leave at eight, before the ferry queue." },
+      { "from": "guest", "name": "Rina", "text": "Halal food anywhere near there?" },
+      { "from": "pak", "name": "Pak Lee", "text": "There is. I'll take you to one I eat at myself." }
+    ]
+  },
+  "reels": {
+    "eyebrow": "On Instagram",
+    "h2": "See a day, before you book one",
+    "body": "Short clips from real trips — guests saying hello, the places we stopped, and what the van actually looks like inside.",
+    "all": "See all videos"
+  },
+  "car": {
+    "eyebrow": "The car",
+    "h2": "Hyundai Staria Lounge",
+    "body": "One van, kept clean, with room to actually stretch out. Eight seats, but it's most comfortable at five or six once the luggage is in.",
+    "specs": [
+      { "value": "8", "label": "seats" },
+      { "value": "Wi-Fi", "label": "free hotspot" },
+      { "value": "USB", "label": "charging at every row" },
+      { "value": "A/C", "label": "front and rear" }
+    ]
+  },
+  "rates": {
+    "eyebrow": "Rates",
+    "h2": "What it costs",
+    "body": "Priced per vehicle, not per person. The same price whether you're two or eight.",
+    "rows": [
+      { "name": "All day — Seoul", "detail": "10 hours, anywhere in the city", "price": "₩300,000", "amount": "300000" },
+      { "name": "Nami Island", "detail": "10 hours, with Petite France and the garden", "price": "₩400,000", "amount": "400000" },
+      { "name": "Airport pickup", "detail": "Incheon to your Seoul hotel, one way", "price": "₩150,000", "amount": "150000" },
+      { "name": "Airport drop", "detail": "Seoul hotel to Incheon, one way", "price": "₩150,000", "amount": "150000" }
+    ],
+    "included": ["Fuel included", "Tolls included", "Insurance included"],
+    "excluded": ["Parking not included", "Entry tickets not included"]
+  },
+  "cta": {
+    "h2": "Where would you like to go?",
+    "body": "Tell me your dates. If it doesn't fit in one day, I'll say so.",
+    "button": "Message Pak Lee on WhatsApp"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

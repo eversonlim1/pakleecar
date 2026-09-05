@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Sewa Mobil + Sopir di Korea | Pak Lee's Car",
+    "description": "Mobil pribadi dengan sopir untuk seharian penuh di Korea. Jadwal bebas, tanpa rombongan. Bensin, tol, asuransi sudah termasuk. Chat Pak Lee di WhatsApp.",
+    "ogImage": "/assets/img/og/home-id.jpg"
+  },
+  "hero": {
+    "h1": "Anda yang atur. Saya yang antar.",
+    "lede": "Satu mobil dan satu sopir untuk seharian penuh — tanpa rute tetap, tanpa rombongan lain, dan tanpa buru-buru di tempat yang Anda suka.",
+    "ctaPrimary": "Chat Pak Lee",
+    "ctaSecondary": "Lihat harga",
+    "sticker": "Jadwal bebas, selalu",
+    "bubbleTitle": "Halo! Saya Pak Lee",
+    "bubbleText": "Tanya apa saja",
+    "facts": [
+      { "icon": "🚌", "value": "Sampai 8", "label": "Kursi, plus koper" },
+      { "icon": "⏰", "value": "10 jam", "label": "Seharian penuh" },
+      { "icon": "⛽", "value": "Sudah termasuk", "label": "Bensin, tol, asuransi" },
+      { "icon": "💬", "value": "Dalam 1 jam", "label": "Rata-rata balas" }
+    ]
+  },
+  "message": {
+    "eyebrow": "Cara kerjanya",
+    "h2": "Mulai dari satu pesan",
+    "body": "Tidak ada formulir, tidak ada DP sebelum kita bicara. Kirim tanggal dan tempat yang ingin Anda datangi. Saya akan bilang jujur mana yang muat dalam sehari.",
+    "link": "Chat Pak Lee",
+    "chat": [
+      { "from": "guest", "name": "Rina", "text": "Kami berenam, tiga anak. Nami Island tanggal 14 — bisa?" },
+      { "from": "pak", "name": "Pak Lee", "text": "Bisa. Enam orang dengan koper masih muat. Saya sarankan berangkat jam delapan, sebelum antrean feri." },
+      { "from": "guest", "name": "Rina", "text": "Ada makanan halal di sekitar sana?" },
+      { "from": "pak", "name": "Pak Lee", "text": "Ada. Saya antar ke tempat yang saya sendiri makan di situ." }
+    ]
+  },
+  "reels": {
+    "eyebrow": "Di Instagram",
+    "h2": "Lihat dulu, baru pesan",
+    "body": "Klip pendek dari perjalanan nyata — tamu menyapa, tempat yang kami singgahi, dan isi mobilnya seperti apa.",
+    "all": "Lihat semua video"
+  },
+  "car": {
+    "eyebrow": "Mobilnya",
+    "h2": "Hyundai Staria Lounge",
+    "body": "Satu mobil, selalu bersih, dengan ruang untuk selonjor. Delapan kursi, tapi paling nyaman untuk lima atau enam orang setelah koper masuk.",
+    "specs": [
+      { "value": "8", "label": "kursi" },
+      { "value": "Wi-Fi", "label": "hotspot gratis" },
+      { "value": "USB", "label": "colokan di tiap baris" },
+      { "value": "AC", "label": "depan dan belakang" }
+    ]
+  },
+  "rates": {
+    "eyebrow": "Harga",
+    "h2": "Berapa biayanya",
+    "body": "Harga per mobil, bukan per orang. Sama saja Anda berdua atau berdelapan.",
+    "rows": [
+      { "name": "Seharian — Seoul", "detail": "10 jam, ke mana saja di kota", "price": "₩300.000", "amount": "300000" },
+      { "name": "Nami Island", "detail": "10 jam, dengan Petite France dan taman", "price": "₩400.000", "amount": "400000" },
+      { "name": "Jemput bandara", "detail": "Incheon ke hotel Seoul, sekali jalan", "price": "₩150.000", "amount": "150000" },
+      { "name": "Antar bandara", "detail": "Hotel Seoul ke Incheon, sekali jalan", "price": "₩150.000", "amount": "150000" }
+    ],
+    "included": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk"],
+    "excluded": ["Parkir tidak termasuk", "Tiket masuk tidak termasuk"]
+  },
+  "cta": {
+    "h2": "Mau ke mana?",
+    "body": "Kirim tanggalnya. Kalau tidak muat dalam sehari, saya akan bilang.",
+    "button": "Chat Pak Lee via WhatsApp"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}
