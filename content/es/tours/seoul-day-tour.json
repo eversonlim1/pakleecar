@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Seúl en un día con chófer | Pak Lee's Car",
+    "description": "Gyeongbokgung, Bukchon, Myeongdong y Namsan en un día con tu propia van y chófer. Diez horas, sin grupo, combustible y peajes incluidos. ₩300,000.",
+    "ogImage": "/assets/img/og/seoul-day-tour-en.jpg"
+  },
+  "hero": {
+    "h1": "Un día completo en Seúl, sin las caminatas de por medio",
+    "lede": "Los palacios, Bukchon, Myeongdong y Namsan no están lejos en el mapa, pero sí lo están a pie en agosto o en enero. Yo conduzco entre ellos y espero fuera, así el día te cuesta las piernas en vez de la paciencia.",
+    "heroImage": "/assets/img/reels/DcAjNy9I9L4.jpg",
+    "heroAlt": "Un día por Seúl con la van de Pak Lee",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "Unas 10 horas"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "09:00",
+      "title": "Gyeongbokgung",
+      "body": "El cambio de guardia es a las 10:00 y a las 14:00, y el palacio cierra los martes. Si alquilas un hanbok cerca, la entrada es gratis: primero te dejo en la tienda de alquiler y te recojo después."
+    },
+    {
+      "time": "11:00",
+      "title": "Bukchon Hanok Village",
+      "body": "Es un barrio de verdad, con gente durmiendo detrás de esos muros, y hay carteles pidiendo silencio. Aparco abajo, al pie de la cuesta, para que lo recorras bajando y no subiendo."
+    },
+    {
+      "time": "12:30",
+      "title": "Comida",
+      "body": "Por la zona de Insadong, o en Gwangjang Market si te sientes más atrevido. Dime en el coche si necesitas halal o vegetariano y elijo en consecuencia, en vez de adivinar."
+    },
+    {
+      "time": "14:30",
+      "title": "Myeongdong",
+      "body": "Cosmética, calcetines y comida callejera. Con dos horas suele bastar, aunque los puestos de comida no se animan de verdad hasta después de las cuatro; podemos dejar esta parada para más tarde si es lo que te interesa del día."
+    },
+    {
+      "time": "17:00",
+      "title": "Namsan y la N Seoul Tower",
+      "body": "Subo hasta la terminal que hay debajo de la torre y tú haces el último tramo en teleférico o en la lanzadera. Subir antes de la puesta de sol y bajar después es todo el truco."
+    },
+    {
+      "time": "19:00",
+      "title": "Cena y de vuelta al hotel",
+      "body": "Barbacoa coreana por Euljiro, o directos al hotel si los niños ya no pueden más. En cualquier caso te dejo en tu puerta, no en una estación de metro."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante 10 horas",
+    "Recogida y regreso al hotel"
+  ],
+  "excludes": [
+    "Entrada al palacio",
+    "Billete del teleférico",
+    "Parking",
+    "Comidas"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Entras al palacio con nosotros?",
+      "a": "No. Soy chófer, no guía con licencia, y para guiar dentro de los palacios hace falta una licencia que no tengo. Te cuento qué mirar, te dejo en la puerta correcta y espero."
+    },
+    {
+      "q": "¿Qué día deberíamos evitar?",
+      "a": "El martes. Gyeongbokgung cierra ese día, y varios museos también. El lunes va bien para esta ruta, al contrario que para la DMZ."
+    },
+    {
+      "q": "¿Podemos cambiar Namsan por otra cosa?",
+      "a": "Sí. Los cambios habituales son Hongdae por la tarde, los parques del río Han o Dongdaemun para comprar hasta tarde. Dilo en el coche y vamos."
+    },
+    {
+      "q": "¿Por qué no está incluido el parking?",
+      "a": "Aparcar en el centro de Seúl cuesta entre ₩2,000 y ₩5,000 la hora en los sitios donde paramos. Te paso exactamente lo que cobra la máquina, sin añadir nada."
+    },
+    {
+      "q": "¿Podemos empezar más tarde de las nueve?",
+      "a": "Sí. Las diez horas empiezan cuando te recojo. Empezar a mediodía deja Myeongdong y Namsan de noche, cosa que a algunos incluso les gusta más."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/kdrama-kpop",
+      "label": "Localizaciones de K-drama y K-pop"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Corea muslim friendly"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días por la ciudad.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Estás planeando tu día en Seúl?",
+    "body": "Mándame tu fecha y cuántos sois. Te diré qué cabe en diez horas y qué no.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

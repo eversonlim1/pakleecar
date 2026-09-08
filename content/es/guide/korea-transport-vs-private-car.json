@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "¿Metro, tren, bus turístico o coche privado?",
+    "description": "Una comparación clara de coste y tiempo entre las opciones de transporte en Corea según el tamaño del grupo, y dónde deja de tener sentido cada una.",
+    "ogImage": "/assets/img/og/guide-transport-en.jpg"
+  },
+  "title": "¿Metro, tren, autobús turístico o coche privado?",
+  "intro": "Yo me gano la vida conduciendo, así que tómate esto con pinzas. Pero prefiero decirte con honestidad dónde deja de merecer la pena un coche privado que fingir que siempre es la respuesta.",
+  "datePublished": "2026-08-20",
+  "blocks": [
+    { "type": "h2", "text": "Solo o en pareja: coge el metro" },
+    { "type": "p", "text": "El metro de Seúl es limpio, barato y de verdad fácil de usar con una aplicación de mapas en inglés. Una tarjeta T-money y un día de metro cuestan una fracción de un coche privado, y para dos personas con poco equipaje no hay argumento real para nada más dentro de la ciudad." },
+    { "type": "h2", "text": "Dónde deja de funcionar el metro" },
+    { "type": "p", "text": "Se cae en cuanto tu día incluye algún sitio al que los trenes no llegan bien: Nami Island, la DMZ, la mayoría de las estaciones de esquí de Gangwon-do. Técnicamente puedes ir a Nami en tren y autobús local, pero son tres transbordos y un buen rato caminando con equipaje, frente a un trayecto directo de noventa minutos en coche." },
+    { "type": "h2", "text": "Autobuses turísticos: baratos, pero el día no es tuyo" },
+    { "type": "p", "text": "Un autobús turístico compartido a Nami Island cuesta por persona una fracción de un coche privado, y para alguien que viaja solo y al que no le importa el itinerario está bien. Lo que pierdes es tiempo: noventa minutos en la isla es lo estándar, y luego vuelves al autobús estés listo o no. Las familias con niños pequeños, o cualquiera que quiera comer en un sitio concreto, suelen arrepentirse." },
+    { "type": "list", "items": [
+      "Autobús turístico: lo más barato por persona, horario fijo, ~90 minutos en cada parada",
+      "Tren + metro: barato y flexible dentro de la ciudad, flojo fuera de ella",
+      "Coche privado: precio fijo por vehículo, tu horario, mejor relación calidad-precio a partir de 3-4 personas"
+    ] },
+    { "type": "h2", "text": "Dónde compensa de verdad un coche privado" },
+    { "type": "p", "text": "Las cuentas cambian en cuanto sois tres o cuatro. ₩400,000 por un día entero a Nami Island repartidos entre cuatro se acercan a lo que cuesta el autobús turístico por persona, y tienes diez horas en vez de noventa minutos, más un chófer que puede parar por comida halal, por un carrito de bebé o simplemente por un baño, sin un horario de autobús al que rendir cuentas." },
+    { "type": "link", "slug": "tours/nami-island", "text": "Mira el día a Nami Island en coche privado" },
+    { "type": "h2", "text": "Si el grupo es más pequeño pero el presupuesto está justo" },
+    { "type": "p", "text": "Para esto existe justamente el Share Tour: la misma van y las mismas diez horas, pero el coste se reparte entre dos o tres equipos sin relación entre sí que van al mismo sitio la misma fecha. Es más lento de organizar que reservar un coche privado directamente, porque depende de que las fechas de otros cuadren, pero cierra la distancia para una pareja que aun así quiere la experiencia de un coche privado sin pagar el vehículo entero." },
+    { "type": "link", "slug": "share-tour", "text": "Mira cómo el Share Tour reparte el coste" },
+    { "type": "h2", "text": "Los traslados al aeropuerto son un caso aparte" },
+    { "type": "p", "text": "Hay un tren directo desde Incheon hasta la ciudad, pero con cuatro o más maletas y un vuelo que puede retrasarse, una recogida a precio fijo en la que alguien sigue tu número de vuelo real ya compensa por sí sola la diferencia." },
+    { "type": "link", "slug": "airport-transfer", "text": "Mira el traslado desde el aeropuerto de Incheon" }
+  ],
+  "relatedTitle": "Tours relacionados",
+  "related": [
+    { "slug": "tours/nami-island", "label": "Nami Island en coche privado" },
+    { "slug": "airport-transfer", "label": "Traslado del aeropuerto de Incheon" }
+  ],
+  "cta": {
+    "h2": "¿No sabes qué encaja con tu viaje?",
+    "body": "Dime cuántos sois y qué ruta queréis. Te diré con honestidad si merece la pena un coche privado.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

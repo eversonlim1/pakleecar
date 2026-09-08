@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Rutas de K-drama y K-pop en coche | Pak Lee's Car",
+    "description": "Localizaciones de rodaje, el edificio de HYBE, los cafés de Seongsu y las tiendas de álbumes en tu propia van. Diez horas a tu ritmo. ₩300,000.",
+    "ogImage": "/assets/img/og/kdrama-kpop-en.jpg"
+  },
+  "hero": {
+    "h1": "Localizaciones de rodaje y sedes de discográficas, en un día",
+    "lede": "Estos sitios están dispersos — Yongsan, Seongsu, el río Han, unas escaleras en Ihwa-dong — y cada uno es una parada de veinte minutos para fotos, no una tarde entera. Ese es exactamente el día para el que sirve un coche privado, y exactamente el día que el metro convierte en un suplicio.",
+    "heroImage": "/assets/img/reels/Dbw32ZWoFpA.jpg",
+    "heroAlt": "Por Seúl con la van de Pak Lee",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "Unas 10 horas"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "09:30",
+      "title": "El edificio de HYBE, en Yongsan",
+      "body": "Es una oficina, así que se fotografía desde fuera: no hay visita ni acceso al vestíbulo para fans. Los edificios de Ador y Belift están a unos minutos, y yo hago la vuelta en coche."
+    },
+    {
+      "time": "10:30",
+      "title": "Una tienda de álbumes",
+      "body": "La tienda que hay bajo HYBE o alguna de las de Myeongdong, según lo que estés buscando. Dime el grupo en el coche y te llevo a la que de verdad lo tenga."
+    },
+    {
+      "time": "12:00",
+      "title": "Seongsu-dong",
+      "body": "Fábricas reconvertidas, pop-ups que cambian cada mes y los cafés donde todo el mundo graba. Aquí también se come. Es la única parada a la que yo te daría dos horas en vez de una."
+    },
+    {
+      "time": "14:30",
+      "title": "Una o dos localizaciones de rodaje",
+      "body": "Dime el drama antes del día y planeo la ruta: las escaleras de Ihwa-dong, el muro del parque Naksan, los bancos del parque del río Han, los callejones de Bukchon o Gangnam si es un vídeo de idols. La mitad están a veinte minutos en coche y a una hora en tren."
+    },
+    {
+      "time": "17:00",
+      "title": "El río Han a la hora dorada",
+      "body": "Banpo o Ttukseom, ramyeon de la tienda de conveniencia y el puente iluminado a tu espalda. Esta es la foto que la gente se queda del día."
+    },
+    {
+      "time": "19:00",
+      "title": "Hongdae por la noche",
+      "body": "Músicos callejeros en la calle principal desde alrededor de las siete y grupos de baile los fines de semana. Yo aparco cerca y espero, así puedes quedarte hasta el final en vez de mirar el reloj por el último tren."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante 10 horas",
+    "Ruta planificada según tu lista"
+  ],
+  "excludes": [
+    "Gasto en cafés y tiendas",
+    "Cualquier exposición de pago",
+    "Parking",
+    "Comidas"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Podemos entrar en los edificios de HYBE o SM?",
+      "a": "No. Son oficinas en funcionamiento y no se admite a fans. Lo que la gente busca es la foto de fuera y la tienda, y a las dos cosas te llevo sin caminatas largas."
+    },
+    {
+      "q": "¿Veremos a algún idol?",
+      "a": "Casi con toda seguridad no, y te mentiría si te prometiera lo contrario. Lo que sí te prometo es que cubrirás seis o siete sitios en un día en vez de tres."
+    },
+    {
+      "q": "¿Puedes planearlo alrededor de un drama concreto?",
+      "a": "Sí, y funciona mucho mejor así. Mándame el título y un par de escenas y monto la ruta antes de tu fecha, en vez de improvisarla."
+    },
+    {
+      "q": "¿Entra Nami Island en esto?",
+      "a": "Puede entrar, pero se come el día entero por sí sola: son noventa minutos de coche por trayecto. Si vienes por Winter Sonata, reserva mejor el día de Nami."
+    },
+    {
+      "q": "Somos cuatro. ¿El precio es el mismo?",
+      "a": "Sí. Los ₩300,000 son por vehículo, seáis dos u ocho. Repartirlo entre cuatro sale normalmente más barato que cuatro abonos de metro más los taxis."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "tours/everland",
+      "label": "Everland ida y vuelta"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días por la ciudad.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Tienes una lista de sitios?",
+    "body": "Mándamela con tu fecha. Te diré qué cabe en un día y lo pondré en un orden con sentido.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "Un itinerario real de 4 días por Corea",
+    "description": "Cómo organizaría yo de verdad cuatro días en Corea para una familia que viene por primera vez: Seúl, Nami Island y un último día más tranquilo.",
+    "ogImage": "/assets/img/og/guide-itinerary-en.jpg"
+  },
+  "title": "Un itinerario real de 4 días por Corea",
+  "intro": "Casi todos los itinerarios que hay en internet están hechos para una hoja de cálculo, no para una familia cansada que acaba de bajarse de un vuelo largo. Esto se parece más a cómo transcurren los cuatro días para los clientes que llevo.",
+  "datePublished": "2026-08-25",
+  "blocks": [
+    { "type": "h2", "text": "Día 1: aterriza y no hagas casi nada" },
+    { "type": "p", "text": "Si tu vuelo llega por la tarde, resiste la tentación de hacer turismo. Recogida en el aeropuerto, entrar al hotel, quizá un paseo hasta una tienda de conveniencia cercana y a dormir pronto. Todo el mundo subestima lo plana que se hace la primera tarde en Corea después de doce horas en el aire." },
+    { "type": "link", "slug": "airport-transfer", "text": "Mira la recogida en el aeropuerto de Incheon" },
+    { "type": "h2", "text": "Día 2: un día completo en Seúl" },
+    { "type": "p", "text": "Este es el día de hacer el palacio, Bukchon Hanok Village, Myeongdong y la N Seoul Tower en una sola vuelta. Se camina mucho, así que empieza temprano y reserva una parada de comida en condiciones en vez de comer de pie por la calle. A media tarde casi todos los grupos ya quieren sentarse." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "Mira cómo se organiza el día en Seúl" },
+    { "type": "h2", "text": "Día 3: Nami Island, y sin prisas" },
+    { "type": "p", "text": "Sal a las ocho si puedes. La mayoría de los grupos de tour solo tienen noventa minutos en la isla y no bastan: con tu propio horario, dos o tres horas se llevan cómodamente, y a la vuelta suele quedar tiempo para Petite France o el Garden of Morning Calm." },
+    { "type": "link", "slug": "tours/nami-island", "text": "Mira el día en Nami Island" },
+    { "type": "h2", "text": "Día 4: algo más tranquilo, y luego al aeropuerto" },
+    { "type": "p", "text": "Si tu vuelo es por la tarde-noche, no planees un cuarto día completo de turismo: planea medio día. Un mercado, una cafetería, quizá una última ronda de compras y directos al aeropuerto con margen. Las familias que intentan meter una atracción más el día de la salida son siempre las que van con el tiempo justo." },
+    { "type": "h2", "text": "Qué cambiaría para una familia con niños pequeños" },
+    { "type": "list", "items": [
+      "Cambiar el paseo por el palacio por algo más corto: Everland funciona bien como alternativa para el día 2",
+      "Reservar un rato de siesta por la tarde en vez de aguantar del tirón hasta la cena",
+      "Pedir la parada en el restaurante halal antes de que aparezca el hambre, no después"
+    ] },
+    { "type": "link", "slug": "tours/everland", "text": "Mira la excursión de un día a Everland" },
+    { "type": "h2", "text": "Si cuatro días no son suficientes" },
+    { "type": "p", "text": "La DMZ y las estaciones de esquí de Gangwon son los dos añadidos por los que más me preguntan, y los dos funcionan mejor como quinto o sexto día que apretujados en estos cuatro: quedan más lejos y merecen su propio día sin prisas." }
+  ],
+  "relatedTitle": "Tours relacionados",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Un día completo en Seúl" },
+    { "slug": "tours/nami-island", "label": "Nami Island en coche privado" },
+    { "slug": "airport-transfer", "label": "Traslado del aeropuerto de Incheon" }
+  ],
+  "cta": {
+    "h2": "¿Quieres ayuda para encajar tus días?",
+    "body": "Dime quién viene y cuántos días tienes. Te diré con honestidad qué cabe.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

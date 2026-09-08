@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Tour a la DMZ en coche privado | Pak Lee's Car",
+    "description": "Imjingak, el Tercer Túnel y el Dora Observatory en tu propia van. Pasaporte obligatorio y cierra los lunes. ₩400,000 más recargo por Gyeonggi.",
+    "ogImage": "/assets/img/og/dmz-en.jpg"
+  },
+  "hero": {
+    "h1": "La DMZ, sin el autocar ni la cola de cuarenta personas",
+    "lede": "La zona fronteriza funciona con los horarios de otros: salidas fijas de lanzadera, un control de pasaportes en el puesto de acceso y un cierre los lunes que pilla desprevenidos a muchos viajeros. Yo te llevo, me ocupo de las esperas y te devuelvo a Seúl a media tarde.",
+    "heroImage": "/assets/img/reels/DcP3w5VIoPf.jpg",
+    "heroAlt": "En carretera al norte de Seúl con Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "Unas 9 horas, más un recargo por Gyeonggi"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "07:30",
+      "title": "Recogida y control de pasaportes",
+      "body": "Trae el pasaporte físico, no una foto. Todos los adultos necesitan el suyo y los nombres se comprueban en el puesto de control. Sin él te harán dar la vuelta, y ahí no hay nadie con quien yo pueda hablar."
+    },
+    {
+      "time": "08:40",
+      "title": "Parque de Imjingak",
+      "body": "El Freedom Bridge, el tren oxidado que sacaron de la zona y las cintas que las familias han atado a la valla. Esta parte es abierta y gratuita, y es donde se venden las entradas para la zona restringida."
+    },
+    {
+      "time": "09:30",
+      "title": "Entrada a la zona controlada",
+      "body": "Pasado Imjingak se continúa en la lanzadera oficial con un soldado a bordo: los coches privados no pueden entrar. Yo compro vuestras plazas, os doy los billetes y espero en el parque con la van."
+    },
+    {
+      "time": "10:15",
+      "title": "El Tercer Túnel",
+      "body": "Una rampa empinada de 350 metros hacia abajo y la misma subida de vuelta, techo bajo, casco puesto y nada de móviles ni cámaras abajo. Sáltatelo si tienes las rodillas mal, un carrito o algo de claustrofobia; el resto del sitio ya justifica el viaje."
+    },
+    {
+      "time": "11:15",
+      "title": "Dora Observatory",
+      "body": "Prismáticos apuntando a Kaesong y a la aldea del otro lado de la línea. Un día de verano con calima se ve muy poco, y las mañanas de invierno son las más despejadas: prefiero decírtelo ahora y no cuando ya hayas pagado."
+    },
+    {
+      "time": "13:00",
+      "title": "Comida y vuelta a Seúl",
+      "body": "Hay unos cuantos restaurantes por Munsan; el guiso de pasta de soja es lo típico de aquí. Normalmente estás de vuelta en el hotel a media tarde, así que la tarde-noche sigue siendo tuya."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante todo el día",
+    "Recogida y regreso al hotel"
+  ],
+  "excludes": [
+    "Lanzadera y entradas a los recintos",
+    "Parking",
+    "Comidas",
+    "Recargo por Gyeonggi"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Qué es el recargo por Gyeonggi?",
+      "a": "La zona fronteriza queda bastante lejos de Seúl, así que el día son ₩400,000 más un recargo por la distancia. Mándame tu hotel y te doy la cifra exacta antes de que te comprometas: al final no aparece nada nuevo."
+    },
+    {
+      "q": "¿Qué días cierra la DMZ?",
+      "a": "Los lunes y algunos días festivos. También puede cerrar con poca antelación por motivos militares o diplomáticos, y eso no está en manos de nadie. Si tu fecha cae en un cierre, te lo digo y lo replanteamos."
+    },
+    {
+      "q": "¿De verdad hacen falta los pasaportes?",
+      "a": "Sí: el pasaporte físico de cada adulto, con el nombre que se registró de antemano. Es la única norma del día sobre la que no puedo hacer nada."
+    },
+    {
+      "q": "¿Puedes llevarnos tú dentro de la DMZ?",
+      "a": "No. Pasado el control de Imjingak todo el mundo viaja en la lanzadera con escolta militar. Yo os llevo hasta allí, compro los billetes y espero con el coche."
+    },
+    {
+      "q": "¿Está incluida la JSA?",
+      "a": "No. La Joint Security Area es un programa aparte con su propio registro y en los últimos años ha estado suspendida más tiempo del que ha estado abierta. Lo que yo hago es la ruta de Imjingak, el túnel y el observatorio."
+    },
+    {
+      "q": "¿Es adecuado para niños pequeños?",
+      "a": "El parque y el observatorio, sí. El túnel, la verdad es que no: es una rampa larga y empinada sin sitio para dar la vuelta a mitad de camino. Muchas familias hacen el día entero y se saltan solo esa parada."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Recogida en el aeropuerto de Incheon"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de la carretera hacia el norte.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Estás pensando en la DMZ?",
+    "body": "Mándame tu fecha y compruebo que no sea un día de cierre antes de que planees nada alrededor.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Share Tour Corea | Pak Lee's Car",
+    "description": "Comparte el coste de un Hyundai Staria Lounge con otro equipo en la misma fecha. Rutas de Seúl, Nami Island y DMZ desde ₩60,000 por equipo.",
+    "ogImage": "/assets/img/og/share-tour-en.jpg"
+  },
+  "hero": {
+    "badge": "Share Tour — Viajad juntos, ahorrad juntos",
+    "h1": "Descubre Corea en grupo y por menos",
+    "sub": "Igual que el tour privado de Pak Lee — Hyundai Staria Lounge, chófer profesional y 10 horas de recorrido — pero el coste del alquiler del coche se reparte entre los equipos que salen esa misma fecha.",
+    "ctaSchedule": "Ver calendario y precio",
+    "ctaConcept": "¿Qué es el Share Tour?",
+    "stats": [
+      { "value": "3", "label": "Rutas disponibles" },
+      { "value": "4+", "label": "Mínimo para salir" },
+      { "value": "10h", "label": "Duración por tour" },
+      { "value": "₩60K", "label": "Desde, por equipo" }
+    ]
+  },
+  "routesSection": {
+    "label": "Rutas y calendario",
+    "title": "Elige una ruta y mira el calendario",
+    "sub": "Cada calendario muestra cuánta gente se ha apuntado ya a esa fecha. Verde significa salida confirmada (4 o más personas), amarillo que aún faltan personas y rojo que está completo (8 personas)."
+  },
+  "priceLabels": ["4 pax", "5 pax", "6-7 pax"],
+  "routes": [
+    {
+      "id": "seoul",
+      "title": "Tour compartido — Seúl ciudad",
+      "stops": ["Gwangjang Market", "Gyeongbokgung Palace", "Bukchon Hanok Village", "Myeongdong (compras)", "N Seoul Tower (Namsan)"],
+      "prices": ["₩80,000", "₩70,000", "₩60,000"],
+      "priceNote": "Precio por equipo · 10 h · mínimo 4 pax para salir",
+      "cta": "Consultar fechas",
+      "waLabel": "Seoul City"
+    },
+    {
+      "id": "nami",
+      "title": "Tour compartido — Nami Island",
+      "stops": ["Nami Island", "Petite France", "Garden of Morning Calm", "Alpaca World"],
+      "prices": ["₩100,000", "₩90,000", "₩70,000"],
+      "priceNote": "Precio por equipo · 10 h · mínimo 4 pax para salir",
+      "cta": "Consultar fechas",
+      "waLabel": "Nami Island"
+    },
+    {
+      "id": "dmz",
+      "title": "Tour compartido — DMZ",
+      "stops": ["Imjingak y Freedom Bridge", "Tercer túnel de infiltración", "Dora Observatory (¡se ve Corea del Norte!)"],
+      "note": "Nota: la JSA no está incluida",
+      "prices": ["₩90,000", "₩80,000", "₩70,000"],
+      "priceNote": "Precio por equipo · 10 h · mínimo 4 pax para salir",
+      "cta": "Consultar fechas",
+      "waLabel": "DMZ"
+    }
+  ],
+  "about": {
+    "label": "Sobre Pak Lee",
+    "greeting": "¡Bienvenido! 안녕하세요!",
+    "h2": "Tu chófer privado de confianza en Corea",
+    "body": "Soy Pak Lee, chófer profesional con un Hyundai Staria Lounge premium. Para el Share Tour hago las rutas más populares con regularidad: solo tienes que unirte a un equipo cuya fecha coincida con la tuya y sigues disfrutando de la comodidad de un coche privado a un precio más asequible.",
+    "chips": ["Muslim friendly", "Chófer profesional", "Residente en Corea"]
+  },
+  "concept": {
+    "label": "El concepto",
+    "title": "¿Qué es el Share Tour?",
+    "sub": "El concepto es sencillo: el coste diario del alquiler del Hyundai Staria Lounge se reparte a partes iguales entre los equipos que salen la misma fecha y por la misma ruta.",
+    "cards": [
+      {
+        "title": "¿Por qué sale más barato?",
+        "items": [
+          "Un solo coche, varios equipos: combustible, peajes y chófer se reparten a partes iguales",
+          "Cuantos más equipos se suman (hasta 6-7 pax), más barato sale por equipo",
+          "Sigue siendo un único coche para todos, no varios coches separados con desconocidos"
+        ]
+      },
+      {
+        "title": "¿Qué no cambia?",
+        "items": [
+          "El mismo vehículo: un Hyundai Staria Lounge premium, no un autobús grande",
+          "El mismo chófer profesional que en el tour privado",
+          "Las 10 horas completas para recorrer la ruta"
+        ]
+      }
+    ],
+    "noteLabel": "Ten en cuenta:",
+    "note": "El precio del Share Tour cubre solo el transporte y el chófer (combustible, seguro y peajes incluidos). Las entradas a las atracciones no están incluidas y se pagan allí mismo, y el tour solo sale cuando al menos 4 personas se han apuntado a esa fecha."
+  },
+  "vehicle": {
+    "label": "Nuestro vehículo",
+    "title": "Hyundai Staria Lounge",
+    "body": "El mismo vehículo que en el tour privado: un viaje premium, casi de VIP, que sigue siendo cómodo aunque lo compartas con otro equipo.",
+    "specs": [
+      { "value": "Máx. 8 pasajeros", "label": "Amplio y cómodo" },
+      { "value": "Hotspot Wi-Fi gratis", "label": "Todos conectados" },
+      { "value": "Varios puertos USB", "label": "Móviles cargados todo el viaje" },
+      { "value": "Aire acondicionado premium", "label": "Cómodo en cualquier estación" }
+    ],
+    "footnote": "Los equipos con menos personas disponen de más espacio para el equipaje."
+  },
+  "howToBook": {
+    "label": "Cómo reservar",
+    "title": "Fácil, solo 3 pasos",
+    "sub": "No hace falta crear una cuenta ni pagar por adelantado: todo se coordina directamente con Pak Lee por WhatsApp.",
+    "steps": [
+      {
+        "title": "Mira el calendario de la ruta",
+        "body": "Consulta el calendario de la ruta que quieras y busca una fecha en verde (salida confirmada) o en amarillo (aún faltan personas)."
+      },
+      {
+        "title": "Escribe a Pak Lee por WhatsApp",
+        "body": "Pulsa el botón Consultar fechas de la tarjeta de la ruta, o escríbeme directamente indicando tu fecha, la ruta y cuántos sois."
+      },
+      {
+        "title": "Confirma y paga el depósito",
+        "body": "Cuando el total de participantes de esa fecha llega a 4, la salida queda confirmada. Se paga un 30 % de depósito por Wise y el resto en efectivo el mismo día."
+      }
+    ]
+  },
+  "wa": {
+    "ask": "¡Hola, Pak Lee! Me interesa el Share Tour {name}. ¿Me puedes dar más detalles?",
+    "join": "¡Hola, Pak Lee! He visto un grupo para el Share Tour {route} el {date}. ¿Me puedes dar detalles y apuntarme?"
+  },
+  "cta": {
+    "h2": "¿Listo para unirte a un Share Tour?",
+    "body": "Mira el calendario de arriba o escribe directamente a Pak Lee para preguntar por las fechas más recientes.",
+    "button": "Chatea ya con Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

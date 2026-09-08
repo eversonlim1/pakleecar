@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Gangwon: esquí y costa en coche | Pak Lee's Car",
+    "description": "Gangneung, Sokcho y las estaciones de esquí de Gangwon en van privada con chófer. Caben esquís y tablas. ₩400,000 más recargo por Gangwon.",
+    "ogImage": "/assets/img/og/gangwon-ski-en.jpg"
+  },
+  "hero": {
+    "h1": "Gangwon: nieve por la mañana, mar por la tarde",
+    "lede": "Las estaciones de esquí y la costa este están a dos horas y media de Seúl y a unos cuarenta minutos entre sí. Con una van puedes hacer media jornada de pistas y aun así comer pescado a la brasa junto al agua en Sokcho, algo que ningún horario de autobús te va a permitir.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "Un día fuera de Seúl con Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "Unas 12 horas, más un recargo por Gangwon"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "06:30",
+      "title": "Salida temprano, a propósito",
+      "body": "Son dos horas y media hasta la costa en una mañana despejada, y casi cuatro si salimos con todo el mundo. Salir antes de las siete es la diferencia entre una excursión y un viaje en coche."
+    },
+    {
+      "time": "09:00",
+      "title": "La estación: Yongpyong, Alpensia o Vivaldi",
+      "body": "Dime cuál antes del día y preparo la ruta. El alquiler de esquís, botas y ropa se hace en la estación y la primera vez lleva unos cuarenta minutos, así que cuéntalo dentro del plan."
+    },
+    {
+      "time": "09:45",
+      "title": "En las pistas",
+      "body": "Los forfaits de media jornada suelen llegar hasta las 12:30 o las 13:00 y son la opción sensata en un viaje así. Yo espero en la base con el coche y vuestras cosas: nada de buscar taquillas."
+    },
+    {
+      "time": "13:30",
+      "title": "Gangneung y la calle del café de Anmok",
+      "body": "Cuarenta minutos bajando hasta el mar. Anmok es una hilera de cafés frente al agua y es donde nació de verdad la cultura del café en Corea, una parada mejor de lo que suena en invierno."
+    },
+    {
+      "time": "15:30",
+      "title": "Sokcho o Jumunjin",
+      "body": "La lonja de Jumunjin para pescado y calamar a la brasa, o el puerto de Sokcho y su pequeño ferry de tracción manual. Uno u otro: los dos en una tarde es ir con prisas."
+    },
+    {
+      "time": "18:00",
+      "title": "Vuelta a Seúl",
+      "body": "De dos horas y media a tres, y casi todo el mundo duerme el trayecto entero. Los domingos por la tarde la autopista Yeongdong es la más lenta, así que prefiero salir de la costa antes de las seis."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante todo el día",
+    "Espacio para esquís y tablas"
+  ],
+  "excludes": [
+    "Forfait y alquiler de material",
+    "Parking",
+    "Comidas",
+    "Recargo por Gangwon"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Qué es el recargo por Gangwon?",
+      "a": "Gangwon está a unos 250 km por trayecto, así que el día son ₩400,000 más un recargo por la distancia y las horas de más. Mándame tu fecha y la estación y te doy la cifra completa por adelantado."
+    },
+    {
+      "q": "¿Cuándo hay nieve de verdad?",
+      "a": "Las estaciones funcionan desde mediados de diciembre hasta principios de marzo más o menos, y fabrican su propia nieve, así que la temporada es más fiable que el tiempo. Fuera de esos meses esto se convierte en un día de costa."
+    },
+    {
+      "q": "¿Caben esquís y tablas en la van?",
+      "a": "Sí, con la última fila abatida. Con seis o más pasajeros más el material se queda justo: dime cuántos sois y te digo con honestidad si sale."
+    },
+    {
+      "q": "¿Podemos quedarnos a dormir y que vuelvas a por nosotros?",
+      "a": "Sí, la gente lo hace a menudo. Un día de ida y otro de vuelta, con precio de dos días. Suele ser el mejor plan si quieres un día entero de esquí."
+    },
+    {
+      "q": "¿Puedes conducir si la carretera está helada?",
+      "a": "La autopista se limpia y yo llevo neumáticos de invierno, pero las carreteras de acceso a la montaña cierran de vez en cuando con nevadas fuertes. Si pasa, cambiamos el plan; no voy a meterme en una carretera que no me dé buena espina."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "tours/everland",
+      "label": "Everland ida y vuelta"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Recogida en el aeropuerto de Incheon"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días fuera de la ciudad.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Estás pensando en Gangwon?",
+    "body": "Dime tu fecha y qué estación. Te doy el recargo antes de que decidas nada.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

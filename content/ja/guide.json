@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "韓国旅行ガイド | Pak Lee's Car",
+    "description": "韓国の専属ドライバーによる実用的なメモ。エリア別のハラル料理、交通手段の比較、そして現実的な4日間のプラン。",
+    "ogImage": "/assets/img/og/guide-en.jpg"
+  },
+  "title": "ガイド",
+  "intro": "何年も韓国でお客様をご案内してきた中で書きためたメモです。まとめ記事ではなく、着く前に実際によく聞かれることを書いています。",
+  "articles": [
+    {
+      "slug": "guide/halal-food-seoul",
+      "title": "ソウルのハラル料理、エリア別ガイド",
+      "excerpt": "認証を受けた店が実際にどこにあるのか、Itaewonのモスク、そしてコンビニで気をつけたいこと。",
+      "image": "/assets/img/reels/DciyJZzI3Rq.jpg",
+      "imageAlt": "ソウルを走るパクさんのバンの車内"
+    },
+    {
+      "slug": "guide/korea-transport-vs-private-car",
+      "title": "地下鉄、鉄道、観光バス、それとも貸切車？",
+      "excerpt": "人数別に費用と時間を率直に比較し、それぞれの手段がどこで行き詰まるかをまとめました。",
+      "image": "/assets/img/reels/DcAjNy9I9L4.jpg",
+      "imageAlt": "バンの窓から見たソウルの街並み"
+    },
+    {
+      "slug": "guide/korea-itinerary-4-days",
+      "title": "現実的な韓国4日間のプラン",
+      "excerpt": "初めて訪れるご家族のために、私なら4日間をどう組むか。時間単位でご紹介します。",
+      "image": "/assets/img/reels/DYoUwpto3-8.jpg",
+      "imageAlt": "パクさんと過ごすお出かけの一日"
+    }
+  ],
+  "cta": {
+    "h2": "ご自身でルートを考えていますか？",
+    "body": "日程と行きたい場所を教えてください。何が入るか正直にお伝えします。",
+    "button": "パクさんにメッセージ"
+  },
+  "nav": {
+    "howItWorks": "ご利用の流れ",
+    "videos": "動画",
+    "car": "車について",
+    "rates": "料金",
+    "shareTour": "シェアツアー",
+    "tagline": "専属ドライバー · 韓国"
+  }
+}

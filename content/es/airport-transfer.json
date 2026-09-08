@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Traslado aeropuerto de Incheon | Pak Lee's Car",
+    "description": "Recogida y traslado privados entre el aeropuerto de Incheon y tu hotel de Seúl. Un trayecto, hasta ocho personas con equipaje, ₩150,000 fijos.",
+    "ogImage": "/assets/img/og/airport-transfer-en.jpg"
+  },
+  "hero": {
+    "h1": "Recogida en Incheon, con tu nombre en un cartel",
+    "lede": "Aterrizas después de un vuelo largo con maletas, un móvil que todavía no funciona y ni un won en el bolsillo. Yo te espero en la puerta de llegadas, llevo las maletas y te dejo en la puerta de tu hotel por un precio acordado antes de que despegaras.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Interior de la van de Pak Lee",
+    "price": "₩150,000",
+    "amount": "150000",
+    "duration": "Un trayecto, unos 70-90 minutos"
+  },
+  "itineraryTitle": "Cómo funciona una recogida",
+  "itinerary": [
+    {
+      "time": "Antes de volar",
+      "title": "Mándame el número de vuelo",
+      "body": "No la hora de aterrizaje: el número de vuelo. Yo sigo la llegada real, así que un retraso de dos horas no te cuesta nada y no hay a quién llamar desde el aire."
+    },
+    {
+      "time": "Al aterrizar",
+      "title": "Inmigración y maletas",
+      "body": "Normalmente entre cuarenta minutos y una hora en la Terminal 1 o 2, más en una mañana cargada. Yo ya estoy aparcado esperando; el reloj no corre en tu contra."
+    },
+    {
+      "time": "En la puerta",
+      "title": "El cartel con tu nombre",
+      "body": "Puerta de salida 5 o 6 en la T1, puerta 2 en la T2, salvo que hayamos quedado en otra cosa. Si tu móvil aún no tiene cobertura, sal y mira: estaré donde te dije que estaría."
+    },
+    {
+      "time": "El trayecto",
+      "title": "De 70 a 90 minutos hasta Seúl",
+      "body": "Más en hora punta entre semana. Wi-Fi gratis en el coche y cargadores en cada fila, para que puedas avisar en casa antes de tener la SIM resuelta."
+    },
+    {
+      "time": "Una parada",
+      "title": "Tarjeta SIM o efectivo, si lo necesitas",
+      "body": "Los mostradores de SIM del aeropuerto y los cajeros que aceptan tarjetas extranjeras bien valen cinco minutos antes de salir. Dímelo y paramos; aquí es más fácil que en la ciudad."
+    },
+    {
+      "time": "Llegada",
+      "title": "La puerta de tu hotel",
+      "body": "No la esquina, ni la estación más cercana. Maletas fuera del maletero y hasta la entrada, y luego el pago en efectivo o por transferencia, como te venga mejor."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Seguimiento del vuelo",
+    "Recibimiento en llegadas",
+    "Hasta 8 plazas"
+  ],
+  "excludes": [
+    "Parking más allá de la espera gratuita",
+    "Sillitas infantiles salvo petición previa",
+    "Paradas extra por la ciudad"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Y si mi vuelo se retrasa?",
+      "a": "No cambia nada. Yo sigo el número de vuelo, no el horario, y no cobro por un retraso que no has causado. Lo mismo vale para una cola lenta en inmigración."
+    },
+    {
+      "q": "¿Son ₩150,000 por trayecto?",
+      "a": "Sí: un trayecto, por vehículo. La recogida y el traslado de vuelta son ₩150,000 cada uno. Reserva los dos juntos y te guardo el mismo coche para la salida."
+    },
+    {
+      "q": "¿Cuánto equipaje cabe?",
+      "a": "Cuatro maletas grandes más equipaje de mano va cómodo. Seis maletas grandes con ocho personas, no: dime el número real de bultos y te digo enseguida si cabe."
+    },
+    {
+      "q": "¿Puedes hacer una salida de madrugada?",
+      "a": "Sí. Una recogida a las 04:30 para un vuelo a las 07:00 es normal para mí. Resérvala el día antes y no esa misma noche, para que pueda organizar el trayecto."
+    },
+    {
+      "q": "¿Tienes sillitas infantiles?",
+      "a": "Puedo llevar una o dos si me lo pides con antelación, sin coste extra. Lo que no puedo es sacarlas de la nada en el momento, así que dímelo al reservar."
+    },
+    {
+      "q": "¿Cómo se paga?",
+      "a": "En efectivo en wones al final, o por transferencia bancaria. Sin depósito antes de haber hablado, y sin datáfono en el coche."
+    }
+  ],
+  "relatedTitle": "Otras cosas que conduzco",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Corea muslim friendly"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de recogidas y días fuera.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Necesitas que te recojan en Incheon?",
+    "body": "Mándame tu número de vuelo, la fecha y cuántas maletas lleváis. Te confirmo el precio antes de que vueles.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Tour muslim friendly en Corea | Pak Lee's Car",
+    "description": "Un día en Seúl planificado según los horarios de oración y con comida halal de verdad, con la mezquita de Itaewon en la ruta. ₩300,000 por vehículo.",
+    "ogImage": "/assets/img/og/muslim-friendly-en.jpg"
+  },
+  "hero": {
+    "h1": "Seúl planificado según las oraciones y con comida halal de verdad",
+    "lede": "Lo difícil de Corea no es hacer turismo, es la comida. Muchos sitios ponen un cartel halal en el escaparate sin ningún certificado detrás. Yo sé cuáles están certificados, cuáles son de propietarios musulmanes y dónde puedes rezar sin tener que ir buscando un rincón tranquilo.",
+    "heroImage": "/assets/img/reels/DciyJZzI3Rq.jpg",
+    "heroAlt": "Interior de la van de Pak Lee",
+    "price": "₩300,000",
+    "amount": "300000",
+    "duration": "Unas 10 horas"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "08:30",
+      "title": "Recogida, y miramos los horarios",
+      "body": "Antes de salir miro los horarios de Zuhr y Asr de hoy y monto los trayectos alrededor de ellos, para que estés cerca de un sitio adecuado y no atrapado en el tráfico cuando lleguen."
+    },
+    {
+      "time": "09:30",
+      "title": "Gyeongbokgung",
+      "body": "El cambio de guardia es a las 10:00 y el palacio cierra los martes. Es llano, con sombra en algunas partes, y hay un rincón tranquilo cerca del lado oeste que sirve si una oración cae aquí."
+    },
+    {
+      "time": "12:30",
+      "title": "Itaewon: la mezquita central de Seúl y comida",
+      "body": "La mezquita está en la colina, por encima de la calle principal, abierta a visitantes fuera de los horarios de oración y con sección de mujeres en la planta de arriba. La calle de abajo es donde están los restaurantes halal certificados: turcos, pakistaníes, uzbekos y un coreano que hace bulgogi halal."
+    },
+    {
+      "time": "14:30",
+      "title": "Namsan y la N Seoul Tower",
+      "body": "A diez minutos de Itaewon. Subo hasta la terminal y tú haces el último tramo en teleférico, así es un paseo corto en vez de la subida entera."
+    },
+    {
+      "time": "16:30",
+      "title": "Myeongdong",
+      "body": "Hay una pequeña sala de oración cerca de las calles comerciales y varios puestos callejeros con certificación halal, aunque no todos los carritos la tienen. Te señalo cuál es cuál antes de que hagas cola."
+    },
+    {
+      "time": "19:00",
+      "title": "Cena y de vuelta al hotel",
+      "body": "De vuelta a Itaewon para una comida en condiciones, o una barbacoa coreana certificada en Jongno si quieres la experiencia de la parrilla. Y luego directos a tu puerta."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante 10 horas",
+    "Ruta planificada según los horarios de oración",
+    "Recomendaciones de restaurantes halal"
+  ],
+  "excludes": [
+    "Entrada al palacio",
+    "Billete del teleférico",
+    "Parking",
+    "Comidas"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Cómo sabes que un restaurante es halal de verdad?",
+      "a": "Corea tiene un sistema de certificación y, aparte, hay restaurantes de propietarios musulmanes que toda la comunidad conoce. Yo me guío por esas dos cosas, no por las pegatinas del escaparate. Cuando un sitio es solo «muslim friendly» —sin cerdo, pero con alcohol— te lo digo claramente y decides tú."
+    },
+    {
+      "q": "¿Dónde podemos rezar durante el día?",
+      "a": "La mezquita central de Seúl, en Itaewon, es la principal, y hay salas de oración pequeñas en Myeongdong, en el aeropuerto de Incheon y en algunos grandes almacenes. Yo también llevo una alfombra en el coche."
+    },
+    {
+      "q": "¿Puedes hacer esto durante el Ramadán?",
+      "a": "Sí, y el día cambia de aspecto: salida más tarde, turismo en las horas de menos calor y estar sentados en un restaurante antes del Magrib, no después. Dime que estás ayunando y lo planeo así."
+    },
+    {
+      "q": "¿Eres musulmán?",
+      "a": "No. Soy un chófer coreano que ha llevado a muchas familias indonesias y malasias por el país, y he aprendido dónde está cada cosa preguntando a mis clientes y yendo con ellos."
+    },
+    {
+      "q": "¿Podemos ir a algún sitio fuera de Seúl?",
+      "a": "Sí. Nami Island y Everland tienen opciones halal cerca y puedo planear cualquiera de los dos igual. Nami queda más lejos, así que el día tiene otro precio."
+    },
+    {
+      "q": "¿El precio es por persona?",
+      "a": "No, por vehículo. Los ₩300,000 cubren la van y a mí durante diez horas, tanto si sois una pareja como una familia de ocho."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Recogida en el aeropuerto de Incheon"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días con familias como la tuya.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Viajas teniendo en cuenta lo halal?",
+    "body": "Dime tus fechas y cómo de estricto quieres que sea con la comida. Planeo el día alrededor de eso.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

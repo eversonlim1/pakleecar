@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "Vídeos | Pak Lee's Car",
+    "description": "Todos los clips del Instagram de Pak Lee: huéspedes reales, viajes reales y cómo es la van por dentro.",
+    "ogImage": "/assets/img/og/videos-en.jpg"
+  },
+  "title": "Vídeos de viajes reales",
+  "intro": "Todos los clips de @paklee.carkorea en un mismo sitio: huéspedes saludando, los lugares donde paramos y la propia van.",
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "Todos los clips",
+    "body": "Toca cualquier miniatura para verlo aquí mismo.",
+    "all": "Sigue a @paklee.carkorea"
+  },
+  "cta": {
+    "h2": "¿Quieres un día así?",
+    "body": "Dime tus fechas. Te diré con honestidad qué cabe.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

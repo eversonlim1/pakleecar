@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "動画 | Pak Lee's Car",
+    "description": "パクさんのInstagramの動画をすべて。実際のお客様、実際の旅、そして車内の本当の様子をご覧いただけます。",
+    "ogImage": "/assets/img/og/videos-en.jpg"
+  },
+  "title": "実際の旅から届いた動画",
+  "intro": "@paklee.carkorea の動画をひとまとめに。ご挨拶するお客様、立ち寄った場所、そして車そのものの様子です。",
+  "reels": {
+    "eyebrow": "Instagramで",
+    "h2": "すべての動画",
+    "body": "サムネイルをタップすると、このページで再生できます。",
+    "all": "@paklee.carkorea をフォロー"
+  },
+  "cta": {
+    "h2": "こんな一日を過ごしてみませんか？",
+    "body": "日程を教えてください。何が入るか正直にお伝えします。",
+    "button": "パクさんにメッセージ"
+  },
+  "nav": {
+    "howItWorks": "ご利用の流れ",
+    "videos": "動画",
+    "car": "車について",
+    "rates": "料金",
+    "shareTour": "シェアツアー",
+    "tagline": "専属ドライバー · 韓国"
+  }
+}

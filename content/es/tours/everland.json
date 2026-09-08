@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Everland en coche privado | Pak Lee's Car",
+    "description": "De tu puerta a Everland, en Yongin, y de vuelta, con el chófer esperando todo el día. Sin última lanzadera que coger. ₩350,000 por vehículo.",
+    "ogImage": "/assets/img/og/everland-en.jpg"
+  },
+  "hero": {
+    "h1": "Everland, de puerta a puerta, con el coche esperando",
+    "lede": "Everland está en Yongin, a una hora al sur de Seúl, y las lanzaderas dejan de pasar mucho antes de que termine el desfile. Yo te llevo, espero en el aparcamiento todo el día y te devuelvo a casa cuando salgas, con los niños cansados dormidos en el camino de vuelta incluidos.",
+    "heroImage": "/assets/img/reels/DYoUwpto3-8.jpg",
+    "heroAlt": "Un día en familia con Pak Lee",
+    "price": "₩350,000",
+    "amount": "350000",
+    "duration": "Unas 12 horas de puerta a puerta"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "08:00",
+      "title": "Recogida en tu hotel",
+      "body": "Everland abre a las diez casi todos los días. Salir de Seúl a las ocho te pone en la puerta antes de que se forme la cola, lo que un fin de semana vale una hora de tu día."
+    },
+    {
+      "time": "09:15",
+      "title": "El viaje hasta allí",
+      "body": "Una hora por autopista cuando está despejada. Compra las entradas por internet la noche antes: la cola de taquilla es lo más lento de la mañana y es totalmente evitable."
+    },
+    {
+      "time": "10:00",
+      "title": "Directos al T Express",
+      "body": "La cola de la montaña rusa de madera pasa de diez minutos a noventa a la hora de comer. Si tu grupo la quiere, hacedla primero y ved los pandas después, no al revés."
+    },
+    {
+      "time": "13:00",
+      "title": "Comida, y yo sigo aquí",
+      "body": "La comida dentro del parque está bien, pero no es barata. Si alguien necesita una siesta, un cargador o dejar una bolsa, escríbeme y salid al coche: se puede volver a entrar con la entrada."
+    },
+    {
+      "time": "17:00",
+      "title": "El desfile y la tarde-noche",
+      "body": "El desfile principal es a última hora de la tarde, y las luces y los fuegos artificiales vienen después del anochecer, según la temporada. Esta es justo la parte que la última lanzadera te obliga a perderte."
+    },
+    {
+      "time": "21:00",
+      "title": "A casa cuando hayas terminado",
+      "body": "Sales cuando sales. Yo estoy en el aparcamiento, no en un horario, y la vuelta es lo bastante tranquila como para que los niños suelan dormirse."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer esperando todo el día",
+    "Recogida y regreso al hotel"
+  ],
+  "excludes": [
+    "Entradas de Everland",
+    "Tarifa de aparcamiento del parque",
+    "Comidas",
+    "Q-Pass o pases exprés"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Nos compras tú las entradas del parque?",
+      "a": "No: te saldrá mejor por internet, que es donde están los descuentos. Reserva la noche antes y ve directo a la puerta de entrada en vez de a la taquilla."
+    },
+    {
+      "q": "¿Esperas todo el día?",
+      "a": "Sí. Eso es justo lo que estás reservando. Me quedo en Everland con el coche para que no estés contando las horas hasta que salga una lanzadera."
+    },
+    {
+      "q": "¿Y si nos pasamos de las doce horas?",
+      "a": "Escríbeme y lo arreglamos. Una hora de más no suele ser problema; solo te pido que me avises en vez de dejarme adivinando en la puerta."
+    },
+    {
+      "q": "¿Está incluido Caribbean Bay?",
+      "a": "Es una entrada aparte y un parque aparte, justo al lado, pero comparten aparcamiento. Dime cuál de los dos vais a hacer y el día funciona igual."
+    },
+    {
+      "q": "¿Podemos añadir algo a la vuelta?",
+      "a": "Sí, aunque después de un día entero en un parque de atracciones casi nadie quiere. El Korean Folk Village está cerca si haces este día en versión corta."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "tours/nami-island",
+      "label": "Nami Island"
+    },
+    {
+      "slug": "muslim-friendly-korea-tour",
+      "label": "Corea muslim friendly"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días en familia.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Llevas a la familia a Everland?",
+    "body": "Dime tu fecha y cuántas plazas necesitas, sillitas de niño incluidas. Te confirmo el mismo día.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

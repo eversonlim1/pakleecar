@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Chófer privado en Corea | Pak Lee's Car",
+    "description": "Una van privada con chófer todo el día en Corea. Sin ruta fija ni grupo. Combustible, peajes y seguro incluidos. Escríbele a Pak Lee por WhatsApp.",
+    "ogImage": "/assets/img/og/home-en.jpg"
+  },
+  "hero": {
+    "h1": "Tú planeas el día. Yo lo conduzco.",
+    "lede": "Una van privada y un solo chófer para todo el día: sin ruta fija, sin grupo al que seguir el paso y sin prisas en los sitios que de verdad te gustan.",
+    "ctaPrimary": "Escríbele a Pak Lee",
+    "ctaSecondary": "Ver las tarifas",
+    "sticker": "Horario libre, siempre",
+    "bubbleTitle": "Halo! Saya Pak Lee",
+    "bubbleText": "Pregúntame lo que quieras",
+    "facts": [
+      { "icon": "🚌", "value": "Hasta 8", "label": "Plazas, más equipaje" },
+      { "icon": "⏰", "value": "10 horas", "label": "Un día entero fuera" },
+      { "icon": "⛽", "value": "Todo incluido", "label": "Combustible, peajes, seguro" },
+      { "icon": "💬", "value": "En menos de una hora", "label": "Tiempo de respuesta habitual" }
+    ]
+  },
+  "message": {
+    "eyebrow": "Cómo funciona",
+    "h2": "Todo empieza con un mensaje",
+    "body": "Sin formularios y sin depósito antes de haber hablado. Mándame tus fechas y lo que te gustaría ver. Te diré con honestidad qué cabe en un día y qué no.",
+    "link": "Escríbele a Pak Lee",
+    "chat": [
+      { "from": "guest", "name": "Rina", "text": "Somos seis, tres niños. Nami Island el 14, ¿es posible?" },
+      { "from": "pak", "name": "Pak Lee", "text": "Sí. Seis con equipaje entran bien. Yo saldría a las ocho, antes de la cola del ferry." },
+      { "from": "guest", "name": "Rina", "text": "¿Hay comida halal cerca de allí?" },
+      { "from": "pak", "name": "Pak Lee", "text": "La hay. Te llevo a uno donde como yo mismo." }
+    ]
+  },
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "Mira un día antes de reservar uno",
+    "body": "Clips cortos de viajes reales: huéspedes saludando, los sitios donde paramos y cómo es la van por dentro.",
+    "all": "Ver todos los vídeos"
+  },
+  "car": {
+    "eyebrow": "El coche",
+    "h2": "Hyundai Staria Lounge",
+    "body": "Una sola van, siempre limpia y con sitio para estirarte de verdad. Ocho plazas, aunque va más cómoda con cinco o seis una vez cargado el equipaje.",
+    "specs": [
+      { "value": "8", "label": "plazas" },
+      { "value": "Wi-Fi", "label": "hotspot gratis" },
+      { "value": "USB", "label": "carga en cada fila" },
+      { "value": "A/A", "label": "delante y detrás" }
+    ]
+  },
+  "rates": {
+    "eyebrow": "Tarifas",
+    "h2": "Lo que cuesta",
+    "body": "El precio es por vehículo, no por persona. Cuesta lo mismo si sois dos que si sois ocho.",
+    "rows": [
+      { "name": "Día completo — Seúl", "detail": "10 horas, por toda la ciudad", "price": "₩300,000", "amount": "300000" },
+      { "name": "Nami Island", "detail": "10 horas, con Petite France y el jardín", "price": "₩400,000", "amount": "400000" },
+      { "name": "Recogida en el aeropuerto", "detail": "De Incheon a tu hotel de Seúl, un trayecto", "price": "₩150,000", "amount": "150000" },
+      { "name": "Traslado al aeropuerto", "detail": "De tu hotel de Seúl a Incheon, un trayecto", "price": "₩150,000", "amount": "150000" }
+    ],
+    "included": ["Combustible incluido", "Peajes incluidos", "Seguro incluido"],
+    "excluded": ["Parking no incluido", "Entradas no incluidas"]
+  },
+  "cta": {
+    "h2": "¿A dónde te gustaría ir?",
+    "body": "Dime tus fechas. Si no cabe en un día, te lo diré.",
+    "button": "Escríbele a Pak Lee por WhatsApp"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

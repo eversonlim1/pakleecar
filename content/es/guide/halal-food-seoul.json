@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Comida halal en Seúl, barrio a barrio",
+    "description": "Dónde están de verdad los restaurantes halal certificados de Seúl, la mezquita de Itaewon y qué evitar en una tienda de conveniencia.",
+    "ogImage": "/assets/img/og/guide-halal-en.jpg"
+  },
+  "title": "Comida halal en Seúl, barrio a barrio",
+  "intro": "He llevado a suficientes familias indonesias y malasias por Seúl como para saber que lo difícil del viaje nunca es hacer turismo. Es la comida. Esto es lo que he aprendido de verdad, no una lista copiada.",
+  "datePublished": "2026-08-15",
+  "blocks": [
+    { "type": "h2", "text": "Itaewon es la base, no la respuesta completa" },
+    { "type": "p", "text": "La mezquita central de Seúl está en la colina, por encima de la calle principal de Itaewon, abierta a visitantes fuera de los horarios de oración y con sección de mujeres arriba. La calle de abajo es el verdadero núcleo halal: turcos, pakistaníes, uzbekos y un restaurante coreano que hace bulgogi halal y que sorprende a la gente. Si solo vas a comer halal en una parte de Seúl, que sea esta." },
+    { "type": "p", "text": "El error es pensar que con Itaewon ya tienes cubierto el viaje entero. Está a quince minutos en coche de la mayoría de los hoteles, no es un sitio al que vuelvas para cada comida." },
+    { "type": "h2", "text": "Myeongdong y los grandes almacenes" },
+    { "type": "p", "text": "Hay una pequeña sala de oración cerca de las calles comerciales, y unos cuantos puestos callejeros tienen certificación halal, pero no todos los carritos con un cartel la tienen. Yo señalo cuáles son antes de que mis clientes hagan cola, porque cuando ya tienes la comida en la mano es tarde para preguntar. Algunos grandes almacenes también tienen mostradores certificados en sus plantas de alimentación del sótano, algo que conviene saber si el tiempo se estropea." },
+    { "type": "list", "items": [
+      "Busca la marca de certificación real, no solo un cartel en árabe",
+      "«Muslim friendly» suele significar simplemente que no hay cerdo: puede que sí sirvan alcohol",
+      "Las plantas de alimentación del sótano de los grandes almacenes a veces tienen mostradores certificados",
+      "Pregunta antes de hacer cola, no cuando ya tengas la bandeja en la mano"
+    ] },
+    { "type": "h2", "text": "Qué evitar de verdad en una tienda de conveniencia" },
+    { "type": "p", "text": "Las tiendas de conveniencia están por todas partes y son muy útiles para picar y beber algo, pero la gelatina aparece en cosas que no te esperas: gominolas, algunos yogures, ciertos sobres de condimento de fideos instantáneos. Si eres estricto, revisar las listas de ingredientes importa aquí más que en un restaurante, donde al menos alguien puede responder a una pregunta directa." },
+    { "type": "h2", "text": "Durante el Ramadán, el día es distinto" },
+    { "type": "p", "text": "Salida más tarde, turismo en las horas de menos calor y estar sentados en un restaurante antes del Magrib en vez de correr después. Dile a tu chófer que estás ayunando y, si es medio decente, planeará las paradas alrededor de eso y no alrededor del horario turístico de siempre." },
+    { "type": "link", "slug": "muslim-friendly-korea-tour", "text": "Mira el día muslim friendly completo que hago en Seúl" },
+    { "type": "h2", "text": "Si solo estás un día en Seúl" },
+    { "type": "p", "text": "Combina la mezquita y la comida en Itaewon con el palacio y Myeongdong en la misma vuelta, en vez de tratar la comida como un recado aparte: es exactamente como está montada la ruta del día en Seúl, horarios de oración incluidos." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "Mira cómo se organiza un día completo en Seúl" }
+  ],
+  "relatedTitle": "Tours relacionados",
+  "related": [
+    { "slug": "muslim-friendly-korea-tour", "label": "Tour muslim friendly por Corea" },
+    { "slug": "tours/seoul-day-tour", "label": "Un día completo en Seúl" }
+  ],
+  "cta": {
+    "h2": "¿Viajas teniendo en cuenta la comida halal?",
+    "body": "Dime tus fechas y cómo de estricto quieres que sea. Planeo el día alrededor de eso.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

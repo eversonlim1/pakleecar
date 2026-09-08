@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "Nami Island en coche privado | Pak Lee's Car",
+    "description": "Van privada con chófer a Nami Island, Petite France y el jardín. Diez horas a tu ritmo, combustible y peajes incluidos. ₩400,000 por vehículo.",
+    "ogImage": "/assets/img/og/nami-en.jpg"
+  },
+  "hero": {
+    "h1": "Nami Island, a tu propio ritmo",
+    "lede": "La mayoría de los tours te dan noventa minutos en la isla. Yo aparco y espero: quédate dos horas o cinco. A la vuelta casi todo el mundo añade Petite France, o Myeongdong si aún queda luz.",
+    "heroImage": "/assets/img/reels/DY3AtNlolDz.jpg",
+    "heroAlt": "Huéspedes en una excursión de un día con Pak Lee",
+    "price": "₩400,000",
+    "amount": "400000",
+    "duration": "Unas 10 horas"
+  },
+  "itineraryTitle": "Cómo suele ir el día",
+  "itinerary": [
+    {
+      "time": "08:00",
+      "title": "Tu hotel",
+      "body": "Te escribo cuando estoy abajo. Sin punto de encuentro y sin esperar en un vestíbulo: salimos desde donde hayas dormido."
+    },
+    {
+      "time": "09:40",
+      "title": "Gapyeong",
+      "body": "Unos noventa minutos desde el centro de Seúl si no hay tráfico. Salir a las ocho nos pone por delante de los autobuses de tour en el embarcadero del ferry."
+    },
+    {
+      "time": "10:00",
+      "title": "Nami Island",
+      "body": "Aparco y espero en el embarcadero. El ferry y la entrada a la isla los pagas tú, unos ₩16,000. Quédate el tiempo que quieras: yo no me muevo de aquí."
+    },
+    {
+      "time": "13:00",
+      "title": "Comida",
+      "body": "Sé qué sitios cerca de Gapyeong son halal de verdad y cuáles solo lo dicen. Si eso no te importa, el dakgalbi de aquí merece la parada."
+    },
+    {
+      "time": "15:00",
+      "title": "Petite France o el Garden of Morning Calm",
+      "body": "Los dos están a quince minutos del embarcadero. Elige uno sobre la marcha: para entonces ya sabrás si te apetece caminar más."
+    },
+    {
+      "time": "19:30",
+      "title": "De vuelta, o no",
+      "body": "Casi todo el mundo añade Myeongdong de camino a casa. A mí me parece bien, siempre que estemos dentro de las diez horas."
+    }
+  ],
+  "includes": [
+    "Combustible incluido",
+    "Peajes incluidos",
+    "Seguro incluido",
+    "Chófer durante 10 horas"
+  ],
+  "excludes": [
+    "Ferry y entrada a la isla",
+    "Entrada a Petite France",
+    "Parking",
+    "Comidas"
+  ],
+  "faqTitle": "Lo que suele preguntarme la gente",
+  "faqs": [
+    {
+      "q": "¿Podemos cambiar el plan sobre la marcha?",
+      "a": "Sí. La gente lo hace todo el rato y no cuesta nada, siempre que nos mantengamos dentro de las diez horas."
+    },
+    {
+      "q": "¿El billete del ferry está incluido?",
+      "a": "No. El ferry y la entrada a la isla cuestan unos ₩16,000 por adulto y se compran en el embarcadero. Yo te enseño dónde."
+    },
+    {
+      "q": "¿Caben ocho personas con equipaje?",
+      "a": "Ocho personas caben. Ocho personas con maletas grandes, no: a partir de seis yo llevaría equipaje de cabina en vez de maletas grandes."
+    },
+    {
+      "q": "¿Cuánto se tarda desde Seúl?",
+      "a": "Unos noventa minutos por trayecto si no hay tráfico. Salir a las ocho en lugar de a las nueve suele ahorrar media hora."
+    },
+    {
+      "q": "¿Merece la pena ir en invierno?",
+      "a": "Los caminos entre árboles se ven mejor con nieve, pero la isla está muy expuesta y el viento del río es frío. Lleva más capas de ropa de las que crees."
+    }
+  ],
+  "relatedTitle": "Otros días fuera",
+  "related": [
+    {
+      "slug": "tours/seoul-day-tour",
+      "label": "Un día completo en Seúl"
+    },
+    {
+      "slug": "tours/gangwon-ski",
+      "label": "Gangwon y las estaciones de esquí"
+    },
+    {
+      "slug": "airport-transfer",
+      "label": "Recogida en el aeropuerto de Incheon"
+    }
+  ],
+  "reels": {
+    "eyebrow": "En Instagram",
+    "h2": "De viajes reales",
+    "body": "Clips cortos de días como este.",
+    "all": "Ver todos los vídeos"
+  },
+  "cta": {
+    "h2": "¿Estás pensando en Nami Island?",
+    "body": "Dime tu fecha y cuántos sois. Te diré con honestidad qué más cabe ese día.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

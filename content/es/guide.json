@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Guías de viaje por Corea | Pak Lee's Car",
+    "description": "Apuntes prácticos de un chófer privado en Corea: comida halal barrio a barrio, el transporte comparado y un itinerario real de 4 días.",
+    "ogImage": "/assets/img/og/guide-en.jpg"
+  },
+  "title": "Guías",
+  "intro": "Apuntes de años llevando a viajeros por Corea. No es una lista copiada, son las cosas que la gente me pregunta de verdad antes de aterrizar.",
+  "articles": [
+    {
+      "slug": "guide/halal-food-seoul",
+      "title": "Comida halal en Seúl, barrio a barrio",
+      "excerpt": "Dónde están de verdad los restaurantes certificados, la mezquita de Itaewon y qué evitar en una tienda de conveniencia.",
+      "image": "/assets/img/reels/DciyJZzI3Rq.jpg",
+      "imageAlt": "Interior de la van de Pak Lee en Seúl"
+    },
+    {
+      "slug": "guide/korea-transport-vs-private-car",
+      "title": "¿Metro, tren, autobús turístico o coche privado?",
+      "excerpt": "Una comparación clara de coste y tiempo según el tamaño del grupo, y dónde deja de funcionar cada opción.",
+      "image": "/assets/img/reels/DcAjNy9I9L4.jpg",
+      "imageAlt": "Una calle de Seúl desde la ventanilla de la van"
+    },
+    {
+      "slug": "guide/korea-itinerary-4-days",
+      "title": "Un itinerario real de 4 días por Corea",
+      "excerpt": "Cómo organizaría yo de verdad cuatro días para una familia que viene por primera vez, hora a hora.",
+      "image": "/assets/img/reels/DYoUwpto3-8.jpg",
+      "imageAlt": "Un día fuera con Pak Lee"
+    }
+  ],
+  "cta": {
+    "h2": "¿Estás montando tu propia ruta?",
+    "body": "Dime tus fechas y qué quieres ver. Te diré con honestidad qué cabe.",
+    "button": "Escríbele a Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}
