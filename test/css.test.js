@@ -32,10 +32,10 @@ test('reduced-motion 대응이 있다', () => {
 });
 
 test('surface-invert / on-invert 토큰이 라이트·다크 양쪽에 정의된다', () => {
-  const rootBlock = css.match(/:root\{[\s\S]*?\n\}/)[0];
+  const rootBlock = css.match(/:root\{[\s\S]*?\r?\n\}/)[0];
   assert.match(rootBlock, /--surface-invert:/);
   assert.match(rootBlock, /--on-invert:/);
-  const darkMedia = css.match(/@media\(prefers-color-scheme:dark\)\{[\s\S]*?\n\}\n/)[0];
+  const darkMedia = css.match(/@media\(prefers-color-scheme:dark\)\{[\s\S]*?\r?\n\}\r?\n/)[0];
   assert.match(darkMedia, /--surface-invert:/);
   assert.match(darkMedia, /--on-invert:/);
 });
