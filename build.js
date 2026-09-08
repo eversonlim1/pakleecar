@@ -8,12 +8,16 @@ const { lightboxMarkup } = require('./templates/partials/reels');
 const cta = require('./templates/partials/cta');
 const home = require('./templates/home');
 const tour = require('./templates/tour');
+const guide = require('./templates/guide');
+const guideHub = require('./templates/guide-hub');
+const videos = require('./templates/videos');
+const shareTour = require('./templates/share-tour');
 const reels = require('./content/reels.json');
 
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
 
-const TEMPLATES = { home, tour };
+const TEMPLATES = { home, tour, guide, guideHub, videos, shareTour };
 
 function write(rel, contents) {
   const file = path.join(DIST, rel);
@@ -37,6 +41,15 @@ function schemaFor(type, lang, slug, data) {
       price: data.hero.amount
     }));
     list.push(S.faqPage(data.faqs));
+  }
+  if (type === 'guide') {
+    list.push(S.article({
+      lang, slug, headline: data.title,
+      description: data.seo.description, datePublished: data.datePublished
+    }));
+  }
+  if (type === 'videos') {
+    for (const r of reels) list.push(S.videoObject(r, lang));
   }
   return list;
 }

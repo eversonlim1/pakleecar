@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Panduan Wisata Korea | Pak Lee's Car",
+    "description": "Catatan dari sopir pribadi di Korea — makanan halal per kawasan, perbandingan transportasi, dan itinerary 4 hari yang nyata.",
+    "ogImage": "/assets/img/og/guide-id.jpg"
+  },
+  "title": "Panduan",
+  "intro": "Catatan dari bertahun-tahun mengantar tamu keliling Korea — bukan daftar generik, tapi hal-hal yang memang sering ditanyakan sebelum tamu mendarat.",
+  "articles": [
+    {
+      "slug": "guide/halal-food-seoul",
+      "title": "Makanan halal di Seoul, per kawasan",
+      "excerpt": "Di mana rumah makan bersertifikat sebenarnya berada, masjid di Itaewon, dan yang harus dihindari di convenience store.",
+      "image": "/assets/img/reels/DciyJZzI3Rq.jpg",
+      "imageAlt": "Di dalam mobil Pak Lee di Seoul"
+    },
+    {
+      "slug": "guide/korea-transport-vs-private-car",
+      "title": "Subway, kereta, tur bus, atau mobil pribadi?",
+      "excerpt": "Perbandingan biaya dan waktu berdasarkan jumlah rombongan, dan di mana masing-masing opsi mulai tidak masuk akal.",
+      "image": "/assets/img/reels/DcAjNy9I9L4.jpg",
+      "imageAlt": "Jalanan Seoul dari jendela mobil"
+    },
+    {
+      "slug": "guide/korea-itinerary-4-days",
+      "title": "Itinerary 4 hari di Korea yang nyata",
+      "excerpt": "Bagaimana saya benar-benar menyusun rute empat hari untuk keluarga yang baru pertama kali, jam per jam.",
+      "image": "/assets/img/reels/DYoUwpto3-8.jpg",
+      "imageAlt": "Sehari bareng Pak Lee"
+    }
+  ],
+  "cta": {
+    "h2": "Sedang merencanakan rute sendiri?",
+    "body": "Kirim tanggal dan tempat yang ingin Anda lihat. Saya bilang jujur mana yang muat.",
+    "button": "Chat Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

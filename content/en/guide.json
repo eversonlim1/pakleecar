@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "Korea Travel Guides | Pak Lee's Car",
+    "description": "Practical notes from a private driver in Korea — halal food by neighbourhood, transport options compared, and a real 4-day itinerary.",
+    "ogImage": "/assets/img/og/guide-en.jpg"
+  },
+  "title": "Guides",
+  "intro": "Notes from years of driving guests around Korea — not a listicle, just the things people actually ask me before they land.",
+  "articles": [
+    {
+      "slug": "guide/halal-food-seoul",
+      "title": "Halal food in Seoul, neighbourhood by neighbourhood",
+      "excerpt": "Where the certified restaurants actually are, the mosque in Itaewon, and what to avoid at a convenience store.",
+      "image": "/assets/img/reels/DciyJZzI3Rq.jpg",
+      "imageAlt": "Inside Pak Lee's van in Seoul"
+    },
+    {
+      "slug": "guide/korea-transport-vs-private-car",
+      "title": "Subway, train, tour bus, or a private car?",
+      "excerpt": "A plain comparison of cost and time by group size, and where each option actually breaks down.",
+      "image": "/assets/img/reels/DcAjNy9I9L4.jpg",
+      "imageAlt": "Seoul street from the van window"
+    },
+    {
+      "slug": "guide/korea-itinerary-4-days",
+      "title": "A real 4-day Korea itinerary",
+      "excerpt": "How I'd actually route four days for a first-time family group, hour by hour.",
+      "image": "/assets/img/reels/DYoUwpto3-8.jpg",
+      "imageAlt": "A day out with Pak Lee"
+    }
+  ],
+  "cta": {
+    "h2": "Planning your own route?",
+    "body": "Tell me your dates and what you want to see. I'll say honestly what fits.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Makanan Halal di Seoul, Per Kawasan",
+    "description": "Di mana rumah makan halal bersertifikat di Seoul sebenarnya berada, masjid di Itaewon, dan yang harus dihindari di convenience store.",
+    "ogImage": "/assets/img/og/guide-halal-id.jpg"
+  },
+  "title": "Makanan halal di Seoul, per kawasan",
+  "intro": "Saya sudah mengantar cukup banyak keluarga Indonesia dan Malaysia keliling Seoul untuk tahu bahwa yang susah dari perjalanan bukan tempat wisatanya. Makan siangnya. Ini yang benar-benar saya pelajari, bukan daftar yang disalin dari tempat lain.",
+  "datePublished": "2026-08-15",
+  "blocks": [
+    { "type": "h2", "text": "Itaewon adalah patokan, bukan satu-satunya jawaban" },
+    { "type": "p", "text": "Seoul Central Mosque ada di atas bukit di ujung jalan utama Itaewon, terbuka untuk pengunjung di luar waktu salat, dengan bagian khusus perempuan di lantai atas. Jalan di bawahnya adalah kawasan halal yang sebenarnya — Turki, Pakistan, Uzbek, dan satu rumah makan Korea yang bikin bulgogi halal yang cukup mengejutkan. Kalau cuma satu kawasan di Seoul yang mau Anda andalkan untuk makan halal, ini kawasannya." },
+    { "type": "p", "text": "Kesalahan yang sering terjadi adalah mengira Itaewon cukup untuk seluruh perjalanan. Itaewon itu lima belas menit dari kebanyakan hotel, bukan tempat yang bisa Anda datangi lagi untuk setiap kali makan." },
+    { "type": "h2", "text": "Myeongdong dan department store" },
+    { "type": "p", "text": "Ada mushola kecil di dekat jalan belanja, dan beberapa lapak jajanan kaki lima punya sertifikasi halal — tapi tidak semua gerobak dengan tulisan Arab benar-benar bersertifikat. Saya tunjukkan mana yang benar sebelum tamu antre, karena kalau sudah pegang makanan sudah terlambat untuk bertanya. Beberapa department store besar juga punya konter bersertifikat halal di food hall lantai bawah, berguna kalau cuaca tidak mendukung." },
+    { "type": "list", "items": [
+      "Cari tanda sertifikasi resmi, bukan sekadar tulisan berhuruf Arab",
+      "\"Muslim-friendly\" sering cuma berarti tidak ada babi — alkohol masih bisa disajikan",
+      "Food hall di department store besar kadang punya konter bersertifikat",
+      "Tanya sebelum antre, bukan setelah pegang nampan"
+    ] },
+    { "type": "h2", "text": "Yang benar-benar harus dihindari di convenience store" },
+    { "type": "p", "text": "Convenience store ada di mana-mana dan memang berguna untuk camilan dan minuman, tapi gelatin muncul di tempat yang tidak disangka — permen gummy, beberapa yogurt, bumbu bubuk mie instan tertentu. Kalau Anda ketat, memeriksa daftar bahan di sini lebih penting dibanding di rumah makan biasa, yang setidaknya ada orang yang bisa langsung dijawab pertanyaannya." },
+    { "type": "h2", "text": "Waktu Ramadan, harinya jadi berbeda" },
+    { "type": "p", "text": "Berangkat lebih siang, jalan-jalan di jam yang lebih sejuk, dan sudah duduk di rumah makan sebelum Maghrib, bukan terburu-buru sesudahnya. Bilang ke sopir Anda kalau sedang puasa, dan sopir yang baik akan menyusun titik pemberhentian sesuai itu, bukan sesuai jadwal turis biasa." },
+    { "type": "link", "slug": "muslim-friendly-korea-tour", "text": "Lihat hari Muslim-friendly lengkap di Seoul" },
+    { "type": "h2", "text": "Kalau hanya sehari di Seoul" },
+    { "type": "p", "text": "Gabungkan masjid dan makan siang Itaewon dengan istana dan Myeongdong dalam satu rute, bukan dijadikan urusan terpisah — persis seperti cara rute tur sehari Seoul saya susun, lengkap dengan waktu salat." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "Lihat rute lengkap sehari di Seoul" }
+  ],
+  "relatedTitle": "Tur terkait",
+  "related": [
+    { "slug": "muslim-friendly-korea-tour", "label": "Tur Muslim-friendly Korea" },
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" }
+  ],
+  "cta": {
+    "h2": "Bepergian dengan pertimbangan makanan halal?",
+    "body": "Kirim tanggal dan seberapa ketat Anda ingin saya perhatikan. Saya susun harinya sesuai itu.",
+    "button": "Chat Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

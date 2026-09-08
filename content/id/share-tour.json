@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Share Tour Korea | Pak Lee's Car",
+    "description": "Bagi biaya sewa Hyundai Staria Lounge dengan tim lain di tanggal yang sama. Rute Seoul, Nami Island dan DMZ, mulai ₩60.000 per tim.",
+    "ogImage": "/assets/img/og/share-tour-id.jpg"
+  },
+  "hero": {
+    "badge": "Share Tour — Sewa Bareng, Hemat Bareng",
+    "h1": "Jelajahi Korea Bareng, Lebih Hemat",
+    "sub": "Sama seperti tur pribadi Pak Lee — Hyundai Staria Lounge, sopir profesional, jadwal 10 jam — tapi biaya sewa mobilnya dibagi rata dengan tim lain di tanggal yang sama.",
+    "ctaSchedule": "Cek Jadwal & Harga",
+    "ctaConcept": "Apa itu Share Tour?",
+    "stats": [
+      { "value": "3", "label": "Rute Tersedia" },
+      { "value": "4+", "label": "Min. Orang Berangkat" },
+      { "value": "10j", "label": "Durasi per Tur" },
+      { "value": "₩60K", "label": "Mulai per Tim" }
+    ]
+  },
+  "routesSection": {
+    "label": "Rute & Jadwal",
+    "title": "Pilih Rute, Cek Kalender",
+    "sub": "Setiap kalender menunjukkan berapa orang sudah gabung di tanggal tersebut. Hijau berarti sudah pasti berangkat (4+ orang), kuning berarti masih menunggu, merah berarti sudah penuh (8 orang)."
+  },
+  "priceLabels": ["4 org", "5 org", "6-7 org"],
+  "routes": [
+    {
+      "id": "seoul",
+      "title": "Share Tour — Seoul Kota",
+      "stops": ["Gwangjang Market (Pasar Street Food)", "Gyeongbokgung Palace", "Bukchon Hanok Village", "Myeongdong (Shopping)", "N Seoul Tower (Namsan)"],
+      "prices": ["₩80.000", "₩70.000", "₩60.000"],
+      "priceNote": "Harga per tim · 10 jam · min. 4 orang berangkat",
+      "cta": "Tanya Jadwal",
+      "waLabel": "Seoul Kota"
+    },
+    {
+      "id": "nami",
+      "title": "Share Tour — Nami Island",
+      "stops": ["Nami Island (Pulau Nami)", "Petite France", "Garden of Morning Calm", "Alpaca World"],
+      "prices": ["₩100.000", "₩90.000", "₩70.000"],
+      "priceNote": "Harga per tim · 10 jam · min. 4 orang berangkat",
+      "cta": "Tanya Jadwal",
+      "waLabel": "Nami Island"
+    },
+    {
+      "id": "dmz",
+      "title": "Share Tour — DMZ",
+      "stops": ["Imjingak & Jembatan Kebebasan", "Tunnel ke-3 (Third Infiltration Tunnel)", "Dora Observatory (Lihat Korea Utara!)"],
+      "note": "Catatan: JSA tidak termasuk",
+      "prices": ["₩90.000", "₩80.000", "₩70.000"],
+      "priceNote": "Harga per tim · 10 jam · min. 4 orang berangkat",
+      "cta": "Tanya Jadwal",
+      "waLabel": "DMZ"
+    }
+  ],
+  "about": {
+    "label": "Tentang Pak Lee",
+    "greeting": "Selamat datang! 안녕하세요!",
+    "h2": "Sopir Pribadi Terpercaya Anda di Korea",
+    "body": "Saya Pak Lee, sopir profesional dengan Hyundai Staria Lounge premium. Untuk Share Tour, saya jalankan rute-rute populer secara rutin — Anda tinggal gabung dengan tim lain yang tanggalnya cocok, dan tetap dapat pengalaman naik mobil pribadi yang nyaman dengan harga lebih terjangkau.",
+    "chips": ["Muslim Friendly", "Sopir Profesional", "Berbasis di Korea"]
+  },
+  "concept": {
+    "label": "Konsepnya",
+    "title": "Apa itu Share Tour?",
+    "sub": "Konsepnya sederhana: biaya sewa Hyundai Staria Lounge untuk satu hari dibagi rata antar tim yang berangkat di tanggal dan rute yang sama.",
+    "cards": [
+      {
+        "title": "Kenapa Lebih Murah?",
+        "items": [
+          "Satu mobil, beberapa tim — biaya bensin, tol dan sopir dibagi rata",
+          "Semakin banyak yang gabung (sampai 6-7 orang), semakin murah per tim",
+          "Tetap satu mobil untuk semua — bukan berbagi dengan orang asing di mobil berbeda"
+        ]
+      },
+      {
+        "title": "Apa yang Tetap Sama?",
+        "items": [
+          "Kendaraan sama: Hyundai Staria Lounge premium, bukan bus besar",
+          "Sopir profesional yang sama seperti tur pribadi",
+          "Durasi 10 jam penuh untuk menjelajah rute"
+        ]
+      }
+    ],
+    "noteLabel": "Perlu diketahui:",
+    "note": "Harga Share Tour hanya untuk transportasi dan sopir (bensin, asuransi, tol termasuk). Tiket masuk tempat wisata tidak termasuk dan dibayar sendiri di lokasi, dan tur berangkat hanya jika minimal 4 orang sudah gabung di tanggal tersebut."
+  },
+  "vehicle": {
+    "label": "Kendaraan Kami",
+    "title": "Hyundai Staria Lounge",
+    "body": "Kendaraan yang sama seperti tur pribadi — perjalanan premium seperti VIP, tetap nyaman meski dibagi bareng tim lain.",
+    "specs": [
+      { "value": "Maks. 8 Penumpang", "label": "Luas dan nyaman" },
+      { "value": "Free Hotspot Wi-Fi", "label": "Semua bisa online" },
+      { "value": "Multi USB Charging", "label": "HP penuh sepanjang perjalanan" },
+      { "value": "Full AC Premium", "label": "Nyaman di segala musim" }
+    ],
+    "footnote": "Tim dengan jumlah orang lebih sedikit dapat ruang bagasi lebih lega."
+  },
+  "howToBook": {
+    "label": "Cara Pesan",
+    "title": "Gampang, Cuma 3 Langkah",
+    "sub": "Tidak perlu daftar akun atau bayar di muka — semua koordinasi lewat WhatsApp langsung dengan Pak Lee.",
+    "steps": [
+      {
+        "title": "Cek Kalender Rute",
+        "body": "Lihat kalender di rute yang Anda mau — cari tanggal yang masih hijau (sudah pasti berangkat) atau kuning (masih menunggu peserta)."
+      },
+      {
+        "title": "Hubungi Pak Lee via WhatsApp",
+        "body": "Klik tombol Tanya Jadwal di kartu rute, atau chat langsung — sebutkan tanggal, rute, dan jumlah orang di tim Anda."
+      },
+      {
+        "title": "Konfirmasi dan DP",
+        "body": "Begitu total peserta di tanggal itu mencapai 4 orang, tur dipastikan berangkat. Bayar DP 30% via Wise, sisanya tunai pada hari-H."
+      }
+    ]
+  },
+  "wa": {
+    "ask": "Halo Pak Lee! Saya tertarik dengan Share Tour {name}. Bisa tolong info lebih lanjut?",
+    "join": "Halo Pak Lee! Saya lihat Share Tour {route} tanggal {date} ada rombongan. Boleh info detail dan gabung?"
+  },
+  "cta": {
+    "h2": "Siap Gabung Share Tour?",
+    "body": "Cek kalender di atas atau langsung chat Pak Lee untuk tanya jadwal terbaru.",
+    "button": "Chat Pak Lee Sekarang"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

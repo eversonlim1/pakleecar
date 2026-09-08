@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "Subway, Kereta, Tur Bus, atau Mobil Pribadi di Korea?",
+    "description": "Perbandingan biaya dan waktu transportasi di Korea berdasarkan jumlah rombongan, dan kapan masing-masing opsi mulai tidak masuk akal.",
+    "ogImage": "/assets/img/og/guide-transport-id.jpg"
+  },
+  "title": "Subway, kereta, tur bus, atau mobil pribadi?",
+  "intro": "Saya sopir, jadi wajar kalau Anda skeptis — tapi saya lebih memilih jujur soal kapan mobil pribadi sudah tidak sepadan, daripada berpura-pura itu selalu jawaban terbaik.",
+  "datePublished": "2026-08-20",
+  "blocks": [
+    { "type": "h2", "text": "Sendiri atau berdua: naik subway saja" },
+    { "type": "p", "text": "Subway Seoul bersih, murah, dan gampang dinavigasi dengan aplikasi peta berbahasa Inggris. Kartu T-money dan seharian naik subway biayanya jauh lebih murah dari mobil pribadi, dan untuk dua orang dengan bawaan ringan, tidak ada alasan kuat pakai yang lain di dalam kota." },
+    { "type": "h2", "text": "Di mana subway berhenti berguna" },
+    { "type": "p", "text": "Subway langsung kewalahan begitu ada tujuan yang tidak terjangkau kereta dengan baik — Nami Island, DMZ, sebagian besar resor ski di Gangwon-do. Secara teknis bisa ke Nami naik kereta dan bus lokal, tapi harus tiga kali ganti dan banyak jalan kaki bawa koper, dibanding naik mobil langsung sembilan puluh menit." },
+    { "type": "h2", "text": "Tur bus: murah, tapi harinya bukan milik Anda" },
+    { "type": "p", "text": "Tur bus rombongan ke Nami Island jauh lebih murah per orang dibanding mobil pribadi, dan untuk pelancong sendirian yang tidak peduli itinerary, ini oke saja. Yang hilang adalah waktu — sembilan puluh menit di pulau itu standar, lalu Anda harus balik ke bus siap atau tidak siap. Keluarga dengan anak kecil atau siapa pun yang mau makan siang di tempat tertentu biasanya menyesal." },
+    { "type": "list", "items": [
+      "Tur bus: paling murah per orang, jadwal tetap, ~90 menit di tiap titik",
+      "Kereta + subway: murah dan fleksibel di dalam kota, lemah di luar kota",
+      "Mobil pribadi: harga tetap per mobil, jadwal Anda, paling worth it mulai 3-4 orang"
+    ] },
+    { "type": "h2", "text": "Di mana mobil pribadi baru terasa sepadan" },
+    { "type": "p", "text": "Hitungannya berubah begitu rombongan tiga atau empat orang. ₩400.000 untuk seharian ke Nami Island dibagi empat sudah mendekati harga tur bus per orang, dan Anda dapat sepuluh jam, bukan sembilan puluh menit, plus sopir yang bisa berhenti untuk makanan halal, stroller, atau sekadar ke toilet tanpa terikat jadwal bus." },
+    { "type": "link", "slug": "tours/nami-island", "text": "Lihat hari Nami Island dengan mobil pribadi" },
+    { "type": "h2", "text": "Kalau rombongan kecil tapi budget ketat" },
+    { "type": "p", "text": "Untuk situasi inilah Share Tour dibuat — mobil dan jadwal sepuluh jam yang sama, tapi biayanya dibagi ke dua atau tiga tim lain yang tidak saling kenal namun tujuan dan tanggalnya sama. Prosesnya lebih lama diatur dibanding langsung pesan mobil pribadi, karena bergantung tanggal orang lain juga cocok, tapi ini menutup celah bagi pasangan yang masih mau pengalaman mobil pribadi tanpa bayar satu mobil penuh." },
+    { "type": "link", "slug": "share-tour", "text": "Lihat cara Share Tour membagi biaya" },
+    { "type": "h2", "text": "Antar-jemput bandara itu kasus tersendiri" },
+    { "type": "p", "text": "Ada kereta langsung dari Incheon ke kota, tapi dengan empat koper lebih dan penerbangan yang mungkin delay, jemputan harga pasti dengan sopir yang melacak nomor penerbangan Anda sendiri sudah sepadan dengan selisihnya." },
+    { "type": "link", "slug": "airport-transfer", "text": "Lihat jemputan bandara Incheon" }
+  ],
+  "relatedTitle": "Tur terkait",
+  "related": [
+    { "slug": "tours/nami-island", "label": "Nami Island dengan mobil pribadi" },
+    { "slug": "airport-transfer", "label": "Jemputan bandara Incheon" }
+  ],
+  "cta": {
+    "h2": "Belum yakin mana yang cocok untuk perjalanan Anda?",
+    "body": "Kirim jumlah rombongan dan rute Anda. Saya bilang jujur apakah mobil pribadi sepadan.",
+    "button": "Chat Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "Subway, Train, Tour Bus, or Private Car in Korea?",
+    "description": "A plain cost and time comparison of Korea transport options by group size, and where each one stops making sense.",
+    "ogImage": "/assets/img/og/guide-transport-en.jpg"
+  },
+  "title": "Subway, train, tour bus, or a private car?",
+  "intro": "I drive for a living, so take this with a grain of salt — but I'd rather tell you honestly where a private car stops being worth it than pretend it's always the answer.",
+  "datePublished": "2026-08-20",
+  "blocks": [
+    { "type": "h2", "text": "Solo or as a couple: take the subway" },
+    { "type": "p", "text": "Seoul's subway is clean, cheap, and genuinely easy to navigate with an English-language map app. A T-money card and a day of subway rides costs a fraction of a private car, and for two people with light luggage there's no real argument for anything else inside the city." },
+    { "type": "h2", "text": "Where the subway stops working" },
+    { "type": "p", "text": "It falls apart the moment your day includes somewhere the trains don't reach well — Nami Island, the DMZ, most of Gangwon-do's ski resorts. You can technically do Nami by train and local bus, but it's three changes and a fair bit of walking with luggage, versus a straight ninety-minute drive." },
+    { "type": "h2", "text": "Tour buses: cheap, but you don't own the day" },
+    { "type": "p", "text": "A shared tour bus to Nami Island runs a fraction of a private car per person, and for a single traveller with no interest in the itinerary it's fine. What you give up is time — ninety minutes on the island is standard, then you're back on the bus whether you're ready or not. Families with young kids or anyone who wants to eat lunch somewhere specific tend to regret it." },
+    { "type": "list", "items": [
+      "Tour bus: cheapest per person, fixed schedule, ~90 minutes at each stop",
+      "Train + subway: cheap and flexible in the city, weak outside it",
+      "Private car: fixed price per vehicle, your schedule, best value from 3-4 people up"
+    ] },
+    { "type": "h2", "text": "Where a private car actually pays off" },
+    { "type": "p", "text": "The math flips once you're three or four people. ₩400,000 for a full day to Nami Island split four ways is close to what a tour bus costs per person, and you get ten hours instead of ninety minutes, plus a driver who can stop for halal food, a stroller, or just a bathroom break without a bus schedule to answer to." },
+    { "type": "link", "slug": "tours/nami-island", "text": "See the Nami Island private car day" },
+    { "type": "h2", "text": "If the group is smaller but the budget is tight" },
+    { "type": "p", "text": "This is exactly what Share Tour is for — the same van and the same ten-hour schedule, but the cost splits across two or three unrelated teams heading to the same place on the same date. It's slower to arrange than booking a private car outright, since it depends on other people's dates lining up, but it closes the gap for a couple who still wants a private-car experience without paying for the whole vehicle." },
+    { "type": "link", "slug": "share-tour", "text": "See how Share Tour splits the cost" },
+    { "type": "h2", "text": "Airport transfers are their own case" },
+    { "type": "p", "text": "There's a direct train from Incheon into the city, but with four or more bags and a flight that might be delayed, a fixed-price pickup where someone tracks your actual flight number is worth the difference on its own." },
+    { "type": "link", "slug": "airport-transfer", "text": "See the Incheon airport transfer" }
+  ],
+  "relatedTitle": "Related tours",
+  "related": [
+    { "slug": "tours/nami-island", "label": "Nami Island by private car" },
+    { "slug": "airport-transfer", "label": "Incheon airport transfer" }
+  ],
+  "cta": {
+    "h2": "Not sure which fits your trip?",
+    "body": "Tell me your group size and route. I'll say honestly whether a private car is worth it.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

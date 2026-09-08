@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "Video | Pak Lee's Car",
+    "description": "Semua klip dari Instagram Pak Lee — tamu asli, perjalanan asli, dan isi mobilnya seperti apa.",
+    "ogImage": "/assets/img/og/videos-id.jpg"
+  },
+  "title": "Video dari perjalanan nyata",
+  "intro": "Semua klip dari @paklee.carkorea di satu tempat — tamu menyapa, tempat yang kami singgahi, dan mobilnya sendiri.",
+  "reels": {
+    "eyebrow": "Di Instagram",
+    "h2": "Semua klip",
+    "body": "Ketuk thumbnail mana saja untuk menonton di sini.",
+    "all": "Ikuti @paklee.carkorea"
+  },
+  "cta": {
+    "h2": "Mau hari seperti ini juga?",
+    "body": "Kirim tanggalnya. Saya bilang jujur mana yang muat.",
+    "button": "Chat Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

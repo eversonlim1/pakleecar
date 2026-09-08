@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Halal Food in Seoul, Neighbourhood by Neighbourhood",
+    "description": "Where certified halal restaurants actually are in Seoul, the Itaewon mosque, and what to avoid at a convenience store.",
+    "ogImage": "/assets/img/og/guide-halal-en.jpg"
+  },
+  "title": "Halal food in Seoul, neighbourhood by neighbourhood",
+  "intro": "I've driven enough Indonesian and Malaysian families around Seoul to know that the sightseeing is never the hard part of the trip. Lunch is. Here's what I've actually learned, not a copied list.",
+  "datePublished": "2026-08-15",
+  "blocks": [
+    { "type": "h2", "text": "Itaewon is the anchor, not the whole answer" },
+    { "type": "p", "text": "Seoul Central Mosque sits on the hill above the main Itaewon strip, open to visitors outside prayer times, with a women's section upstairs. The street below it is the real halal cluster — Turkish, Pakistani, Uzbek, and one Korean restaurant doing halal bulgogi that surprises people. If you only eat halal food in one part of Seoul, this is the part." },
+    { "type": "p", "text": "The mistake is thinking Itaewon means you're covered for the whole trip. It's a fifteen-minute drive from most hotels, not somewhere you loop back to for every meal." },
+    { "type": "h2", "text": "Myeongdong and the department stores" },
+    { "type": "p", "text": "There's a small prayer room near the shopping streets, and a handful of street stalls carry halal certification — but not every cart with a sign does. I point out which ones before guests queue, because by the time you're holding food it's too late to ask. Some of the bigger department stores also run halal-certified counters in their basement food halls, which is worth knowing if the weather turns." },
+    { "type": "list", "items": [
+      "Look for the actual certification mark, not just an Arabic-script sign",
+      "\"Muslim-friendly\" often just means no pork — alcohol may still be served",
+      "Basement food halls in major department stores sometimes have certified counters",
+      "Ask before you queue, not after you're holding the tray"
+    ] },
+    { "type": "h2", "text": "What to actually avoid at a convenience store" },
+    { "type": "p", "text": "Convenience stores are everywhere and genuinely useful for snacks and drinks, but gelatin turns up in things you wouldn't expect — gummies, some yogurts, certain instant noodle seasoning packets. If you're strict, checking ingredient lists here matters more than at a sit-down restaurant, where at least someone can answer a direct question." },
+    { "type": "h2", "text": "During Ramadan, the day looks different" },
+    { "type": "p", "text": "A later start, sightseeing in the cooler hours, and being seated at a restaurant before Maghrib rather than scrambling after. Tell your driver you're fasting and a decent one will plan the stops around it rather than around the usual tourist schedule." },
+    { "type": "link", "slug": "muslim-friendly-korea-tour", "text": "See the full Muslim-friendly Seoul day I run" },
+    { "type": "h2", "text": "If you're only in Seoul for one day" },
+    { "type": "p", "text": "Pair the mosque and Itaewon lunch with the palace and Myeongdong in the same loop rather than treating food as a separate errand — it's exactly how the Seoul day tour is routed, prayer times and all." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "See how a full Seoul day is routed" }
+  ],
+  "relatedTitle": "Related tours",
+  "related": [
+    { "slug": "muslim-friendly-korea-tour", "label": "Muslim-friendly Korea tour" },
+    { "slug": "tours/seoul-day-tour", "label": "A full day in Seoul" }
+  ],
+  "cta": {
+    "h2": "Travelling with halal food in mind?",
+    "body": "Tell me your dates and how strict you'd like me to be. I'll plan the day around it.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

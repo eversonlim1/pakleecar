@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "Itinerary 4 Hari Korea yang Nyata | Pak Lee's Car",
+    "description": "Bagaimana saya sungguh menyusun rute empat hari di Korea untuk keluarga yang baru pertama kali — Seoul, Nami Island, dan hari terakhir yang santai.",
+    "ogImage": "/assets/img/og/guide-itinerary-id.jpg"
+  },
+  "title": "Itinerary 4 hari di Korea yang nyata",
+  "intro": "Kebanyakan itinerary di internet dibuat untuk spreadsheet, bukan untuk keluarga yang capai baru turun dari penerbangan panjang. Ini lebih dekat ke bagaimana empat hari itu sungguhan berjalan untuk tamu yang saya antar.",
+  "datePublished": "2026-08-25",
+  "blocks": [
+    { "type": "h2", "text": "Hari 1: mendarat, dan jangan lakukan apa-apa dulu" },
+    { "type": "p", "text": "Kalau penerbangan mendarat sore hari, tahan dulu keinginan untuk jalan-jalan. Jemput bandara, check-in, mungkin jalan kaki ke convenience store terdekat, lalu tidur lebih awal. Semua orang meremehkan betapa lemasnya malam pertama di Korea setelah dua belas jam di udara." },
+    { "type": "link", "slug": "airport-transfer", "text": "Lihat jemputan bandara Incheon" },
+    { "type": "h2", "text": "Hari 2: seharian penuh di Seoul" },
+    { "type": "p", "text": "Ini hari untuk istana, Bukchon Hanok Village, Myeongdong, dan N Seoul Tower dalam satu rute — banyak jalan kaki, jadi mulai pagi dan siapkan waktu makan siang yang benar, bukan jajan sambil jalan. Sore hari kebanyakan rombongan sudah siap duduk santai." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "Lihat cara rute Seoul disusun" },
+    { "type": "h2", "text": "Hari 3: Nami Island, dan jangan terburu-buru" },
+    { "type": "p", "text": "Berangkat jam delapan kalau bisa. Kebanyakan rombongan tur hanya dapat sembilan puluh menit di pulau dan itu tidak cukup — dengan jadwal sendiri, dua sampai tiga jam terasa pas, dan biasanya masih ada waktu untuk Petite France atau Garden of Morning Calm di perjalanan pulang." },
+    { "type": "link", "slug": "tours/nami-island", "text": "Lihat hari Nami Island" },
+    { "type": "h2", "text": "Hari 4: sesuatu yang lebih santai, lalu ke bandara" },
+    { "type": "p", "text": "Kalau penerbangan malam, jangan rencanakan hari keempat penuh jalan-jalan — rencanakan setengah hari saja. Pasar, kedai kopi, mungkin belanja terakhir, lalu langsung ke bandara dengan waktu lebih. Keluarga yang memaksa satu tempat lagi di hari keberangkatan selalu yang terlambat." },
+    { "type": "h2", "text": "Yang akan saya ubah untuk keluarga dengan anak kecil" },
+    { "type": "list", "items": [
+      "Ganti jalan kaki di istana dengan sesuatu yang lebih singkat — Everland cocok jadi alternatif Hari 2",
+      "Sisakan waktu tidur siang, jangan dipaksakan terus sampai makan malam",
+      "Minta berhenti di rumah makan halal sebelum lapar, bukan sesudahnya"
+    ] },
+    { "type": "link", "slug": "tours/everland", "text": "Lihat trip sehari ke Everland" },
+    { "type": "h2", "text": "Kalau empat hari belum cukup" },
+    { "type": "p", "text": "DMZ dan resor ski di Gangwon adalah dua tambahan yang paling sering ditanyakan, dan keduanya lebih pas jadi hari kelima atau keenam dibanding dipaksakan masuk empat hari ini — jaraknya lebih jauh dan layak punya harinya sendiri tanpa terburu-buru." }
+  ],
+  "relatedTitle": "Tur terkait",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "Seharian keliling Seoul" },
+    { "slug": "tours/nami-island", "label": "Nami Island dengan mobil pribadi" },
+    { "slug": "airport-transfer", "label": "Jemputan bandara Incheon" }
+  ],
+  "cta": {
+    "h2": "Butuh bantuan menyusun hari-hari Anda sendiri?",
+    "body": "Kirim siapa yang ikut dan berapa hari yang Anda punya. Saya bilang jujur apa yang muat.",
+    "button": "Chat Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

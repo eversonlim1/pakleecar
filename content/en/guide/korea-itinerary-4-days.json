@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "A Real 4-Day Korea Itinerary | Pak Lee's Car",
+    "description": "How I'd actually route four days in Korea for a first-time family group — Seoul, Nami Island, and a slower final day.",
+    "ogImage": "/assets/img/og/guide-itinerary-en.jpg"
+  },
+  "title": "A real 4-day Korea itinerary",
+  "intro": "Most itineraries online are built for a spreadsheet, not a tired family fresh off a long flight. This is closer to how the four days actually go for the guests I drive.",
+  "datePublished": "2026-08-25",
+  "blocks": [
+    { "type": "h2", "text": "Day 1: land, and do almost nothing" },
+    { "type": "p", "text": "If your flight lands in the afternoon, resist the urge to sightsee. Airport pickup, check in, maybe a walk to a nearby convenience store, and an early night. Everyone underestimates how flat the first evening in Korea feels after twelve hours in the air." },
+    { "type": "link", "slug": "airport-transfer", "text": "See the Incheon airport pickup" },
+    { "type": "h2", "text": "Day 2: a full day in Seoul" },
+    { "type": "p", "text": "This is the day to do the palace, Bukchon Hanok Village, Myeongdong, and N Seoul Tower in one loop — it's a lot of walking, so start early and build in a real lunch stop rather than street food on the move. By late afternoon most groups are ready to sit down." },
+    { "type": "link", "slug": "tours/seoul-day-tour", "text": "See how the Seoul day is routed" },
+    { "type": "h2", "text": "Day 3: Nami Island, and don't rush it" },
+    { "type": "p", "text": "Leave by eight if you can. Most tour groups only get ninety minutes on the island and it isn't enough — with your own schedule, two or three hours is comfortable, and there's usually time left for Petite France or the Garden of Morning Calm on the way back." },
+    { "type": "link", "slug": "tours/nami-island", "text": "See the Nami Island day" },
+    { "type": "h2", "text": "Day 4: something slower, then the airport" },
+    { "type": "p", "text": "If your flight is in the evening, don't plan a fourth full day of sightseeing — plan a half day. A market, a coffee shop, maybe a last round of shopping, then straight to the airport with room to spare. The families who try to squeeze in one more attraction on departure day are always the ones running late." },
+    { "type": "h2", "text": "What I'd change for a family with young kids" },
+    { "type": "list", "items": [
+      "Swap the palace walk for something shorter — Everland works well as a Day 2 alternative",
+      "Build in an afternoon nap window rather than pushing through to dinner",
+      "Ask for the halal restaurant stop before hunger sets in, not after"
+    ] },
+    { "type": "link", "slug": "tours/everland", "text": "See the Everland day trip" },
+    { "type": "h2", "text": "If four days isn't enough" },
+    { "type": "p", "text": "The DMZ and Gangwon's ski resorts are the two additions I get asked about most, and both work better as a fifth or sixth day than squeezed into these four — they're further out and deserve their own unhurried day." }
+  ],
+  "relatedTitle": "Related tours",
+  "related": [
+    { "slug": "tours/seoul-day-tour", "label": "A full day in Seoul" },
+    { "slug": "tours/nami-island", "label": "Nami Island by private car" },
+    { "slug": "airport-transfer", "label": "Incheon airport transfer" }
+  ],
+  "cta": {
+    "h2": "Want help fitting your own days together?",
+    "body": "Tell me who's coming and how many days you have. I'll say honestly what fits.",
+    "button": "Message Pak Lee"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

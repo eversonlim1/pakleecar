@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Share Tour Korea | Pak Lee's Car",
+    "description": "Split the cost of a Hyundai Staria Lounge with another team on the same date. Seoul, Nami Island and DMZ routes, from ₩60,000 per team.",
+    "ogImage": "/assets/img/og/share-tour-en.jpg"
+  },
+  "hero": {
+    "badge": "Share Tour — Ride Together, Save Together",
+    "h1": "Explore Korea Together, For Less",
+    "sub": "Same as Pak Lee's private tour — Hyundai Staria Lounge, professional driver, 10-hour schedule — but the car rental cost is shared with other teams on the same date.",
+    "ctaSchedule": "Check Schedule & Price",
+    "ctaConcept": "What is Share Tour?",
+    "stats": [
+      { "value": "3", "label": "Available Routes" },
+      { "value": "4+", "label": "Min. People to Depart" },
+      { "value": "10h", "label": "Duration per Tour" },
+      { "value": "₩60K", "label": "Starting per Team" }
+    ]
+  },
+  "routesSection": {
+    "label": "Routes & Schedule",
+    "title": "Pick a Route, Check the Calendar",
+    "sub": "Each calendar shows how many people have already joined that date. Green means confirmed to depart (4+ people), yellow means still waiting, red means full (8 people)."
+  },
+  "priceLabels": ["4 pax", "5 pax", "6-7 pax"],
+  "routes": [
+    {
+      "id": "seoul",
+      "title": "Shared Tour — Seoul City",
+      "stops": ["Gwangjang Market", "Gyeongbokgung Palace", "Bukchon Hanok Village", "Myeongdong (Shopping)", "N Seoul Tower (Namsan)"],
+      "prices": ["₩80,000", "₩70,000", "₩60,000"],
+      "priceNote": "Price per team · 10 hrs · min. 4 pax to depart",
+      "cta": "Ask Schedule",
+      "waLabel": "Seoul City"
+    },
+    {
+      "id": "nami",
+      "title": "Shared Tour — Nami Island",
+      "stops": ["Nami Island", "Petite France", "Garden of Morning Calm", "Alpaca World"],
+      "prices": ["₩100,000", "₩90,000", "₩70,000"],
+      "priceNote": "Price per team · 10 hrs · min. 4 pax to depart",
+      "cta": "Ask Schedule",
+      "waLabel": "Nami Island"
+    },
+    {
+      "id": "dmz",
+      "title": "Shared Tour — DMZ",
+      "stops": ["Imjingak & Freedom Bridge", "3rd Infiltration Tunnel", "Dora Observatory (See North Korea!)"],
+      "note": "Note: JSA not included",
+      "prices": ["₩90,000", "₩80,000", "₩70,000"],
+      "priceNote": "Price per team · 10 hrs · min. 4 pax to depart",
+      "cta": "Ask Schedule",
+      "waLabel": "DMZ"
+    }
+  ],
+  "about": {
+    "label": "About Pak Lee",
+    "greeting": "Welcome! 안녕하세요!",
+    "h2": "Your Trusted Private Driver in Korea",
+    "body": "I'm Pak Lee, a professional driver with a premium Hyundai Staria Lounge. For Share Tour, I run popular routes regularly — just join a team whose date matches yours, and still enjoy a comfortable private-car experience at a more affordable price.",
+    "chips": ["Muslim Friendly", "Professional Driver", "Based in Korea"]
+  },
+  "concept": {
+    "label": "The Concept",
+    "title": "What is Share Tour?",
+    "sub": "The concept is simple: the daily rental cost of the Hyundai Staria Lounge is split evenly among teams departing on the same date and route.",
+    "cards": [
+      {
+        "title": "Why is it Cheaper?",
+        "items": [
+          "One car, multiple teams — fuel, toll and driver cost split evenly",
+          "The more teams join (up to 6-7 pax), the cheaper per team",
+          "Still one car for everyone — not split across separate cars with strangers"
+        ]
+      },
+      {
+        "title": "What Stays the Same?",
+        "items": [
+          "Same vehicle: premium Hyundai Staria Lounge, not a big bus",
+          "Same professional driver as the private tour",
+          "Full 10-hour duration to explore the route"
+        ]
+      }
+    ],
+    "noteLabel": "Please note:",
+    "note": "Share Tour price is for transport and driver only (fuel, insurance, toll included). Attraction entrance tickets are not included and are paid on-site, and the tour only departs once at least 4 people have joined that date."
+  },
+  "vehicle": {
+    "label": "Our Vehicle",
+    "title": "Hyundai Staria Lounge",
+    "body": "The same vehicle as the private tour — a premium, VIP-like journey, still comfortable even when shared with another team.",
+    "specs": [
+      { "value": "Max 8 Passengers", "label": "Spacious and comfortable" },
+      { "value": "Free Hotspot Wi-Fi", "label": "Everyone stays online" },
+      { "value": "Multi USB Charging", "label": "Phones fully charged all trip" },
+      { "value": "Full Premium AC", "label": "Comfortable in all seasons" }
+    ],
+    "footnote": "Teams with fewer people get more generous luggage space."
+  },
+  "howToBook": {
+    "label": "How to Book",
+    "title": "Easy, Just 3 Steps",
+    "sub": "No account signup or upfront payment needed — everything is coordinated directly with Pak Lee via WhatsApp.",
+    "steps": [
+      {
+        "title": "Check the Route Calendar",
+        "body": "Look at the calendar for the route you want — find a green date (confirmed to depart) or a yellow one (still waiting for more people)."
+      },
+      {
+        "title": "Contact Pak Lee via WhatsApp",
+        "body": "Click the Ask Schedule button on the route card, or chat directly — mention your date, route, and team size."
+      },
+      {
+        "title": "Confirm and Deposit",
+        "body": "Once total participants for that date reach 4, the tour is confirmed to depart. Pay a 30% deposit via Wise, the rest in cash on the day."
+      }
+    ]
+  },
+  "wa": {
+    "ask": "Hello Pak Lee! I'm interested in the Share Tour {name}. Could you share more details?",
+    "join": "Hello Pak Lee! I see a group for Share Tour {route} on {date}. Could you share details and let me join?"
+  },
+  "cta": {
+    "h2": "Ready to Join a Share Tour?",
+    "body": "Check the calendar above or chat Pak Lee directly to ask about the latest schedule.",
+    "button": "Chat Pak Lee Now"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}
