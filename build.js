@@ -90,6 +90,11 @@ function build() {
   }
 
   copyDir('assets', 'assets');
+
+  const { sitemapXml, robotsTxt } = require('./src/sitemap');
+  write('sitemap.xml', sitemapXml());
+  write('robots.txt', robotsTxt());
+
   console.log('built →', DIST);
 }
 
