@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "test": "node --test --test-concurrency=1 \"test/**/*.test.js\"",
-    "build": "node build.js",
+    "build": "node scripts/images.js && node build.js",
     "images": "node scripts/images.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
   }
 }

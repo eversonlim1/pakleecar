@@ -24,4 +24,18 @@ function img({ src, alt, width, height, eager = false, className = null, sizes =
   })}>`;
 }
 
-module.exports = { esc, attr, img };
+const PICTURE_WIDTHS = [480, 960, 1440];
+
+function picture({ src, alt, width, height, sizes = '100vw', eager = false, className = null }) {
+  if (alt === undefined || alt === null) throw new Error(`picture() requires alt: ${src}`);
+  const dir = src.replace(/\/[^/]+$/, '') + '/opt';
+  const name = src.split('/').pop().replace(/\.[^.]+$/, '');
+  const set = ext => PICTURE_WIDTHS.map(w => `${dir}/${name}-${w}.${ext} ${w}w`).join(', ');
+  return `<picture>
+<source type="image/avif" srcset="${set('avif')}" sizes="${esc(sizes)}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${esc(sizes)}">
+${img({ src: `${dir}/${name}-960.jpg`, alt, width, height, eager, className })}
+</picture>`;
+}
+
+module.exports = { esc, attr, img, picture };

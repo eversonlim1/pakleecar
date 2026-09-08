@@ -1,4 +1,4 @@
-const { esc, img } = require('../src/html');
+const { esc, picture } = require('../src/html');
 const { pageUrl } = require('../build.config');
 const { reelStrip } = require('./partials/reels');
 
@@ -30,7 +30,7 @@ module.exports = function tour({ lang, data, reels }) {
 <div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(data.cta.button)}</a></div>
 </div>
 <div class="frame"><div class="clipwrap">
-${img({ src: h.heroImage, alt: h.heroAlt, width: 720, height: 900, eager: true })}
+${picture({ src: h.heroImage, alt: h.heroAlt, width: 720, height: 900, eager: true })}
 </div></div>
 </div></header>
 

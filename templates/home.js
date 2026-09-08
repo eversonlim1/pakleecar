@@ -1,4 +1,4 @@
-const { esc, img } = require('../src/html');
+const { esc, picture } = require('../src/html');
 const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
 const rates = require('./partials/rates');
@@ -29,7 +29,7 @@ module.exports = function home({ lang, data, reels }) {
 <div class="facts">${facts}</div>
 </div>
 <div class="frame">
-<div class="clipwrap">${img({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
+<div class="clipwrap">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
 <div class="sticker">${esc(h.sticker)}</div>
 <div class="sticker2"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
 <span><b>${esc(h.bubbleTitle)}</b>${esc(h.bubbleText)}</span></div>
@@ -60,9 +60,9 @@ ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'
   `<div class="spec"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>
 </div>
 <div class="gal">
-${img({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge exterior', width: 720, height: 960 })}
-${img({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior seats', width: 720, height: 480 })}
-${img({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge exterior', width: 720, height: 960 })}
+${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior seats', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
 </div>
 </div></section>
 

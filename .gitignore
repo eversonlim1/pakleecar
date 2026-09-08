@@ -4,3 +4,4 @@ node_modules
 .env.local
 .superpowers/
 dist/
+assets/img/**/opt/
