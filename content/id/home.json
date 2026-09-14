@@ -64,7 +64,8 @@
   "cta": {
     "h2": "Mau ke mana?",
     "body": "Kirim tanggalnya. Kalau tidak muat dalam sehari, saya akan bilang.",
-    "button": "Chat Pak Lee via WhatsApp"
+    "button": "Chat Pak Lee via WhatsApp",
+    "email": "Atau kirim email"
   },
   "nav": {
     "howItWorks": "Cara kerjanya",

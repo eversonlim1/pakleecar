@@ -64,7 +64,8 @@
   "cta": {
     "h2": "¿A dónde te gustaría ir?",
     "body": "Dime tus fechas. Si no cabe en un día, te lo diré.",
-    "button": "Escríbele a Pak Lee por WhatsApp"
+    "button": "Escríbele a Pak Lee por WhatsApp",
+    "email": "O envíame un correo"
   },
   "nav": {
     "howItWorks": "Cómo funciona",

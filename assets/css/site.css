@@ -230,6 +230,9 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 .band h2{margin-bottom:12px}
 .band p{color:rgba(255,255,255,.6);font-size:17px;max-width:28em}
 .band .btn{padding:16px 28px;font-size:15.5px}
+.band .actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.band .email{color:rgba(255,255,255,.7);font-size:14.5px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.band .email:hover{color:var(--on-invert)}
 
 /* ── 13.5 Footer ── */
 .foot{background:var(--g1);border-top:1px solid var(--g2);color:var(--g6)}

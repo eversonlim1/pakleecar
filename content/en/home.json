@@ -64,7 +64,8 @@
   "cta": {
     "h2": "Where would you like to go?",
     "body": "Tell me your dates. If it doesn't fit in one day, I'll say so.",
-    "button": "Message Pak Lee on WhatsApp"
+    "button": "Message Pak Lee on WhatsApp",
+    "email": "Or email me"
   },
   "nav": {
     "howItWorks": "How it works",
