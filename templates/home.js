@@ -1,4 +1,10 @@
 const { esc, picture } = require('../src/html');
+
+function twoLineHeadline(text) {
+  const m = text.match(/^(.+?[.。])\s*(.*)$/s);
+  if (!m || !m[2]) return esc(text);
+  return `${esc(m[1])}<br>${esc(m[2])}`;
+}
 const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
 const rates = require('./partials/rates');
@@ -21,7 +27,7 @@ module.exports = function home({ lang, data, reels }) {
 <div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
 <div class="wrap">
 <div>
-<h1>${esc(h.h1)}</h1>
+<h1>${twoLineHeadline(h.h1)}</h1>
 <svg class="squiggle" viewBox="0 0 330 16" aria-hidden="true"><path d="M5 11C48 3 92 3 135 9s87 6 130-4"/></svg>
 <p class="ld">${esc(h.lede)}</p>
 <div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>

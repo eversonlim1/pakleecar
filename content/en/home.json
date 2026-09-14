@@ -28,7 +28,7 @@
       { "from": "guest", "name": "Rina", "text": "Six of us, three kids. Nami Island on the 14th — possible?" },
       { "from": "pak", "name": "Pak Lee", "text": "Yes. Six with luggage fits fine. I'd leave at eight, before the ferry queue." },
       { "from": "guest", "name": "Rina", "text": "Halal food anywhere near there?" },
-      { "from": "pak", "name": "Pak Lee", "text": "There is. I'll take you to one I eat at myself." }
+      { "from": "pak", "name": "Pak Lee", "text": "There is. I'll take you to one." }
     ]
   },
   "reels": {
