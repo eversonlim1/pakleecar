@@ -1,8 +1,8 @@
 {
   "seo": {
     "title": "Private Driver in Korea | Pak Lee's Car",
-    "description": "A private van and driver for the whole day in Korea. No fixed route, no group. Fuel, tolls and insurance included. Message Pak Lee on WhatsApp.",
-    "ogImage": "/assets/img/og/home-en.jpg"
+    "description": "Private van + driver in Korea from ₩150,000. Flexible schedule, halal-friendly, fuel and tolls included. Message Pak Lee on WhatsApp today.",
+    "ogImage": "/assets/img/staria-ext.jpg"
   },
   "hero": {
     "h1": "You plan the day. I'll drive it.",
@@ -60,6 +60,17 @@
     ],
     "included": ["Fuel included", "Tolls included", "Insurance included"],
     "excluded": ["Parking not included", "Entry tickets not included"]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Questions people ask me",
+    "items": [
+      { "q": "How much does a private driver cost in Korea?", "a": "A full day with me and the van runs ₩300,000 to ₩400,000 depending on where you're going, priced per vehicle, not per person. Fuel, tolls and insurance are already in that price." },
+      { "q": "Can I change the plan during the day?", "a": "Yes. Nothing is booked with a tour company, so if you want to skip a stop or add one, we just do it." },
+      { "q": "Is this service halal or Muslim friendly?", "a": "Yes. I know which restaurants are actually halal, not just labeled that way, and I build prayer stops into the day without you having to ask twice." },
+      { "q": "How many people fit in the van?", "a": "Up to 8 with luggage, though 5 to 6 is more comfortable once the bags are loaded." },
+      { "q": "How do I book?", "a": "Message me on WhatsApp with your dates. No deposit and no form before we've actually talked." }
+    ]
   },
   "cta": {
     "h2": "Where would you like to go?",

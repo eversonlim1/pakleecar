@@ -73,5 +73,12 @@ ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats',
 </div></section>
 
 ${rates(data.rates)}
+
+<section class="faqs" id="faq"><div class="wrap">
+<span class="eyebrow">${esc(data.faq.eyebrow)}</span>
+<h2>${esc(data.faq.h2)}</h2>
+${data.faq.items.map(f =>
+  `<details class="faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n')}
+</div></section>
 </main>`;
 };

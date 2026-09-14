@@ -1,8 +1,8 @@
 {
   "seo": {
     "title": "Chófer privado en Corea | Pak Lee's Car",
-    "description": "Una van privada con chófer todo el día en Corea. Sin ruta fija ni grupo. Combustible, peajes y seguro incluidos. Escríbele a Pak Lee por WhatsApp.",
-    "ogImage": "/assets/img/og/home-en.jpg"
+    "description": "Van privada + chófer en Corea desde ₩150,000. Horario flexible, apto para musulmanes, combustible y peajes incluidos. Escribe a Pak Lee ya.",
+    "ogImage": "/assets/img/staria-ext.jpg"
   },
   "hero": {
     "h1": "Tú planeas el día. Yo lo conduzco.",
@@ -60,6 +60,17 @@
     ],
     "included": ["Combustible incluido", "Peajes incluidos", "Seguro incluido"],
     "excluded": ["Parking no incluido", "Entradas no incluidas"]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "h2": "Lo que me suelen preguntar",
+    "items": [
+      { "q": "¿Cuánto cuesta un chófer privado en Corea?", "a": "Un día completo conmigo y la van cuesta entre ₩300,000 y ₩400,000 según el destino, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio." },
+      { "q": "¿Puedo cambiar el plan durante el día?", "a": "Sí. Nada está reservado a través de una agencia de tours, así que si quieres saltarte una parada o añadir otra, simplemente lo hacemos." },
+      { "q": "¿Este servicio es apto para musulmanes?", "a": "Sí. Sé qué restaurantes son realmente halal y no solo lo dicen, y organizo paradas para el rezo durante el día sin que tengas que pedirlo dos veces." },
+      { "q": "¿Cuántas personas caben en la van?", "a": "Hasta 8 personas con equipaje, aunque de 5 a 6 es más cómodo una vez que se cargan las maletas." },
+      { "q": "¿Cómo reservo?", "a": "Escríbeme por WhatsApp con tus fechas. Sin depósito y sin formularios antes de que hablemos de verdad." }
+    ]
   },
   "cta": {
     "h2": "¿A dónde te gustaría ir?",

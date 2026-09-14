@@ -1,8 +1,8 @@
 {
   "seo": {
     "title": "Sewa Mobil + Sopir di Korea | Pak Lee's Car",
-    "description": "Mobil pribadi dengan sopir untuk seharian penuh di Korea. Jadwal bebas, tanpa rombongan. Bensin, tol, asuransi sudah termasuk. Chat Pak Lee di WhatsApp.",
-    "ogImage": "/assets/img/og/home-id.jpg"
+    "description": "Sewa mobil + sopir di Korea mulai ₩150.000. Jadwal bebas, ramah muslim, bensin dan tol sudah termasuk. Chat Pak Lee di WhatsApp sekarang.",
+    "ogImage": "/assets/img/staria-ext.jpg"
   },
   "hero": {
     "h1": "Anda yang atur. Saya yang antar.",
@@ -60,6 +60,17 @@
     ],
     "included": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk"],
     "excluded": ["Parkir tidak termasuk", "Tiket masuk tidak termasuk"]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Pertanyaan yang sering ditanyakan",
+    "items": [
+      { "q": "Berapa biaya sopir pribadi di Korea?", "a": "Seharian penuh dengan saya dan mobil sekitar ₩300.000 sampai ₩400.000 tergantung tujuan, harganya per mobil, bukan per orang. Bensin, tol, dan asuransi sudah termasuk di harga itu." },
+      { "q": "Bisa ubah rencana di tengah hari?", "a": "Bisa. Tidak ada yang dipesan lewat agen tur, jadi kalau mau lewati satu tempat atau tambah tempat lain, tinggal kita jalani saja." },
+      { "q": "Apakah layanan ini ramah muslim?", "a": "Ya. Saya tahu restoran mana yang benar-benar halal, bukan cuma diklaim begitu, dan saya siapkan waktu sholat dalam perjalanan tanpa Anda perlu minta dua kali." },
+      { "q": "Muat berapa orang di dalam mobil?", "a": "Sampai 8 orang dengan koper, tapi 5 sampai 6 orang lebih nyaman setelah tas dimasukkan." },
+      { "q": "Bagaimana cara bookingnya?", "a": "Kirim pesan ke WhatsApp saya dengan tanggal Anda. Tidak ada DP dan tidak ada formulir sebelum kita benar-benar bicara." }
+    ]
   },
   "cta": {
     "h2": "Mau ke mana?",

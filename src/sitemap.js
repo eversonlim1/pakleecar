@@ -28,6 +28,8 @@ Disallow: /admin.html
 Disallow: /api/
 
 Sitemap: ${SITE_URL}/sitemap.xml
+
+# llms.txt: ${SITE_URL}/llms.txt
 `;
 }
 

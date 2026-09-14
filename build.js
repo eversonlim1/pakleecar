@@ -33,6 +33,7 @@ function schemaFor(type, lang, slug, data) {
   const list = [S.organization(), S.breadcrumb(lang, slug, data.seo.title)];
   if (type === 'home') {
     list.push(S.localBusiness(data.rates.rows));
+    list.push(S.faqPage(data.faq.items));
     for (const r of reels) list.push(S.videoObject(r, lang));
   }
   if (type === 'tour') {
@@ -94,6 +95,9 @@ function build() {
   const { sitemapXml, robotsTxt } = require('./src/sitemap');
   write('sitemap.xml', sitemapXml());
   write('robots.txt', robotsTxt());
+
+  const { llmsTxt } = require('./src/llms');
+  write('llms.txt', llmsTxt());
 
   console.log('built →', DIST);
 }
