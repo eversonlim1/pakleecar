@@ -53,7 +53,7 @@
     "h2": "What it costs",
     "body": "Priced per vehicle, not per person. The same price whether you're two or eight.",
     "rows": [
-      { "name": "All day — Seoul", "detail": "10 hours, anywhere in the city — +₩50,000 if starting or ending at the airport", "price": "₩300,000", "amount": "300000" },
+      { "name": "All day — Seoul", "detail": "10 hours, anywhere in the city — add an Incheon Airport stop for +₩50,000", "price": "₩300,000", "amount": "300000" },
       { "name": "Nami Island", "detail": "10 hours, with Petite France and the garden", "price": "₩400,000", "amount": "400000" },
       { "name": "Airport pickup", "detail": "Incheon to your Seoul hotel, one way", "price": "₩150,000", "amount": "150000" },
       { "name": "Airport drop", "detail": "Seoul hotel to Incheon, one way", "price": "₩150,000", "amount": "150000" }
