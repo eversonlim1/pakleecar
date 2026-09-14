@@ -53,7 +53,7 @@
     "h2": "Lo que cuesta",
     "body": "El precio es por vehículo, no por persona. Cuesta lo mismo si sois dos que si sois ocho.",
     "rows": [
-      { "name": "Día completo — Seúl", "detail": "10 horas, por toda la ciudad", "price": "₩300,000", "amount": "300000" },
+      { "name": "Día completo — Seúl", "detail": "10 horas, por toda la ciudad — +₩50,000 si empieza o termina en el aeropuerto", "price": "₩300,000", "amount": "300000" },
       { "name": "Nami Island", "detail": "10 horas, con Petite France y el jardín", "price": "₩400,000", "amount": "400000" },
       { "name": "Recogida en el aeropuerto", "detail": "De Incheon a tu hotel de Seúl, un trayecto", "price": "₩150,000", "amount": "150000" },
       { "name": "Traslado al aeropuerto", "detail": "De tu hotel de Seúl a Incheon, un trayecto", "price": "₩150,000", "amount": "150000" }

@@ -53,7 +53,7 @@
     "h2": "Berapa biayanya",
     "body": "Harga per mobil, bukan per orang. Sama saja Anda berdua atau berdelapan.",
     "rows": [
-      { "name": "Seharian — Seoul", "detail": "10 jam, ke mana saja di kota", "price": "₩300.000", "amount": "300000" },
+      { "name": "Seharian — Seoul", "detail": "10 jam, ke mana saja di kota — +₩50.000 jika mulai atau berakhir di bandara", "price": "₩300.000", "amount": "300000" },
       { "name": "Nami Island", "detail": "10 jam, dengan Petite France dan taman", "price": "₩400.000", "amount": "400000" },
       { "name": "Jemput bandara", "detail": "Incheon ke hotel Seoul, sekali jalan", "price": "₩150.000", "amount": "150000" },
       { "name": "Antar bandara", "detail": "Hotel Seoul ke Incheon, sekali jalan", "price": "₩150.000", "amount": "150000" }
