@@ -155,6 +155,7 @@ h2{font-size:clamp(28px,3.1vw,38px);line-height:1.14;font-weight:700;letter-spac
 
 /* ── 9. Rates table / chips ── */
 .rates{background:var(--g1)}
+.rates .sub{max-width:none}
 .tbl{margin-top:34px;background:#fff;border:1px solid var(--g2);border-radius:var(--rl);overflow:hidden;box-shadow:var(--sh)}
 .tr{display:grid;grid-template-columns:1.25fr 2fr .9fr;align-items:center;padding:20px 26px;border-bottom:1px solid var(--g2)}
 .tr:last-child{border-bottom:0}
