@@ -4,9 +4,9 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "pakleecar.vercel.app" }],
-      "destination": "https://pakleecar.com/:path*",
+      "destination": "https://pakleecar.com/$1",
       "permanent": true
     },
     { "source": "/", "destination": "/en/", "permanent": false }
