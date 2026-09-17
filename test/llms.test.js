@@ -12,7 +12,7 @@ test('llmsTxt가 사업 요약과 연락처를 담는다', () => {
 test('llmsTxt가 절대 URL만 쓴다', () => {
   const out = llmsTxt();
   assert.doesNotMatch(out, /\]\(\//);
-  assert.match(out, /https:\/\/pakleecar\.vercel\.app\/en\//);
+  assert.match(out, /https:\/\/pakleecar\.com\/en\//);
 });
 
 test('llmsTxt가 home을 제외한 모든 페이지를 나열한다', () => {

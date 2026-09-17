@@ -13,12 +13,12 @@ test('hreflang이 4개 언어 + x-default를 만든다', () => {
 });
 
 test('x-default는 루트를 가리킨다', () => {
-  assert.match(hreflangs('home'), /hreflang="x-default" href="https:\/\/pakleecar\.vercel\.app\/"/);
+  assert.match(hreflangs('home'), /hreflang="x-default" href="https:\/\/pakleecar.com\/"/);
 });
 
 test('head가 canonical을 절대 URL로 넣는다', () => {
   const out = head({ lang: 'en', slug: 'tours/dmz', seo });
-  assert.match(out, /<link rel="canonical" href="https:\/\/pakleecar\.vercel\.app\/en\/tours\/dmz\/">/);
+  assert.match(out, /<link rel="canonical" href="https:\/\/pakleecar.com\/en\/tours\/dmz\/">/);
 });
 
 test('head가 title과 og:title을 넣는다', () => {
@@ -29,7 +29,7 @@ test('head가 title과 og:title을 넣는다', () => {
 
 test('head가 og:image를 절대 URL로 만든다', () => {
   const out = head({ lang: 'en', slug: 'home', seo });
-  assert.match(out, /og:image" content="https:\/\/pakleecar\.vercel\.app\/a\.jpg"/);
+  assert.match(out, /og:image" content="https:\/\/pakleecar.com\/a\.jpg"/);
 });
 
 test('head가 og:locale을 언어에 맞게 넣는다', () => {
@@ -51,12 +51,12 @@ test('head가 extraHead를 그대로 이어붙인다', () => {
 test('hreflang이 중첩 slug에서도 4개 언어 경로 + x-default 루트를 만든다', () => {
   const out = hreflangs('tours/dmz');
   for (const l of ['id', 'en', 'es', 'ja']) {
-    assert.match(out, new RegExp(`hreflang="${l}" href="https://pakleecar\\.vercel\\.app/${l}/tours/dmz/"`));
+    assert.match(out, new RegExp(`hreflang="${l}" href="https://pakleecar\\.com/${l}/tours/dmz/"`));
   }
-  assert.match(out, /hreflang="x-default" href="https:\/\/pakleecar\.vercel\.app\/"/);
+  assert.match(out, /hreflang="x-default" href="https:\/\/pakleecar.com\/"/);
 });
 
 test('abs가 상대 경로에는 SITE_URL을 붙이고 절대 URL은 그대로 둔다', () => {
-  assert.strictEqual(abs('/http-banner.jpg'), 'https://pakleecar.vercel.app/http-banner.jpg');
+  assert.strictEqual(abs('/http-banner.jpg'), 'https://pakleecar.com/http-banner.jpg');
   assert.strictEqual(abs('https://cdn.example.com/a.jpg'), 'https://cdn.example.com/a.jpg');
 });

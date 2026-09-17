@@ -1,4 +1,4 @@
-const SITE_URL = 'https://pakleecar.vercel.app';
+const SITE_URL = 'https://pakleecar.com';
 const LANGS = ['id', 'en', 'es', 'ja'];
 const DEFAULT_LANG = 'en';
 

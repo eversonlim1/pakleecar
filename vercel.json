@@ -3,6 +3,12 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "pakleecar.vercel.app" }],
+      "destination": "https://pakleecar.com/:path*",
+      "permanent": true
+    },
     { "source": "/", "destination": "/en/", "permanent": false }
   ],
   "headers": [

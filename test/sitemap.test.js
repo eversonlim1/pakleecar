@@ -21,7 +21,7 @@ test('sitemap이 절대 URL만 쓴다', () => {
 });
 
 test('robots가 sitemap을 가리킨다', () => {
-  assert.match(robotsTxt(), /Sitemap: https:\/\/pakleecar\.vercel\.app\/sitemap\.xml/);
+  assert.match(robotsTxt(), /Sitemap: https:\/\/pakleecar\.com\/sitemap\.xml/);
 });
 
 test('빌드가 sitemap.xml과 robots.txt를 dist에 쓴다', () => {
