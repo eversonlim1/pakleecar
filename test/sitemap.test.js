@@ -5,14 +5,14 @@ const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 const { sitemapXml, robotsTxt } = require('../src/sitemap');
 
-test('sitemap에 60개 url이 있다', () => {
+test('sitemap에 75개 url이 있다', () => {
   const x = sitemapXml();
-  assert.strictEqual((x.match(/<url>/g) || []).length, 60);
+  assert.strictEqual((x.match(/<url>/g) || []).length, 75);
 });
 
-test('각 url이 5개 hreflang 대체링크를 갖는다', () => {
+test('각 url이 6개 hreflang 대체링크를 갖는다', () => {
   const x = sitemapXml();
-  assert.strictEqual((x.match(/xhtml:link/g) || []).length, 60 * 5);
+  assert.strictEqual((x.match(/xhtml:link/g) || []).length, 75 * 6);
 });
 
 test('sitemap이 절대 URL만 쓴다', () => {

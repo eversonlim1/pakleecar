@@ -12,16 +12,16 @@ test('빌드가 성공한다', () => {
   assert.ok(fs.existsSync(DIST));
 });
 
-test('4개 언어의 홈이 생성된다', () => {
-  for (const l of ['id', 'en', 'es', 'ja']) {
+test('5개 언어의 홈이 생성된다', () => {
+  for (const l of ['id', 'en', 'es', 'ja', 'th']) {
     assert.ok(fs.existsSync(path.join(DIST, l, 'index.html')), `${l} 홈 누락`);
   }
 });
 
-test('홈에 canonical과 5개 hreflang이 있다', () => {
+test('홈에 canonical과 6개 hreflang이 있다', () => {
   const h = fs.readFileSync(path.join(DIST, 'en', 'index.html'), 'utf8');
   assert.match(h, /rel="canonical"/);
-  assert.strictEqual((h.match(/rel="alternate"/g) || []).length, 5);
+  assert.strictEqual((h.match(/rel="alternate"/g) || []).length, 6);
 });
 
 test('홈에 LocalBusiness 스키마가 있다', () => {

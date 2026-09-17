@@ -1,7 +1,7 @@
 const { SITE_URL, LANGS, pageUrl } = require('../build.config');
 const { esc } = require('./html');
 
-const OG_LOCALE = { id: 'id_ID', en: 'en_US', es: 'es_ES', ja: 'ja_JP' };
+const OG_LOCALE = { id: 'id_ID', en: 'en_US', es: 'es_ES', ja: 'ja_JP', th: 'th_TH' };
 
 function abs(p) {
   return /^https?:\/\//.test(p) ? p : SITE_URL + p;

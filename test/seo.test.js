@@ -4,12 +4,13 @@ const { head, hreflangs, abs } = require('../src/seo');
 
 const seo = { title: 'T', description: 'D', ogImage: '/a.jpg' };
 
-test('hreflang이 4개 언어 + x-default를 만든다', () => {
+test('hreflang이 5개 언어 + x-default를 만든다', () => {
   const out = hreflangs('home');
-  assert.strictEqual((out.match(/rel="alternate"/g) || []).length, 5);
+  assert.strictEqual((out.match(/rel="alternate"/g) || []).length, 6);
   assert.match(out, /hreflang="x-default"/);
   assert.match(out, /hreflang="id"[^>]*\/id\//);
   assert.match(out, /hreflang="ja"[^>]*\/ja\//);
+  assert.match(out, /hreflang="th"[^>]*\/th\//);
 });
 
 test('x-default는 루트를 가리킨다', () => {
@@ -48,9 +49,9 @@ test('head가 extraHead를 그대로 이어붙인다', () => {
   assert.match(out, /<script>1<\/script>/);
 });
 
-test('hreflang이 중첩 slug에서도 4개 언어 경로 + x-default 루트를 만든다', () => {
+test('hreflang이 중첩 slug에서도 5개 언어 경로 + x-default 루트를 만든다', () => {
   const out = hreflangs('tours/dmz');
-  for (const l of ['id', 'en', 'es', 'ja']) {
+  for (const l of ['id', 'en', 'es', 'ja', 'th']) {
     assert.match(out, new RegExp(`hreflang="${l}" href="https://pakleecar\\.com/${l}/tours/dmz/"`));
   }
   assert.match(out, /hreflang="x-default" href="https:\/\/pakleecar.com\/"/);

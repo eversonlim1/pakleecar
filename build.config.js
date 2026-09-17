@@ -1,5 +1,5 @@
 const SITE_URL = 'https://pakleecar.com';
-const LANGS = ['id', 'en', 'es', 'ja'];
+const LANGS = ['id', 'en', 'es', 'ja', 'th'];
 const DEFAULT_LANG = 'en';
 
 const PAGES = [

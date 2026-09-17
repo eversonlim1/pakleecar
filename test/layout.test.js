@@ -35,9 +35,9 @@ test('nav가 마스코트 이미지를 alt와 함께 넣는다', () => {
   assert.match(out, /alt="Pak Lee"/);
 });
 
-test('footer가 4개 언어 링크를 모두 넣는다', () => {
+test('footer가 5개 언어 링크를 모두 넣는다', () => {
   const out = footer('en', navText);
-  for (const l of ['id', 'en', 'es', 'ja']) {
+  for (const l of ['id', 'en', 'es', 'ja', 'th']) {
     assert.match(out, new RegExp(`href="/${l}/"`), `${l} 링크 누락`);
   }
 });

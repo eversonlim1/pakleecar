@@ -10,10 +10,10 @@ const TOURS = ['tours/nami-island', 'tours/seoul-day-tour', 'tours/dmz',
   'tours/gangwon-ski', 'tours/kdrama-kpop', 'tours/everland',
   'airport-transfer', 'muslim-friendly-korea-tour'];
 
-test('투어 8종 × 4언어가 생성된다', () => {
+test('투어 8종 × 5언어가 생성된다', () => {
   execFileSync('node', ['build.js'], { cwd: ROOT, stdio: 'pipe' });
   for (const s of TOURS) {
-    for (const l of ['id', 'en', 'es', 'ja']) {
+    for (const l of ['id', 'en', 'es', 'ja', 'th']) {
       assert.ok(fs.existsSync(path.join(DIST, l, s, 'index.html')), `${l}/${s} 누락`);
     }
   }

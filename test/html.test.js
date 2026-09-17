@@ -42,6 +42,6 @@ test('pageUrl이 언어별 경로를 만든다', () => {
   assert.strictEqual(pageUrl('id', 'tours/dmz'), '/id/tours/dmz/');
 });
 
-test('LANGS는 th를 포함하지 않는다', () => {
-  assert.deepStrictEqual(LANGS, ['id', 'en', 'es', 'ja']);
+test('LANGS는 5개 언어를 담는다', () => {
+  assert.deepStrictEqual(LANGS, ['id', 'en', 'es', 'ja', 'th']);
 });

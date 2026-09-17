@@ -18,7 +18,7 @@ function shape(v, prefix = '') {
   return Object.keys(v).flatMap(k => [`${prefix}.${k}`, ...shape(v[k], `${prefix}.${k}`)]);
 }
 
-for (const lang of ['es', 'ja']) {
+for (const lang of ['es', 'ja', 'th']) {
   test(`${lang}: 15종 콘텐츠 파일이 모두 존재한다`, () => {
     for (const slug of SLUGS) {
       const f = path.join(CONTENT, lang, `${slug}.json`);
@@ -51,7 +51,7 @@ for (const lang of ['es', 'ja']) {
   });
 }
 
-for (const lang of ['id', 'en', 'es', 'ja']) {
+for (const lang of ['id', 'en', 'es', 'ja', 'th']) {
   for (const type of ['tour', 'guide']) {
     test(`${lang}: ${type} 페이지 seo.title이 서로 다르다`, () => {
       const slugs = PAGES.filter(p => p.type === type).map(p => p.slug);
@@ -61,16 +61,7 @@ for (const lang of ['id', 'en', 'es', 'ja']) {
   }
 }
 
-test('th/home.json이 존재하고 구조가 유효하다', () => {
-  const f = path.join(CONTENT, 'th', 'home.json');
-  assert.ok(fs.existsSync(f), 'content/th/home.json 누락');
-  const th = JSON.parse(fs.readFileSync(f, 'utf8'));
-  assert.ok(th.hero && th.hero.h1, 'th hero.h1 누락');
-  assert.ok(th.nav && th.nav.rates, 'th nav.rates 누락');
-  assert.ok(Array.isArray(th.rates.rows) && th.rates.rows.length > 0, 'th rates.rows 누락');
-});
-
-test('th는 빌드 대상이 아니다', () => {
+test('th는 이제 빌드 대상이다', () => {
   const { LANGS } = require('../build.config');
-  assert.ok(!LANGS.includes('th'), 'th가 LANGS에 있으면 안 된다');
+  assert.ok(LANGS.includes('th'), 'th가 LANGS에 있어야 한다');
 });

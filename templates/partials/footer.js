@@ -1,7 +1,7 @@
 const { esc } = require('../../src/html');
 const { LANGS, pageUrl } = require('../../build.config');
 
-const NAMES = { id: 'Bahasa Indonesia', en: 'English', es: 'Español', ja: '日本語' };
+const NAMES = { id: 'Bahasa Indonesia', en: 'English', es: 'Español', ja: '日本語', th: 'ภาษาไทย' };
 
 module.exports = function footer(lang, t) {
   const langs = LANGS.map(l =>
