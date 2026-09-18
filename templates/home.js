@@ -72,6 +72,12 @@ ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats',
 </div>
 </div></section>
 
+<section class="quote"><div class="wrap">
+<svg class="qmark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0l1.6 3.2c-4.8 1.6-7.2 4.8-7.2 8.8h6.4V24H0Zm17.6 0V14.4c0-8 4.8-13.2 12.8-14.4L32 3.2c-4.8 1.6-7.2 4.8-7.2 8.8H32V24H17.6Z"/></svg>
+<p>${esc(data.quote.text)}</p>
+<div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">Pak Lee</div>
+</div></section>
+
 ${rates(data.rates)}
 
 <section class="faqs" id="faq"><div class="wrap">

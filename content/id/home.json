@@ -72,6 +72,9 @@
       { "q": "Bagaimana cara bookingnya?", "a": "Kirim pesan ke WhatsApp saya dengan tanggal Anda. Tidak ada DP dan tidak ada formulir sebelum kita benar-benar bicara." }
     ]
   },
+  "quote": {
+    "text": "Orang suka tanya apa saya keberatan kalau rencana berubah mendadak. Tidak — justru itu alasan saya kerja sendiri, bukan lewat agen."
+  },
   "cta": {
     "h2": "Mau ke mana?",
     "body": "Kirim tanggalnya. Kalau tidak muat dalam sehari, saya akan bilang.",

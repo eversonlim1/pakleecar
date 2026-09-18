@@ -72,6 +72,9 @@
       { "q": "¿Cómo reservo?", "a": "Escríbeme por WhatsApp con tus fechas. Sin depósito y sin formularios antes de que hablemos de verdad." }
     ]
   },
+  "quote": {
+    "text": "La gente me pregunta si me molesta cuando el plan cambia a último momento. No — por eso hago esto yo mismo, no a través de una agencia."
+  },
   "cta": {
     "h2": "¿A dónde te gustaría ir?",
     "body": "Dime tus fechas. Si no cabe en un día, te lo diré.",

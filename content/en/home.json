@@ -72,6 +72,9 @@
       { "q": "How do I book?", "a": "Message me on WhatsApp with your dates. No deposit and no form before we've actually talked." }
     ]
   },
+  "quote": {
+    "text": "People ask if I mind when the plan changes last minute. I don't — that's the whole point of doing this myself, not through an agency."
+  },
   "cta": {
     "h2": "Where would you like to go?",
     "body": "Tell me your dates. If it doesn't fit in one day, I'll say so.",
