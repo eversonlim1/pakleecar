@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const { LANGS, PAGES, pageUrl } = require('./build.config');
 const { load } = require('./src/content');
 const layout = require('./templates/layout');
@@ -27,6 +28,27 @@ function write(rel, contents) {
 
 function copyDir(from, to) {
   fs.cpSync(path.join(ROOT, from), path.join(DIST, to), { recursive: true });
+}
+
+// vercel.json caches everything under /assets/ for a year with `immutable`,
+// which only stays correct if a content change also changes the URL.
+// These filenames carry a content hash so a deploy that edits site.css,
+// nav.js or lightbox.js is never served stale from a CDN/browser cache —
+// the plain (unhashed) filename stays too, only as a legacy fallback.
+function hashedAssetName(relPath) {
+  const buf = fs.readFileSync(path.join(ROOT, relPath));
+  const hash = crypto.createHash('sha1').update(buf).digest('hex').slice(0, 10);
+  const { dir, name, ext } = path.parse(relPath);
+  const hashedRel = path.join(dir, `${name}.${hash}${ext}`);
+  return { hash, href: '/' + hashedRel.split(path.sep).join('/') };
+}
+
+function copyHashed(relPath) {
+  const { href } = hashedAssetName(relPath);
+  const dest = path.join(DIST, href);
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, relPath), dest);
+  return href;
 }
 
 function schemaFor(type, lang, slug, data) {
@@ -72,6 +94,10 @@ function clean(dir) {
 function build() {
   clean(DIST);
 
+  const cssHref = copyHashed('assets/css/site.css');
+  const navJsHref = copyHashed('assets/js/nav.js');
+  const lightboxJsHref = copyHashed('assets/js/lightbox.js');
+
   for (const page of PAGES) {
     const tpl = TEMPLATES[page.type];
     if (!tpl) continue; // 아직 구현되지 않은 페이지 타입은 건너뛴다
@@ -81,7 +107,8 @@ function build() {
       const html = layout({
         lang, slug: page.slug, seo: data.seo,
         schema: schemaFor(page.type, lang, page.slug, data),
-        body, nav: data.nav, bodyEnd: lightboxMarkup()
+        body, nav: data.nav, bodyEnd: lightboxMarkup(lightboxJsHref),
+        cssHref, navJsHref
       });
       const out = page.slug === 'home'
         ? `${lang}/index.html`

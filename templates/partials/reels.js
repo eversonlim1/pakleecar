@@ -27,7 +27,7 @@ ${items}
 </div></section>`;
 }
 
-function lightboxMarkup() {
+function lightboxMarkup(jsHref = '/assets/js/lightbox.js') {
   return `<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Instagram video">
 <div class="lb-box">
 <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
@@ -39,7 +39,7 @@ function lightboxMarkup() {
 </div>
 </div>
 </div>
-<script src="/assets/js/lightbox.js" defer></script>`;
+<script src="${jsHref}" defer></script>`;
 }
 
 module.exports = { reelStrip, lightboxMarkup };

@@ -15,7 +15,7 @@ function hreflangs(slug) {
   return links.join('\n');
 }
 
-function head({ lang, slug, seo, extraHead = '' }) {
+function head({ lang, slug, seo, extraHead = '', cssHref = '/assets/css/site.css' }) {
   const url = abs(pageUrl(lang, slug));
   const ogImage = abs(seo.ogImage || '/assets/img/staria-ext.jpg');
   return `<meta charset="utf-8">
@@ -38,7 +38,7 @@ ${hreflangs(slug)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="${cssHref}">
 ${extraHead}`;
 }
 
