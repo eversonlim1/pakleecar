@@ -18,17 +18,14 @@ module.exports = function home({ lang, data, reels }) {
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
   const facts = h.facts.map(f =>
-    `<div class="fact"><span class="ic" aria-hidden="true">${f.icon}</span>
-<div><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div></div>`
+    `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
   ).join('\n');
 
   return `<main>
 <header class="hero">
-<div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
 <div class="wrap">
 <div>
 <h1>${twoLineHeadline(h.h1)}</h1>
-<svg class="squiggle" viewBox="0 0 330 16" aria-hidden="true"><path d="M5 11C48 3 92 3 135 9s87 6 130-4"/></svg>
 <p class="ld">${esc(h.lede)}</p>
 <div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
 <a class="b" href="#rates">${esc(h.ctaSecondary)}</a></div>
@@ -36,9 +33,6 @@ module.exports = function home({ lang, data, reels }) {
 </div>
 <div class="frame">
 <div class="clipwrap">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
-<div class="sticker">${esc(h.sticker)}</div>
-<div class="sticker2"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
-<span><b>${esc(h.bubbleTitle)}</b>${esc(h.bubbleText)}</span></div>
 <a class="cap" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">
 <i aria-hidden="true">&#9654;</i><div><b>${esc(heroTitle)}</b><s>Reel · @paklee.carkorea</s></div></a>
 </div>
