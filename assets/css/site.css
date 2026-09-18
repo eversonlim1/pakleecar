@@ -78,11 +78,17 @@ a{color:inherit;text-decoration:none}
   transition:background .18s,border-color .18s}
 .cta .b:hover{background:var(--g1);border-color:var(--g5)}
 
-/* ── 5. Hero ── */
+/* ── 5. Hero ──
+   The headline is deliberately NOT inside the two-column grid: it spans
+   the full wrap width at a much larger size, then the supporting copy,
+   CTAs and photo sit in a narrower row underneath. This is the whole
+   point of the layout — a boxed 50/50 hero reads as a generic template
+   no matter how the decoration inside it is styled. */
 .hero{position:relative;overflow:hidden}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:80px;
-  align-items:center;padding-top:88px;padding-bottom:96px}
-.hero h1{font-size:clamp(40px,5vw,66px);line-height:1.05;font-weight:700;letter-spacing:-.032em}
+.hero .wrap{position:relative;z-index:1;padding-top:76px;padding-bottom:100px}
+.hero h1{font-size:clamp(52px,8.2vw,116px);line-height:.94;font-weight:700;letter-spacing:-.04em;
+  max-width:16em;margin-bottom:56px}
+.herobody{display:grid;grid-template-columns:1.04fr .96fr;gap:80px;align-items:center}
 .hero .ld{font-size:18px;line-height:1.66;color:var(--g6);max-width:27em;margin-bottom:36px;font-weight:400}
 
 .facts{display:grid;grid-template-columns:repeat(4,auto);gap:28px;padding-top:32px;border-top:1px solid var(--g2)}
@@ -228,7 +234,8 @@ h2{font-size:clamp(30px,3.4vw,42px);line-height:1.12;font-weight:700;letter-spac
 @media(max-width:920px){
   .nav ul{display:none}
   .hamburger{display:flex}
-  .hero .wrap,.msg .wrap,.car .wrap{grid-template-columns:1fr;gap:44px}
+  .herobody,.msg .wrap,.car .wrap{grid-template-columns:1fr;gap:44px}
+  .hero h1{font-size:clamp(40px,11vw,64px);margin-bottom:36px}
   .gal{height:300px}
   .strip{grid-template-columns:repeat(2,1fr)}
   .tr{grid-template-columns:1fr auto;gap:5px}

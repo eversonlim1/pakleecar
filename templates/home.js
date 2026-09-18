@@ -24,8 +24,9 @@ module.exports = function home({ lang, data, reels }) {
   return `<main>
 <header class="hero">
 <div class="wrap">
-<div>
 <h1>${twoLineHeadline(h.h1)}</h1>
+<div class="herobody">
+<div>
 <p class="ld">${esc(h.lede)}</p>
 <div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
 <a class="b" href="#rates">${esc(h.ctaSecondary)}</a></div>
@@ -35,6 +36,7 @@ module.exports = function home({ lang, data, reels }) {
 <div class="clipwrap">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
 <a class="cap" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">
 <i aria-hidden="true">&#9654;</i><div><b>${esc(heroTitle)}</b><s>Reel · @paklee.carkorea</s></div></a>
+</div>
 </div>
 </div>
 </header>
