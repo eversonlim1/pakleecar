@@ -3,7 +3,7 @@ const { esc, picture } = require('../src/html');
 function twoLineHeadline(text) {
   const m = text.match(/^(.+?[.。])\s*(.*)$/s);
   if (!m || !m[2]) return esc(text);
-  return `${esc(m[1])}<br><span class="accent">${esc(m[2])}</span>`;
+  return `${esc(m[1])}<br>${esc(m[2])}`;
 }
 const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
@@ -18,16 +18,14 @@ module.exports = function home({ lang, data, reels }) {
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
   const facts = h.facts.map(f =>
-    `<div class="fact"><span class="ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span class="lb">${esc(f.label)}</span></div>`
+    `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
   ).join('\n');
 
-  return `<main class="home">
+  return `<main>
 <header class="hero">
 <div class="wrap">
-<p class="tagline">${esc(h.sticker)}</p>
-<h1>${twoLineHeadline(h.h1)}</h1>
-<div class="herobody">
 <div>
+<h1>${twoLineHeadline(h.h1)}</h1>
 <p class="ld">${esc(h.lede)}</p>
 <div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
 <a class="b" href="#rates">${esc(h.ctaSecondary)}</a></div>
@@ -37,7 +35,6 @@ module.exports = function home({ lang, data, reels }) {
 <div class="clipwrap">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
 <a class="cap" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">
 <i aria-hidden="true">&#9654;</i><div><b>${esc(heroTitle)}</b><s>Reel · @paklee.carkorea</s></div></a>
-</div>
 </div>
 </div>
 </header>
@@ -54,7 +51,6 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 
 ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
 
-<div class="bento-row">
 <section class="car" id="car"><div class="wrap">
 <div>
 <span class="eyebrow">${esc(data.car.eyebrow)}</span>
@@ -75,7 +71,6 @@ ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats',
 <p>${esc(data.quote.text)}</p>
 <div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">Pak Lee</div>
 </div></section>
-</div>
 
 ${rates(data.rates)}
 

@@ -78,17 +78,11 @@ a{color:inherit;text-decoration:none}
   transition:background .18s,border-color .18s}
 .cta .b:hover{background:var(--g1);border-color:var(--g5)}
 
-/* ── 5. Hero ──
-   The headline is deliberately NOT inside the two-column grid: it spans
-   the full wrap width at a much larger size, then the supporting copy,
-   CTAs and photo sit in a narrower row underneath. This is the whole
-   point of the layout — a boxed 50/50 hero reads as a generic template
-   no matter how the decoration inside it is styled. */
+/* ── 5. Hero ── */
 .hero{position:relative;overflow:hidden}
-.hero .wrap{position:relative;z-index:1;padding-top:76px;padding-bottom:100px}
-.hero h1{font-size:clamp(52px,8.2vw,116px);line-height:.94;font-weight:700;letter-spacing:-.04em;
-  max-width:16em;margin-bottom:56px}
-.herobody{display:grid;grid-template-columns:1.04fr .96fr;gap:80px;align-items:center}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:80px;
+  align-items:center;padding-top:88px;padding-bottom:96px}
+.hero h1{font-size:clamp(40px,5vw,66px);line-height:1.05;font-weight:700;letter-spacing:-.032em}
 .hero .ld{font-size:18px;line-height:1.66;color:var(--g6);max-width:27em;margin-bottom:36px;font-weight:400}
 
 .facts{display:grid;grid-template-columns:repeat(4,auto);gap:28px;padding-top:32px;border-top:1px solid var(--g2)}
@@ -234,8 +228,7 @@ h2{font-size:clamp(30px,3.4vw,42px);line-height:1.12;font-weight:700;letter-spac
 @media(max-width:920px){
   .nav ul{display:none}
   .hamburger{display:flex}
-  .herobody,.msg .wrap,.car .wrap{grid-template-columns:1fr;gap:44px}
-  .hero h1{font-size:clamp(40px,11vw,64px);margin-bottom:36px}
+  .hero .wrap,.msg .wrap,.car .wrap{grid-template-columns:1fr;gap:44px}
   .gal{height:300px}
   .strip{grid-template-columns:repeat(2,1fr)}
   .tr{grid-template-columns:1fr auto;gap:5px}
@@ -270,107 +263,6 @@ body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .nav{background:rgba(15,21,18,.86)}
 [data-theme="dark"] .chat,[data-theme="dark"] .tbl,[data-theme="dark"] .chip,
 [data-theme="dark"] .reel{background:#161D1A}
-
-/* ── 19. Home — app-dashboard identity ──
-   Reference: consumer app home screens. The greeting/headline sits
-   directly on a plain neutral canvas (not a card) — only the actual
-   content widgets below it (chat, car, quote) are cards, and those
-   cards are FLAT, VIVID, SATURATED colour with white text, not pale
-   tinted backgrounds. That saturation + white-on-colour is what reads
-   as "app UI" instead of "marketing site section". Scoped to `.home`. */
-body:has(.home){background:#F4F0E9}
-body:has(.home) .nav{background:transparent;border-bottom:0;backdrop-filter:none}
-body:has(.home) .nav .wrap{background:#fff;border-radius:999px;margin-top:14px;padding:0 28px;
-  box-shadow:0 10px 30px -18px rgba(60,50,30,.25)}
-
-.home{background:#F4F0E9;padding:0 20px 20px}
-.home .wrap{max-width:1180px}
-.home > section,.home > div.bento-row{margin:20px auto 0;max-width:1180px}
-.home .msg,.home .car,.home .quote{border-radius:32px;box-shadow:0 16px 40px -24px rgba(60,50,30,.28);
-  position:relative;overflow:hidden}
-.home .msg::after,.home .car::after,.home .quote::after{
-  content:'\2197';position:absolute;top:28px;right:28px;width:40px;height:40px;border-radius:50%;
-  background:rgba(255,255,255,.22);color:#fff;display:flex;align-items:center;justify-content:center;
-  font-size:16px;z-index:3}
-
-/* Hero: plain canvas, not a card — matches the reference's page-title
-   treatment (bold greeting + headline sitting on the background). */
-.home .hero{background:transparent;padding-top:32px}
-.home .hero .wrap{max-width:1180px;padding:0}
-.home .tagline{display:inline-block;font-size:13.5px;font-weight:700;color:var(--g7);background:#fff;
-  border-radius:999px;padding:7px 16px;margin-bottom:22px;box-shadow:0 8px 20px -14px rgba(60,50,30,.3)}
-.home h1{max-width:14em}
-.home h1 .accent{color:#7B5CFA}
-.home .facts{border-top:1px solid rgba(22,33,28,.1);gap:14px}
-.home .fact{flex-direction:row;align-items:center;gap:10px;background:#fff;border-radius:999px;
-  padding:8px 16px 8px 8px;box-shadow:0 8px 20px -14px rgba(60,50,30,.25)}
-.home .fact .ic{width:32px;height:32px;border-radius:50%;background:var(--g1);display:flex;align-items:center;
-  justify-content:center;font-size:14px;flex-shrink:0}
-.home .fact b{font-size:14.5px}
-.home .fact .lb{font-size:11px;color:var(--g6);font-weight:500}
-.home .cta .a{background:#7B5CFA;color:#fff}
-.home .cta .b{background:#fff;border-color:transparent}
-.home .frame{border-radius:26px;box-shadow:0 20px 44px -22px rgba(60,50,30,.35)}
-
-/* Chat/message widget: vivid gradient card, white heading + link,
-   the chat mockup itself stays a white card floating on top of it. */
-.home .msg{background:linear-gradient(135deg,#FF8A65,#FF5C8A)}
-.home .msg .wrap{max-width:none;padding:56px}
-.home .msg .eyebrow,.home .msg h2,.home .msg .sub{color:#fff}
-.home .msg .sub{color:rgba(255,255,255,.85)}
-.home .msg .go{color:#fff;font-weight:700}
-.home .chat{box-shadow:0 20px 40px -20px rgba(0,0,0,.35);border:0}
-
-.home .reels{background:transparent;box-shadow:none;margin-top:20px}
-.home .reels .wrap{max-width:1180px}
-.home .reel{border-radius:22px}
-
-/* Bento row: two unequal, differently-coloured widget cards side by
-   side — a dashboard row, not another linear full-width section. */
-.home .bento-row{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:stretch}
-.home .bento-row > section{margin:0!important;max-width:none!important;height:100%}
-
-.home .car{background:#7B5CFA;color:#fff}
-.home .car .wrap{max-width:none;padding:48px;height:100%}
-.home .car .eyebrow,.home .car h2,.home .car .sub{color:#fff}
-.home .car .sub{color:rgba(255,255,255,.8)}
-.home .car .spec{border-color:rgba(255,255,255,.2)}
-.home .car .spec b{color:#fff}
-.home .car .spec span{color:rgba(255,255,255,.75)}
-.home .gal img{border-radius:18px;border:3px solid rgba(255,255,255,.9)}
-
-.home .quote{background:linear-gradient(150deg,#FFB25C,#FF6B6B);color:#fff;display:flex}
-.home .quote .wrap{max-width:none;padding:44px;display:flex;flex-direction:column;justify-content:center}
-.home .quote .qmark{fill:#fff;opacity:.9}
-.home .quote p{color:#fff;font-size:clamp(18px,1.8vw,22px)}
-.home .quote .qwho{color:rgba(255,255,255,.85)}
-.home .quote .qwho img{border-color:#fff}
-
-.home .rates{background:#fff;border-top:0;border-radius:32px;box-shadow:0 16px 40px -24px rgba(60,50,30,.28)}
-.home .rates .wrap{max-width:none;padding:56px}
-.home .tbl{box-shadow:none;border-color:rgba(22,33,28,.08)}
-.home .tbl::before{content:'';display:block;height:10px;border-radius:999px;margin-bottom:28px;
-  background:linear-gradient(90deg,#7B5CFA,#FF5C8A 55%,#FFB25C)}
-
-.home .faqs{background:#fff;border-top:0;border-radius:32px;box-shadow:0 16px 40px -24px rgba(60,50,30,.28);
-  counter-reset:faqn}
-.home .faqs .wrap{max-width:none;padding:56px}
-.home .faq{border-color:rgba(22,33,28,.12);counter-increment:faqn}
-.home .faq:first-of-type{border-top-color:rgba(22,33,28,.12)}
-.home .faq summary{padding-left:44px;position:relative}
-.home .faq summary::before{content:counter(faqn);position:absolute;left:0;top:19px;width:26px;height:26px;
-  border-radius:50%;background:var(--g1);color:var(--ink);font-size:12.5px;font-weight:700;display:flex;
-  align-items:center;justify-content:center}
-
-body:has(.home) .foot{background:transparent;border-top:0}
-
-@media(max-width:920px){
-  .home{padding:0 12px 12px}
-  .home > section,.home > div.bento-row{border-radius:24px;margin-top:14px}
-  .home .bento-row{grid-template-columns:1fr;gap:14px}
-  .home .hero .wrap,.home .msg .wrap,.home .car .wrap,.home .quote .wrap,.home .rates .wrap,.home .faqs .wrap{padding:32px 24px}
-  .home .msg::after,.home .car::after,.home .quote::after{width:34px;height:34px;top:18px;right:18px}
-}
 
 /* ============================================================
    PAGE-TYPE ADDITIONS
