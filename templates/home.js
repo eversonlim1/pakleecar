@@ -3,7 +3,7 @@ const { esc, picture } = require('../src/html');
 function twoLineHeadline(text) {
   const m = text.match(/^(.+?[.。])\s*(.*)$/s);
   if (!m || !m[2]) return esc(text);
-  return `${esc(m[1])}<br>${esc(m[2])}`;
+  return `${esc(m[1])}<br><span class="accent">${esc(m[2])}</span>`;
 }
 const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
@@ -21,7 +21,7 @@ module.exports = function home({ lang, data, reels }) {
     `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
   ).join('\n');
 
-  return `<main>
+  return `<main class="home">
 <header class="hero">
 <div class="wrap">
 <h1>${twoLineHeadline(h.h1)}</h1>
