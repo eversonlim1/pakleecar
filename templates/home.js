@@ -18,12 +18,13 @@ module.exports = function home({ lang, data, reels }) {
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
   const facts = h.facts.map(f =>
-    `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
+    `<div class="fact"><span class="ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span class="lb">${esc(f.label)}</span></div>`
   ).join('\n');
 
   return `<main class="home">
 <header class="hero">
 <div class="wrap">
+<p class="tagline">${esc(h.sticker)}</p>
 <h1>${twoLineHeadline(h.h1)}</h1>
 <div class="herobody">
 <div>
@@ -53,6 +54,7 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 
 ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
 
+<div class="bento-row">
 <section class="car" id="car"><div class="wrap">
 <div>
 <span class="eyebrow">${esc(data.car.eyebrow)}</span>
@@ -73,6 +75,7 @@ ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats',
 <p>${esc(data.quote.text)}</p>
 <div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">Pak Lee</div>
 </div></section>
+</div>
 
 ${rates(data.rates)}
 
