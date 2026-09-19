@@ -271,52 +271,6 @@ body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .chat,[data-theme="dark"] .tbl,[data-theme="dark"] .chip,
 [data-theme="dark"] .reel{background:#161D1A}
 
-/* ── 19. Home — warm & friendly identity ──
-   Not luxury/dark: Pak Lee markets on being a friendly, personal driver,
-   not a black-car premium service. The shift is a warm cream ground +
-   bold peach/coral/sun colour blocks (tokens already in the system but
-   previously used only as tiny decorative dots) instead of white+green,
-   plus color-blocked sections instead of white-card-on-white. Scoped to
-   `.home` so other pages keep the current light system untouched. */
-body:has(.home){background:#FFFAF4}
-body:has(.home) .nav{background:rgba(255,250,244,.9)}
-
-.home{background:#FFFAF4}
-.home .hero{background:var(--peach)}
-.home .hero .wrap{padding-top:64px}
-.home .hero h1{color:var(--ink)}
-.home .facts{border-top:1px solid rgba(22,33,28,.12)}
-.home .cta .a{background:var(--coral);color:#fff}
-.home .cta .a:hover{opacity:.9}
-.home .cta .b{border-color:rgba(22,33,28,.22);background:#fff}
-.home .frame{border:3px solid #fff;box-shadow:0 18px 40px -18px rgba(255,138,91,.55)}
-.home .eyebrow{color:var(--coral)}
-.home .go{color:var(--coral)}
-
-.home .msg{background:var(--sun)}
-.home .chat{border-color:rgba(22,33,28,.1)}
-.home .row.me .bub{background:var(--coral)}
-.home .clip{background:#fff}
-
-.home .reels{background:#FFFAF4}
-.home .reel{background:var(--peach)}
-
-.home .car{background:var(--mint)}
-
-.home .quote{background:var(--sun);color:var(--ink)}
-.home .quote .qmark{fill:var(--coral);opacity:1}
-.home .quote p{color:var(--ink)}
-.home .quote .qwho{color:var(--g7)}
-.home .quote .qwho img{border-color:var(--coral)}
-
-.home .rates{background:#FFFAF4;border-top:0}
-.home .tbl{border-color:rgba(22,33,28,.1)}
-.home .chip{background:#fff}
-
-.home .faqs{background:var(--peach);border-top:0}
-.home .faq{border-color:rgba(22,33,28,.14)}
-.home .faq:first-of-type{border-top-color:rgba(22,33,28,.14)}
-
 /* ============================================================
    PAGE-TYPE ADDITIONS
    Tasks 9–10 append page-specific component styles below this line.

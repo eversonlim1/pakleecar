@@ -21,7 +21,7 @@ module.exports = function home({ lang, data, reels }) {
     `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
   ).join('\n');
 
-  return `<main class="home">
+  return `<main>
 <header class="hero">
 <div class="wrap">
 <h1>${twoLineHeadline(h.h1)}</h1>
