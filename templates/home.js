@@ -18,7 +18,7 @@ module.exports = function home({ lang, data, reels }) {
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
   const facts = h.facts.map(f =>
-    `<div class="fact"><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
+    `<div class="fact"><span class="ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span>${esc(f.label)}</span></div>`
   ).join('\n');
 
   return `<main>

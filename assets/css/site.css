@@ -81,18 +81,21 @@ a{color:inherit;text-decoration:none}
 /* ── 5. Hero ── */
 .hero{position:relative;overflow:hidden}
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:80px;
-  align-items:center;padding-top:88px;padding-bottom:96px}
+  align-items:start;padding-top:88px;padding-bottom:96px}
 .hero h1{font-size:clamp(40px,5vw,66px);line-height:1.05;font-weight:700;letter-spacing:-.032em}
 .hero .ld{font-size:18px;line-height:1.66;color:var(--g6);max-width:27em;margin-bottom:36px;font-weight:400}
 
-.facts{display:grid;grid-template-columns:repeat(4,auto);gap:28px;padding-top:32px;border-top:1px solid var(--g2)}
-.fact{display:flex;flex-direction:column;gap:3px}
-.fact b{font-size:20px;font-weight:700;letter-spacing:-.03em}
-.fact span{font-size:12.5px;color:var(--g6);font-weight:500}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-top:0;border-top:0;margin-top:32px}
+.fact{display:flex;flex-direction:column;gap:2px;background:var(--g1);border-radius:16px;padding:14px 16px}
+.fact .ic{font-size:17px;margin-bottom:4px}
+.fact b{font-size:17px;font-weight:700;letter-spacing:-.03em}
+.fact span{font-size:11.5px;color:var(--g6);font-weight:500;line-height:1.3}
 
 .frame{position:relative;aspect-ratio:4/5;background:#12100D;border-radius:24px;overflow:hidden}
 .frame .clipwrap{position:absolute;inset:0;overflow:hidden;border-radius:30px}
-.frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:center 15%;transform:scale(1.02)}
+.frame::before{content:'';position:absolute;left:0;right:0;top:0;height:30%;pointer-events:none;z-index:1;
+  background:linear-gradient(to bottom,rgba(12,15,18,.55),rgba(12,15,18,0));border-radius:30px 30px 0 0}
 .frame::after{content:'';position:absolute;left:0;right:0;bottom:0;height:44%;pointer-events:none;
   background:linear-gradient(to top,rgba(12,15,18,.86),rgba(12,15,18,0));border-radius:0 0 30px 30px}
 .frame .cap{cursor:pointer;position:absolute;left:20px;right:20px;bottom:20px;z-index:2;
