@@ -317,6 +317,45 @@ body:has(.home) .nav{background:rgba(255,250,244,.9)}
 .home .faq{border-color:rgba(22,33,28,.14)}
 .home .faq:first-of-type{border-top-color:rgba(22,33,28,.14)}
 
+/* ── 19.5 Home — composition breaks (not just colour) ──
+   Rectangles/grids read as "generic template" no matter the palette.
+   These rules physically break photos and stat blocks out of straight
+   rows: rotated polaroid-style frames, overlap, a staggered reel strip. */
+.home .herobody{align-items:start}
+.home .frame{transform:rotate(-3deg);border-radius:14px;box-shadow:0 22px 44px -20px rgba(255,138,91,.5)}
+.home .frame .clipwrap{border-radius:10px}
+.home .facts{display:flex;flex-wrap:wrap;gap:0;border-top:0;padding-top:8px;margin-left:-6px}
+.home .fact{background:#fff;border-radius:999px;padding:14px 20px;margin:6px;box-shadow:0 10px 22px -14px rgba(22,33,28,.3);
+  transform:rotate(-2deg)}
+.home .fact:nth-child(2){transform:rotate(2deg);margin-top:14px}
+.home .fact:nth-child(3){transform:rotate(-1.5deg)}
+.home .fact:nth-child(4){transform:rotate(2.5deg);margin-top:10px}
+
+.home .car .gal{display:block;position:relative;height:460px;padding:20px}
+.home .car .gal picture{position:absolute;display:block;border:6px solid #fff;border-radius:6px;
+  box-shadow:0 18px 34px -16px rgba(22,33,28,.35)}
+.home .car .gal picture:nth-child(1){width:56%;height:88%;left:0;top:0;transform:rotate(-4deg);z-index:2}
+.home .car .gal picture:nth-child(2){width:46%;height:52%;right:0;top:6%;transform:rotate(5deg);z-index:1}
+.home .car .gal picture:nth-child(3){width:46%;height:46%;right:4%;bottom:0;transform:rotate(-3deg);z-index:3}
+.home .car .gal img{border-radius:0}
+
+.home .strip{align-items:start}
+.home .reel{border-radius:22px}
+.home .reel:nth-child(2n){transform:translateY(22px) rotate(1deg)}
+.home .reel:nth-child(2n+1){transform:rotate(-1deg)}
+.home .reel:hover{transform:translateY(-4px) rotate(0)}
+
+.home .quote .qmark{display:none}
+.home .quote .wrap{display:flex;align-items:center;gap:34px;flex-wrap:wrap;max-width:900px}
+.home .quote p{flex:1 1 380px;margin-bottom:0}
+.home .quote .qwho{flex-direction:column;align-items:flex-start;gap:0;transform:rotate(-3deg);order:-1}
+.home .quote .qwho img{width:74px;height:74px;border-width:4px;margin-bottom:8px}
+
+@media(max-width:920px){
+  .home .car .gal{height:340px}
+  .home .fact{transform:none!important;margin-top:6px!important}
+}
+
 /* ============================================================
    PAGE-TYPE ADDITIONS
    Tasks 9–10 append page-specific component styles below this line.
