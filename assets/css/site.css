@@ -268,55 +268,47 @@ body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .reel{background:#161D1A}
 
 /* ── 13.6 Homepage (redesign) ──
-   .hero, .facts/.fact, .frame's replacements below, .msg, .car/.gal, .rates,
-   .faqs .wrap grid are all homepage-only (home.js is the sole caller), so
-   these rules are safe to override outright rather than scope under .home. */
+   .hero, .msg, .car/.gal, .rates, .faqs .wrap grid are all homepage-only
+   (home.js is the sole caller), so these rules are safe to override
+   outright rather than scope under .home. */
 
-/* -- hero: oversized editorial headline up top, no side-by-side photo card;
-   a full-bleed photo band breaks out of the container underneath instead. -- */
+/* -- hero: asymmetric 2x2 editorial quadrant grid (Awwwards SOTD "Aspen
+   Search" reference: oversized wordmark-scale headline, flat colour-block
+   panels, a dot-texture graphic panel standing in for a photo) instead of
+   the side-by-side text/photo card or full-bleed photo band tried before. -- */
 .hero{padding-bottom:0}
-.hero .htop{display:block;padding-top:108px;padding-bottom:56px}
+.hgrid{display:grid;grid-template-columns:1.35fr 1fr;border-top:1px solid var(--g2)}
+.hcell{padding:56px 48px}
+.hcell-a{border-right:1px solid var(--g2);border-bottom:1px solid var(--g2);padding-top:88px}
 .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:var(--ac-strong);
   border:1px solid var(--g3);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;
   letter-spacing:.01em;margin-bottom:28px}
-.hero h1{font-size:clamp(42px,7vw,92px);line-height:.98;max-width:15ch;margin-bottom:44px}
-.hero-row{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end}
-.hero-lede .ld{font-size:19px;margin-bottom:32px}
-.stat-rail{list-style:none;border-top:1px solid var(--g3)}
-.stat-rail li{display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:14px;
-  padding:14px 0;border-bottom:1px solid var(--g3)}
-.stat-rail .ic{display:flex;align-items:center;justify-content:center;width:32px;height:32px;
-  border-radius:50%;background:var(--mint);font-size:14px}
-.stat-rail b{font-size:15px;font-weight:700;letter-spacing:-.02em;justify-self:end;order:3}
-.stat-rail .lb{font-size:12.5px;color:var(--g6);font-weight:500}
+.hero h1{font-size:clamp(40px,6vw,78px);line-height:.98;letter-spacing:-.035em;font-weight:700}
+.hero h1 .accent{color:var(--ac-strong)}
 
-/* full-bleed photo band: graded with a warm top glow + grounded bottom fade so a
-   plain product shot reads as an intentional, considered moment rather than a
-   flat snapshot dropped in at full width */
-.hero-band{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw;
-  height:clamp(320px,42vw,520px);background:var(--ink);isolation:isolate}
-.hero-band .band-img,.hero-band .band-img picture,.hero-band .band-img img{display:block;width:100%;height:100%}
-.hero-band .band-img img{object-fit:cover;object-position:62% 40%;filter:saturate(1.05) contrast(1.03)}
-.hero-band::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(60% 90% at 82% 0%,rgba(255,206,82,.22),transparent 60%),
-             linear-gradient(to bottom,rgba(22,33,28,.22),transparent 34%)}
-.hero-band::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(to top,rgba(15,21,18,.82) 0%,rgba(15,21,18,0) 46%)}
+.hcell-b{position:relative;border-bottom:1px solid var(--g2);display:flex;align-items:center;
+  justify-content:center;min-height:220px;padding:32px;
+  background-image:radial-gradient(var(--ac-strong) 1.5px,transparent 1.5px);
+  background-size:16px 16px;background-color:var(--mint)}
+.htrust{display:flex;align-items:center;gap:12px;background:#fff;border-radius:14px;padding:12px 18px;
+  box-shadow:0 16px 32px -16px rgba(16,20,24,.32)}
+.htrust img{width:34px;height:34px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
+.htrust b{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
+.htrust span{display:block;font-size:11.5px;color:var(--g6)}
 
-/* the floating card is a real, working affordance: it opens WhatsApp, so it
-   earns its overlap instead of sitting there as decoration */
-.band-cta{position:absolute;left:50%;transform:translateX(-50%);bottom:-32px;z-index:2;
-  display:flex;align-items:center;gap:14px;max-width:min(92vw,420px);background:#fff;
-  border-radius:999px;padding:12px 12px 12px 12px;box-shadow:0 18px 36px -14px rgba(16,20,24,.32);
-  transition:box-shadow .18s,transform .18s}
-.band-cta:hover{box-shadow:0 22px 40px -12px rgba(16,20,24,.4);transform:translateX(-50%) translateY(-2px)}
-.band-cta-av{width:44px;height:44px;border-radius:50%;flex-shrink:0;border:2px solid var(--ac);object-fit:cover}
-.band-cta-txt{min-width:0}
-.band-cta-txt b{display:block;font-size:14.5px;font-weight:700;letter-spacing:-.02em;color:var(--ink);
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.band-cta-txt span{display:block;font-size:12.5px;color:var(--g6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.band-cta-go{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--ac-strong);color:#fff;
-  display:flex;align-items:center;justify-content:center;font-style:normal;font-size:15px;margin-left:auto}
+.hcell-c{background:var(--surface-invert);color:var(--on-invert);display:flex;flex-direction:column;
+  justify-content:space-between;gap:28px}
+.hcell-c .ld{margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,.78);max-width:32em}
+.hgo{display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--on-invert);
+  border-top:1px solid rgba(255,255,255,.18);padding-top:18px;font-size:13px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;transition:gap .16s}
+.hgo:hover{gap:22px}
+.hgo i{font-style:normal}
+
+.hcell-d{background:var(--ac-strong);color:#fff;display:flex;align-items:center}
+.quad-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;width:100%}
+.quad-facts b{display:block;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.quad-facts span{display:block;font-size:12.5px;color:rgba(255,255,255,.78);font-weight:500}
 
 /* message: a soft wash instead of a flat mint block, and the chat is staged
    as an actual phone screen (header bar + avatar + status dot) rather than a
@@ -433,14 +425,9 @@ body[data-theme="dark"]{background:#0F1512}
 .home + .band .wrap{position:relative;padding-top:92px;padding-bottom:96px}
 
 @media(max-width:920px){
-  .hero .htop{padding-top:76px;padding-bottom:44px}
-  .hero h1{max-width:none}
-  .hero-row{grid-template-columns:1fr;gap:32px}
-  .stat-rail{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;border-top:0}
-  .stat-rail li{border-bottom:1px solid var(--g3)}
-  .hero-band{height:280px}
-  .band-cta{left:20px;right:20px;transform:none;bottom:-30px;max-width:none}
-  .band-cta:hover{transform:translateY(-2px)}
+  .hgrid{grid-template-columns:1fr}
+  .hcell{padding:36px 24px}
+  .hcell-a{padding-top:64px;border-right:0}
   .msg .wrap{grid-template-columns:1fr;gap:32px}
   .msg .wrap>div:first-child{order:1}
   .msg .wrap>.phone{order:2}

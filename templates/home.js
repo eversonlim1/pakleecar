@@ -3,7 +3,7 @@ const { esc, picture } = require('../src/html');
 function twoLineHeadline(text) {
   const m = text.match(/^(.+?[.。])\s*(.*)$/s);
   if (!m || !m[2]) return esc(text);
-  return `${esc(m[1])}<br>${esc(m[2])}`;
+  return `${esc(m[1])}<br><span class="accent">${esc(m[2])}</span>`;
 }
 const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
@@ -17,8 +17,8 @@ module.exports = function home({ lang, data, reels }) {
   const heroReel = reels.find(r => r.id === 'DY3AtNlolDz') || reels[0];
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
-  const stats = h.facts.map(f =>
-    `<li><span class="ic" aria-hidden="true">${esc(f.icon)}</span><span class="lb">${esc(f.label)}</span><b>${esc(f.value)}</b></li>`
+  const quadFacts = h.facts.map(f =>
+    `<li><b>${esc(f.value)}</b><span>${esc(f.label)}</span></li>`
   ).join('\n');
 
   const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '❄️'];
@@ -27,28 +27,30 @@ module.exports = function home({ lang, data, reels }) {
   ).join('\n');
 
   return `<main class="home">
-<header class="hero">
-<div class="wrap htop">
+<header class="hero"><div class="hgrid">
+
+<div class="hcell hcell-a">
 <span class="kicker">${esc(h.sticker)}</span>
 <h1>${twoLineHeadline(h.h1)}</h1>
-<div class="hero-row">
-<div class="hero-lede">
-<p class="ld">${esc(h.lede)}</p>
-<div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
-<a class="b" href="#rates">${esc(h.ctaSecondary)}</a></div>
 </div>
-<ul class="stat-rail">${stats}</ul>
-</div>
-</div>
-<div class="hero-band">
-<div class="band-img">${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Inside the Staria Lounge — sunroof and captain seats', width: 1440, height: 640, eager: true })}</div>
-<a class="band-cta" href="${WA}" target="_blank" rel="noopener">
-<img class="band-cta-av" src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
-<div class="band-cta-txt"><b>${esc(h.bubbleTitle)}</b><span>${esc(h.bubbleText)}</span></div>
-<i class="band-cta-go" aria-hidden="true">&rarr;</i>
+
+<div class="hcell hcell-b">
+<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
+<img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">
+<div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
 </a>
 </div>
-</header>
+
+<div class="hcell hcell-c">
+<p class="ld">${esc(h.lede)}</p>
+<a class="hgo" href="${WA}" target="_blank" rel="noopener"><span>${esc(h.ctaPrimary)}</span><i aria-hidden="true">&rarr;</i></a>
+</div>
+
+<div class="hcell hcell-d">
+<ul class="quad-facts">${quadFacts}</ul>
+</div>
+
+</div></header>
 
 <section class="msg" id="how"><div class="wrap">
 <div>
