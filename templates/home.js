@@ -21,6 +21,11 @@ module.exports = function home({ lang, data, reels }) {
     `<li><span class="ic" aria-hidden="true">${esc(f.icon)}</span><span class="lb">${esc(f.label)}</span><b>${esc(f.value)}</b></li>`
   ).join('\n');
 
+  const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '❄️'];
+  const specs = data.car.specs.map((s, i) =>
+    `<li><span class="ic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><span class="lb">${esc(s.label)}</span><b>${esc(s.value)}</b></li>`
+  ).join('\n');
+
   return `<main class="home">
 <header class="hero">
 <div class="wrap htop">
@@ -52,28 +57,36 @@ module.exports = function home({ lang, data, reels }) {
 <p class="sub">${esc(data.message.body)}</p>
 <a class="go" href="${WA}" target="_blank" rel="noopener">${esc(data.message.link)} &rarr;</a>
 </div>
+<div class="phone">
+<div class="phone-head"><img src="/assets/img/paklee-avatar.jpg" alt="" width="30" height="30"><b>Pak Lee</b><i class="dot" aria-hidden="true"></i></div>
 ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
+</div>
 </div></section>
 
 <section class="quote"><div class="wrap">
-<svg class="qmark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0l1.6 3.2c-4.8 1.6-7.2 4.8-7.2 8.8h6.4V24H0Zm17.6 0V14.4c0-8 4.8-13.2 12.8-14.4L32 3.2c-4.8 1.6-7.2 4.8-7.2 8.8H32V24H17.6Z"/></svg>
+<span class="qmark" aria-hidden="true">&#8220;</span>
+<div class="qbody">
 <p>${esc(data.quote.text)}</p>
-<div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">Pak Lee</div>
+<div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
+<div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
+</div>
+<span class="quote-tag">${esc(h.sticker)}</span>
 </div></section>
 
 ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
 
 <section class="car" id="car"><div class="wrap">
-<div>
+<div class="car-head">
 <span class="eyebrow">${esc(data.car.eyebrow)}</span>
 <h2>${esc(data.car.h2)}</h2>
 <p class="sub">${esc(data.car.body)}</p>
-<div class="specs">${data.car.specs.map(s =>
-  `<div class="spec"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>
 </div>
+<div class="car-row">
 <div class="gal">
 ${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge exterior', width: 720, height: 480 })}
 ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
+</div>
+<ul class="specs">${specs}</ul>
 </div>
 </div></section>
 
@@ -83,7 +96,7 @@ ${rates(data.rates)}
 <span class="eyebrow">${esc(data.faq.eyebrow)}</span>
 <h2>${esc(data.faq.h2)}</h2>
 ${data.faq.items.map(f =>
-  `<details class="faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n')}
+  `<details class="faq"><summary>${esc(f.q)}</summary><div class="faq-a"><img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28"><p>${esc(f.a)}</p></div></details>`).join('\n')}
 </div></section>
 </main>`;
 };
