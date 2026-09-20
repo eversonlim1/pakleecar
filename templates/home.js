@@ -36,8 +36,12 @@ module.exports = function home({ lang, data, reels }) {
 </div>
 </div>
 <div class="hero-band">
-<div class="band-img">${picture({ src: '/assets/img/staria-ext.jpg', alt: 'The Hyundai Staria Lounge van Pak Lee drives', width: 1440, height: 640, eager: true })}</div>
-<div class="band-bubble"><b>${esc(h.bubbleTitle)}</b><span>${esc(h.bubbleText)}</span></div>
+<div class="band-img">${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Inside the Staria Lounge — sunroof and captain seats', width: 1440, height: 640, eager: true })}</div>
+<a class="band-cta" href="${WA}" target="_blank" rel="noopener">
+<img class="band-cta-av" src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
+<div class="band-cta-txt"><b>${esc(h.bubbleTitle)}</b><span>${esc(h.bubbleText)}</span></div>
+<i class="band-cta-go" aria-hidden="true">&rarr;</i>
+</a>
 </div>
 </header>
 
@@ -68,7 +72,7 @@ ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'
   `<div class="spec"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>
 </div>
 <div class="gal">
-${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior seats', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge exterior', width: 720, height: 480 })}
 ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
 </div>
 </div></section>

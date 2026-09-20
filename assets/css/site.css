@@ -283,25 +283,58 @@ body[data-theme="dark"]{background:#0F1512}
 .hero-row{display:grid;grid-template-columns:1.5fr 1fr;gap:64px;align-items:end}
 .hero-lede .ld{font-size:19px;margin-bottom:32px}
 .stat-rail{list-style:none;border-top:1px solid var(--g3)}
-.stat-rail li{display:grid;grid-template-columns:24px 1fr auto;align-items:center;gap:14px;
-  padding:13px 0;border-bottom:1px solid var(--g3)}
-.stat-rail .ic{font-size:16px}
+.stat-rail li{display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--g3)}
+.stat-rail .ic{display:flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:50%;background:var(--mint);font-size:14px}
 .stat-rail b{font-size:15px;font-weight:700;letter-spacing:-.02em;justify-self:end;order:3}
 .stat-rail .lb{font-size:12.5px;color:var(--g6);font-weight:500}
 
+/* full-bleed photo band: graded with a warm top glow + grounded bottom fade so a
+   plain product shot reads as an intentional, considered moment rather than a
+   flat snapshot dropped in at full width */
 .hero-band{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw;
-  height:clamp(280px,40vw,460px);background:var(--g1)}
+  height:clamp(320px,42vw,520px);background:var(--ink);isolation:isolate}
 .hero-band .band-img,.hero-band .band-img picture,.hero-band .band-img img{display:block;width:100%;height:100%}
-.hero-band .band-img img{object-fit:cover}
-.band-bubble{position:absolute;left:36px;bottom:-34px;z-index:2;max-width:280px;background:#fff;
-  border-radius:var(--rl);padding:18px 20px;box-shadow:0 14px 32px -14px rgba(16,20,24,.28)}
-.band-bubble b{display:block;font-size:15.5px;font-weight:700;letter-spacing:-.02em;color:var(--ink);margin-bottom:3px}
-.band-bubble span{display:block;font-size:13.5px;color:var(--g6)}
+.hero-band .band-img img{object-fit:cover;object-position:62% 40%;filter:saturate(1.05) contrast(1.03)}
+.hero-band::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(60% 90% at 82% 0%,rgba(255,206,82,.22),transparent 60%),
+             linear-gradient(to bottom,rgba(22,33,28,.22),transparent 34%)}
+.hero-band::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(to top,rgba(15,21,18,.82) 0%,rgba(15,21,18,0) 46%)}
+
+/* the floating card is a real, working affordance: it opens WhatsApp, so it
+   earns its overlap instead of sitting there as decoration */
+.band-cta{position:absolute;left:50%;transform:translateX(-50%);bottom:-32px;z-index:2;
+  display:flex;align-items:center;gap:14px;max-width:min(92vw,420px);background:#fff;
+  border-radius:999px;padding:12px 12px 12px 12px;box-shadow:0 18px 36px -14px rgba(16,20,24,.32);
+  transition:box-shadow .18s,transform .18s}
+.band-cta:hover{box-shadow:0 22px 40px -12px rgba(16,20,24,.4);transform:translateX(-50%) translateY(-2px)}
+.band-cta-av{width:44px;height:44px;border-radius:50%;flex-shrink:0;border:2px solid var(--ac);object-fit:cover}
+.band-cta-txt{min-width:0}
+.band-cta-txt b{display:block;font-size:14.5px;font-weight:700;letter-spacing:-.02em;color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.band-cta-txt span{display:block;font-size:12.5px;color:var(--g6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.band-cta-go{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--ac-strong);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-style:normal;font-size:15px;margin-left:auto}
 
 /* message: mirror the hero's rhythm by flipping which side leads */
 .msg .wrap{grid-template-columns:1.12fr .88fr}
 .msg .wrap>div:first-child{order:2}
 .msg .wrap>.chat{order:1}
+
+/* the one square-cropped reel thumbnail in the library (native 640x640, not
+   the usual 9:16) crops off the sides of its baked-in caption when covered
+   into a portrait card anywhere on the site — letterbox it instead of
+   cropping it, on the two spots the homepage surfaces it. */
+.clip .th img[src$="DY3AtNlolDz.jpg"],
+.home .strip img[src$="DY3AtNlolDz.jpg"]{object-fit:contain;background:#12100D}
+
+/* strip: a taller, darker fade so a caption baked into the photo itself never
+   fights with our own overlaid title/place line (scoped to the homepage's
+   strip only — videos.js and tour.js render their own .strip instances) */
+.home .reels .strip .reel::after{background:linear-gradient(to top,rgba(10,13,11,.94) 4%,rgba(10,13,11,.62) 30%,transparent 64%)}
+.home .reels .strip .reel .mt{text-shadow:0 1px 6px rgba(0,0,0,.4)}
 
 /* car: two overlapping photos instead of an even bento grid */
 .gal{position:relative;height:420px;display:block}
@@ -313,23 +346,26 @@ body[data-theme="dark"]{background:#0F1512}
 .rates .tbl{margin-top:34px;background:transparent;border:0;border-radius:0;box-shadow:none;
   border-top:1px solid var(--g3)}
 .rates .tr{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;
-  column-gap:24px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--g3)}
+  column-gap:24px;align-items:baseline;padding:28px 4px;border-bottom:1px solid var(--g3);
+  border-radius:14px;transition:background .16s}
+.rates .tr:hover{background:var(--g1)}
 .rates .tr b{font-size:21px;letter-spacing:-.028em;grid-column:1;grid-row:1}
 .rates .tr span{grid-column:1/-1;grid-row:2;margin-top:8px;color:var(--g6);max-width:46em}
-.rates .tr .pr{font-size:27px;text-align:right;grid-column:2;grid-row:1}
+.rates .tr .pr{font-size:27px;text-align:right;grid-column:2;grid-row:1;color:var(--ac-strong)}
 
 /* faq: two-column editorial grid on desktop */
 .faqs .wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
 .faqs .eyebrow,.faqs h2{grid-column:1/-1}
 
 @media(max-width:920px){
-  .hero .htop{padding-top:76px;padding-bottom:40px}
+  .hero .htop{padding-top:76px;padding-bottom:44px}
   .hero h1{max-width:none}
   .hero-row{grid-template-columns:1fr;gap:32px}
   .stat-rail{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;border-top:0}
   .stat-rail li{border-bottom:1px solid var(--g3)}
-  .hero-band{height:220px}
-  .band-bubble{left:20px;right:20px;bottom:-28px;max-width:none}
+  .hero-band{height:280px}
+  .band-cta{left:20px;right:20px;transform:none;bottom:-30px;max-width:none}
+  .band-cta:hover{transform:translateY(-2px)}
   .msg .wrap>div:first-child{order:1}
   .msg .wrap>.chat{order:2}
   .gal{height:320px}
