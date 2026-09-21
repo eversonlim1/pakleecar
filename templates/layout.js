@@ -17,6 +17,10 @@ ${head({ lang, slug, seo, extraHead: ld, cssHref })}
 ${nav(lang, navText)}
 ${body}
 ${footer(lang, navText)}
+<div class="ilb" id="ilb" role="dialog" aria-modal="true" aria-label="Photo">
+<button class="ilb-x" id="ilbX" type="button" aria-label="Close">&times;</button>
+<img id="ilbImg" src="" alt="" width="1100" height="825">
+</div>
 <script src="${navJsHref}" defer></script>
 ${bodyEnd}
 </body>

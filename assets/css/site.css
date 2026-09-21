@@ -204,6 +204,16 @@ h2{font-size:clamp(30px,3.4vw,42px);line-height:1.12;font-weight:700;letter-spac
 .lb-nav button:hover{background:rgba(255,255,255,.24)}
 .lb-nav .ct{font-size:13px;color:rgba(255,255,255,.6)}
 
+/* ── 12.5 Photo lightbox (click any gallery photo to view it larger) ── */
+.ilb{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:32px;
+  background:rgba(12,16,14,.82);backdrop-filter:blur(6px)}
+.ilb.open{display:flex;animation:lbin .22s ease}
+.ilb img{max-width:min(94vw,1100px);max-height:88vh;width:auto;height:auto;border-radius:16px;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.6);animation:pop .24s cubic-bezier(.2,1.2,.4,1)}
+.ilb-x{position:fixed;top:24px;right:24px;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(255,255,255,.14);color:#fff;font-size:22px;line-height:1;transition:background .16s,transform .2s}
+.ilb-x:hover{background:rgba(255,255,255,.24);transform:rotate(90deg)}
+
 /* ── 13. Band (closing CTA) ── */
 .band{background:var(--surface-invert);color:var(--on-invert)}
 .band .wrap{display:flex;align-items:center;justify-content:space-between;gap:44px;flex-wrap:wrap;
@@ -407,7 +417,7 @@ body[data-theme="dark"]{background:#0F1512}
 .car .gal{position:relative;height:420px;display:block}
 .car .gal::before{content:'';position:absolute;left:-24px;top:-24px;right:18%;bottom:18%;
   background:var(--mint);border-radius:var(--rl);z-index:0}
-.car .gal picture{position:static}
+.car .gal picture{position:static;cursor:pointer}
 .car .gal img{position:absolute;z-index:1;border-radius:var(--rl);object-fit:cover;box-shadow:0 16px 34px -16px rgba(16,20,24,.3)}
 .car .gal picture:nth-child(1) img{width:76%;height:80%;top:0;left:0}
 .car .gal picture:nth-child(2) img{width:52%;height:54%;right:0;bottom:0;border:6px solid #fff;z-index:2}
@@ -437,14 +447,17 @@ body[data-theme="dark"]{background:#0F1512}
   text-align:center;font-size:22px;color:#0C7A49;background:#E7F5EE;
   border-left:2px dashed var(--g3);padding:0 22px;min-width:118px}
 
-.rates-extra{margin-top:28px;padding-top:24px;border-top:1px solid var(--g2)}
-.rx-label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--g6);margin-bottom:14px}
-.rx-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.rates-extra{margin-top:32px;padding:26px 28px;background:#E7F5EE;border-radius:20px;
+  border:1px solid rgba(12,122,73,.18)}
+.rx-label{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;letter-spacing:.04em;
+  text-transform:uppercase;color:#0C7A49;margin-bottom:16px}
+.rx-label::before{content:'!';display:flex;align-items:center;justify-content:center;width:20px;height:20px;
+  border-radius:50%;background:#0C7A49;color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
+.rx-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
 .rx-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
-  background:var(--g1);border-radius:12px;padding:12px 16px}
-.rx-list span{font-size:14px;color:var(--g7);font-weight:500}
-.rx-list b{font-size:14.5px;color:#0C7A49;font-weight:700;white-space:nowrap}
+  background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 4px 14px -8px rgba(12,122,73,.25)}
+.rx-list span{font-size:14.5px;color:#16211C;font-weight:600}
+.rx-list b{font-size:16px;color:#0C7A49;font-weight:700;white-space:nowrap}
 
 /* faq: each answer arrives as a message from Pak Lee, matching the chat
    section's visual language, instead of a generic 2-col SaaS accordion */
@@ -455,8 +468,8 @@ body[data-theme="dark"]{background:#0F1512}
 .home .faq summary{padding:20px 22px}
 .faq-a{display:flex;gap:12px;align-items:flex-start;padding:0 20px 20px}
 .faq-a img{width:28px;height:28px;border-radius:50%;flex-shrink:0;margin-top:2px;border:2px solid var(--ac)}
-.faq-a p{background:#F3F8F5;border-radius:16px 16px 16px 4px;padding:14px 16px;margin:0;
-  font-size:14.5px;line-height:1.6;color:#3C4A44;max-width:none}
+.home .faq-a p{background:#EEF3F0;border-radius:16px 16px 16px 4px;padding:14px 16px;margin:0;
+  font-size:15px;line-height:1.6;color:#16211C;font-weight:500;max-width:none}
 
 /* footer band: the sole dark full-width moment left on the page (the quote
    above is light now) — echo the hero's full-bleed glow so it bookends the

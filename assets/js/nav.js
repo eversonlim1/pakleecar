@@ -62,3 +62,36 @@
     update();
   });
 })();
+
+(function () {
+  var ilb = document.getElementById('ilb');
+  var ilbImg = document.getElementById('ilbImg');
+  var ilbX = document.getElementById('ilbX');
+  var pics = document.querySelectorAll('.car .gal picture');
+  if (!ilb || !ilbImg || !ilbX || !pics.length) return;
+
+  function open(src, alt) {
+    ilbImg.src = src;
+    ilbImg.alt = alt || '';
+    ilb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    ilb.classList.remove('open');
+    ilbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  pics.forEach(function (pic) {
+    pic.addEventListener('click', function () {
+      var img = pic.querySelector('img');
+      if (!img) return;
+      open(img.currentSrc || img.src, img.alt);
+    });
+  });
+  ilbX.addEventListener('click', close);
+  ilb.addEventListener('click', function (e) { if (e.target === ilb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && ilb.classList.contains('open')) close();
+  });
+})();
