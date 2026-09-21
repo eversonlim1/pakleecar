@@ -43,9 +43,10 @@
     "body": "One van, kept clean, with room to actually stretch out. Eight seats, but it's most comfortable at five or six once the luggage is in.",
     "specs": [
       { "value": "8", "label": "seats" },
-      { "value": "Wi-Fi", "label": "free hotspot" },
-      { "value": "USB", "label": "charging at every row" },
-      { "value": "A/C", "label": "front and rear" }
+      { "value": "Hotspot", "label": "free Wi-Fi for everyone" },
+      { "value": "Charging", "label": "USB at every row" },
+      { "value": "Water", "label": "bottled water provided" },
+      { "value": "First Aid", "label": "emergency kit onboard" }
     ]
   },
   "rates": {
@@ -74,7 +75,7 @@
     "eyebrow": "FAQ",
     "h2": "Questions people ask me",
     "items": [
-      { "q": "How much does a private driver cost in Korea?", "a": "A full day with me and the van runs ₩300,000 to ₩400,000 depending on where you're going, priced per vehicle, not per person. Fuel, tolls and insurance are already in that price. Going into Gyeonggi-do, Chungcheong-do or Gangwon-do adds a bit more, and so does running past the 10-hour mark — see the exact numbers under Rates." },
+      { "q": "How much does a private driver cost in Korea?", "a": "A full day with me and the van starts at ₩300,000 for Seoul, priced per vehicle, not per person. Fuel, tolls and insurance are already in that price. Going into Gyeonggi-do, Chungcheong-do or Gangwon-do adds a bit more, and so does running past the 10-hour mark — see the exact numbers under Rates." },
       { "q": "Can I change the plan during the day?", "a": "Yes. Nothing is booked with a tour company, so if you want to skip a stop or add one, we just do it." },
       { "q": "Is this service halal or Muslim friendly?", "a": "Yes. I know which restaurants are actually halal, not just labeled that way, and I build prayer stops into the day without you having to ask twice." },
       { "q": "How many people fit in the van?", "a": "Up to 8 with luggage, though 5 to 6 is more comfortable once the bags are loaded." },

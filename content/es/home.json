@@ -43,9 +43,10 @@
     "body": "Una sola van, siempre limpia y con sitio para estirarte de verdad. Ocho plazas, aunque va más cómoda con cinco o seis una vez cargado el equipaje.",
     "specs": [
       { "value": "8", "label": "plazas" },
-      { "value": "Wi-Fi", "label": "hotspot gratis" },
-      { "value": "USB", "label": "carga en cada fila" },
-      { "value": "A/A", "label": "delante y detrás" }
+      { "value": "Hotspot", "label": "Wi-Fi gratis para todos" },
+      { "value": "Carga", "label": "USB en cada fila" },
+      { "value": "Agua", "label": "botellas de agua incluidas" },
+      { "value": "Botiquín", "label": "kit de emergencia a bordo" }
     ]
   },
   "rates": {
@@ -74,7 +75,7 @@
     "eyebrow": "Preguntas frecuentes",
     "h2": "Lo que me suelen preguntar",
     "items": [
-      { "q": "¿Cuánto cuesta un chófer privado en Corea?", "a": "Un día completo conmigo y la van cuesta entre ₩300,000 y ₩400,000 según el destino, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio. Ir a Gyeonggi-do, Chungcheong-do o Gangwon-do tiene un costo extra, igual que pasar de las 10 horas — los montos exactos están en la sección Tarifas." },
+      { "q": "¿Cuánto cuesta un chófer privado en Corea?", "a": "Un día completo conmigo y la van empieza en ₩300,000 para Seúl, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio. Ir a Gyeonggi-do, Chungcheong-do o Gangwon-do tiene un costo extra, igual que pasar de las 10 horas — los montos exactos están en la sección Tarifas." },
       { "q": "¿Puedo cambiar el plan durante el día?", "a": "Sí. Nada está reservado a través de una agencia de tours, así que si quieres saltarte una parada o añadir otra, simplemente lo hacemos." },
       { "q": "¿Este servicio es apto para musulmanes?", "a": "Sí. Sé qué restaurantes son realmente halal y no solo lo dicen, y organizo paradas para el rezo durante el día sin que tengas que pedirlo dos veces." },
       { "q": "¿Cuántas personas caben en la van?", "a": "Hasta 8 personas con equipaje, aunque de 5 a 6 es más cómodo una vez que se cargan las maletas." },

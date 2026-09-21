@@ -21,7 +21,7 @@ module.exports = function home({ lang, data, reels }) {
     `<li><span class="qf-ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span class="qf-lb">${esc(f.label)}</span></li>`
   ).join('\n');
 
-  const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '❄️'];
+  const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
   const specs = data.car.specs.map((s, i) =>
     `<li><span class="ic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><span class="lb">${esc(s.label)}</span><b>${esc(s.value)}</b></li>`
   ).join('\n');
@@ -79,6 +79,7 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 <div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
 <div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
 </div>
+<span class="quote-tag quote-tag-top" aria-hidden="true">${esc(h.facts[3].icon)} ${esc(h.facts[3].value)} <i>${esc(h.facts[3].label)}</i></span>
 <span class="quote-tag">${esc(h.sticker)}</span>
 </div></section>
 
@@ -93,8 +94,10 @@ ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'
 <div class="car-row">
 <div class="gal">
 ${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, three-quarter view', width: 720, height: 480 })}
-${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 480, height: 480 })}
 ${picture({ src: '/assets/img/staria-int2.jpg', alt: 'Staria Lounge sunroof and full row of seats', width: 480, height: 480 })}
+${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge, front view', width: 480, height: 480 })}
+${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior, front row', width: 480, height: 480 })}
 </div>
 <ul class="specs">${specs}</ul>
 </div>
