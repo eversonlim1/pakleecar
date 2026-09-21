@@ -8,11 +8,17 @@ module.exports = function rates(d) {
     ...d.included.map(c => `<span class="chip">${esc(c)}</span>`),
     ...d.excluded.map(c => `<span class="chip no">${esc(c)}</span>`)
   ].join('');
+  const extra = d.extra ? `<div class="rates-extra">
+<span class="rx-label">${esc(d.extra.label)}</span>
+<ul class="rx-list">${d.extra.items.map(x =>
+    `<li><span>${esc(x.name)}</span><b>${esc(x.price)}</b></li>`).join('')}</ul>
+</div>` : '';
   return `<section class="rates" id="rates"><div class="wrap">
 <span class="eyebrow">${esc(d.eyebrow)}</span>
 <h2>${esc(d.h2)}</h2>
 <p class="sub">${esc(d.body)}</p>
 <div class="tbl">${rows}</div>
 <div class="incl">${chips}</div>
+${extra}
 </div></section>`;
 };

@@ -59,7 +59,16 @@
       { "name": "Antar bandara", "detail": "Hotel Seoul ke Incheon, sekali jalan", "price": "₩150.000", "amount": "150000" }
     ],
     "included": ["Bensin termasuk", "Tol termasuk", "Asuransi termasuk"],
-    "excluded": ["Parkir tidak termasuk", "Tiket masuk tidak termasuk"]
+    "excluded": ["Parkir tidak termasuk", "Tiket masuk tidak termasuk"],
+    "extra": {
+      "label": "Di luar Seoul & lembur",
+      "items": [
+        { "name": "Gyeonggi-do", "price": "+₩50.000" },
+        { "name": "Chungcheong-do", "price": "+₩100.000" },
+        { "name": "Gangwon-do", "price": "+₩150.000–200.000" },
+        { "name": "Lembur (per jam)", "price": "+₩30.000" }
+      ]
+    }
   },
   "faq": {
     "eyebrow": "FAQ",

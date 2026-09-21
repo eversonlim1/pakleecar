@@ -59,7 +59,16 @@
       { "name": "Traslado al aeropuerto", "detail": "De tu hotel de Seúl a Incheon, un trayecto", "price": "₩150,000", "amount": "150000" }
     ],
     "included": ["Combustible incluido", "Peajes incluidos", "Seguro incluido"],
-    "excluded": ["Parking no incluido", "Entradas no incluidas"]
+    "excluded": ["Parking no incluido", "Entradas no incluidas"],
+    "extra": {
+      "label": "Fuera de Seúl y horas extra",
+      "items": [
+        { "name": "Gyeonggi-do", "price": "+₩50.000" },
+        { "name": "Chungcheong-do", "price": "+₩100.000" },
+        { "name": "Gangwon-do", "price": "+₩150.000–200.000" },
+        { "name": "Hora extra (por hora)", "price": "+₩30.000" }
+      ]
+    }
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",

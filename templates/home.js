@@ -92,8 +92,9 @@ ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'
 </div>
 <div class="car-row">
 <div class="gal">
-${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge exterior', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, three-quarter view', width: 720, height: 480 })}
 ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 720, height: 480 })}
+${picture({ src: '/assets/img/staria-int2.jpg', alt: 'Staria Lounge sunroof and full row of seats', width: 480, height: 480 })}
 </div>
 <ul class="specs">${specs}</ul>
 </div>

@@ -59,7 +59,16 @@
       { "name": "Airport drop", "detail": "Seoul hotel to Incheon, one way", "price": "₩150,000", "amount": "150000" }
     ],
     "included": ["Fuel included", "Tolls included", "Insurance included"],
-    "excluded": ["Parking not included", "Entry tickets not included"]
+    "excluded": ["Parking not included", "Entry tickets not included"],
+    "extra": {
+      "label": "Outside Seoul & overtime",
+      "items": [
+        { "name": "Gyeonggi-do", "price": "+₩50,000" },
+        { "name": "Chungcheong-do", "price": "+₩100,000" },
+        { "name": "Gangwon-do", "price": "+₩150,000–200,000" },
+        { "name": "Overtime (per hour)", "price": "+₩30,000" }
+      ]
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
