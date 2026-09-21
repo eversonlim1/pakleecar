@@ -44,7 +44,7 @@
     "specs": [
       { "value": "8", "label": "kursi" },
       { "value": "Hotspot", "label": "Wi-Fi gratis untuk semua" },
-      { "value": "Colokan", "label": "USB di tiap baris" },
+      { "value": "Colokan", "label": "USB tersedia" },
       { "value": "Air", "label": "air minum disediakan" },
       { "value": "P3K", "label": "kotak P3K tersedia" }
     ]
@@ -76,10 +76,10 @@
     "h2": "Pertanyaan yang sering ditanyakan",
     "items": [
       { "q": "Berapa biaya sopir pribadi di Korea?", "a": "Seharian penuh dengan saya dan mobil mulai dari ₩300.000 untuk area Seoul, harganya per mobil, bukan per orang. Bensin, tol, dan asuransi sudah termasuk di harga itu. Kalau masuk Gyeonggi-do, Chungcheong-do, atau Gangwon-do ada tambahan, begitu juga kalau lewat dari 10 jam — lihat angka pastinya di bagian Rates." },
-      { "q": "Bisa ubah rencana di tengah hari?", "a": "Bisa. Tidak ada yang dipesan lewat agen tur, jadi kalau mau lewati satu tempat atau tambah tempat lain, tinggal kita jalani saja." },
-      { "q": "Apakah layanan ini ramah muslim?", "a": "Ya. Saya tahu restoran mana yang benar-benar halal, bukan cuma diklaim begitu, dan saya siapkan waktu sholat dalam perjalanan tanpa Anda perlu minta dua kali." },
-      { "q": "Muat berapa orang di dalam mobil?", "a": "Sampai 8 orang dengan koper, tapi 5 sampai 6 orang lebih nyaman setelah tas dimasukkan." },
-      { "q": "Bagaimana cara bookingnya?", "a": "Kirim pesan ke WhatsApp saya dengan tanggal Anda. Tidak ada DP dan tidak ada formulir sebelum kita benar-benar bicara." }
+      { "q": "Bisa ubah rencana di tengah hari?", "a": "Bisa, sepenuhnya — jalan sesuai waktu dan cara yang paling nyaman buat Anda. Lewati satu tempat, tambah tempat lain, atau tinggal lebih lama di tempat yang Anda suka." },
+      { "q": "Apakah layanan ini ramah muslim?", "a": "Ya. Saya tahu beberapa tempat makan halal yang bisa saya rekomendasikan, dan saya siapkan waktu sholat dalam perjalanan tanpa Anda perlu minta dua kali." },
+      { "q": "Muat berapa orang di dalam mobil?", "a": "Sampai 8 orang, tapi itu cuma sisa tempat untuk 2 sampai 3 koper kabin kecil. Dengan 5 orang, koper besar juga muat." },
+      { "q": "Bagaimana cara bookingnya?", "a": "Kirim pesan ke WhatsApp saya atau email dengan tanggal Anda, nanti kita lanjut dari situ." }
     ]
   },
   "quote": {

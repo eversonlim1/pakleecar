@@ -439,13 +439,14 @@ body[data-theme="dark"]{background:#0F1512}
 .car .gal picture:nth-child(5){grid-column:3/4;grid-row:2/3}
 .car .specs{display:block;list-style:none;background:var(--mint);border-radius:var(--rl);
   padding:8px 26px;margin-top:0}
-.car .specs li{display:grid;grid-template-columns:36px 1fr auto;align-items:center;gap:14px;
+.car .specs li{display:flex;align-items:center;gap:14px;
   padding:15px 0;border-bottom:1px solid rgba(22,33,28,.1)}
 .car .specs li:last-child{border-bottom:0}
 .car .specs .ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;
-  border-radius:50%;background:#fff;font-size:15px}
-.car .specs b{font-size:16px;font-weight:700;letter-spacing:-.02em;justify-self:end;order:3}
-.car .specs .lb{font-size:13.5px;color:var(--g7);font-weight:500}
+  flex-shrink:0;border-radius:50%;background:#fff;font-size:15px}
+.car .specs .spec-tx{display:flex;flex-direction:column;gap:2px}
+.car .specs b{font-size:16px;font-weight:700;letter-spacing:-.02em}
+.car .specs .spec-lb{font-size:13px;color:var(--g7);font-weight:500}
 
 /* rates: a pair of boarding-pass style tickets per row instead of a plain
    price list or a bordered SaaS pricing card — fits a travel business, and

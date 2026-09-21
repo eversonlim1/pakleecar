@@ -23,7 +23,7 @@ module.exports = function home({ lang, data, reels }) {
 
   const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
   const specs = data.car.specs.map((s, i) =>
-    `<li><span class="ic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><span class="lb">${esc(s.label)}</span><b>${esc(s.value)}</b></li>`
+    `<li><span class="ic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><span class="spec-tx"><b>${esc(s.value)}</b><span class="spec-lb">${esc(s.label)}</span></span></li>`
   ).join('\n');
 
   return `<main class="home">
