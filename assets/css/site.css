@@ -388,6 +388,17 @@ body[data-theme="dark"]{background:#0F1512}
 .home .reels .strip .reel::after{background:linear-gradient(to top,rgba(10,13,11,.94) 4%,rgba(10,13,11,.62) 30%,transparent 64%)}
 .home .reels .strip .reel .mt{text-shadow:0 1px 6px rgba(0,0,0,.4)}
 
+.sbtn{display:none}
+.strip-wrap{position:relative}
+.home .strip-wrap .sbtn{display:flex;position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+  align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:0;
+  background:rgba(255,255,255,.94);color:#16211C;font-size:16px;cursor:pointer;
+  box-shadow:0 10px 24px -10px rgba(0,0,0,.4);transition:opacity .16s,transform .16s}
+.home .strip-wrap .sbtn:hover{transform:translateY(-50%) scale(1.06)}
+.home .strip-wrap .sbtn.prev{left:-4px}
+.home .strip-wrap .sbtn.next{right:-4px}
+.home .strip-wrap .sbtn:disabled{opacity:0;pointer-events:none}
+
 /* car: photos lead on a soft color panel, specs read as an icon rail that
    echoes the hero's stat rail instead of a plain two-column label list */
 .car .wrap{display:block}

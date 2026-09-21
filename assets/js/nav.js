@@ -37,3 +37,28 @@
     }
   });
 })();
+
+(function () {
+  document.querySelectorAll('.strip-wrap').forEach(function (wrap) {
+    var strip = wrap.querySelector('.strip');
+    var prev = wrap.querySelector('.sbtn.prev');
+    var next = wrap.querySelector('.sbtn.next');
+    if (!strip || !prev || !next) return;
+
+    function update() {
+      var max = strip.scrollWidth - strip.clientWidth - 1;
+      prev.disabled = strip.scrollLeft <= 0;
+      next.disabled = strip.scrollLeft >= max;
+    }
+
+    prev.addEventListener('click', function () {
+      strip.scrollBy({ left: -strip.clientWidth * 0.8, behavior: 'smooth' });
+    });
+    next.addEventListener('click', function () {
+      strip.scrollBy({ left: strip.clientWidth * 0.8, behavior: 'smooth' });
+    });
+    strip.addEventListener('scroll', update);
+    window.addEventListener('resize', update);
+    update();
+  });
+})();

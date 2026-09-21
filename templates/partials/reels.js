@@ -21,8 +21,12 @@ function reelStrip(lang, reels, t, { limit = 6, allHref = null } = {}) {
 <div><span class="eyebrow">${esc(t.eyebrow)}</span><h2>${esc(t.h2)}</h2><p class="sub">${esc(t.body)}</p></div>
 ${all}
 </div>
+<div class="strip-wrap">
+<button class="sbtn prev" type="button" data-scroll="-1" aria-label="Scroll left">&larr;</button>
 <div class="strip">
 ${items}
+</div>
+<button class="sbtn next" type="button" data-scroll="1" aria-label="Scroll right">&rarr;</button>
 </div>
 </div></section>`;
 }
