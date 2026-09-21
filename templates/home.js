@@ -32,14 +32,17 @@ module.exports = function home({ lang, data, reels }) {
 <div class="hcell hcell-a">
 <span class="kicker">${esc(h.sticker)}</span>
 <h1>${twoLineHeadline(h.h1)}</h1>
+</div>
+
+<div class="hcell hcell-b">
+<a class="hclip" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}" aria-label="Play: ${esc(heroTitle)}">
+${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}
+<i class="pl" aria-hidden="true">&#9654;</i>
+</a>
 <a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
 <img src="/assets/img/paklee-avatar.jpg" alt="" width="32" height="32">
 <div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
 </a>
-</div>
-
-<div class="hcell hcell-b">
-<div class="hclip">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
 </div>
 
 <div class="hcell hcell-c">
