@@ -35,6 +35,7 @@ module.exports = function home({ lang, data, reels }) {
 </div>
 
 <div class="hcell hcell-b">
+<div class="hclip">${picture({ src: heroReel.thumb, alt: heroTitle, width: 560, height: 700, eager: true })}</div>
 <a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
 <img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">
 <div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
