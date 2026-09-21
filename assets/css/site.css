@@ -257,6 +257,8 @@ h2{font-size:clamp(30px,3.4vw,42px);line-height:1.12;font-weight:700;letter-spac
   .chip:not([data-theme="light"]){background:#161D1A}
   .reel:not([data-theme="light"]){background:#161D1A}
   .phone:not([data-theme="light"]){background:#161D1A;border-color:#28322D}
+  .rates:not([data-theme="light"]),.reels:not([data-theme="light"]){background:#0F1512}
+  .hamburger:not([data-theme="light"]){background:#161D1A;border-color:#28322D}
 }
 :root[data-theme="dark"]{
   --ink:#EAF2ED; --g1:#141A17; --g2:#1B2320; --g3:#28322D; --g5:#7C8B84; --g6:#AAB8B1; --g7:#CDD8D2;
@@ -291,10 +293,11 @@ body[data-theme="dark"]{background:#0F1512}
 
 .hcell-b{position:relative;overflow:hidden;border-bottom:1px solid var(--g2);background:#12100D;
   background-image:radial-gradient(rgba(255,255,255,.08) 1.5px,transparent 1.5px);background-size:18px 18px;
-  min-height:520px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
-.hclip{position:relative;display:block;height:420px;max-height:100%;aspect-ratio:4/5;border-radius:20px;
+  min-height:520px;padding:20px;display:flex;align-items:center;justify-content:center}
+.hbrow{display:flex;align-items:center;gap:28px}
+.hclip{position:relative;display:block;height:400px;max-height:100%;aspect-ratio:4/5;border-radius:20px;
   overflow:hidden;box-shadow:0 24px 48px -18px rgba(0,0,0,.5),0 0 0 8px rgba(255,255,255,.04);
-  cursor:pointer;transition:transform .18s}
+  cursor:pointer;transition:transform .18s;flex-shrink:0}
 .hclip:hover{transform:translateY(-3px)}
 .hclip picture,.hclip img{display:block;width:100%;height:100%;object-fit:cover}
 .hclip .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
@@ -303,10 +306,10 @@ body[data-theme="dark"]{background:#0F1512}
   padding-left:3px;box-shadow:0 12px 24px -8px rgba(0,0,0,.5);transition:transform .16s}
 .hclip:hover .pl{transform:translate(-50%,-50%) scale(1.08)}
 
-.htrust{display:flex;align-items:center;gap:12px}
-.htrust img{width:32px;height:32px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
-.htrust b{display:block;font-size:13.5px;font-weight:700;color:#fff}
-.htrust span{display:block;font-size:11.5px;color:rgba(255,255,255,.6)}
+.htrust{display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:150px}
+.htrust img{width:52px;height:52px;border-radius:50%;border:3px solid var(--ac);flex-shrink:0}
+.htrust b{display:block;font-size:19px;line-height:1.15;font-weight:700;color:#fff;letter-spacing:-.02em}
+.htrust span{display:block;font-size:12.5px;color:rgba(255,255,255,.55)}
 
 .hcell-c{background:var(--surface-invert);color:var(--on-invert);display:flex;flex-direction:column;
   align-items:center;justify-content:center;text-align:center;gap:30px;min-height:300px}
@@ -319,8 +322,11 @@ body[data-theme="dark"]{background:#0F1512}
 
 .hcell-d{background:var(--ac-strong);color:#fff;display:flex;align-items:center;justify-content:center;min-height:300px}
 .quad-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:36px 48px;text-align:center}
-.quad-facts b{display:block;font-size:38px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
-.quad-facts span{display:block;font-size:14.5px;color:rgba(255,255,255,.82);font-weight:500}
+.quad-facts li{display:flex;flex-direction:column;align-items:center}
+.qf-ic{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,.16);font-size:20px;margin-bottom:10px}
+.quad-facts b{display:block;font-size:34px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.qf-lb{display:block;font-size:14.5px;color:rgba(255,255,255,.82);font-weight:500}
 
 /* message: a soft wash instead of a flat mint block, and the chat is staged
    as an actual phone screen (header bar + avatar + status dot) rather than a
@@ -441,6 +447,8 @@ body[data-theme="dark"]{background:#0F1512}
   .hgrid{grid-template-columns:1fr}
   .hcell{padding:36px 24px}
   .hcell-a{padding-top:64px;border-right:0}
+  .hbrow{flex-direction:column}
+  .htrust{align-items:center;text-align:center;max-width:none}
   .msg .wrap{grid-template-columns:1fr;gap:32px}
   .msg .wrap>div:first-child{order:1}
   .msg .wrap>.phone{order:2}

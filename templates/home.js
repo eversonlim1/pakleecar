@@ -18,7 +18,7 @@ module.exports = function home({ lang, data, reels }) {
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
 
   const quadFacts = h.facts.map(f =>
-    `<li><b>${esc(f.value)}</b><span>${esc(f.label)}</span></li>`
+    `<li><span class="qf-ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span class="qf-lb">${esc(f.label)}</span></li>`
   ).join('\n');
 
   const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '❄️'];
@@ -35,14 +35,17 @@ module.exports = function home({ lang, data, reels }) {
 </div>
 
 <div class="hcell hcell-b">
+<div class="hbrow">
 <a class="hclip" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}" aria-label="Play: ${esc(heroTitle)}">
 ${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}
 <i class="pl" aria-hidden="true">&#9654;</i>
 </a>
 <a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
-<img src="/assets/img/paklee-avatar.jpg" alt="" width="32" height="32">
-<div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
+<img src="/assets/img/paklee-avatar.jpg" alt="" width="52" height="52">
+<b>Real trips,<br>real guests</b>
+<span>@paklee.carkorea</span>
 </a>
+</div>
 </div>
 
 <div class="hcell hcell-c">
