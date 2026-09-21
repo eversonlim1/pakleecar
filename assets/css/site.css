@@ -453,11 +453,11 @@ body[data-theme="dark"]{background:#0F1512}
   text-transform:uppercase;color:#0C7A49;margin-bottom:16px}
 .rx-label::before{content:'!';display:flex;align-items:center;justify-content:center;width:20px;height:20px;
   border-radius:50%;background:#0C7A49;color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
-.rx-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-.rx-list li{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
-  background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 4px 14px -8px rgba(12,122,73,.25)}
-.rx-list span{font-size:14.5px;color:#16211C;font-weight:600}
-.rx-list b{font-size:16px;color:#0C7A49;font-weight:700;white-space:nowrap}
+.rx-list{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rx-list li{display:flex;flex-direction:column;gap:6px;
+  background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 4px 14px -8px rgba(12,122,73,.25)}
+.rx-list span{font-size:13.5px;color:#16211C;font-weight:600;white-space:nowrap}
+.rx-list b{font-size:16.5px;color:#0C7A49;font-weight:700;white-space:nowrap}
 
 /* faq: each answer arrives as a message from Pak Lee, matching the chat
    section's visual language, instead of a generic 2-col SaaS accordion */
@@ -496,6 +496,7 @@ body[data-theme="dark"]{background:#0F1512}
   .car .gal{height:320px}
   .car .gal::before{right:16%;bottom:16%}
   .rates .tbl{grid-template-columns:1fr}
+  .rx-list{grid-template-columns:repeat(2,1fr)}
   .faqs .wrap{max-width:none}
 }
 
