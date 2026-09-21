@@ -32,14 +32,14 @@ module.exports = function home({ lang, data, reels }) {
 <div class="hcell hcell-a">
 <span class="kicker">${esc(h.sticker)}</span>
 <h1>${twoLineHeadline(h.h1)}</h1>
+<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
+<img src="/assets/img/paklee-avatar.jpg" alt="" width="32" height="32">
+<div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
+</a>
 </div>
 
 <div class="hcell hcell-b">
-<div class="hclip">${picture({ src: heroReel.thumb, alt: heroTitle, width: 560, height: 700, eager: true })}</div>
-<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
-<img src="/assets/img/paklee-avatar.jpg" alt="" width="36" height="36">
-<div><b>Real trips, real guests</b><span>@paklee.carkorea</span></div>
-</a>
+<div class="hclip">${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}</div>
 </div>
 
 <div class="hcell hcell-c">

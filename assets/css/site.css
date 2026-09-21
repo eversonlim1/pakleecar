@@ -280,23 +280,20 @@ body[data-theme="dark"]{background:#0F1512}
 .hgrid{display:grid;grid-template-columns:1.35fr 1fr;border-top:1px solid var(--g2)}
 .hcell{padding:56px 48px}
 .hcell-a{border-right:1px solid var(--g2);border-bottom:1px solid var(--g2);
-  display:flex;flex-direction:column;justify-content:center;min-height:340px}
+  display:flex;flex-direction:column;justify-content:center;min-height:460px}
 .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:var(--ac-strong);
   border:1px solid var(--g3);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;
   letter-spacing:.01em;margin-bottom:28px;align-self:flex-start}
 .hero h1{font-size:clamp(40px,6vw,78px);line-height:.98;letter-spacing:-.035em;font-weight:700}
 .hero h1 .accent{color:var(--ac-strong)}
 
-.hcell-b{position:relative;border-bottom:1px solid var(--g2);display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:0;min-height:460px;padding:32px;
-  background-image:radial-gradient(var(--ac-strong) 1.5px,transparent 1.5px);
-  background-size:16px 16px;background-color:var(--mint)}
-.hclip{width:280px;aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:5px solid #fff;
-  box-shadow:0 24px 48px -18px rgba(16,20,24,.4);position:relative;z-index:1}
+.hcell-b{position:relative;overflow:hidden;border-bottom:1px solid var(--g2);
+  background:var(--ink);min-height:460px;padding:0}
+.hclip{position:absolute;inset:0}
 .hclip picture,.hclip img{display:block;width:100%;height:100%;object-fit:cover}
-.htrust{position:relative;z-index:2;margin-top:-22px;display:flex;align-items:center;gap:12px;
-  background:#fff;border-radius:14px;padding:12px 18px;box-shadow:0 16px 32px -16px rgba(16,20,24,.32)}
-.htrust img{width:34px;height:34px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
+
+.htrust{margin-top:32px;display:flex;align-items:center;gap:12px;align-self:flex-start}
+.htrust img{width:32px;height:32px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
 .htrust b{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
 .htrust span{display:block;font-size:11.5px;color:var(--g6)}
 
@@ -341,7 +338,7 @@ body[data-theme="dark"]{background:#0F1512}
 .quote .wrap{position:relative;max-width:1040px;padding-top:88px;padding-bottom:92px}
 .quote .qmark{position:absolute;top:-18px;left:-6px;font-size:220px;line-height:1;font-weight:700;
   color:var(--ac);opacity:.14;font-style:normal;pointer-events:none}
-.quote .qbody{position:relative;max-width:30em}
+.quote .qbody{position:relative;max-width:720px}
 .quote p{font-size:clamp(22px,2.8vw,32px);line-height:1.4;font-weight:700;letter-spacing:-.018em;
   color:var(--ink);margin-bottom:30px}
 .quote .qwho{display:flex;align-items:center;gap:12px}
