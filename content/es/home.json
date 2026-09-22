@@ -44,7 +44,7 @@
     "specs": [
       { "value": "8", "label": "plazas" },
       { "value": "Hotspot", "label": "Wi-Fi gratis para todos" },
-      { "value": "Carga", "label": "USB en cada fila" },
+      { "value": "Carga", "label": "USB disponible" },
       { "value": "Agua", "label": "botellas de agua incluidas" },
       { "value": "Botiquín", "label": "kit de emergencia a bordo" }
     ]
@@ -77,7 +77,6 @@
     "items": [
       { "q": "¿Cuánto cuesta un chófer privado en Corea?", "a": "Un día completo conmigo y la van empieza en ₩300,000 para Seúl, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio. Ir a Gyeonggi-do, Chungcheong-do o Gangwon-do tiene un costo extra, igual que pasar de las 10 horas — los montos exactos están en la sección Tarifas." },
       { "q": "¿Puedo cambiar el plan durante el día?", "a": "Sí, completamente — muévete cuando y como te resulte más cómodo. Salta una parada, añade otra, o quédate más tiempo en el sitio que te guste." },
-      { "q": "¿Este servicio es apto para musulmanes?", "a": "Sí. Sé qué restaurantes son realmente halal y no solo lo dicen, y organizo paradas para el rezo durante el día sin que tengas que pedirlo dos veces." },
       { "q": "¿Cuántas personas caben en la van?", "a": "Hasta 8, pero eso solo deja sitio para 2 o 3 maletas de cabina pequeñas. Con 5 personas, caben maletas grandes." },
       { "q": "¿Cómo reservo?", "a": "Escríbeme por WhatsApp o mándame un correo con tus fechas, y seguimos desde ahí." }
     ]
