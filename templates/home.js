@@ -32,6 +32,8 @@ module.exports = function home({ lang, data, reels }) {
 <div class="hcell hcell-a">
 <span class="kicker">${esc(h.sticker)}</span>
 <h1>${twoLineHeadline(h.h1)}</h1>
+<p class="ld">${esc(h.lede)}</p>
+<a class="hgo" href="${WA}" target="_blank" rel="noopener"><span>${esc(h.ctaPrimary)}</span><i aria-hidden="true">&rarr;</i></a>
 </div>
 
 <div class="hcell hcell-b">
@@ -49,8 +51,8 @@ ${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager:
 </div>
 
 <div class="hcell hcell-c">
-<p class="ld">${esc(h.lede)}</p>
-<a class="hgo" href="${WA}" target="_blank" rel="noopener"><span>${esc(h.ctaPrimary)}</span><i aria-hidden="true">&rarr;</i></a>
+${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, the private van used for every trip', width: 640, height: 480 })}
+<span class="van-tag">${esc(h.vanTag)}</span>
 </div>
 
 <div class="hcell hcell-d">

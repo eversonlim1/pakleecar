@@ -12,6 +12,7 @@
     "sticker": "Horario libre, siempre",
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "Pregúntame lo que quieras",
+    "vanTag": "Van privada + chófer, todo incluido",
     "facts": [
       { "icon": "🚌", "value": "Hasta 8", "label": "Plazas, más equipaje" },
       { "icon": "⏰", "value": "10 horas", "label": "Un día entero fuera" },

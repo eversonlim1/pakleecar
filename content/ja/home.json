@@ -12,6 +12,7 @@
     "sticker": "スケジュールはいつでも自由",
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "何でも聞いてください",
+    "vanTag": "専属バン+ドライバー込み",
     "facts": [
       { "icon": "🚌", "value": "最大8名", "label": "座席、荷物も積めます" },
       { "icon": "⏰", "value": "10時間", "label": "丸一日のお出かけ" },

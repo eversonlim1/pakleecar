@@ -12,6 +12,7 @@
     "sticker": "Jadwal bebas, selalu",
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "Tanya apa saja",
+    "vanTag": "Van pribadi + sopir, semua termasuk",
     "facts": [
       { "icon": "🚌", "value": "Sampai 8", "label": "Kursi, plus koper" },
       { "icon": "⏰", "value": "10 jam", "label": "Seharian penuh" },
