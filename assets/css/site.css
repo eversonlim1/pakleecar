@@ -331,14 +331,13 @@ body[data-theme="dark"]{background:#0F1512}
 
 .hcell-c{position:relative;overflow:hidden;background:var(--surface-invert);min-height:300px;padding:0}
 .hcell-c picture,.hcell-c img{display:block;width:100%;height:100%}
-.hcell-c img{object-fit:cover;object-position:center 62%;transform:scale(1.06);
-  filter:contrast(1.12) saturate(1.22) brightness(1.03)}
+.hcell-c img{object-fit:cover;object-position:38% 58%;transform:scale(1.55);
+  filter:contrast(1.03) saturate(1.08) brightness(1.08)}
 .hcell-c::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
-  background:radial-gradient(120% 100% at 50% 10%,rgba(22,160,99,.14),transparent 55%),
-             linear-gradient(to top,rgba(10,14,11,.15),transparent 40%)}
-.hcell-c::after{content:'';position:absolute;left:0;right:0;bottom:0;height:60%;pointer-events:none;z-index:1;
-  background:linear-gradient(to top,rgba(10,14,11,.88),rgba(10,14,11,0))}
-.van-tag{position:absolute;left:28px;bottom:28px;z-index:2;background:#fff;color:var(--ink);
+  background:radial-gradient(120% 100% at 50% 0%,rgba(22,160,99,.12),transparent 55%)}
+.hcell-c::after{content:'';position:absolute;left:0;right:0;top:0;height:40%;pointer-events:none;z-index:1;
+  background:linear-gradient(to bottom,rgba(10,14,11,.7),rgba(10,14,11,0))}
+.van-tag{position:absolute;left:28px;top:28px;z-index:2;background:#fff;color:var(--ink);
   font-size:14px;font-weight:700;padding:13px 22px;border-radius:999px;
   box-shadow:0 12px 28px -12px rgba(0,0,0,.4)}
 
