@@ -329,25 +329,32 @@ body[data-theme="dark"]{background:#0F1512}
 .hgo:hover{background:var(--g1);border-color:var(--g5)}
 .hgo i{font-style:normal;font-size:16px}
 
-.hcell-c{position:relative;overflow:hidden;background:var(--surface-invert);min-height:300px;padding:0}
-.hcell-c picture,.hcell-c img{display:block;width:100%;height:100%}
-.hcell-c img{object-fit:cover;object-position:38% 58%;transform:scale(1.55);
-  filter:contrast(1.03) saturate(1.08) brightness(1.08)}
-.hcell-c::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
-  background:radial-gradient(120% 100% at 50% 0%,rgba(22,160,99,.12),transparent 55%)}
-.hcell-c::after{content:'';position:absolute;left:0;right:0;top:0;height:40%;pointer-events:none;z-index:1;
-  background:linear-gradient(to bottom,rgba(10,14,11,.7),rgba(10,14,11,0))}
-.van-tag{position:absolute;left:28px;top:28px;z-index:2;background:#fff;color:var(--ink);
-  font-size:14px;font-weight:700;padding:13px 22px;border-radius:999px;
-  box-shadow:0 12px 28px -12px rgba(0,0,0,.4)}
+/* Bottom row, redesigned as one thing instead of two flat colour
+   blocks side by side: a single full-width photo with a frosted-glass
+   info card floating over its lower edge, holding the van claim and
+   the stat strip together as one unit. */
+.hcell-wide{grid-column:1/3;position:relative;overflow:hidden;background:var(--surface-invert);
+  min-height:380px;padding:0}
+.hcell-wide picture,.hcell-wide img{display:block;width:100%;height:100%}
+.hcell-wide img{object-fit:cover;object-position:50% 55%;transform:scale(1.12);
+  filter:contrast(1.03) saturate(1.08) brightness(1.05)}
+.hcell-wide::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
+  background:linear-gradient(to top,rgba(8,11,9,.55) 0%,rgba(8,11,9,.05) 45%)}
 
-.hcell-d{background:var(--ac-strong);color:#fff;display:flex;align-items:center;justify-content:center;min-height:300px}
-.quad-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:36px 48px;text-align:center}
-.quad-facts li{display:flex;flex-direction:column;align-items:center}
-.qf-ic{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;
-  background:rgba(255,255,255,.16);font-size:20px;margin-bottom:10px}
-.quad-facts b{display:block;font-size:34px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
-.qf-lb{display:block;font-size:14.5px;color:rgba(255,255,255,.82);font-weight:500}
+.van-glass{position:absolute;left:24px;right:24px;bottom:24px;z-index:2;
+  background:rgba(255,255,255,.14);backdrop-filter:blur(18px) saturate(140%);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);
+  border:1px solid rgba(255,255,255,.28);border-radius:24px;
+  padding:22px 28px;display:flex;align-items:center;justify-content:space-between;
+  gap:28px;flex-wrap:wrap;box-shadow:0 20px 44px -20px rgba(0,0,0,.5)}
+.van-tag{color:#fff;font-size:16px;font-weight:700;letter-spacing:-.01em;max-width:16em}
+
+.quad-facts{list-style:none;display:flex;gap:28px;flex-wrap:wrap}
+.quad-facts li{display:flex;align-items:center;gap:10px}
+.qf-ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
+  background:rgba(255,255,255,.2);font-size:16px;flex-shrink:0}
+.quad-facts b{display:block;font-size:16px;font-weight:700;letter-spacing:-.02em;color:#fff}
+.qf-lb{display:block;font-size:11.5px;color:rgba(255,255,255,.75);font-weight:500}
 
 /* message: a soft wash instead of a flat mint block, and the chat is staged
    as an actual phone screen (header bar + avatar + status dot) rather than a
@@ -512,6 +519,9 @@ body[data-theme="dark"]{background:#0F1512}
   .hcell-a{padding-top:64px;border-right:0}
   .hbrow{flex-direction:column}
   .htrust{align-items:center;text-align:center;max-width:none}
+  .hcell-wide{grid-column:1/2;min-height:460px}
+  .van-glass{flex-direction:column;align-items:flex-start;left:16px;right:16px;bottom:16px;padding:18px 20px}
+  .quad-facts{gap:16px 22px}
   .msg .wrap{grid-template-columns:1fr;gap:32px}
   .msg .wrap>div:first-child{order:1}
   .msg .wrap>.phone{order:2}

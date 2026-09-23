@@ -50,13 +50,12 @@ ${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager:
 </div>
 </div>
 
-<div class="hcell hcell-c">
-${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, the private van used for every trip', width: 640, height: 480 })}
+<div class="hcell hcell-wide">
+${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, the private van used for every trip', width: 1280, height: 480, eager: true })}
+<div class="van-glass">
 <span class="van-tag">${esc(h.vanTag)}</span>
-</div>
-
-<div class="hcell hcell-d">
 <ul class="quad-facts">${quadFacts}</ul>
+</div>
 </div>
 
 </div></header>
