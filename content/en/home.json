@@ -14,11 +14,9 @@
     "bubbleText": "Ask me anything",
     "vanTag": "Private van + driver, all included",
     "facts": [
-      { "icon": "🚌", "value": "Up to 8", "label": "Seats, plus luggage" },
-      { "icon": "⏰", "value": "10 hours", "label": "A full day out" },
-      { "icon": "⛽", "value": "All in", "label": "Fuel, tolls, insurance" },
-      { "icon": "💬", "value": "Within an hour", "label": "Typical reply time" }
-    ]
+      { "icon": "🤗", "value": "Warm from hello to goodbye", "label": "Guests say it feels like riding with a friend" }
+    ],
+    "replyFact": { "icon": "💬", "value": "Within an hour", "label": "Typical reply time" }
   },
   "message": {
     "eyebrow": "How it works",

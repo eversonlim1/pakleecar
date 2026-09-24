@@ -74,7 +74,7 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 <div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
 <div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
 </div>
-<span class="quote-tag quote-tag-top" aria-hidden="true">${esc(h.facts[3].icon)} ${esc(h.facts[3].value)} <i>${esc(h.facts[3].label)}</i></span>
+<span class="quote-tag quote-tag-top" aria-hidden="true">${esc(h.replyFact.icon)} ${esc(h.replyFact.value)} <i>${esc(h.replyFact.label)}</i></span>
 <span class="quote-tag">${esc(h.sticker)}</span>
 </div></section>
 

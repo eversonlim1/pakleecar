@@ -14,11 +14,9 @@
     "bubbleText": "Pregúntame lo que quieras",
     "vanTag": "Van privada + chófer, todo incluido",
     "facts": [
-      { "icon": "🚌", "value": "Hasta 8", "label": "Plazas, más equipaje" },
-      { "icon": "⏰", "value": "10 horas", "label": "Un día entero fuera" },
-      { "icon": "⛽", "value": "Todo incluido", "label": "Combustible, peajes, seguro" },
-      { "icon": "💬", "value": "En menos de una hora", "label": "Tiempo de respuesta habitual" }
-    ]
+      { "icon": "🤗", "value": "Cercano de principio a fin", "label": "Los huéspedes dicen que se siente como viajar con un amigo" }
+    ],
+    "replyFact": { "icon": "💬", "value": "En menos de una hora", "label": "Tiempo de respuesta habitual" }
   },
   "message": {
     "eyebrow": "Cómo funciona",
