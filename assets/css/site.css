@@ -286,75 +286,57 @@ body[data-theme="dark"]{background:#0F1512}
    (home.js is the sole caller), so these rules are safe to override
    outright rather than scope under .home. */
 
-/* -- hero: asymmetric 2x2 editorial quadrant grid (Awwwards SOTD "Aspen
-   Search" reference: oversized wordmark-scale headline, flat colour-block
-   panels, a dot-texture graphic panel standing in for a photo) instead of
-   the side-by-side text/photo card or full-bleed photo band tried before. -- */
-.hero{padding-bottom:0}
-.hgrid{display:grid;grid-template-columns:1.35fr 1fr;border-top:1px solid var(--g2)}
-.hcell{padding:56px 48px}
-.hcell-a{border-right:1px solid var(--g2);border-bottom:1px solid var(--g2);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:520px}
-.kicker{display:inline-flex;align-items:center;gap:8px;background:#E7F5EE;color:#0C7A49;
-  border:1px solid var(--g3);border-radius:999px;padding:8px 16px;font-size:12.5px;font-weight:700;
-  letter-spacing:.01em;margin-bottom:28px}
-.hero h1{font-size:clamp(40px,6vw,78px);line-height:.98;letter-spacing:-.035em;font-weight:700;text-align:center}
-.hero h1 .accent{color:var(--ac-strong)}
+/* -- hero: full-bleed candid photo with the headline set directly on it
+   and a single floating white action card (Welcome Pickups reference:
+   welcomepickups.com — real-passenger photo, oversized white headline
+   with no box around it, one white card off to the side holding the
+   actual conversion action) instead of the boxed quadrant grid or the
+   glass-overlay-on-photo versions tried before. -- */
+.hero{padding-bottom:0;position:relative;min-height:640px;display:flex;align-items:flex-end;
+  color:#fff}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg picture,.hero-bg img{display:block;width:100%;height:100%;object-fit:cover;
+  object-position:50% 30%;transform:scale(1.02)}
+.hero-scrim{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(0deg,rgba(8,11,9,.78) 0%,rgba(8,11,9,.4) 42%,rgba(8,11,9,.12) 68%,rgba(8,11,9,.32) 100%)}
+.hero-wrap{position:relative;z-index:2;width:100%;display:flex;align-items:flex-end;
+  justify-content:space-between;gap:40px;flex-wrap:wrap;padding:80px 0 64px}
 
-.hcell-b{position:relative;overflow:hidden;border-bottom:1px solid var(--g2);background:#12100D;
-  background-image:radial-gradient(rgba(255,255,255,.08) 1.5px,transparent 1.5px);background-size:18px 18px;
-  min-height:520px;padding:20px;display:flex;align-items:center;justify-content:center}
-.hbrow{display:flex;align-items:center;gap:28px}
-.hclip{position:relative;display:block;height:400px;max-height:100%;aspect-ratio:4/5;border-radius:20px;
-  overflow:hidden;box-shadow:0 24px 48px -18px rgba(0,0,0,.5),0 0 0 8px rgba(255,255,255,.04);
-  cursor:pointer;transition:transform .18s;flex-shrink:0}
-.hclip:hover{transform:translateY(-3px)}
-.hclip picture,.hclip img{display:block;width:100%;height:100%;object-fit:cover}
-.hclip .pl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
-  width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.94);color:#16211C;
-  display:flex;align-items:center;justify-content:center;font-size:18px;font-style:normal;
-  padding-left:3px;box-shadow:0 12px 24px -8px rgba(0,0,0,.5);transition:transform .16s}
-.hclip:hover .pl{transform:translate(-50%,-50%) scale(1.08)}
+.hero-headline{max-width:640px;padding-bottom:8px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);
+  backdrop-filter:blur(6px);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:999px;
+  padding:8px 16px;font-size:12.5px;font-weight:700;letter-spacing:.01em}
+.hero h1{font-size:clamp(38px,5.2vw,64px);line-height:1.03;letter-spacing:-.03em;font-weight:700;
+  color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.3)}
+.hero h1 .accent{color:#8FE3B4}
+.hero-headline .ld{margin:18px 0 0;font-size:17.5px;line-height:1.6;color:rgba(255,255,255,.88);
+  max-width:32em;font-weight:400}
+.hclip-link{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#fff;
+  font-size:14px;font-weight:700;letter-spacing:.01em;cursor:pointer}
+.hclip-link i{font-style:normal;font-size:11px;width:32px;height:32px;border-radius:50%;
+  background:rgba(255,255,255,.94);color:#16211C;display:inline-flex;align-items:center;
+  justify-content:center;padding-left:2px;transition:transform .16s}
+.hclip-link:hover i{transform:scale(1.08)}
 
-.htrust{display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:150px}
-.htrust img{width:52px;height:52px;border-radius:50%;border:3px solid var(--ac);flex-shrink:0}
-.htrust b{display:block;font-size:19px;line-height:1.15;font-weight:700;color:#fff;letter-spacing:-.02em}
-.htrust span{display:block;font-size:12.5px;color:rgba(255,255,255,.55)}
-
-.hcell-a .ld{margin:18px 0 26px;font-size:18px;line-height:1.6;color:var(--g7);max-width:26em;
-  font-weight:400;text-align:center}
-.hgo{display:inline-flex;align-items:center;gap:12px;color:var(--ink);
-  border:1px solid var(--g3);border-radius:999px;padding:15px 28px;font-size:14.5px;font-weight:700;
-  letter-spacing:.04em;text-transform:uppercase;transition:background .16s,border-color .16s}
-.hgo:hover{background:var(--g1);border-color:var(--g5)}
-.hgo i{font-style:normal;font-size:16px}
-
-/* Bottom row, redesigned as one thing instead of two flat colour
-   blocks side by side: a single full-width photo with a frosted-glass
-   info card floating over its lower edge, holding the van claim and
-   the stat strip together as one unit. */
-.hcell-wide{grid-column:1/3;position:relative;overflow:hidden;background:var(--surface-invert);
-  min-height:380px;padding:0}
-.hcell-wide picture,.hcell-wide img{display:block;width:100%;height:100%}
-.hcell-wide img{object-fit:cover;object-position:50% 55%;transform:scale(1.12);
-  filter:contrast(1.03) saturate(1.08) brightness(1.05)}
-.hcell-wide::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
-  background:linear-gradient(to top,rgba(8,11,9,.55) 0%,rgba(8,11,9,.05) 45%)}
-
-.van-glass{position:absolute;left:24px;right:24px;bottom:24px;z-index:2;
-  background:rgba(255,255,255,.14);backdrop-filter:blur(18px) saturate(140%);
-  -webkit-backdrop-filter:blur(18px) saturate(140%);
-  border:1px solid rgba(255,255,255,.28);border-radius:24px;
-  padding:22px 28px;display:flex;align-items:center;justify-content:space-between;
-  gap:28px;flex-wrap:wrap;box-shadow:0 20px 44px -20px rgba(0,0,0,.5)}
-.van-tag{color:#fff;font-size:16px;font-weight:700;letter-spacing:-.01em;max-width:16em}
-
-.quad-facts{list-style:none;display:flex;gap:28px;flex-wrap:wrap}
-.quad-facts li{display:flex;align-items:center;gap:10px}
-.qf-ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
-  background:rgba(255,255,255,.2);font-size:16px;flex-shrink:0}
-.quad-facts b{display:block;font-size:16px;font-weight:700;letter-spacing:-.02em;color:#fff}
-.qf-lb{display:block;font-size:11.5px;color:rgba(255,255,255,.75);font-weight:500}
+.hcard{background:#fff;border-radius:24px;padding:28px;width:320px;flex-shrink:0;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:flex;flex-direction:column;
+  align-items:flex-start;gap:16px;color:var(--ink)}
+.hcard .kicker{background:#E7F5EE;color:#0C7A49;border-color:var(--g3)}
+.hcard .quad-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;width:100%}
+.hcard .quad-facts li{display:flex;align-items:center;gap:10px}
+.hcard .qf-ic{display:flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:50%;background:var(--mint);font-size:14px;flex-shrink:0}
+.hcard .quad-facts b{display:block;font-size:15px;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.hcard .qf-lb{display:block;font-size:11px;color:var(--g7);font-weight:500}
+.van-tag{display:block;font-size:13.5px;font-weight:600;color:var(--g7);letter-spacing:-.005em;
+  border-top:1px solid var(--g2);padding-top:16px;width:100%}
+.hgo{display:flex;align-items:center;justify-content:center;width:100%;color:#fff;background:var(--ac-strong);
+  border-radius:14px;padding:16px;font-size:14.5px;font-weight:700;letter-spacing:.02em;
+  text-transform:uppercase;transition:filter .16s}
+.hgo:hover{filter:brightness(1.08)}
+.htrust{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--g7);font-weight:500;
+  line-height:1.4}
+.htrust img{width:28px;height:28px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
 
 /* message: a soft wash instead of a flat mint block, and the chat is staged
    as an actual phone screen (header bar + avatar + status dot) rather than a
@@ -514,14 +496,10 @@ body[data-theme="dark"]{background:#0F1512}
 .home + .band .wrap{position:relative;padding-top:92px;padding-bottom:96px}
 
 @media(max-width:920px){
-  .hgrid{grid-template-columns:1fr}
-  .hcell{padding:36px 24px}
-  .hcell-a{padding-top:64px;border-right:0}
-  .hbrow{flex-direction:column}
-  .htrust{align-items:center;text-align:center;max-width:none}
-  .hcell-wide{grid-column:1/2;min-height:460px}
-  .van-glass{flex-direction:column;align-items:flex-start;left:16px;right:16px;bottom:16px;padding:18px 20px}
-  .quad-facts{gap:16px 22px}
+  .hero{min-height:560px}
+  .hero-wrap{flex-direction:column;align-items:stretch;padding:64px 0 40px}
+  .hero-headline{max-width:none}
+  .hcard{width:auto}
   .msg .wrap{grid-template-columns:1fr;gap:32px}
   .msg .wrap>div:first-child{order:1}
   .msg .wrap>.phone{order:2}

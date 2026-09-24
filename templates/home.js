@@ -27,38 +27,32 @@ module.exports = function home({ lang, data, reels }) {
   ).join('\n');
 
   return `<main class="home">
-<header class="hero"><div class="hgrid">
+<header class="hero">
+<div class="hero-bg">${picture({ src: heroReel.thumb, alt: heroTitle, width: 1600, height: 1000, eager: true })}</div>
+<div class="hero-scrim"></div>
+<div class="wrap hero-wrap">
 
-<div class="hcell hcell-a">
-<span class="kicker">${esc(h.sticker)}</span>
+<div class="hero-headline">
 <h1>${twoLineHeadline(h.h1)}</h1>
 <p class="ld">${esc(h.lede)}</p>
-<a class="hgo" href="${WA}" target="_blank" rel="noopener"><span>${esc(h.ctaPrimary)}</span><i aria-hidden="true">&rarr;</i></a>
-</div>
-
-<div class="hcell hcell-b">
-<div class="hbrow">
-<a class="hclip" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}" aria-label="Play: ${esc(heroTitle)}">
-${picture({ src: heroReel.thumb, alt: heroTitle, width: 720, height: 900, eager: true })}
-<i class="pl" aria-hidden="true">&#9654;</i>
-</a>
-<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
-<img src="/assets/img/paklee-avatar.jpg" alt="" width="52" height="52">
-<b>Real trips,<br>real guests</b>
-<span>@paklee.carkorea</span>
+<a class="hclip-link" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">
+<i aria-hidden="true">&#9654;</i> Watch a real trip
 </a>
 </div>
-</div>
 
-<div class="hcell hcell-wide">
-${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, the private van used for every trip', width: 1280, height: 480, eager: true })}
-<div class="van-glass">
-<span class="van-tag">${esc(h.vanTag)}</span>
+<div class="hcard">
+<span class="kicker">${esc(h.sticker)}</span>
 <ul class="quad-facts">${quadFacts}</ul>
-</div>
+<span class="van-tag">${esc(h.vanTag)}</span>
+<a class="hgo" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
+<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
+<img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28">
+Real trips, real guests · @paklee.carkorea
+</a>
 </div>
 
-</div></header>
+</div>
+</header>
 
 <section class="msg" id="how"><div class="wrap">
 <div>
