@@ -323,12 +323,12 @@ body[data-theme="dark"]{background:#0F1512}
   align-items:flex-start;gap:16px;color:var(--ink)}
 .hcard .kicker{background:#E7F5EE;color:#0C7A49;border-color:var(--g3)}
 .hcard .quad-facts{list-style:none;display:flex;flex-direction:column;gap:12px;width:100%}
-.hcard .quad-facts li{display:flex;align-items:flex-start;gap:12px}
+.hcard .quad-facts li{display:flex;flex-direction:column;gap:8px}
 .hcard .qf-ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;
   border-radius:50%;background:var(--mint);font-size:16px;flex-shrink:0}
 .hcard .quad-facts b{display:block;font-size:15.5px;font-weight:700;letter-spacing:-.02em;
-  color:var(--ink);line-height:1.3}
-.hcard .qf-lb{display:block;font-size:12.5px;color:var(--g7);font-weight:500;margin-top:3px;line-height:1.4}
+  color:var(--ink);line-height:1.3;margin-top:2px}
+.hcard .qf-lb{display:block;font-size:12.5px;color:var(--g7);font-weight:500;line-height:1.4}
 .van-tag{display:block;font-size:13.5px;font-weight:600;color:var(--g7);letter-spacing:-.005em;
   border-top:1px solid var(--g2);padding-top:16px;width:100%}
 .hgo{display:flex;align-items:center;justify-content:center;width:100%;color:#fff;background:var(--ac-strong);

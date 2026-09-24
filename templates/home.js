@@ -47,7 +47,7 @@ module.exports = function home({ lang, data, reels }) {
 <a class="hgo" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
 <a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
 <img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28">
-Real trips, real guests · @paklee.carkorea
+@paklee.carkorea
 </a>
 </div>
 
