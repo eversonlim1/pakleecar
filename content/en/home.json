@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Private Driver in Korea | Pak Lee's Car",
-    "description": "Private van + driver in Korea from ₩150,000. Flexible schedule, halal-friendly, fuel and tolls included. Message Pak Lee on WhatsApp today.",
+    "description": "Private van + driver in Korea: ₩300,000 for 10 hours, airport pickup ₩150,000. Flexible schedule, halal-friendly, fuel and tolls included. WhatsApp Pak Lee.",
     "ogImage": "/assets/img/staria-ext.jpg"
   },
   "hero": {
@@ -25,7 +25,7 @@
   "message": {
     "eyebrow": "How it works",
     "h2": "It starts with a message",
-    "body": "No forms, and no deposit before we've spoken. Send me your dates and what you'd like to see. I'll tell you honestly what fits in a day and what doesn't.",
+    "body": "No forms. Send me your dates and what you'd like to see, and I'll tell you honestly what fits in a day and what doesn't. Once we've agreed on the plan, a 10% deposit holds your date.",
     "link": "Message Pak Lee",
     "chat": [
       { "from": "guest", "name": "Rina", "text": "Six of us, three kids. Nami Island on the 14th — possible?" },
