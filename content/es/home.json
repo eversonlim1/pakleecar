@@ -30,8 +30,8 @@
     "chat": [
       { "from": "guest", "name": "Rina", "text": "Somos seis, tres niños. Nami Island el 14, ¿es posible?" },
       { "from": "pak", "name": "Pak Lee", "text": "Sí. Seis con equipaje entran bien. Yo saldría a las ocho, antes de la cola del ferry." },
-      { "from": "guest", "name": "Rina", "text": "¿Hay comida halal cerca de allí?" },
-      { "from": "pak", "name": "Pak Lee", "text": "La hay. Te llevo a uno donde como yo mismo." }
+      { "from": "guest", "name": "Rina", "text": "¿Nos recomiendas algún sitio bueno para comer por allí?" },
+      { "from": "pak", "name": "Pak Lee", "text": "Claro. Te llevo a uno donde como yo mismo." }
     ]
   },
   "reels": {
