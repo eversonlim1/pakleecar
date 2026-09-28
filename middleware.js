@@ -5,7 +5,7 @@ const DEFAULT_LANG = 'en';
 
 export default function middleware(request) {
   const url = new URL(request.url);
-  const cookieLang = request.cookies.get('pl_lang')?.value;
+  const cookieLang = (request.headers.get('cookie') || '').match(/(?:^|;\s*)pl_lang=([a-z]{2})/)?.[1];
 
   let lang = DEFAULT_LANG;
   if (cookieLang && SUPPORTED.includes(cookieLang)) {
@@ -20,5 +20,5 @@ export default function middleware(request) {
   }
 
   url.pathname = `/${lang}/`;
-  return Response.redirect(url, 307);
+  return Response.redirect(url.toString(), 307);
 }
