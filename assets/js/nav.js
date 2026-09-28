@@ -1,4 +1,14 @@
 (function () {
+  document.querySelectorAll('.fl a[href]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var m = a.getAttribute('href').match(/^\/([a-z]{2})\//);
+      if (!m) return;
+      document.cookie = 'pl_lang=' + m[1] + ';path=/;max-age=' + (60 * 60 * 24 * 365);
+    });
+  });
+})();
+
+(function () {
   var hamburger = document.querySelector('.hamburger');
   var menu = document.querySelector('.mobile-menu');
   var close = menu ? menu.querySelector('.mm-close') : null;
