@@ -19,14 +19,14 @@
       { "icon": "🚐", "value": "Solo tu grupo", "label": "Van privada, hasta 8" },
       { "icon": "⛽", "value": "Todo incluido", "label": "Combustible, peajes y seguro" },
       { "icon": "🤗", "value": "Cercano de principio a fin", "label": "Como viajar con un amigo" }
-    ],
-    "replyFact": { "icon": "💬", "value": "En menos de una hora", "label": "Tiempo de respuesta habitual" }
+    ]
   },
   "message": {
     "eyebrow": "Cómo funciona",
     "h2": "Todo empieza con un mensaje",
     "body": "Sin formularios. Mándame tus fechas y lo que te gustaría ver, y te diré con honestidad qué cabe en un día y qué no. Cuando acordemos el plan, un depósito del 10% reserva tu fecha.",
     "link": "Escríbele a Pak Lee",
+    "email": "Enviar un email",
     "chat": [
       { "from": "guest", "name": "Rina", "text": "Somos seis, tres niños. Nami Island el 14, ¿es posible?" },
       { "from": "pak", "name": "Pak Lee", "text": "Sí. Seis con equipaje entran bien. Yo saldría a las ocho, antes de la cola del ferry." },

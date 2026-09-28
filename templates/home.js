@@ -89,8 +89,10 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 <div class="h-talk-tx">
 <blockquote>&ldquo;${esc(data.quote.text)}&rdquo;</blockquote>
 <div class="h-who"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40"><div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
-<span class="h-pill">${esc(h.replyFact.icon)} ${esc(h.replyFact.value)} · ${esc(h.replyFact.label)}</span>
+<div class="h-talk-btns">
 <a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(data.message.link)} &rsaquo;</a>
+<a class="pbtn" href="mailto:pakleecar@gmail.com">&#9993; ${esc(data.message.email)}</a>
+</div>
 </div>
 </div>
 <div class="h-card h-reels">

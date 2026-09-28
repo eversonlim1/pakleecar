@@ -19,14 +19,14 @@
       { "icon": "🚐", "value": "Just your group", "label": "A private van, up to 8" },
       { "icon": "⛽", "value": "All included", "label": "Fuel, tolls & insurance" },
       { "icon": "🤗", "value": "Warm from hello to goodbye", "label": "Like riding with a friend" }
-    ],
-    "replyFact": { "icon": "💬", "value": "Within an hour", "label": "Typical reply time" }
+    ]
   },
   "message": {
     "eyebrow": "How it works",
     "h2": "It starts with a message",
     "body": "No forms. Send me your dates and what you'd like to see, and I'll tell you honestly what fits in a day and what doesn't. Once we've agreed on the plan, a 10% deposit holds your date.",
     "link": "Message Pak Lee",
+    "email": "Send an email",
     "chat": [
       { "from": "guest", "name": "Rina", "text": "Six of us, three kids. Nami Island on the 14th — possible?" },
       { "from": "pak", "name": "Pak Lee", "text": "Yes. Six with luggage fits fine. I'd leave at eight, before the ferry queue." },

@@ -6,7 +6,7 @@ test('llmsTxt가 사업 요약과 연락처를 담는다', () => {
   const out = llmsTxt();
   assert.match(out, /Pak Lee's Car/);
   assert.match(out, /\+82 10-9415-7859/);
-  assert.match(out, /eversonlim@gmail\.com/);
+  assert.match(out, /pakleecar@gmail\.com/);
 });
 
 test('llmsTxt가 절대 URL만 쓴다', () => {
