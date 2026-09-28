@@ -13,8 +13,12 @@
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "Ask me anything",
     "vanTag": "Private van + driver, all included",
+    "watch": "Watch a real trip",
     "facts": [
-      { "icon": "🤗", "value": "Warm from hello to goodbye", "label": "Guests say it feels like riding with a friend" }
+      { "icon": "🗺️", "value": "Your route, your pace", "label": "Free schedule, always" },
+      { "icon": "🚐", "value": "Just your group", "label": "A private van, up to 8" },
+      { "icon": "⛽", "value": "All included", "label": "Fuel, tolls & insurance" },
+      { "icon": "🤗", "value": "Warm from hello to goodbye", "label": "Like riding with a friend" }
     ],
     "replyFact": { "icon": "💬", "value": "Within an hour", "label": "Typical reply time" }
   },
@@ -70,6 +74,7 @@
       ]
     }
   },
+  "why": { "h2": "Why spend the day with Pak Lee?" },
   "faq": {
     "eyebrow": "FAQ",
     "h2": "Questions people ask me",

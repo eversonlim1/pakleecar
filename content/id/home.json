@@ -13,8 +13,12 @@
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "Tanya apa saja",
     "vanTag": "Van pribadi + sopir, semua termasuk",
+    "watch": "Lihat perjalanan nyata",
     "facts": [
-      { "icon": "🤗", "value": "Ramah dari awal sampai akhir", "label": "Menurut tamu, rasanya seperti naik bareng teman" }
+      { "icon": "🗺️", "value": "Rute & tempo Anda", "label": "Jadwal bebas, selalu" },
+      { "icon": "🚐", "value": "Hanya rombongan Anda", "label": "Van pribadi, sampai 8 orang" },
+      { "icon": "⛽", "value": "Semua termasuk", "label": "Bensin, tol & asuransi" },
+      { "icon": "🤗", "value": "Ramah dari awal sampai akhir", "label": "Seperti jalan bareng teman" }
     ],
     "replyFact": { "icon": "💬", "value": "Dalam 1 jam", "label": "Rata-rata balas" }
   },
@@ -70,6 +74,7 @@
       ]
     }
   },
+  "why": { "h2": "Kenapa seharian bersama Pak Lee?" },
   "faq": {
     "eyebrow": "FAQ",
     "h2": "Pertanyaan yang sering ditanyakan",

@@ -19,8 +19,8 @@ test('Figtree만 지정한다', () => {
   assert.doesNotMatch(css, /Plus Jakarta|Poppins|Georgia|Times/);
 });
 
-test('h1/h2가 weight 700이다', () => {
-  assert.doesNotMatch(css, /font-weight:\s*800/);
+test('기본 h2(홈 외 페이지)는 weight 700이다', () => {
+  assert.match(css, /\nh2\{[^}]*font-weight:700/);
 });
 
 test('다크모드 대응이 있다', () => {

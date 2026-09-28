@@ -281,245 +281,247 @@ body[data-theme="dark"]{background:#0F1512}
 [data-theme="dark"] .reel{background:#161D1A}
 [data-theme="dark"] .phone{background:#161D1A;border-color:#28322D}
 
-/* ── 13.6 Homepage (redesign) ──
-   .hero, .msg, .car/.gal, .rates, .faqs .wrap grid are all homepage-only
-   (home.js is the sole caller), so these rules are safe to override
-   outright rather than scope under .home. */
+/* ── 13.6 Homepage ──
+   Korean promo-landing grammar (Behance "PEET 썸머스쿨 2018" reference):
+   centred black mega-headline on white, chunky buttons with a hard black
+   drop, a solid green badge band, white cards on a green ground, numbered
+   01/02/03 blocks on light grey, a yellow call-out box and a side quick
+   menu. Every colour below is literal, not a theme token, so the page keeps
+   its light promo look in OS dark mode instead of flipping text to light on
+   these always-light cards. */
 
-/* -- hero: full-bleed candid photo with the headline set directly on it
-   and a single floating white action card (Welcome Pickups reference:
-   welcomepickups.com — real-passenger photo, oversized white headline
-   with no box around it, one white card off to the side holding the
-   actual conversion action) instead of the boxed quadrant grid or the
-   glass-overlay-on-photo versions tried before. -- */
-.hero{padding-bottom:0;position:relative;min-height:640px;display:flex;align-items:flex-end;
-  color:#fff}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg picture,.hero-bg img{display:block;width:100%;height:100%;object-fit:cover;
-  object-position:50% 30%;transform:scale(1.02)}
-.hero-scrim{position:absolute;inset:0;z-index:1;
-  background:linear-gradient(0deg,rgba(8,11,9,.78) 0%,rgba(8,11,9,.4) 42%,rgba(8,11,9,.12) 68%,rgba(8,11,9,.32) 100%)}
-.hero-wrap{position:relative;z-index:2;width:100%;display:flex;align-items:flex-end;
-  justify-content:space-between;gap:40px;flex-wrap:wrap;padding:80px 0 64px}
+/* reels.js is shared with the tour/videos pages; only the homepage shows
+   the scroll arrows */
+.sbtn{display:none}
+.strip-wrap{position:relative}
 
-.hero-headline{max-width:640px;padding-bottom:8px}
-.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);
-  backdrop-filter:blur(6px);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:999px;
-  padding:8px 16px;font-size:12.5px;font-weight:700;letter-spacing:.01em}
-.hero h1{font-size:clamp(38px,5.2vw,64px);line-height:1.03;letter-spacing:-.03em;font-weight:700;
-  color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.3)}
-.hero h1 .accent{color:#8FE3B4}
-.hero-headline .ld{margin:18px 0 0;font-size:17.5px;line-height:1.6;color:rgba(255,255,255,.88);
-  max-width:32em;font-weight:400}
-.hclip-link{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:#fff;
-  font-size:14px;font-weight:700;letter-spacing:.01em;cursor:pointer}
-.hclip-link i{font-style:normal;font-size:11px;width:32px;height:32px;border-radius:50%;
-  background:rgba(255,255,255,.94);color:#16211C;display:inline-flex;align-items:center;
-  justify-content:center;padding-left:2px;transition:transform .16s}
-.hclip-link:hover i{transform:scale(1.08)}
+.home{color:#111}
 
-.hcard{background:#fff;border-radius:24px;padding:28px;width:320px;flex-shrink:0;
-  box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:flex;flex-direction:column;
-  align-items:flex-start;gap:16px;color:var(--ink)}
-.hcard .kicker{background:#E7F5EE;color:#0C7A49;border-color:var(--g3)}
-.hcard .quad-facts{list-style:none;display:flex;flex-direction:column;gap:12px;width:100%}
-.hcard .quad-facts li{display:flex;flex-direction:column;gap:8px}
-.hcard .qf-ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;
-  border-radius:50%;background:var(--mint);font-size:16px;flex-shrink:0}
-.hcard .quad-facts b{display:block;font-size:15.5px;font-weight:700;letter-spacing:-.02em;
-  color:var(--ink);line-height:1.3;margin-top:2px}
-.hcard .qf-lb{display:block;font-size:12.5px;color:var(--g7);font-weight:500;line-height:1.4}
-.van-tag{display:block;font-size:13.5px;font-weight:600;color:var(--g7);letter-spacing:-.005em;
-  border-top:1px solid var(--g2);padding-top:16px;width:100%}
-.hgo{display:flex;align-items:center;justify-content:center;width:100%;color:#fff;background:var(--ac-strong);
-  border-radius:14px;padding:16px;font-size:14.5px;font-weight:700;letter-spacing:.02em;
-  text-transform:uppercase;transition:filter .16s}
-.hgo:hover{filter:brightness(1.08)}
-.htrust{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--g7);font-weight:500;
-  line-height:1.4}
-.htrust img{width:28px;height:28px;border-radius:50%;border:2px solid var(--ac);flex-shrink:0}
+/* buttons */
+.pbtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#111;
+  border:2px solid #111;border-radius:8px;padding:15px 26px;font-size:15px;font-weight:800;
+  letter-spacing:-.01em;box-shadow:0 5px 0 #111;transition:transform .12s,box-shadow .12s;white-space:nowrap}
+.pbtn:hover{transform:translateY(3px);box-shadow:0 2px 0 #111}
+.pbtn-or{background:#F0582B;color:#fff}
 
-/* message: a soft wash instead of a flat mint block, and the chat is staged
-   as an actual phone screen (header bar + avatar + status dot) rather than a
-   plain card — it should look like a screenshot of texting him, not a
-   generic testimonial widget. */
-.msg{background:radial-gradient(120% 160% at 12% 15%,var(--mint) 0%,var(--g1) 62%)}
-.msg .wrap{grid-template-columns:1.08fr .92fr}
-.msg .wrap>div:first-child{order:2}
-.msg .wrap>.phone{order:1}
-.phone{background:#fff;border-radius:32px;box-shadow:0 30px 60px -28px rgba(16,20,24,.28);
-  border:1px solid var(--g2);overflow:hidden;max-width:400px}
-.phone-head{display:flex;align-items:center;gap:11px;padding:16px 20px;background:var(--surface-invert)}
-.phone-head img{width:30px;height:30px;border-radius:50%;border:2px solid var(--ac)}
-.phone-head b{color:var(--on-invert);font-size:14.5px;font-weight:700;letter-spacing:-.02em}
-.phone-head .dot{width:8px;height:8px;border-radius:50%;background:var(--ac);margin-left:auto;
+/* hero */
+.h-hero{position:relative;overflow:hidden;background:#fff;color:#111}
+.h-hero-in{position:relative;z-index:2;max-width:900px;text-align:center;padding-top:92px;padding-bottom:100px}
+.h-teaser{font-size:15px;font-weight:700;line-height:1.6;color:#2A2A2A;max-width:32em;margin:0 auto 26px}
+.h-sub{font-size:clamp(22px,2.6vw,32px);font-weight:900;color:#16A063;letter-spacing:-.025em;margin-bottom:4px}
+.home .h-hero h1{font-size:clamp(40px,5vw,74px);line-height:.96;font-weight:900;letter-spacing:-.045em;
+  color:#111;text-transform:uppercase}
+.h-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:42px}
+
+.h-ph{position:absolute;z-index:1;background:#fff;padding:8px;border:2px solid #111;border-radius:6px;
+  box-shadow:9px 9px 0 #16A063}
+.h-ph picture,.h-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.h-ph-tl{width:300px;height:200px;left:-40px;top:48px;transform:rotate(-7deg)}
+.h-ph-tr{width:240px;height:190px;right:-24px;top:44px;transform:rotate(6deg)}
+.h-ph-tr img{object-position:50% 0}
+.h-ph-bl{width:190px;height:230px;left:70px;bottom:-44px;transform:rotate(5deg)}
+.h-ph-bl img{object-position:50% 8%}
+.h-ph-br{width:290px;height:200px;right:40px;bottom:-34px;transform:rotate(-5deg)}
+.h-ph-br img{object-position:50% 62%}
+
+/* badge band */
+.h-band{background:#12925A;color:#fff}
+.h-band .wrap{padding-top:56px;padding-bottom:60px}
+.h-badges{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:900px;
+  margin:0 auto;text-align:center}
+.h-badges li{display:flex;flex-direction:column;align-items:center;gap:4px}
+.h-badges .h-bic{width:96px;height:96px;border-radius:50%;background:#fff;display:flex;align-items:center;
+  justify-content:center;font-size:42px;margin-bottom:14px;box-shadow:0 6px 0 rgba(0,0,0,.16)}
+.h-badges b{font-size:16px;font-weight:800;line-height:1.3;letter-spacing:-.01em}
+.h-badges span{font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85)}
+
+/* section heads */
+.h-head{text-align:center;margin-bottom:38px}
+.h-accent{display:inline-block;font-size:24px;font-weight:900;font-style:italic;letter-spacing:-.02em;
+  color:#FFE36E;transform:rotate(-6deg);margin-bottom:12px;padding-bottom:2px;
+  border-bottom:3px solid currentColor;border-radius:0 0 40% 40%/0 0 8px 8px}
+.h-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:900;letter-spacing:-.03em;line-height:1.2;margin-bottom:12px}
+.h-head p{font-size:16.5px;line-height:1.65;max-width:36em;margin:0 auto}
+
+/* green section */
+.h-green{background:#16A063;color:#fff}
+.h-green .wrap{padding-top:88px;padding-bottom:96px}
+.h-green .h-head h2{color:#fff}
+.h-green .h-head p{color:rgba(255,255,255,.9)}
+.h-card{background:#fff;color:#111;border-radius:6px;box-shadow:0 20px 40px -22px rgba(0,0,0,.4);
+  max-width:1000px;margin:0 auto}
+
+.h-talk{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center;padding:44px}
+.home .phone{background:#fff;border-radius:28px;box-shadow:0 24px 50px -26px rgba(16,20,24,.35);
+  border:1px solid #E2E8E4;overflow:hidden}
+.phone-head{display:flex;align-items:center;gap:11px;padding:16px 20px;background:#16211C}
+.phone-head img{width:30px;height:30px;border-radius:50%;border:2px solid #16A063}
+.phone-head b{color:#fff;font-size:14.5px;font-weight:700}
+.phone-head .dot{width:8px;height:8px;border-radius:50%;background:#16A063;margin-left:auto;
   box-shadow:0 0 0 3px rgba(22,160,99,.25)}
-.phone .chat{border:0;border-radius:0;box-shadow:none;padding:22px;
-  background-image:radial-gradient(var(--g2) 1px,transparent 1px);background-size:15px 15px}
-
-/* quote: no more centered pull-quote in a solid dark band — a huge ghost
-   quotation mark behind left-aligned text, on a light angled-panel ground,
-   signed off like a note rather than a marquee statement. */
-.quote{background:#fff;color:#16211C;position:relative;overflow:hidden}
-.quote::before{content:'';position:absolute;top:0;right:0;bottom:0;width:46%;
-  background:var(--mint);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%)}
-.quote .wrap{position:relative;max-width:1040px;padding-top:88px;padding-bottom:92px}
-.quote .qmark{position:absolute;top:-18px;left:-6px;font-size:220px;line-height:1;font-weight:700;
-  color:var(--ac);opacity:.14;font-style:normal;pointer-events:none}
-.quote .qbody{position:relative;max-width:720px}
-.quote p{font-size:clamp(22px,2.8vw,32px);line-height:1.4;font-weight:700;letter-spacing:-.018em;
-  color:#16211C;margin-bottom:30px}
-.quote .qwho{display:flex;align-items:center;gap:12px}
-.quote .qwho img{width:40px;height:40px;border-radius:50%;border:2px solid var(--ac)}
-.quote .qwho div{display:flex;flex-direction:column}
-.quote .qwho b{font-size:14.5px;font-weight:700;color:#16211C}
-.quote .qwho span{font-size:12.5px;color:#5C6B64}
-.quote-tag{position:absolute;right:64px;bottom:56px;display:inline-flex;align-items:center;
-  background:#fff;color:var(--ac-strong);border:1px solid var(--g3);border-radius:999px;
-  padding:16px 30px;font-size:19px;font-weight:700;letter-spacing:.01em;
-  box-shadow:0 14px 30px -14px rgba(16,20,24,.25);transform:rotate(-3deg)}
-/* A second, smaller badge fills the otherwise-empty top-right corner of
-   the mint diagonal -- reuses a hero fact that's already true elsewhere
-   on the page, not a new claim invented for this spot. */
-.quote-tag-top{position:absolute;top:48px;right:72px;bottom:auto;display:inline-flex;
-  align-items:baseline;gap:7px;padding:11px 22px;font-size:15px;font-weight:700;
-  transform:rotate(2deg);box-shadow:0 10px 22px -12px rgba(16,20,24,.22)}
-.quote-tag-top i{font-style:normal;font-weight:500;color:#5C6B64;font-size:12.5px}
-
-/* the one square-cropped reel thumbnail in the library (native 640x640, not
-   the usual 9:16) crops off the sides of its baked-in caption when covered
-   into a portrait card anywhere on the site — letterbox it instead of
-   cropping it, on the two spots the homepage surfaces it. */
+.home .phone .chat{border:0;border-radius:0;box-shadow:none;padding:22px;background:#fff;
+  background-image:radial-gradient(#E3E9E5 1px,transparent 1px);background-size:15px 15px}
+.home .chat .bub{background:#F0F4F1;color:#2A332F}
+.home .chat .row.me .bub{background:#16211C;color:#fff}
+.home .chat .who{color:#7A857F}
+.home .chat .clip{background:#F0F4F1}
+.home .chat .clip b{color:#111}
+.home .chat .clip s{color:#5C6B64}
 .clip .th img[src$="DY3AtNlolDz.jpg"],
-.home .strip img[src$="DY3AtNlolDz.jpg"],
-.hclip img[src$="DY3AtNlolDz.jpg"]{object-fit:contain;background:#12100D}
+.home .strip img[src$="DY3AtNlolDz.jpg"]{object-fit:contain;background:#12100D}
 
-/* strip: an uneven horizontal scroll rail — a featured wide clip leads,
-   the rest trail as regular vertical clips — instead of a uniform 6-up grid
-   that reads as an embedded Instagram feed (scoped to the homepage's own
-   strip; videos.js and tour.js keep the grid). */
+.h-talk-tx blockquote{font-size:clamp(20px,2.2vw,25px);font-weight:800;line-height:1.42;letter-spacing:-.02em;
+  color:#111;margin-bottom:24px}
+.h-who{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.h-who img{width:40px;height:40px;border-radius:50%;border:2px solid #16A063}
+.h-who b{display:block;font-size:14.5px;font-weight:800;color:#111}
+.h-who span{display:block;font-size:12.5px;color:#5C6B64}
+.h-pill{display:inline-block;background:#E7F5EE;color:#0C7A49;font-size:13.5px;font-weight:700;
+  border-radius:999px;padding:8px 14px;margin-bottom:26px}
+.h-talk-tx .pbtn{display:flex;width:max-content}
+
+.h-reels{margin-top:28px}
+.h-reels .reels{background:transparent}
+.h-reels .reels .wrap{max-width:none;padding:38px 40px 42px}
+.h-reels .eyebrow{color:#0C7A49}
+.h-reels h2{color:#0C7A49;font-size:clamp(22px,2.4vw,28px);font-weight:900}
+.h-reels .sub{color:#5C6B64;font-size:15px}
+.h-reels .reels .ig{color:#111;border:2px solid #111;border-radius:8px;font-weight:800;box-shadow:0 4px 0 #111}
+.h-reels .reels .ig:hover{background:#F4F5F4}
 .home .reels .strip{display:flex;overflow-x:auto;overscroll-behavior-x:contain;gap:14px;
   scroll-snap-type:x proximity;padding-bottom:8px;margin-bottom:-8px;scrollbar-width:none}
 .home .reels .strip::-webkit-scrollbar{display:none}
-.home .reels .strip .reel{flex:0 0 auto;width:180px;scroll-snap-align:start}
+.home .reels .strip .reel{flex:0 0 auto;width:180px;scroll-snap-align:start;border-radius:6px}
 .home .reels .strip .reel:first-child{width:280px;aspect-ratio:4/5}
 .home .reels .strip .reel::after{background:linear-gradient(to top,rgba(10,13,11,.94) 4%,rgba(10,13,11,.62) 30%,transparent 64%)}
 .home .reels .strip .reel .mt{text-shadow:0 1px 6px rgba(0,0,0,.4)}
-
-.sbtn{display:none}
-.strip-wrap{position:relative}
 .home .strip-wrap .sbtn{display:flex;position:absolute;top:50%;transform:translateY(-50%);z-index:3;
-  align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:0;
-  background:rgba(255,255,255,.94);color:#16211C;font-size:16px;cursor:pointer;
-  box-shadow:0 10px 24px -10px rgba(0,0,0,.4);transition:opacity .16s,transform .16s}
-.home .strip-wrap .sbtn:hover{transform:translateY(-50%) scale(1.06)}
-.home .strip-wrap .sbtn.prev{left:-4px}
-.home .strip-wrap .sbtn.next{right:-4px}
+  align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:2px solid #111;
+  background:#fff;color:#111;font-size:16px;cursor:pointer;box-shadow:0 4px 0 #111;transition:opacity .16s}
+.home .strip-wrap .sbtn.prev{left:-6px}
+.home .strip-wrap .sbtn.next{right:-6px}
 .home .strip-wrap .sbtn:disabled{opacity:0;pointer-events:none}
 
-/* car: photos lead on a soft color panel, specs read as an icon rail that
-   echoes the hero's stat rail instead of a plain two-column label list */
-.car .wrap{display:block}
-.car-head{max-width:38em;margin-bottom:44px}
-.car-row{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center}
-/* Five photos: one tall lead shot plus a 2x2 grid of smaller ones beside
-   it, all sitting on a soft mint backdrop that peeks out past the edges
-   (same brand panel the old 3-photo version used, just resized to frame
-   a wider collage). */
-.car .gal{position:relative;height:460px;display:grid;
-  grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}
-.car .gal::before{content:'';position:absolute;left:-24px;top:-24px;right:-24px;bottom:-24px;
-  background:var(--mint);border-radius:calc(var(--rl) + 12px);z-index:0}
-.car .gal picture{position:relative;z-index:1;display:block;cursor:pointer;height:100%}
-.car .gal img{position:static;width:100%;height:100%;border-radius:var(--rl);
-  object-fit:cover;box-shadow:0 16px 34px -16px rgba(16,20,24,.3);border:6px solid #fff}
-.car .gal picture:nth-child(1){grid-column:1/2;grid-row:1/3}
-.car .gal picture:nth-child(2){grid-column:2/3;grid-row:1/2}
-.car .gal picture:nth-child(3){grid-column:3/4;grid-row:1/2}
-.car .gal picture:nth-child(4){grid-column:2/3;grid-row:2/3}
-.car .gal picture:nth-child(5){grid-column:3/4;grid-row:2/3}
-.car .specs{display:block;list-style:none;background:var(--mint);border-radius:var(--rl);
-  padding:8px 26px;margin-top:0}
-.car .specs li{display:flex;align-items:center;gap:14px;
-  padding:15px 0;border-bottom:1px solid rgba(22,33,28,.1)}
-.car .specs li:last-child{border-bottom:0}
-.car .specs .ic{display:flex;align-items:center;justify-content:center;width:36px;height:36px;
-  flex-shrink:0;border-radius:50%;background:#fff;font-size:15px}
-.car .specs .spec-tx{display:flex;flex-direction:column;gap:2px}
-.car .specs b{font-size:16px;font-weight:700;letter-spacing:-.02em}
-.car .specs .spec-lb{font-size:13px;color:var(--g7);font-weight:500}
+/* grey section with numbered blocks */
+.h-gray{background:#F4F5F4;color:#111}
+.h-gray .wrap{max-width:1060px;padding-top:88px;padding-bottom:96px}
+.h-gray .h-head{margin-bottom:0}
+.h-gray .h-head h2{color:#0C7A49}
+.h-gray .h-accent{color:#F0A500}
+.h-block{border-top:2px solid #16A063;padding-top:44px;margin-top:52px;text-align:center}
+.h-num{display:block;font-size:26px;font-weight:900;color:#16A063;margin-bottom:6px}
+.h-block h3{font-size:clamp(22px,2.4vw,28px);font-weight:900;letter-spacing:-.025em;color:#111;margin-bottom:10px}
+.h-bsub{font-size:15.5px;color:#4A5550;max-width:36em;margin:0 auto 30px;line-height:1.65}
 
-/* rates: a pair of boarding-pass style tickets per row instead of a plain
-   price list or a bordered SaaS pricing card — fits a travel business, and
-   pricing sections almost never look like this */
-.rates .tbl{margin-top:34px;background:none;border:0;box-shadow:none;
-  display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.rates .tr{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;
-  background:#fff;border:1px solid var(--g3);border-radius:20px;overflow:hidden;
-  box-shadow:var(--sh);border-bottom:1px solid var(--g3);transition:transform .16s,box-shadow .16s}
-.rates .tr:hover{transform:translateY(-3px);box-shadow:0 20px 34px -20px rgba(16,20,24,.3)}
-.rates .tr b{font-size:17.5px;letter-spacing:-.024em;grid-column:1;grid-row:1;padding:22px 20px 6px 22px;color:#16211C}
-.rates .tr span{grid-column:1;grid-row:2;margin:0;color:#5C6B64;font-size:13.5px;padding:0 20px 22px 22px}
-.rates .tr .pr{grid-column:2;grid-row:1/3;display:flex;align-items:center;justify-content:center;
-  text-align:center;font-size:22px;color:#0C7A49;background:#E7F5EE;
-  border-left:2px dashed var(--g3);padding:0 22px;min-width:118px}
+.home .gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:180px 180px;gap:10px;height:auto}
+.home .gal picture{display:block;height:100%;cursor:zoom-in}
+.home .gal img{width:100%;height:100%;object-fit:cover;border-radius:4px;background:#E2E6E3}
+.home .gal picture:first-child{grid-row:1/3}
 
-.rates-extra{margin-top:32px;padding:26px 28px;background:#E7F5EE;border-radius:20px;
-  border:1px solid rgba(12,122,73,.18)}
-.rx-label{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;letter-spacing:.04em;
-  text-transform:uppercase;color:#0C7A49;margin-bottom:16px}
-.rx-label::before{content:'!';display:flex;align-items:center;justify-content:center;width:20px;height:20px;
-  border-radius:50%;background:#0C7A49;color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
-.rx-list{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.rx-list li{display:flex;flex-direction:column;gap:6px;
-  background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 4px 14px -8px rgba(12,122,73,.25)}
-.rx-list span{font-size:13.5px;color:#16211C;font-weight:600;white-space:nowrap}
-.rx-list b{font-size:16.5px;color:#0C7A49;font-weight:700;white-space:nowrap}
+.h-tiles{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:10px;text-align:left}
+.h-tiles li{background:#16A063;color:#fff;border-radius:4px;padding:18px 16px;display:flex;flex-direction:column;gap:3px}
+.h-tiles .h-tic{font-size:22px;margin-bottom:8px}
+.h-tiles b{font-size:16px;font-weight:800}
+.h-tiles span{font-size:12.5px;line-height:1.4;color:rgba(255,255,255,.88)}
 
-/* faq: each answer arrives as a message from Pak Lee, matching the chat
-   section's visual language, instead of a generic 2-col SaaS accordion */
-.faqs .wrap{display:block;max-width:720px}
-.home .faq{border:0;background:#fff;color:#16211C;border-radius:20px;margin-bottom:12px;overflow:hidden;
-  box-shadow:var(--sh)}
-.home .faq:first-of-type{border-top:0}
-.home .faq summary{padding:20px 22px}
-.faq-a{display:flex;gap:12px;align-items:flex-start;padding:0 20px 20px}
-.faq-a img{width:28px;height:28px;border-radius:50%;flex-shrink:0;margin-top:2px;border:2px solid var(--ac)}
-.home .faq-a p{background:#EEF3F0;border-radius:16px 16px 16px 4px;padding:14px 16px;margin:0;
-  font-size:15px;line-height:1.6;color:#16211C;font-weight:500;max-width:none}
+.h-prices{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}
+.h-price{background:#fff;border:1px solid #E2E6E3;border-radius:4px;padding:24px 26px;display:grid;
+  grid-template-columns:1fr auto;column-gap:18px;align-items:center}
+.h-price b{font-size:17px;font-weight:900;color:#111}
+.h-price span{grid-row:2;font-size:13px;color:#5C6B64;line-height:1.45;margin-top:4px}
+.h-price strong{grid-column:2;grid-row:1/3;font-size:28px;font-weight:900;color:#16A063;letter-spacing:-.03em;white-space:nowrap}
 
-/* footer band: the sole dark full-width moment left on the page (the quote
-   above is light now) — echo the hero's full-bleed glow so it bookends the
-   page instead of repeating a flat solid box */
-.home + .band{position:relative;overflow:hidden}
-.home + .band::before{content:'';position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(55% 140% at 88% 0%,rgba(255,206,82,.16),transparent 62%)}
+.h-incl{list-style:none;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:center;background:#1F1F1F;
+  color:#fff;border-radius:4px;padding:22px 26px;margin-top:12px}
+.h-incl li{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700}
+.h-incl li::before{content:'\2713';display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;
+  border-radius:50%;background:#16A063;font-size:11px}
+.h-incl li.no{color:rgba(255,255,255,.6)}
+.h-incl li.no::before{content:'\2715';background:#555}
+
+.h-yellow{display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:center;background:#FFE36E;color:#111;
+  border-radius:4px;padding:26px 28px;margin-top:12px;text-align:left}
+.h-ylabel{font-size:18px;font-weight:900;line-height:1.3}
+.h-yellow ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.h-yellow li{display:flex;flex-direction:column;gap:4px;background:rgba(255,255,255,.72);border-radius:4px;padding:12px 14px}
+.h-yellow li span{font-size:13px;font-weight:600}
+.h-yellow li b{font-size:15px;font-weight:900}
+
+.h-faqs{max-width:760px;margin:0 auto;text-align:left}
+.h-faq{background:#fff;border:2px solid #111;border-radius:6px;margin-bottom:14px;box-shadow:0 4px 0 #111}
+.h-faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 20px;
+  font-size:16px;font-weight:800;color:#111}
+.h-faq summary::-webkit-details-marker{display:none}
+.h-faq summary i{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex-shrink:0;
+  border-radius:50%;background:#16A063;color:#fff;font-style:normal;font-size:14px;font-weight:900}
+.h-faq summary::after{content:'+';margin-left:auto;font-size:22px;font-weight:700}
+.h-faq[open] summary::after{content:'\2212'}
+.h-faq-a{display:flex;gap:12px;align-items:flex-start;padding:0 20px 20px}
+.h-faq-a img{width:28px;height:28px;border-radius:50%;flex-shrink:0;margin-top:2px;border:2px solid #16A063}
+.h-faq-a p{background:#EEF3F0;border-radius:14px 14px 14px 4px;padding:14px 16px;font-size:15px;line-height:1.6;
+  color:#16211C;font-weight:500}
+
+/* side quick menu */
+.h-quick{display:none;position:fixed;right:16px;bottom:24px;z-index:40;flex-direction:column;
+  width:100px;background:#fff;border:2px solid #111;box-shadow:4px 4px 0 #111}
+.h-quick a{padding:12px;font-size:12.5px;font-weight:800;line-height:1.3;color:#111;border-bottom:2px solid #111}
+.h-quick a:hover{background:#F4F5F4}
+.h-quick .q-wa{background:#F0582B;color:#fff}
+.h-quick .q-wa:hover{background:#E04A1E}
+.h-quick .q-top{background:#111;color:#fff;border-bottom:0;text-align:center}
+.h-quick .q-top:hover{background:#333}
+@media(min-width:1400px){.h-quick{display:flex}}
+
+/* closing band: dark, with a strip of colour tabs along the top */
+.home + .band{position:relative;overflow:hidden;background:#262626;color:#fff}
+.home + .band::before{content:'';position:absolute;left:0;right:0;top:0;height:8px;
+  background:linear-gradient(90deg,#7B4BC4 0 16.6%,#4B2A9E 0 33.3%,#1E88E5 0 50%,#1D4FA8 0 66.6%,#16A063 0 83.3%,#F0582B 0)}
 .home + .band .wrap{position:relative;padding-top:92px;padding-bottom:96px}
+.home + .band h2{font-weight:900;color:#fff}
+.home + .band p{color:rgba(255,255,255,.7)}
+.home + .band .btn{background:#F0582B;border:2px solid #000;border-radius:8px;box-shadow:0 5px 0 #000;
+  font-weight:800;opacity:1;transition:transform .12s,box-shadow .12s}
+.home + .band .btn:hover{transform:translateY(3px);box-shadow:0 2px 0 #000}
+.home + .band .email{color:rgba(255,255,255,.75)}
+
+@media(max-width:1280px){
+  .h-ph-tl{left:-110px}
+  .h-ph-tr{right:-90px}
+  .h-ph-bl{left:-40px}
+  .h-ph-br{right:-80px}
+}
 
 @media(max-width:920px){
-  .hero{min-height:560px}
-  .hero-wrap{flex-direction:column;align-items:stretch;padding:64px 0 40px}
-  .hero-headline{max-width:none}
-  .hcard{width:auto}
-  .msg .wrap{grid-template-columns:1fr;gap:32px}
-  .msg .wrap>div:first-child{order:1}
-  .msg .wrap>.phone{order:2}
-  .phone{max-width:none}
-  .quote::before{width:100%;clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}
-  .quote .qmark{font-size:140px}
-  .quote-tag{display:none}
-  .car-row{grid-template-columns:1fr;gap:36px}
-  .car .gal{height:auto;grid-template-columns:1.3fr 1fr;grid-template-rows:140px 90px 90px}
-  .car .gal picture:nth-child(1){grid-column:1/2;grid-row:1/3}
-  .car .gal picture:nth-child(2){grid-column:2/3;grid-row:1/2}
-  .car .gal picture:nth-child(3){grid-column:1/2;grid-row:3/4}
-  .car .gal picture:nth-child(4){grid-column:2/3;grid-row:2/3}
-  .car .gal picture:nth-child(5){grid-column:2/3;grid-row:3/4}
-  .car .gal::before{left:-12px;top:-12px;right:-12px;bottom:-12px}
-  .rates .tbl{grid-template-columns:1fr}
-  .rx-list{grid-template-columns:repeat(2,1fr)}
-  .faqs .wrap{max-width:none}
+  .h-ph-tl,.h-ph-br{display:none}
+  .h-ph-tr{width:150px;height:118px;right:-24px;top:22px}
+  .h-ph-bl{width:150px;height:118px;left:-24px;top:22px;bottom:auto;transform:rotate(-6deg)}
+  .h-ph-bl img{object-position:50% 0}
+  .h-hero-in{padding-top:168px;padding-bottom:64px}
+  .h-teaser{font-size:14px}
+  .home .h-hero h1:lang(ja){font-size:34px;letter-spacing:-.02em}
+  .h-btns{flex-direction:column;align-items:stretch;max-width:340px;margin-left:auto;margin-right:auto}
+  .h-badges{grid-template-columns:1fr 1fr;gap:28px 16px}
+  .h-badges .h-bic{width:76px;height:76px;font-size:34px}
+  .h-green .wrap,.h-gray .wrap{padding-top:64px;padding-bottom:72px}
+  .h-talk{grid-template-columns:1fr;gap:28px;padding:22px 18px 28px}
+  .h-talk-tx .pbtn{width:100%}
+  .h-reels .reels .wrap{padding:26px 16px 28px}
+  .home .strip-wrap .sbtn{display:none}
+  .home .gal{grid-template-columns:1.3fr 1fr;grid-template-rows:140px 90px 90px}
+  .home .gal picture:nth-child(1){grid-column:1/2;grid-row:1/3}
+  .home .gal picture:nth-child(2){grid-column:2/3;grid-row:1/2}
+  .home .gal picture:nth-child(3){grid-column:1/2;grid-row:3/4}
+  .home .gal picture:nth-child(4){grid-column:2/3;grid-row:2/3}
+  .home .gal picture:nth-child(5){grid-column:2/3;grid-row:3/4}
+  .h-tiles{grid-template-columns:1fr 1fr}
+  .h-prices{grid-template-columns:1fr}
+  .h-price{padding:20px}
+  .h-price strong{font-size:23px}
+  .h-yellow{grid-template-columns:1fr;gap:14px;padding:22px 18px}
+  .h-yellow ul{grid-template-columns:1fr 1fr}
+  .h-faq summary{font-size:15px;padding:16px}
 }
+
 
 /* ============================================================
    PAGE-TYPE ADDITIONS
@@ -551,7 +553,8 @@ body[data-theme="dark"]{background:#0F1512}
 .step p{font-size:15.5px;line-height:1.62;color:var(--g6);max-width:44em}
 
 .faqs{background:var(--g1);border-top:1px solid var(--g2)}
-.faqs .wrap{padding-top:80px;padding-bottom:84px}
+.faqs .wrap{display:block;max-width:720px;padding-top:80px;padding-bottom:84px}
+@media(max-width:920px){.faqs .wrap{max-width:none}}
 .faq{border-bottom:1px solid var(--g3)}
 .faq:first-of-type{border-top:1px solid var(--g3)}
 .faq summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;

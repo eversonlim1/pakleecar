@@ -13,8 +13,12 @@
     "bubbleTitle": "Halo! Saya Pak Lee",
     "bubbleText": "Pregúntame lo que quieras",
     "vanTag": "Van privada + chófer, todo incluido",
+    "watch": "Ver un viaje real",
     "facts": [
-      { "icon": "🤗", "value": "Cercano de principio a fin", "label": "Los huéspedes dicen que se siente como viajar con un amigo" }
+      { "icon": "🗺️", "value": "Tu ruta, tu ritmo", "label": "Horario libre, siempre" },
+      { "icon": "🚐", "value": "Solo tu grupo", "label": "Van privada, hasta 8" },
+      { "icon": "⛽", "value": "Todo incluido", "label": "Combustible, peajes y seguro" },
+      { "icon": "🤗", "value": "Cercano de principio a fin", "label": "Como viajar con un amigo" }
     ],
     "replyFact": { "icon": "💬", "value": "En menos de una hora", "label": "Tiempo de respuesta habitual" }
   },
@@ -70,6 +74,7 @@
       ]
     }
   },
+  "why": { "h2": "¿Por qué pasar el día con Pak Lee?" },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "h2": "Lo que me suelen preguntar",

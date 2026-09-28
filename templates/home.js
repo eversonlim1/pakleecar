@@ -1,110 +1,133 @@
 const { esc, picture } = require('../src/html');
+const { pageUrl } = require('../build.config');
+const chat = require('./partials/chat');
+const { reelStrip } = require('./partials/reels');
+
+const WA = 'https://wa.me/821094157859';
+const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
 
 function twoLineHeadline(text) {
   const m = text.match(/^(.+?[.。])\s*(.*)$/s);
   if (!m || !m[2]) return esc(text);
-  return `${esc(m[1])}<br><span class="accent">${esc(m[2])}</span>`;
+  return `${esc(m[1])}<br>${esc(m[2])}`;
 }
-const { pageUrl } = require('../build.config');
-const chat = require('./partials/chat');
-const rates = require('./partials/rates');
-const { reelStrip } = require('./partials/reels');
 
-const WA = 'https://wa.me/821094157859';
+const accent = '<span class="h-accent" aria-hidden="true">Pak Lee</span>';
+
+function block(num, title, body, inner) {
+  return `<div class="h-block">
+<span class="h-num">${num}</span>
+<h3>${esc(title)}</h3>
+${body ? `<p class="h-bsub">${esc(body)}</p>` : ''}
+${inner}
+</div>`;
+}
 
 module.exports = function home({ lang, data, reels }) {
   const h = data.hero;
   const heroReel = reels.find(r => r.id === 'DY3AtNlolDz') || reels[0];
   const heroTitle = heroReel.title[lang] || heroReel.title.en;
+  const r = data.rates;
 
-  const quadFacts = h.facts.map(f =>
-    `<li><span class="qf-ic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span class="qf-lb">${esc(f.label)}</span></li>`
+  const corners = [
+    { src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge private van', w: 480, h: 320, cls: 'tl' },
+    { src: '/assets/img/reels/DcAjNy9I9L4.jpg', alt: 'Pak Lee taking photos for guests in Seoul', w: 360, h: 440, cls: 'tr' },
+    { src: '/assets/img/reels/DcP3w5VIoPf.jpg', alt: 'Pak Lee at the wheel, thumbs up', w: 360, h: 440, cls: 'bl' },
+    { src: heroReel.thumb, alt: heroTitle, w: 480, h: 340, cls: 'br' }
+  ].map(p => `<div class="h-ph h-ph-${p.cls}">${picture({ src: p.src, alt: p.alt, width: p.w, height: p.h, eager: true })}</div>`).join('\n');
+
+  const badges = h.facts.map(f =>
+    `<li><span class="h-bic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span>${esc(f.label)}</span></li>`
   ).join('\n');
 
-  const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
   const specs = data.car.specs.map((s, i) =>
-    `<li><span class="ic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><span class="spec-tx"><b>${esc(s.value)}</b><span class="spec-lb">${esc(s.label)}</span></span></li>`
+    `<li><span class="h-tic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><b>${esc(s.value)}</b><span>${esc(s.label)}</span></li>`
+  ).join('\n');
+
+  const prices = r.rows.map(row =>
+    `<div class="h-price"><b>${esc(row.name)}</b><span>${esc(row.detail)}</span><strong>${esc(row.price)}</strong></div>`
+  ).join('\n');
+
+  const chips = [
+    ...r.included.map(c => `<li class="yes">${esc(c)}</li>`),
+    ...r.excluded.map(c => `<li class="no">${esc(c)}</li>`)
+  ].join('');
+
+  const extra = r.extra ? `<div class="h-yellow">
+<b class="h-ylabel">${esc(r.extra.label)}</b>
+<ul>${r.extra.items.map(x => `<li><span>${esc(x.name)}</span><b>${esc(x.price)}</b></li>`).join('')}</ul>
+</div>` : '';
+
+  const faqs = data.faq.items.map(f =>
+    `<details class="h-faq"><summary><i aria-hidden="true">Q</i>${esc(f.q)}</summary><div class="h-faq-a"><img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28"><p>${esc(f.a)}</p></div></details>`
   ).join('\n');
 
   return `<main class="home">
-<header class="hero">
-<div class="hero-bg">${picture({ src: heroReel.thumb, alt: heroTitle, width: 1600, height: 1000, eager: true })}</div>
-<div class="hero-scrim"></div>
-<div class="wrap hero-wrap">
-
-<div class="hero-headline">
+<header class="h-hero">
+${corners}
+<div class="wrap h-hero-in">
+<p class="h-teaser">${esc(h.lede)}</p>
+<p class="h-sub">${esc(h.vanTag)}</p>
 <h1>${twoLineHeadline(h.h1)}</h1>
-<p class="ld">${esc(h.lede)}</p>
-<a class="hclip-link" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">
-<i aria-hidden="true">&#9654;</i> Watch a real trip
-</a>
+<div class="h-btns">
+<a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rsaquo;</a>
+<a class="pbtn" href="#rates">${esc(h.ctaSecondary)} &rsaquo;</a>
+<a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>
 </div>
-
-<div class="hcard">
-<span class="kicker">${esc(h.sticker)}</span>
-<ul class="quad-facts">${quadFacts}</ul>
-<span class="van-tag">${esc(h.vanTag)}</span>
-<a class="hgo" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)}</a>
-<a class="htrust" href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">
-<img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28">
-@paklee.carkorea
-</a>
-</div>
-
 </div>
 </header>
 
-<section class="msg" id="how"><div class="wrap">
-<div>
-<span class="eyebrow">${esc(data.message.eyebrow)}</span>
-<h2>${esc(data.message.h2)}</h2>
-<p class="sub">${esc(data.message.body)}</p>
-<a class="go" href="${WA}" target="_blank" rel="noopener">${esc(data.message.link)} &rarr;</a>
-</div>
+<section class="h-band"><div class="wrap"><ul class="h-badges">${badges}</ul></div></section>
+
+<section class="h-green" id="how"><div class="wrap">
+<div class="h-head">${accent}<h2>${esc(data.message.h2)}</h2><p>${esc(data.message.body)}</p></div>
+<div class="h-card h-talk">
 <div class="phone">
 <div class="phone-head"><img src="/assets/img/paklee-avatar.jpg" alt="" width="30" height="30"><b>Pak Lee</b><i class="dot" aria-hidden="true"></i></div>
 ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
 </div>
-</div></section>
-
-<section class="quote"><div class="wrap">
-<span class="qmark" aria-hidden="true">&#8220;</span>
-<div class="qbody">
-<p>${esc(data.quote.text)}</p>
-<div class="qwho"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40">
-<div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
+<div class="h-talk-tx">
+<blockquote>&ldquo;${esc(data.quote.text)}&rdquo;</blockquote>
+<div class="h-who"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40"><div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
+<span class="h-pill">${esc(h.replyFact.icon)} ${esc(h.replyFact.value)} · ${esc(h.replyFact.label)}</span>
+<a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(data.message.link)} &rsaquo;</a>
 </div>
-<span class="quote-tag quote-tag-top" aria-hidden="true">${esc(h.replyFact.icon)} ${esc(h.replyFact.value)} <i>${esc(h.replyFact.label)}</i></span>
-<span class="quote-tag">${esc(h.sticker)}</span>
-</div></section>
-
+</div>
+<div class="h-card h-reels">
 ${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
-
-<section class="car" id="car"><div class="wrap">
-<div class="car-head">
-<span class="eyebrow">${esc(data.car.eyebrow)}</span>
-<h2>${esc(data.car.h2)}</h2>
-<p class="sub">${esc(data.car.body)}</p>
 </div>
-<div class="car-row">
-<div class="gal">
+</div></section>
+
+<section class="h-gray"><div class="wrap">
+<div class="h-head">${accent}<h2>&ldquo;${esc(data.why.h2)}&rdquo;</h2></div>
+
+<div id="car" class="car">
+${block('01', data.car.h2, data.car.body, `<div class="gal">
 ${picture({ src: '/assets/img/staria-ext2.jpg', alt: 'Hyundai Staria Lounge, three-quarter view', width: 720, height: 480 })}
 ${picture({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', width: 480, height: 480 })}
 ${picture({ src: '/assets/img/staria-int2.jpg', alt: 'Staria Lounge sunroof and full row of seats', width: 480, height: 480 })}
 ${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge, front view', width: 480, height: 480 })}
 ${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior, front row', width: 480, height: 480 })}
 </div>
-<ul class="specs">${specs}</ul>
+<ul class="h-tiles">${specs}</ul>`)}
+</div>
+
+<div id="rates">
+${block('02', r.h2, r.body, `<div class="h-prices">${prices}</div>
+<ul class="h-incl">${chips}</ul>
+${extra}`)}
+</div>
+
+<div id="faq">
+${block('03', data.faq.h2, '', `<div class="h-faqs">${faqs}</div>`)}
 </div>
 </div></section>
 
-${rates(data.rates)}
-
-<section class="faqs" id="faq"><div class="wrap">
-<span class="eyebrow">${esc(data.faq.eyebrow)}</span>
-<h2>${esc(data.faq.h2)}</h2>
-${data.faq.items.map(f =>
-  `<details class="faq"><summary>${esc(f.q)}</summary><div class="faq-a"><img src="/assets/img/paklee-avatar.jpg" alt="" width="28" height="28"><p>${esc(f.a)}</p></div></details>`).join('\n')}
-</div></section>
+<nav class="h-quick" aria-label="Quick menu">
+<a class="q-wa" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rarr;</a>
+<a href="#rates">${esc(data.nav.rates)} &rarr;</a>
+<a href="#faq">${esc(data.faq.eyebrow)} &rarr;</a>
+<a class="q-top" href="#">TOP &uarr;</a>
+</nav>
 </main>`;
 };
