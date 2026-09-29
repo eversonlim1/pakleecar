@@ -10,7 +10,11 @@ module.exports = function chat(rows, clip) {
   }).join('\n');
 
   const attach = clip
-    ? `<a class="clip" href="https://www.instagram.com/reel/${clip.id}/" data-open="${clip.id}">
+    ? clip.igProfile
+      ? `<a class="clip" href="${clip.igProfile}" target="_blank" rel="noopener">
+<div class="th">${img({ src: clip.thumb, alt: clip.title, width: 132, height: 100 })}<i aria-hidden="true">&#9654;</i></div>
+<div><b>${esc(clip.title)}</b><s>Reel · ${esc(clip.handle)}</s></div></a>`
+      : `<a class="clip" href="https://www.instagram.com/reel/${clip.id}/" data-open="${clip.id}">
 <div class="th">${img({ src: clip.thumb, alt: clip.title, width: 132, height: 100 })}<i aria-hidden="true">&#9654;</i></div>
 <div><b>${esc(clip.title)}</b><s>Reel · @paklee.carkorea</s></div></a>`
     : '';

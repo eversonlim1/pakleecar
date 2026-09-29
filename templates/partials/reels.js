@@ -1,21 +1,23 @@
 const { esc, img } = require('../../src/html');
 const IG = 'https://www.instagram.com/paklee.carkorea/';
 
-function card(r, lang) {
+function card(r, lang, igProfile) {
   const title = r.title[lang] || r.title.en;
   const place = r.place[lang] || r.place.en;
-  return `<a class="reel" href="https://www.instagram.com/reel/${r.id}/" data-reel="${r.id}"
+  const href = igProfile || `https://www.instagram.com/reel/${r.id}/`;
+  const dataReel = igProfile ? '' : ` data-reel="${r.id}"`;
+  return `<a class="reel" href="${href}"${dataReel}
  target="_blank" rel="noopener">
 ${img({ src: r.thumb, alt: title, width: 360, height: 640 })}
 <i class="pl" aria-hidden="true">&#9654;</i>
 <div class="mt"><b>${esc(title)}</b><s>Reel · ${esc(place)}</s></div></a>`;
 }
 
-function reelStrip(lang, reels, t, { limit = 6, allHref = null } = {}) {
-  const items = reels.slice(0, limit).map(r => card(r, lang)).join('\n');
+function reelStrip(lang, reels, t, { limit = 6, allHref = null, igProfile = null } = {}) {
+  const items = reels.slice(0, limit).map(r => card(r, lang, igProfile)).join('\n');
   const all = allHref
     ? `<a class="ig" href="${allHref}">${esc(t.all)}</a>`
-    : `<a class="ig" href="${IG}" target="_blank" rel="noopener">@paklee.carkorea</a>`;
+    : `<a class="ig" href="${igProfile || IG}" target="_blank" rel="noopener">@paklee.carkorea</a>`;
   return `<section class="reels" id="videos"><div class="wrap">
 <div class="rh">
 <div><span class="eyebrow">${esc(t.eyebrow)}</span><h2>${esc(t.h2)}</h2><p class="sub">${esc(t.body)}</p></div>

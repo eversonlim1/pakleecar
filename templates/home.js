@@ -4,6 +4,7 @@ const chat = require('./partials/chat');
 const { reelStrip } = require('./partials/reels');
 
 const WA = 'https://wa.me/821094157859';
+const EN_IG = 'https://www.instagram.com/mr.lee_private_car_in_korea/';
 const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
 
 function twoLineHeadline(text) {
@@ -72,7 +73,9 @@ ${corners}
 <div class="h-btns">
 <a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rsaquo;</a>
 <a class="pbtn" href="#rates">${esc(h.ctaSecondary)} &rsaquo;</a>
-<a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>
+${lang === 'en'
+  ? `<a class="pbtn" href="${EN_IG}" target="_blank" rel="noopener">&#9654; ${esc(h.watch)}</a>`
+  : `<a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>`}
 </div>
 </div>
 </header>
@@ -84,7 +87,9 @@ ${corners}
 <div class="h-card h-talk">
 <div class="phone">
 <div class="phone-head"><img src="/assets/img/paklee-avatar.jpg" alt="" width="30" height="30"><b>Pak Lee</b><i class="dot" aria-hidden="true"></i></div>
-${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
+${chat(data.message.chat, lang === 'en'
+  ? { thumb: heroReel.thumb, title: heroTitle, igProfile: EN_IG, handle: '@mr.lee_private_car_in_korea' }
+  : { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
 </div>
 <div class="h-talk-tx">
 <blockquote>&ldquo;${esc(data.quote.text)}&rdquo;</blockquote>
@@ -96,7 +101,7 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 </div>
 </div>
 <div class="h-card h-reels">
-${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
+${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'), igProfile: lang === 'en' ? EN_IG : null })}
 </div>
 </div></section>
 
