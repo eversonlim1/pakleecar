@@ -2,6 +2,7 @@ const { pageUrl } = require('../build.config');
 const { abs } = require('./seo');
 
 const IG = 'https://www.instagram.com/paklee.carkorea/';
+const IG_EN = 'https://www.instagram.com/mr.lee_private_car_in_korea/';
 const PHONE = '+821094157859';
 
 function jsonLd(objects) {
@@ -18,7 +19,7 @@ function organization() {
     url: abs('/'),
     logo: abs('/assets/img/paklee-avatar.jpg'),
     telephone: PHONE,
-    sameAs: [IG]
+    sameAs: [IG, IG_EN]
   };
 }
 

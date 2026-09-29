@@ -13,6 +13,7 @@ test('organization이 마스코트를 logo로 쓴다', () => {
   assert.strictEqual(o['@type'], 'Organization');
   assert.match(o.logo, /paklee-avatar/);
   assert.ok(o.sameAs.includes('https://www.instagram.com/paklee.carkorea/'));
+  assert.ok(o.sameAs.includes('https://www.instagram.com/mr.lee_private_car_in_korea/'));
 });
 
 test('touristTrip이 Offer와 통화를 담는다', () => {

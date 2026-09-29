@@ -27,8 +27,9 @@ Pak Lee is an independent private driver based in Seoul. He offers a Hyundai Sta
 - Halal-friendly: the driver identifies genuinely halal restaurants (not just self-labeled ones) and builds in prayer-time stops
 - Shared/split-cost tours are available for solo travellers or small groups (see the Share Tour page)
 - Contact: WhatsApp +82 10-9415-7859, email pakleecar@gmail.com
-- Site languages: Indonesian, English, Spanish, Japanese
+- Site languages: Indonesian, English, Spanish, Japanese, Thai
 - Instagram: https://www.instagram.com/paklee.carkorea/
+- Instagram (English): https://www.instagram.com/mr.lee_private_car_in_korea/
 
 ## Pages
 

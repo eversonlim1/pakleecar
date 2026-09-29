@@ -10,6 +10,8 @@ module.exports = function footer(lang, t) {
   return `<footer class="foot"><div class="wrap">
 <div class="fl">${langs}</div>
 <p class="fc">© ${new Date().getFullYear()} Pak Lee's Car · ${esc(t.tagline)} ·
-<a href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">@paklee.carkorea</a></p>
+${lang === 'en'
+  ? '<a href="https://www.instagram.com/mr.lee_private_car_in_korea/" target="_blank" rel="noopener">@mr.lee_private_car_in_korea</a>'
+  : '<a href="https://www.instagram.com/paklee.carkorea/" target="_blank" rel="noopener">@paklee.carkorea</a>'}</p>
 </div></footer>`;
 };
