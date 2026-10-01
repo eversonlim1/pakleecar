@@ -43,12 +43,15 @@ module.exports = function home({ lang, data, reels }) {
 
   const vanVideo = reels.find(r => r.id === 'DciyJZzI3Rq') || reels[0];
   const vanVideoTitle = vanVideo.title[lang] || vanVideo.title.en;
-  const vanVideoCard = `<a class="h-van-video" href="${lang === 'en' ? EN_IG : `https://www.instagram.com/reel/${vanVideo.id}/`}"
- ${lang === 'en' ? 'target="_blank" rel="noopener"' : `data-open="${vanVideo.id}"`}>
+  const vanVideoCard = `<a class="h-van-video" href="https://www.instagram.com/reel/${vanVideo.id}/" data-open="${vanVideo.id}">
 ${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
 <i class="pl" aria-hidden="true">&#9654;</i>
-<span><b>${esc(vanVideoTitle)}</b><s>${lang === 'en' ? 'Watch on Instagram' : 'Reel · @paklee.carkorea'}</s></span>
+<span><b>${esc(vanVideoTitle)}</b><s>Reel · @paklee.carkorea</s></span>
 </a>`;
+
+  const igAccount = lang === 'id'
+    ? { url: 'https://www.instagram.com/paklee.carkorea/', handle: '@paklee.carkorea' }
+    : { url: EN_IG, handle: '@mr.lee_private_car_in_korea' };
 
   const specs = data.car.specs.map((s, i) =>
     `<li><span class="h-tic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><b>${esc(s.value)}</b><span>${esc(s.label)}</span></li>`
@@ -82,9 +85,7 @@ ${corners}
 <div class="h-btns">
 <a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rsaquo;</a>
 <a class="pbtn" href="#rates">${esc(h.ctaSecondary)} &rsaquo;</a>
-${lang === 'en'
-  ? `<a class="pbtn" href="${EN_IG}" target="_blank" rel="noopener">&#9654; ${esc(h.watch)}</a>`
-  : `<a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>`}
+<a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>
 </div>
 </div>
 </header>
@@ -96,9 +97,7 @@ ${lang === 'en'
 <div class="h-card h-talk">
 <div class="phone">
 <div class="phone-head"><img src="/assets/img/paklee-avatar.jpg" alt="" width="30" height="30"><b>Pak Lee</b><i class="dot" aria-hidden="true"></i></div>
-${chat(data.message.chat, lang === 'en'
-  ? { thumb: heroReel.thumb, title: heroTitle, igProfile: EN_IG, handle: '@mr.lee_private_car_in_korea' }
-  : { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
+${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroTitle })}
 </div>
 <div class="h-talk-tx">
 <blockquote>&ldquo;${esc(data.quote.text)}&rdquo;</blockquote>
@@ -110,8 +109,11 @@ ${chat(data.message.chat, lang === 'en'
 </div>
 </div>
 <div class="h-card h-reels">
-${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos'), igProfile: lang === 'en' ? EN_IG : null })}
+${reelStrip(lang, reels, data.reels, { limit: 6, allHref: pageUrl(lang, 'videos') })}
 </div>
+<a class="h-ig-badge" href="${igAccount.url}" target="_blank" rel="noopener">
+<span aria-hidden="true">&#128247;</span> Follow ${igAccount.handle} on Instagram
+</a>
 </div></section>
 
 <section class="h-gray"><div class="wrap">

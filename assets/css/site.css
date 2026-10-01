@@ -433,6 +433,12 @@ body[data-theme="dark"]{background:#0F1512}
 .h-van-video b{display:block;font-size:16px;font-weight:800}
 .h-van-video s{display:block;font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;margin-top:2px}
 
+.h-ig-badge{display:flex;align-items:center;justify-content:center;gap:9px;margin:18px auto 0;
+  max-width:420px;background:#fff;color:#111;border:2px solid #111;border-radius:999px;
+  padding:13px 22px;font-size:14.5px;font-weight:800;box-shadow:0 4px 0 #111;transition:transform .12s,box-shadow .12s}
+.h-ig-badge:hover{transform:translateY(3px);box-shadow:0 1px 0 #111}
+.h-ig-badge span{font-size:17px}
+
 .h-prices{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}
 .h-price{background:#fff;border:1px solid #E2E6E3;border-radius:4px;padding:26px 28px;display:grid;
   grid-template-columns:1fr auto;column-gap:18px;align-items:center}
