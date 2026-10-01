@@ -43,7 +43,13 @@ module.exports = function home({ lang, data, reels }) {
 
   const vanVideo = reels.find(r => r.id === 'DciyJZzI3Rq') || reels[0];
   const vanVideoTitle = vanVideo.title[lang] || vanVideo.title.en;
-  const vanVideoCard = `<a class="h-van-video" href="https://www.instagram.com/reel/${vanVideo.id}/" data-open="${vanVideo.id}">
+  const vanVideoCard = lang === 'en'
+    ? `<a class="h-van-video" href="https://www.instagram.com/p/Dd3LBBxyXrI/" data-open="Dd3LBBxyXrI" data-embed-path="p" data-embed-id="Dd3LBBxyXrI">
+${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
+<i class="pl" aria-hidden="true">&#9654;</i>
+<span><b>${esc(vanVideoTitle)}</b><s>Reel · @mr.lee_private_car_in_korea</s></span>
+</a>`
+    : `<a class="h-van-video" href="https://www.instagram.com/reel/${vanVideo.id}/" data-open="${vanVideo.id}">
 ${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
 <i class="pl" aria-hidden="true">&#9654;</i>
 <span><b>${esc(vanVideoTitle)}</b><s>Reel · @paklee.carkorea</s></span>
