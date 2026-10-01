@@ -41,6 +41,15 @@ module.exports = function home({ lang, data, reels }) {
     `<li><span class="h-bic" aria-hidden="true">${esc(f.icon)}</span><b>${esc(f.value)}</b><span>${esc(f.label)}</span></li>`
   ).join('\n');
 
+  const vanVideo = reels.find(r => r.id === 'DciyJZzI3Rq') || reels[0];
+  const vanVideoTitle = vanVideo.title[lang] || vanVideo.title.en;
+  const vanVideoCard = `<a class="h-van-video" href="${lang === 'en' ? EN_IG : `https://www.instagram.com/reel/${vanVideo.id}/`}"
+ ${lang === 'en' ? 'target="_blank" rel="noopener"' : `data-open="${vanVideo.id}"`}>
+${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
+<i class="pl" aria-hidden="true">&#9654;</i>
+<span><b>${esc(vanVideoTitle)}</b><s>${lang === 'en' ? 'Watch on Instagram' : 'Reel · @paklee.carkorea'}</s></span>
+</a>`;
+
   const specs = data.car.specs.map((s, i) =>
     `<li><span class="h-tic" aria-hidden="true">${SPEC_ICONS[i] || '•'}</span><b>${esc(s.value)}</b><span>${esc(s.label)}</span></li>`
   ).join('\n');
@@ -116,7 +125,8 @@ ${picture({ src: '/assets/img/staria-int2.jpg', alt: 'Staria Lounge sunroof and 
 ${picture({ src: '/assets/img/staria-ext.jpg', alt: 'Hyundai Staria Lounge, front view', width: 480, height: 480 })}
 ${picture({ src: '/assets/img/staria-int1.jpg', alt: 'Staria Lounge interior, front row', width: 480, height: 480 })}
 </div>
-<ul class="h-tiles">${specs}</ul>`)}
+<ul class="h-tiles">${specs}</ul>
+${vanVideoCard}`)}
 </div>
 
 <div id="rates">
