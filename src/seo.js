@@ -20,6 +20,13 @@ function head({ lang, slug, seo, extraHead = '', cssHref = '/assets/css/site.css
   const ogImage = abs(seo.ogImage || '/assets/img/staria-ext.jpg');
   return `<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CHW93PTKZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0CHW93PTKZ');
+</script>
 <title>${esc(seo.title)}</title>
 <meta name="description" content="${esc(seo.description)}">
 <link rel="canonical" href="${url}">
