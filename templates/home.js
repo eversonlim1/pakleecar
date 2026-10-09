@@ -6,6 +6,7 @@ const { reelStrip } = require('./partials/reels');
 const WA = 'https://wa.me/821094157859';
 const EN_IG = 'https://www.instagram.com/mr.lee_private_car_in_korea/';
 const TH_IG = 'https://www.instagram.com/pakleecar_th/';
+const JP_IG = 'https://www.instagram.com/pakleecar_jp/';
 const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
 
 function twoLineHeadline(text) {
@@ -60,6 +61,8 @@ ${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
     ? { url: 'https://www.instagram.com/paklee.carkorea/', handle: '@paklee.carkorea' }
     : lang === 'th'
     ? { url: TH_IG, handle: '@pakleecar_th' }
+    : lang === 'ja'
+    ? { url: JP_IG, handle: '@pakleecar_jp' }
     : { url: EN_IG, handle: '@mr.lee_private_car_in_korea' };
 
   const specs = data.car.specs.map((s, i) =>
