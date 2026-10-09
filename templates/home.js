@@ -45,11 +45,18 @@ module.exports = function home({ lang, data, reels }) {
 
   const vanVideo = reels.find(r => r.id === 'DciyJZzI3Rq') || reels[0];
   const vanVideoTitle = vanVideo.title[lang] || vanVideo.title.en;
-  const vanVideoCard = lang === 'en'
-    ? `<a class="h-van-video" href="https://www.instagram.com/p/Dd3LBBxyXrI/" data-open="Dd3LBBxyXrI" data-embed-path="p" data-embed-id="Dd3LBBxyXrI">
+  // Each of these accounts has its own real "what's in this van" post --
+  // link straight to it instead of the shared Indonesian original.
+  const VAN_POST = {
+    en: { id: 'Dd3LBBxyXrI', path: 'p', handle: '@mr.lee_private_car_in_korea' },
+    th: { id: 'DeQdC60zj3q', path: 'reel', handle: '@pakleecar_th' },
+    ja: { id: 'DeQxX5is4qq', path: 'reel', handle: '@pakleecar_jp' }
+  }[lang];
+  const vanVideoCard = VAN_POST
+    ? `<a class="h-van-video" href="https://www.instagram.com/${VAN_POST.path}/${VAN_POST.id}/" data-open="${VAN_POST.id}" data-embed-path="${VAN_POST.path}" data-embed-id="${VAN_POST.id}">
 ${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
 <i class="pl" aria-hidden="true">&#9654;</i>
-<span><b>${esc(vanVideoTitle)}</b><s>Reel · @mr.lee_private_car_in_korea</s></span>
+<span><b>${esc(vanVideoTitle)}</b><s>Reel · ${esc(VAN_POST.handle)}</s></span>
 </a>`
     : `<a class="h-van-video" href="https://www.instagram.com/reel/${vanVideo.id}/" data-open="${vanVideo.id}">
 ${picture({ src: vanVideo.thumb, alt: vanVideoTitle, width: 112, height: 112 })}
