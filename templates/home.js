@@ -160,6 +160,18 @@ ${extra}`)}
 <div id="faq">
 ${block('03', data.faq.h2, '', `<div class="h-faqs">${faqs}</div>`)}
 </div>
+
+<div id="reviews">
+${block('04', data.review.h2, '', `<div class="h-review">
+<video class="h-review-video" src="/assets/video/review-hugo.mp4" poster="/assets/img/review-hugo.jpg"
+ controls playsinline preload="none" aria-label="${esc(data.review.videoAlt)}"></video>
+<div class="h-review-card">
+<div class="h-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<blockquote>${esc(data.review.quote).replace(/\n/g, '<br>')}</blockquote>
+<div class="h-review-who"><b>${esc(data.review.name)}</b><span>${esc(data.review.date)}</span></div>
+</div>
+</div>`)}
+</div>
 </div></section>
 
 <nav class="h-quick" aria-label="Quick menu">

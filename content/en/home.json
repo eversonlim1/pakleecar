@@ -15,10 +15,26 @@
     "vanTag": "Private van + driver, all included",
     "watch": "Watch a real trip",
     "facts": [
-      { "icon": "🗺️", "value": "Your route, your pace", "label": "Free schedule, always" },
-      { "icon": "🚐", "value": "Just your group", "label": "A private van, up to 8" },
-      { "icon": "⛽", "value": "All included", "label": "Fuel, tolls & insurance" },
-      { "icon": "🤗", "value": "Warm from hello to goodbye", "label": "Like riding with a friend" }
+      {
+        "icon": "🗺️",
+        "value": "Your route, your pace",
+        "label": "Free schedule, always"
+      },
+      {
+        "icon": "🚐",
+        "value": "Just your group",
+        "label": "A private van, up to 8"
+      },
+      {
+        "icon": "⛽",
+        "value": "All included",
+        "label": "Fuel, tolls & insurance"
+      },
+      {
+        "icon": "🤗",
+        "value": "Warm from hello to goodbye",
+        "label": "Like riding with a friend"
+      }
     ]
   },
   "message": {
@@ -28,10 +44,26 @@
     "link": "Message Pak Lee",
     "email": "Send an email",
     "chat": [
-      { "from": "guest", "name": "Rina", "text": "Six of us, three kids. Nami Island on the 14th — possible?" },
-      { "from": "pak", "name": "Pak Lee", "text": "Yes. Six with luggage fits fine. I'd leave at eight, before the ferry queue." },
-      { "from": "guest", "name": "Rina", "text": "Any good places to eat near there?" },
-      { "from": "pak", "name": "Pak Lee", "text": "Plenty. I'll take you to one I eat at myself." }
+      {
+        "from": "guest",
+        "name": "Rina",
+        "text": "Six of us, three kids. Nami Island on the 14th — possible?"
+      },
+      {
+        "from": "pak",
+        "name": "Pak Lee",
+        "text": "Yes. Six with luggage fits fine. I'd leave at eight, before the ferry queue."
+      },
+      {
+        "from": "guest",
+        "name": "Rina",
+        "text": "Any good places to eat near there?"
+      },
+      {
+        "from": "pak",
+        "name": "Pak Lee",
+        "text": "Plenty. I'll take you to one I eat at myself."
+      }
     ]
   },
   "reels": {
@@ -45,11 +77,26 @@
     "h2": "Hyundai Staria Lounge",
     "body": "One van, kept clean, with room to actually stretch out. Eight seats, but it's most comfortable at five or six once the luggage is in.",
     "specs": [
-      { "value": "8", "label": "seats" },
-      { "value": "Hotspot", "label": "free Wi-Fi for everyone" },
-      { "value": "Charging", "label": "USB available" },
-      { "value": "Water", "label": "bottled water provided" },
-      { "value": "First Aid", "label": "emergency kit onboard" }
+      {
+        "value": "8",
+        "label": "seats"
+      },
+      {
+        "value": "Hotspot",
+        "label": "free Wi-Fi for everyone"
+      },
+      {
+        "value": "Charging",
+        "label": "USB available"
+      },
+      {
+        "value": "Water",
+        "label": "bottled water provided"
+      },
+      {
+        "value": "First Aid",
+        "label": "emergency kit onboard"
+      }
     ]
   },
   "rates": {
@@ -57,36 +104,97 @@
     "h2": "What it costs",
     "body": "Priced per vehicle, not per person. The same price whether you're two or eight.",
     "rows": [
-      { "name": "All day — Seoul", "detail": "10 hours, anywhere in the city — add an Incheon Airport stop for +₩50,000", "price": "₩300,000", "amount": "300000" },
-      { "name": "Nami Island", "detail": "10 hours, with Petite France and the garden", "price": "₩400,000", "amount": "400000" },
-      { "name": "Airport pickup", "detail": "Incheon to your Seoul hotel, one way", "price": "₩150,000", "amount": "150000" },
-      { "name": "Airport drop", "detail": "Seoul hotel to Incheon, one way", "price": "₩150,000", "amount": "150000" }
+      {
+        "name": "All day — Seoul",
+        "detail": "10 hours, anywhere in the city — add an Incheon Airport stop for +₩50,000",
+        "price": "₩300,000",
+        "amount": "300000"
+      },
+      {
+        "name": "Nami Island",
+        "detail": "10 hours, with Petite France and the garden",
+        "price": "₩400,000",
+        "amount": "400000"
+      },
+      {
+        "name": "Airport pickup",
+        "detail": "Incheon to your Seoul hotel, one way",
+        "price": "₩150,000",
+        "amount": "150000"
+      },
+      {
+        "name": "Airport drop",
+        "detail": "Seoul hotel to Incheon, one way",
+        "price": "₩150,000",
+        "amount": "150000"
+      }
     ],
-    "included": ["Fuel included", "Tolls included", "Insurance included"],
-    "excluded": ["Parking not included", "Entry tickets not included"],
+    "included": [
+      "Fuel included",
+      "Tolls included",
+      "Insurance included"
+    ],
+    "excluded": [
+      "Parking not included",
+      "Entry tickets not included"
+    ],
     "extra": {
       "label": "Outside Seoul & overtime",
       "items": [
-        { "name": "Gyeonggi-do", "price": "+₩50,000" },
-        { "name": "Chungcheong-do", "price": "+₩100,000" },
-        { "name": "Gangwon-do", "price": "+₩150,000–200,000" },
-        { "name": "Overtime (per hour)", "price": "+₩30,000" }
+        {
+          "name": "Gyeonggi-do",
+          "price": "+₩50,000"
+        },
+        {
+          "name": "Chungcheong-do",
+          "price": "+₩100,000"
+        },
+        {
+          "name": "Gangwon-do",
+          "price": "+₩150,000–200,000"
+        },
+        {
+          "name": "Overtime (per hour)",
+          "price": "+₩30,000"
+        }
       ]
     }
   },
-  "why": { "h2": "Why spend the day with Pak Lee?" },
+  "why": {
+    "h2": "Why spend the day with Pak Lee?"
+  },
   "faq": {
     "eyebrow": "FAQ",
     "h2": "Questions people ask me",
     "items": [
-      { "q": "How much does a private driver cost in Korea?", "a": "A full day with me and the van starts at ₩300,000 for Seoul, priced per vehicle, not per person. Fuel, tolls and insurance are already in that price. Going into Gyeonggi-do, Chungcheong-do or Gangwon-do adds a bit more, and so does running past the 10-hour mark — see the exact numbers under Rates." },
-      { "q": "Can I change the plan during the day?", "a": "Yes, completely — move whenever and wherever feels comfortable for you. Skip a stop, add one, stay longer somewhere you like." },
-      { "q": "How many people fit in the van?", "a": "Up to 8, but that only leaves room for 2 to 3 small carry-ons. With 5 people, you can bring full-size suitcases." },
-      { "q": "How do I book?", "a": "Message me on WhatsApp or send an email with your dates, and we'll go from there." }
+      {
+        "q": "How much does a private driver cost in Korea?",
+        "a": "A full day with me and the van starts at ₩300,000 for Seoul, priced per vehicle, not per person. Fuel, tolls and insurance are already in that price. Going into Gyeonggi-do, Chungcheong-do or Gangwon-do adds a bit more, and so does running past the 10-hour mark — see the exact numbers under Rates."
+      },
+      {
+        "q": "Can I change the plan during the day?",
+        "a": "Yes, completely — move whenever and wherever feels comfortable for you. Skip a stop, add one, stay longer somewhere you like."
+      },
+      {
+        "q": "How many people fit in the van?",
+        "a": "Up to 8, but that only leaves room for 2 to 3 small carry-ons. With 5 people, you can bring full-size suitcases."
+      },
+      {
+        "q": "How do I book?",
+        "a": "Message me on WhatsApp or send an email with your dates, and we'll go from there."
+      }
     ]
   },
   "quote": {
     "text": "It's your day, so it's your call. Change the plan whenever you want — I'll never mind."
+  },
+  "review": {
+    "eyebrow": "Guest review",
+    "h2": "What guests say",
+    "quote": "Good evening Mr Lee\nWe were very happy to meet you, you were very helpfull and also very friendly.\nEverything on schedule, safe & smooth.\nWishing you always in a good health & succsess.\nRegards to your family and hope to see you again,soon.\nThanks a lot for today Mr Lee 🙏🙏",
+    "name": "Mr. Hugo",
+    "date": "2026.09.29",
+    "videoAlt": "Mr. Hugo's family waving goodbye after their trip with Pak Lee"
   },
   "cta": {
     "h2": "Where would you like to go?",

@@ -15,10 +15,26 @@
     "vanTag": "Van privada + chófer, todo incluido",
     "watch": "Ver un viaje real",
     "facts": [
-      { "icon": "🗺️", "value": "Tu ruta, tu ritmo", "label": "Horario libre, siempre" },
-      { "icon": "🚐", "value": "Solo tu grupo", "label": "Van privada, hasta 8" },
-      { "icon": "⛽", "value": "Todo incluido", "label": "Combustible, peajes y seguro" },
-      { "icon": "🤗", "value": "Cercano de principio a fin", "label": "Como viajar con un amigo" }
+      {
+        "icon": "🗺️",
+        "value": "Tu ruta, tu ritmo",
+        "label": "Horario libre, siempre"
+      },
+      {
+        "icon": "🚐",
+        "value": "Solo tu grupo",
+        "label": "Van privada, hasta 8"
+      },
+      {
+        "icon": "⛽",
+        "value": "Todo incluido",
+        "label": "Combustible, peajes y seguro"
+      },
+      {
+        "icon": "🤗",
+        "value": "Cercano de principio a fin",
+        "label": "Como viajar con un amigo"
+      }
     ]
   },
   "message": {
@@ -28,10 +44,26 @@
     "link": "Escríbele a Pak Lee",
     "email": "Enviar un email",
     "chat": [
-      { "from": "guest", "name": "Rina", "text": "Somos seis, tres niños. Nami Island el 14, ¿es posible?" },
-      { "from": "pak", "name": "Pak Lee", "text": "Sí. Seis con equipaje entran bien. Yo saldría a las ocho, antes de la cola del ferry." },
-      { "from": "guest", "name": "Rina", "text": "¿Nos recomiendas algún sitio bueno para comer por allí?" },
-      { "from": "pak", "name": "Pak Lee", "text": "Claro. Te llevo a uno donde como yo mismo." }
+      {
+        "from": "guest",
+        "name": "Rina",
+        "text": "Somos seis, tres niños. Nami Island el 14, ¿es posible?"
+      },
+      {
+        "from": "pak",
+        "name": "Pak Lee",
+        "text": "Sí. Seis con equipaje entran bien. Yo saldría a las ocho, antes de la cola del ferry."
+      },
+      {
+        "from": "guest",
+        "name": "Rina",
+        "text": "¿Nos recomiendas algún sitio bueno para comer por allí?"
+      },
+      {
+        "from": "pak",
+        "name": "Pak Lee",
+        "text": "Claro. Te llevo a uno donde como yo mismo."
+      }
     ]
   },
   "reels": {
@@ -45,11 +77,26 @@
     "h2": "Hyundai Staria Lounge",
     "body": "Una sola van, siempre limpia y con sitio para estirarte de verdad. Ocho plazas, aunque va más cómoda con cinco o seis una vez cargado el equipaje.",
     "specs": [
-      { "value": "8", "label": "plazas" },
-      { "value": "Hotspot", "label": "Wi-Fi gratis para todos" },
-      { "value": "Carga", "label": "USB disponible" },
-      { "value": "Agua", "label": "botellas de agua incluidas" },
-      { "value": "Botiquín", "label": "kit de emergencia a bordo" }
+      {
+        "value": "8",
+        "label": "plazas"
+      },
+      {
+        "value": "Hotspot",
+        "label": "Wi-Fi gratis para todos"
+      },
+      {
+        "value": "Carga",
+        "label": "USB disponible"
+      },
+      {
+        "value": "Agua",
+        "label": "botellas de agua incluidas"
+      },
+      {
+        "value": "Botiquín",
+        "label": "kit de emergencia a bordo"
+      }
     ]
   },
   "rates": {
@@ -57,36 +104,97 @@
     "h2": "Lo que cuesta",
     "body": "El precio es por vehículo, no por persona. Cuesta lo mismo si sois dos que si sois ocho.",
     "rows": [
-      { "name": "Día completo — Seúl", "detail": "10 horas, por toda la ciudad — añade una parada en el aeropuerto de Incheon por +₩50,000", "price": "₩300,000", "amount": "300000" },
-      { "name": "Nami Island", "detail": "10 horas, con Petite France y el jardín", "price": "₩400,000", "amount": "400000" },
-      { "name": "Recogida en el aeropuerto", "detail": "De Incheon a tu hotel de Seúl, un trayecto", "price": "₩150,000", "amount": "150000" },
-      { "name": "Traslado al aeropuerto", "detail": "De tu hotel de Seúl a Incheon, un trayecto", "price": "₩150,000", "amount": "150000" }
+      {
+        "name": "Día completo — Seúl",
+        "detail": "10 horas, por toda la ciudad — añade una parada en el aeropuerto de Incheon por +₩50,000",
+        "price": "₩300,000",
+        "amount": "300000"
+      },
+      {
+        "name": "Nami Island",
+        "detail": "10 horas, con Petite France y el jardín",
+        "price": "₩400,000",
+        "amount": "400000"
+      },
+      {
+        "name": "Recogida en el aeropuerto",
+        "detail": "De Incheon a tu hotel de Seúl, un trayecto",
+        "price": "₩150,000",
+        "amount": "150000"
+      },
+      {
+        "name": "Traslado al aeropuerto",
+        "detail": "De tu hotel de Seúl a Incheon, un trayecto",
+        "price": "₩150,000",
+        "amount": "150000"
+      }
     ],
-    "included": ["Combustible incluido", "Peajes incluidos", "Seguro incluido"],
-    "excluded": ["Parking no incluido", "Entradas no incluidas"],
+    "included": [
+      "Combustible incluido",
+      "Peajes incluidos",
+      "Seguro incluido"
+    ],
+    "excluded": [
+      "Parking no incluido",
+      "Entradas no incluidas"
+    ],
     "extra": {
       "label": "Fuera de Seúl y horas extra",
       "items": [
-        { "name": "Gyeonggi-do", "price": "+₩50.000" },
-        { "name": "Chungcheong-do", "price": "+₩100.000" },
-        { "name": "Gangwon-do", "price": "+₩150.000–200.000" },
-        { "name": "Hora extra (por hora)", "price": "+₩30.000" }
+        {
+          "name": "Gyeonggi-do",
+          "price": "+₩50.000"
+        },
+        {
+          "name": "Chungcheong-do",
+          "price": "+₩100.000"
+        },
+        {
+          "name": "Gangwon-do",
+          "price": "+₩150.000–200.000"
+        },
+        {
+          "name": "Hora extra (por hora)",
+          "price": "+₩30.000"
+        }
       ]
     }
   },
-  "why": { "h2": "¿Por qué pasar el día con Pak Lee?" },
+  "why": {
+    "h2": "¿Por qué pasar el día con Pak Lee?"
+  },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "h2": "Lo que me suelen preguntar",
     "items": [
-      { "q": "¿Cuánto cuesta un chófer privado en Corea?", "a": "Un día completo conmigo y la van empieza en ₩300,000 para Seúl, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio. Ir a Gyeonggi-do, Chungcheong-do o Gangwon-do tiene un costo extra, igual que pasar de las 10 horas — los montos exactos están en la sección Tarifas." },
-      { "q": "¿Puedo cambiar el plan durante el día?", "a": "Sí, completamente — muévete cuando y como te resulte más cómodo. Salta una parada, añade otra, o quédate más tiempo en el sitio que te guste." },
-      { "q": "¿Cuántas personas caben en la van?", "a": "Hasta 8, pero eso solo deja sitio para 2 o 3 maletas de cabina pequeñas. Con 5 personas, caben maletas grandes." },
-      { "q": "¿Cómo reservo?", "a": "Escríbeme por WhatsApp o mándame un correo con tus fechas, y seguimos desde ahí." }
+      {
+        "q": "¿Cuánto cuesta un chófer privado en Corea?",
+        "a": "Un día completo conmigo y la van empieza en ₩300,000 para Seúl, precio por vehículo, no por persona. Combustible, peajes y seguro ya están incluidos en ese precio. Ir a Gyeonggi-do, Chungcheong-do o Gangwon-do tiene un costo extra, igual que pasar de las 10 horas — los montos exactos están en la sección Tarifas."
+      },
+      {
+        "q": "¿Puedo cambiar el plan durante el día?",
+        "a": "Sí, completamente — muévete cuando y como te resulte más cómodo. Salta una parada, añade otra, o quédate más tiempo en el sitio que te guste."
+      },
+      {
+        "q": "¿Cuántas personas caben en la van?",
+        "a": "Hasta 8, pero eso solo deja sitio para 2 o 3 maletas de cabina pequeñas. Con 5 personas, caben maletas grandes."
+      },
+      {
+        "q": "¿Cómo reservo?",
+        "a": "Escríbeme por WhatsApp o mándame un correo con tus fechas, y seguimos desde ahí."
+      }
     ]
   },
   "quote": {
     "text": "Es tu día, así que decides tú. Cambia el plan cuando quieras — nunca me va a molestar."
+  },
+  "review": {
+    "eyebrow": "Opinión de huéspedes",
+    "h2": "Lo que dicen los huéspedes",
+    "quote": "Good evening Mr Lee\nWe were very happy to meet you, you were very helpfull and also very friendly.\nEverything on schedule, safe & smooth.\nWishing you always in a good health & succsess.\nRegards to your family and hope to see you again,soon.\nThanks a lot for today Mr Lee 🙏🙏",
+    "name": "Mr. Hugo",
+    "date": "2026.09.29",
+    "videoAlt": "Mr. Hugo's family waving goodbye after their trip with Pak Lee"
   },
   "cta": {
     "h2": "¿A dónde te gustaría ir?",
