@@ -8,19 +8,11 @@
   "name": "Tu nombre",
   "date": "Fecha",
   "people": "Número de personas",
-  "tour": "¿A dónde te gustaría ir?",
-  "tours": [
-    "Día en Seúl (10 horas)",
-    "Isla Nami",
-    "Recogida en el aeropuerto",
-    "Traslado al aeropuerto",
-    "Otra cosa"
-  ],
   "hotel": "Hotel / lugar de recogida (opcional)",
   "message": "¿Algo más? (opcional)",
   "submit": "Enviar solicitud por WhatsApp",
   "note": "No pagas nada ahora. Pak Lee te responderá para confirmar.",
-  "required": "Por favor, escribe tu nombre y la fecha.",
+  "required": "Por favor, escribe tu nombre, la fecha y elige tu viaje.",
   "nav": {
     "howItWorks": "Cómo funciona",
     "videos": "Vídeos",
@@ -28,5 +20,24 @@
     "rates": "Tarifas",
     "shareTour": "Tour compartido",
     "tagline": "Chófer privado · Corea"
-  }
+  },
+  "service": "¿Qué necesitas?",
+  "svcDay": "Alquiler de día (10 horas)",
+  "svcAirport": "Recogida / traslado al aeropuerto",
+  "airportQ": "¿Recogida o traslado?",
+  "pickup": "Recogida en el aeropuerto",
+  "drop": "Traslado al aeropuerto",
+  "areaQ": "¿A dónde vas?",
+  "inSeoul": "Dentro de Seúl",
+  "outSeoul": "Fuera de Seúl",
+  "destQ": "¿Qué destino?",
+  "nami": "Isla Nami",
+  "vivaldi": "Vivaldi Park",
+  "sokcho": "Sokcho",
+  "other": "Otro lugar",
+  "from": "Salida",
+  "to": "Destino",
+  "price": "Precio",
+  "quote": "Pak Lee te enviará un presupuesto",
+  "priceNote": "Por vehículo · combustible, peajes y seguro incluidos"
 }

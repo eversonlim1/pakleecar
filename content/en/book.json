@@ -8,19 +8,11 @@
   "name": "Your name",
   "date": "Date",
   "people": "Number of people",
-  "tour": "Where would you like to go?",
-  "tours": [
-    "Seoul day trip (10 hours)",
-    "Nami Island",
-    "Airport pickup",
-    "Airport drop-off",
-    "Something else"
-  ],
   "hotel": "Hotel / pickup place (optional)",
   "message": "Anything else? (optional)",
   "submit": "Send booking request on WhatsApp",
   "note": "No payment now. Pak Lee will reply to confirm.",
-  "required": "Please fill in your name and date.",
+  "required": "Please fill in your name, date and choose your trip.",
   "nav": {
     "howItWorks": "How it works",
     "videos": "Videos",
@@ -28,5 +20,24 @@
     "rates": "Rates",
     "shareTour": "Shared tour",
     "tagline": "Private driver · Korea"
-  }
+  },
+  "service": "What do you need?",
+  "svcDay": "10-hour day hire",
+  "svcAirport": "Airport pickup / drop-off",
+  "airportQ": "Pickup or drop-off?",
+  "pickup": "Airport pickup",
+  "drop": "Airport drop-off",
+  "areaQ": "Where will you go?",
+  "inSeoul": "Within Seoul",
+  "outSeoul": "Outside Seoul",
+  "destQ": "Which destination?",
+  "nami": "Nami Island",
+  "vivaldi": "Vivaldi Park",
+  "sokcho": "Sokcho",
+  "other": "Somewhere else",
+  "from": "Departure",
+  "to": "Destination",
+  "price": "Price",
+  "quote": "Pak Lee will send you a quote",
+  "priceNote": "Per vehicle · fuel, tolls & insurance included"
 }

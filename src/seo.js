@@ -15,18 +15,20 @@ function hreflangs(slug) {
   return links.join('\n');
 }
 
-function head({ lang, slug, seo, extraHead = '', cssHref = '/assets/css/site.css' }) {
-  const url = abs(pageUrl(lang, slug));
-  const ogImage = abs(seo.ogImage || '/assets/img/staria-ext.jpg');
-  return `<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CHW93PTKZ"></script>
+const GA_TAG = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CHW93PTKZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-0CHW93PTKZ');
-</script>
+</script>`;
+
+function head({ lang, slug, seo, extraHead = '', cssHref = '/assets/css/site.css' }) {
+  const url = abs(pageUrl(lang, slug));
+  const ogImage = abs(seo.ogImage || '/assets/img/staria-ext.jpg');
+  return `<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+${GA_TAG}
 <title>${esc(seo.title)}</title>
 <meta name="description" content="${esc(seo.description)}">
 <link rel="canonical" href="${url}">
@@ -49,4 +51,4 @@ ${hreflangs(slug)}
 ${extraHead}`;
 }
 
-module.exports = { head, hreflangs, abs };
+module.exports = { head, hreflangs, abs, GA_TAG };

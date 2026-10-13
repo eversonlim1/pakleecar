@@ -772,3 +772,22 @@ button.stask.btn{border:0;font:inherit;cursor:pointer;font-size:13.5px;padding:1
   .nav .brand span{display:none}
   .navr .btn{white-space:nowrap}
 }
+
+/* booking form: stepped trip choice + live price */
+.bk-step{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.bk-step[hidden],.bk-row[hidden],.bk-price[hidden]{display:none}
+.bk-step legend{font-size:14.5px;font-weight:700;color:#111;margin-bottom:9px;padding:0}
+.bk-chips{display:flex;flex-wrap:wrap;gap:8px}
+.bk-chip{cursor:pointer}
+.bk-chip input{position:absolute;opacity:0;pointer-events:none}
+.bk-chip span{display:inline-block;padding:11px 16px;border:1.5px solid #C9D2CD;border-radius:999px;
+  font-size:15px;font-weight:600;color:#111;background:#fff;transition:background .12s,border-color .12s}
+.bk-chip:hover span{border-color:#16A063}
+.bk-chip input:checked + span{background:#16A063;border-color:#16A063;color:#fff}
+.bk-chip input:focus-visible + span{box-shadow:0 0 0 3px rgba(22,160,99,.3)}
+.bk-price{display:flex;flex-direction:column;gap:2px;background:#E7F5EE;border:1.5px solid #16A063;
+  border-radius:8px;padding:14px 18px}
+.bk-price span{font-size:13px;font-weight:700;color:#0C7A49;text-transform:uppercase;letter-spacing:.04em}
+.bk-price b{font-size:28px;font-weight:900;color:#0C7A49;letter-spacing:-.02em}
+.bk-price small{font-size:13px;color:#3C4A44}
+.bk-brand{display:inline-flex;margin:0 auto 28px}

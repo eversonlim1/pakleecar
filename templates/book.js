@@ -1,18 +1,33 @@
 const { esc } = require('../src/html');
-const { pageUrl } = require('../build.config');
 
 const WA_NUMBER = '821094157859';
-// Pak Lee reads English, so the WhatsApp message itself uses English labels
-// whatever language the form is shown in.
-const TOUR_EN = ['Seoul day trip (10 hours)', 'Nami Island', 'Airport pickup', 'Airport drop-off', 'Something else'];
+const LOCALE = { en: 'en-US', id: 'id-ID', es: 'es-ES', ja: 'ja-JP', th: 'th-TH' };
+
+// Pak Lee reads English, so the WhatsApp message uses these English labels
+// whatever language the form is shown in. price null = he quotes it.
+const CHOICES = {
+  pickup:  { en: 'Airport pickup', price: 150000 },
+  drop:    { en: 'Airport drop-off', price: 150000 },
+  seoul:   { en: '10-hour day hire - within Seoul', price: 300000 },
+  nami:    { en: '10-hour day hire - Nami Island', price: 400000 },
+  vivaldi: { en: '10-hour day hire - Vivaldi Park', price: 400000 },
+  sokcho:  { en: '10-hour day hire - Sokcho', price: 450000 },
+  other:   { en: '10-hour day hire - other destination', price: null }
+};
 
 function js(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
 
+function chips(name, items) {
+  return `<div class="bk-chips" role="radiogroup">${items.map(([value, label]) =>
+    `<label class="bk-chip"><input type="radio" name="${name}" value="${value}"><span>${esc(label)}</span></label>`
+  ).join('')}</div>`;
+}
+
 module.exports = function book({ lang, data }) {
-  const options = data.tours.map((t, i) => `<option value="${i}">${esc(t)}</option>`).join('');
-  const people = Array.from({ length: 8 }, (_, i) => `<option value="${i + 1}"${i === 1 ? ' selected' : ''}>${i + 1}</option>`).join('');
+  const people = Array.from({ length: 8 }, (_, i) =>
+    `<option value="${i + 1}"${i === 1 ? ' selected' : ''}>${i + 1}</option>`).join('');
 
   return `<main class="bk"><div class="wrap bk-wrap">
 <h1>${esc(data.h1)}</h1>
@@ -23,7 +38,34 @@ module.exports = function book({ lang, data }) {
 <label>${esc(data.date)}<input name="date" type="date" required></label>
 <label>${esc(data.people)}<select name="people">${people}</select></label>
 </div>
-<label>${esc(data.tour)}<select name="tour">${options}</select></label>
+
+<fieldset class="bk-step"><legend>${esc(data.service)}</legend>
+${chips('service', [['day', data.svcDay], ['airport', data.svcAirport]])}
+</fieldset>
+
+<fieldset class="bk-step" data-show="airport" hidden><legend>${esc(data.airportQ)}</legend>
+${chips('airport', [['pickup', data.pickup], ['drop', data.drop]])}
+</fieldset>
+
+<fieldset class="bk-step" data-show="day" hidden><legend>${esc(data.areaQ)}</legend>
+${chips('area', [['seoul', data.inSeoul], ['out', data.outSeoul]])}
+</fieldset>
+
+<fieldset class="bk-step" data-show="out" hidden><legend>${esc(data.destQ)}</legend>
+${chips('dest', [['nami', data.nami], ['vivaldi', data.vivaldi], ['sokcho', data.sokcho], ['other', data.other]])}
+</fieldset>
+
+<div class="bk-row" data-show="other" hidden>
+<label>${esc(data.from)}<input name="from" type="text"></label>
+<label>${esc(data.to)}<input name="to" type="text"></label>
+</div>
+
+<div class="bk-price" id="bkPrice" hidden>
+<span>${esc(data.price)}</span>
+<b id="bkPriceVal"></b>
+<small>${esc(data.priceNote)}</small>
+</div>
+
 <label>${esc(data.hotel)}<input name="hotel" type="text"></label>
 <label>${esc(data.message)}<textarea name="message" rows="3"></textarea></label>
 <p class="bk-err" id="bkErr" role="alert" hidden>${esc(data.required)}</p>
@@ -35,21 +77,60 @@ module.exports = function book({ lang, data }) {
 (function () {
   var form = document.getElementById('bkForm');
   var err = document.getElementById('bkErr');
-  var tours = ${js(TOUR_EN)};
-  var thanks = ${js(pageUrl(lang, 'thanks'))};
+  var priceBox = document.getElementById('bkPrice');
+  var priceVal = document.getElementById('bkPriceVal');
+  var choices = ${js(CHOICES)};
+  var quote = ${js(data.quote)};
+  var thanks = ${js('/thanks/?l=' + lang)};
+  var fmt = new Intl.NumberFormat(${js(LOCALE[lang] || 'en-US')});
   var d = new Date();
   form.date.min = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+
+  function val(name) {
+    var el = form.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : '';
+  }
+  // Which final choice the visitor has reached so far ('' = not yet).
+  function choice() {
+    var s = val('service');
+    if (s === 'airport') return val('airport');
+    if (s === 'day') {
+      var a = val('area');
+      if (a === 'seoul') return 'seoul';
+      if (a === 'out') return val('dest');
+    }
+    return '';
+  }
+  function show(key, on) {
+    form.querySelectorAll('[data-show="' + key + '"]').forEach(function (el) { el.hidden = !on; });
+  }
+  function update() {
+    var s = val('service'), a = val('area');
+    show('airport', s === 'airport');
+    show('day', s === 'day');
+    show('out', s === 'day' && a === 'out');
+    show('other', s === 'day' && a === 'out' && val('dest') === 'other');
+    var c = choice();
+    priceBox.hidden = !c;
+    if (c) priceVal.textContent = choices[c].price ? '\\u20a9' + fmt.format(choices[c].price) : quote;
+  }
+  form.addEventListener('change', update);
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var name = form.name.value.trim();
     var date = form.date.value;
-    if (!name || !date) { err.hidden = false; return; }
+    var c = choice();
+    var from = form.from.value.trim(), to = form.to.value.trim();
+    if (!name || !date || !c || (c === 'other' && (!from || !to))) { err.hidden = false; return; }
     err.hidden = true;
     var lines = ['Hi Pak Lee! Booking request:',
       'Name: ' + name,
       'Date: ' + date,
       'People: ' + form.people.value,
-      'Tour: ' + tours[+form.tour.value]];
+      'Service: ' + choices[c].en];
+    if (c === 'other') lines.push('From: ' + from, 'To: ' + to);
+    lines.push('Price: ' + (choices[c].price ? '\\u20a9' + choices[c].price.toLocaleString('en-US') : 'quote needed'));
     if (form.hotel.value.trim()) lines.push('Hotel/pickup: ' + form.hotel.value.trim());
     if (form.message.value.trim()) lines.push('Message: ' + form.message.value.trim());
     var url = 'https://wa.me/${WA_NUMBER}?text=' + encodeURIComponent(lines.join('\\n'));

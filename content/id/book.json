@@ -8,19 +8,11 @@
   "name": "Nama Anda",
   "date": "Tanggal",
   "people": "Jumlah orang",
-  "tour": "Mau ke mana?",
-  "tours": [
-    "Keliling Seoul (10 jam)",
-    "Pulau Nami",
-    "Jemput bandara",
-    "Antar ke bandara",
-    "Lainnya"
-  ],
   "hotel": "Hotel / lokasi jemput (opsional)",
   "message": "Ada pesan lain? (opsional)",
   "submit": "Kirim booking lewat WhatsApp",
   "note": "Belum perlu bayar sekarang. Pak Lee akan balas untuk konfirmasi.",
-  "required": "Mohon isi nama dan tanggal.",
+  "required": "Mohon isi nama, tanggal, dan pilih perjalanan Anda.",
   "nav": {
     "howItWorks": "Cara kerjanya",
     "videos": "Video",
@@ -28,5 +20,24 @@
     "rates": "Harga",
     "shareTour": "Share Tour",
     "tagline": "Sopir pribadi · Korea"
-  }
+  },
+  "service": "Butuh layanan apa?",
+  "svcDay": "Sewa harian 10 jam",
+  "svcAirport": "Jemput / antar bandara",
+  "airportQ": "Jemput atau antar?",
+  "pickup": "Jemput di bandara",
+  "drop": "Antar ke bandara",
+  "areaQ": "Mau ke mana?",
+  "inSeoul": "Dalam kota Seoul",
+  "outSeoul": "Luar Seoul",
+  "destQ": "Tujuan yang mana?",
+  "nami": "Pulau Nami",
+  "vivaldi": "Vivaldi Park",
+  "sokcho": "Sokcho",
+  "other": "Tempat lain",
+  "from": "Lokasi berangkat",
+  "to": "Tujuan",
+  "price": "Harga",
+  "quote": "Pak Lee akan kirim penawaran harga",
+  "priceNote": "Per mobil · sudah termasuk bensin, tol & asuransi"
 }
