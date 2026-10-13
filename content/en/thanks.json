@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Booking Request Sent | Pak Lee's Car",
+    "description": "Thanks! Your booking request is ready in WhatsApp. Press send and Pak Lee will reply soon to confirm your private van and driver."
+  },
+  "h1": "Thank you! Your request is ready",
+  "body": "WhatsApp has opened with your booking details. Just press send — Pak Lee usually replies within an hour.",
+  "again": "WhatsApp didn't open? Tap here",
+  "home": "Back to home",
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

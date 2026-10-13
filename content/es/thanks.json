@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Solicitud de reserva enviada | Pak Lee's Car",
+    "description": "¡Gracias! Tu solicitud de reserva está lista en WhatsApp. Pulsa enviar y Pak Lee te responderá pronto para confirmar."
+  },
+  "h1": "¡Gracias! Tu solicitud está lista",
+  "body": "WhatsApp se ha abierto con los datos de tu reserva. Solo pulsa enviar: Pak Lee suele responder en menos de una hora.",
+  "again": "¿No se abrió WhatsApp? Pulsa aquí",
+  "home": "Volver al inicio",
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

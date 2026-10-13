@@ -740,3 +740,35 @@ button.stask.btn{border:0;font:inherit;cursor:pointer;font-size:13.5px;padding:1
 [data-theme="dark"] .stcard,[data-theme="dark"] .stconcept-card,
 [data-theme="dark"] .stalert{background:#161D1A}
 [data-theme="dark"] .gcard{background:#161D1A}
+
+/* ── 19. Booking form + completion page ──
+   Literal light colours like the homepage, so the form stays a white card
+   in OS dark mode instead of flipping text light on a light input. */
+.mobile-menu .mm-wa{margin-top:12px;background:transparent;border:1px solid rgba(255,255,255,.4)}
+.bk{background:#F4F5F4;color:#111}
+.bk-wrap{max-width:620px;padding-top:64px;padding-bottom:88px}
+.bk h1{font-size:clamp(28px,4vw,40px);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:12px;color:#111}
+.bk-lede{font-size:16.5px;line-height:1.65;color:#3C4A44;margin-bottom:28px}
+.bk-form{display:flex;flex-direction:column;gap:16px;background:#fff;border:2px solid #111;border-radius:8px;
+  box-shadow:0 4px 0 #111;padding:28px}
+.bk-form label{display:flex;flex-direction:column;gap:7px;font-size:14.5px;font-weight:700;color:#111}
+.bk-form input,.bk-form select,.bk-form textarea{font:inherit;font-size:16px;font-weight:500;color:#111;
+  background:#fff;border:1.5px solid #C9D2CD;border-radius:6px;padding:12px 14px;width:100%}
+.bk-form input:focus,.bk-form select:focus,.bk-form textarea:focus{outline:none;border-color:#16A063;
+  box-shadow:0 0 0 3px rgba(22,160,99,.18)}
+.bk-row{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+.bk-err{color:#C0392B;font-size:14px;font-weight:700}
+.bk-submit{width:100%;margin-top:6px;font-size:16px;padding:17px 20px;cursor:pointer}
+.bk-note{font-size:13.5px;color:#5C6B64;text-align:center}
+.bk-done{text-align:center}
+.bk-check{width:72px;height:72px;margin:0 auto 22px;border-radius:50%;background:#16A063;color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:900;box-shadow:0 4px 0 #0C7A49}
+.bk-done .pbtn{margin:8px auto 0}
+.bk-home{display:block;margin-top:22px;font-size:15px;font-weight:700;color:#0C7A49}
+@media(max-width:920px){
+  .bk-wrap{padding-top:40px;padding-bottom:64px}
+  .bk-form{padding:20px 18px}
+  .bk-row{grid-template-columns:1fr}
+  .nav .brand span{display:none}
+  .navr .btn{white-space:nowrap}
+}

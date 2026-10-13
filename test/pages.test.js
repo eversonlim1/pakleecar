@@ -8,7 +8,7 @@ const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const read = p => fs.readFileSync(path.join(DIST, p), 'utf8');
 
-test('15종 × 5언어 = 75개 HTML이 생성된다', () => {
+test('15종 × 5언어 + 예약 퍼널 2종 × 5언어 = 85개 HTML이 생성된다', () => {
   execFileSync('node', ['build.js'], { cwd: ROOT, stdio: 'pipe' });
   let n = 0;
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).forEach(e => {
@@ -17,7 +17,7 @@ test('15종 × 5언어 = 75개 HTML이 생성된다', () => {
     else if (e.name === 'index.html') n++;
   });
   for (const l of ['id', 'en', 'es', 'ja', 'th']) walk(path.join(DIST, l));
-  assert.strictEqual(n, 75);
+  assert.strictEqual(n, 85);
 });
 
 test('가이드 글에 Article 스키마가 있다', () => {
@@ -37,4 +37,17 @@ test('영상 페이지에 릴 6개와 VideoObject 6개가 있다', () => {
 
 test('공유투어 페이지가 예약 API를 호출한다', () => {
   assert.match(read('en/share-tour/index.html'), /\/api\/bookings/);
+});
+
+test('예약 완료 페이지는 noindex이고 사이트맵에 없다', () => {
+  for (const l of ['id', 'en', 'es', 'ja', 'th']) {
+    const t = fs.readFileSync(path.join(DIST, l, 'thanks', 'index.html'), 'utf8');
+    assert.match(t, /<meta name="robots" content="noindex, nofollow">/);
+    const b = fs.readFileSync(path.join(DIST, l, 'book', 'index.html'), 'utf8');
+    assert.match(b, new RegExp(`var thanks = "/${l}/thanks/"`));
+    assert.match(b, /wa\.me\/821094157859\?text=/);
+  }
+  const sitemap = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
+  assert.doesNotMatch(sitemap, /\/thanks\//);
+  assert.doesNotMatch(sitemap, /\/book\//);
 });

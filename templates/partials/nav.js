@@ -2,6 +2,7 @@ const { esc, img } = require('../../src/html');
 const { pageUrl } = require('../../build.config');
 
 const WA = 'https://wa.me/821094157859';
+const BOOK = { en: 'Book now', id: 'Booking', es: 'Reservar', ja: '予約する', th: 'จองเลย' };
 
 const mascot = () => img({
   src: '/assets/img/paklee-avatar.jpg', alt: 'Pak Lee',
@@ -32,7 +33,7 @@ ${mascot()}
 ${desktopLinks}
 </ul>
 <div class="navr">
-<a class="btn" href="${WA}" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn" href="${l('book')}">${esc(BOOK[lang] || BOOK.en)}</a>
 <button type="button" class="hamburger" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
 <span></span>
 </button>
@@ -48,6 +49,7 @@ ${mascot()}
 <ul>
 ${mobileLinks}
 </ul>
-<a class="btn" href="${WA}" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn" href="${l('book')}">${esc(BOOK[lang] || BOOK.en)}</a>
+<a class="btn mm-wa" href="${WA}" target="_blank" rel="noopener">WhatsApp</a>
 </div>`;
 };

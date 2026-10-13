@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Permintaan Booking Terkirim | Pak Lee's Car",
+    "description": "Terima kasih! Permintaan booking Anda sudah siap di WhatsApp. Tekan kirim dan Pak Lee akan segera membalas untuk konfirmasi."
+  },
+  "h1": "Terima kasih! Permintaan Anda sudah siap",
+  "body": "WhatsApp sudah terbuka dengan detail booking Anda. Tinggal tekan kirim — Pak Lee biasanya membalas dalam satu jam.",
+  "again": "WhatsApp tidak terbuka? Tekan di sini",
+  "home": "Kembali ke beranda",
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

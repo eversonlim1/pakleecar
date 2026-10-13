@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Book a Private Van + Driver in Korea | Pak Lee's Car",
+    "description": "Send a booking request in 30 seconds: your name, date and group size. Pak Lee replies on WhatsApp to confirm your private van and driver in Korea."
+  },
+  "h1": "Book your day with Pak Lee",
+  "lede": "Fill in a few details and tap the button. WhatsApp opens with your request already written — just press send.",
+  "name": "Your name",
+  "date": "Date",
+  "people": "Number of people",
+  "tour": "Where would you like to go?",
+  "tours": [
+    "Seoul day trip (10 hours)",
+    "Nami Island",
+    "Airport pickup",
+    "Airport drop-off",
+    "Something else"
+  ],
+  "hotel": "Hotel / pickup place (optional)",
+  "message": "Anything else? (optional)",
+  "submit": "Send booking request on WhatsApp",
+  "note": "No payment now. Pak Lee will reply to confirm.",
+  "required": "Please fill in your name and date.",
+  "nav": {
+    "howItWorks": "How it works",
+    "videos": "Videos",
+    "car": "The car",
+    "rates": "Rates",
+    "shareTour": "Shared tour",
+    "tagline": "Private driver · Korea"
+  }
+}

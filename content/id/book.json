@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Booking Sewa Mobil + Sopir di Korea | Pak Lee's Car",
+    "description": "Kirim permintaan booking dalam 30 detik: nama, tanggal, dan jumlah orang. Pak Lee akan balas lewat WhatsApp untuk konfirmasi mobil dan sopir di Korea."
+  },
+  "h1": "Booking jalan-jalan bareng Pak Lee",
+  "lede": "Isi data singkat lalu tekan tombol. WhatsApp akan terbuka dengan pesan yang sudah terisi — tinggal kirim.",
+  "name": "Nama Anda",
+  "date": "Tanggal",
+  "people": "Jumlah orang",
+  "tour": "Mau ke mana?",
+  "tours": [
+    "Keliling Seoul (10 jam)",
+    "Pulau Nami",
+    "Jemput bandara",
+    "Antar ke bandara",
+    "Lainnya"
+  ],
+  "hotel": "Hotel / lokasi jemput (opsional)",
+  "message": "Ada pesan lain? (opsional)",
+  "submit": "Kirim booking lewat WhatsApp",
+  "note": "Belum perlu bayar sekarang. Pak Lee akan balas untuk konfirmasi.",
+  "required": "Mohon isi nama dan tanggal.",
+  "nav": {
+    "howItWorks": "Cara kerjanya",
+    "videos": "Video",
+    "car": "Mobilnya",
+    "rates": "Harga",
+    "shareTour": "Share Tour",
+    "tagline": "Sopir pribadi · Korea"
+  }
+}

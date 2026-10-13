@@ -7,6 +7,7 @@ const WA = 'https://wa.me/821094157859';
 const EN_IG = 'https://www.instagram.com/mr.lee_private_car_in_korea/';
 const TH_IG = 'https://www.instagram.com/pakleecar_th/';
 const JP_IG = 'https://www.instagram.com/pakleecar_jp/';
+const BOOK = { en: 'Book now', id: 'Booking sekarang', es: 'Reservar ahora', ja: '今すぐ予約', th: 'จองเลย' };
 const SPEC_ICONS = ['\u{1F465}', '\u{1F4F6}', '\u{1F50C}', '\u{1F4A7}', '\u{1FA79}'];
 
 function twoLineHeadline(text) {
@@ -102,7 +103,7 @@ ${corners}
 <p class="h-sub">${esc(h.vanTag)}</p>
 <h1>${twoLineHeadline(h.h1)}</h1>
 <div class="h-btns">
-<a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rsaquo;</a>
+<a class="pbtn pbtn-or" href="${pageUrl(lang, 'book')}">${esc(BOOK[lang] || BOOK.en)} &rsaquo;</a>
 <a class="pbtn" href="#rates">${esc(h.ctaSecondary)} &rsaquo;</a>
 <a class="pbtn" href="https://www.instagram.com/reel/${heroReel.id}/" data-open="${heroReel.id}">&#9654; ${esc(h.watch)}</a>
 </div>
@@ -175,7 +176,7 @@ ${block('04', data.review.h2, '', `<div class="h-review">
 </div></section>
 
 <nav class="h-quick" aria-label="Quick menu">
-<a class="q-wa" href="${WA}" target="_blank" rel="noopener">${esc(h.ctaPrimary)} &rarr;</a>
+<a class="q-wa" href="${pageUrl(lang, 'book')}">${esc(BOOK[lang] || BOOK.en)} &rarr;</a>
 <a href="#rates">${esc(data.nav.rates)} &rarr;</a>
 <a href="#faq">${esc(data.faq.eyebrow)} &rarr;</a>
 <a class="q-top" href="#">TOP &uarr;</a>

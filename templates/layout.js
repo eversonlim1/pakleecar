@@ -5,13 +5,13 @@ const footer = require('./partials/footer');
 
 module.exports = function layout({
   lang, slug, seo, schema = [], body, nav: navText, bodyEnd = '',
-  cssHref = '/assets/css/site.css', navJsHref = '/assets/js/nav.js'
+  cssHref = '/assets/css/site.css', navJsHref = '/assets/js/nav.js', headExtra = ''
 }) {
   const ld = schema.length ? jsonLd(schema) : '';
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
-${head({ lang, slug, seo, extraHead: ld, cssHref })}
+${head({ lang, slug, seo, extraHead: ld + headExtra, cssHref })}
 </head>
 <body>
 ${nav(lang, navText)}

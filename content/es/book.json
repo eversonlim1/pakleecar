@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Reserva van privada + chófer en Corea | Pak Lee's Car",
+    "description": "Envía tu solicitud en 30 segundos: nombre, fecha y número de personas. Pak Lee te responde por WhatsApp para confirmar tu van y chófer en Corea."
+  },
+  "h1": "Reserva tu día con Pak Lee",
+  "lede": "Rellena unos datos y pulsa el botón. WhatsApp se abre con tu solicitud ya escrita: solo tienes que enviarla.",
+  "name": "Tu nombre",
+  "date": "Fecha",
+  "people": "Número de personas",
+  "tour": "¿A dónde te gustaría ir?",
+  "tours": [
+    "Día en Seúl (10 horas)",
+    "Isla Nami",
+    "Recogida en el aeropuerto",
+    "Traslado al aeropuerto",
+    "Otra cosa"
+  ],
+  "hotel": "Hotel / lugar de recogida (opcional)",
+  "message": "¿Algo más? (opcional)",
+  "submit": "Enviar solicitud por WhatsApp",
+  "note": "No pagas nada ahora. Pak Lee te responderá para confirmar.",
+  "required": "Por favor, escribe tu nombre y la fecha.",
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "videos": "Vídeos",
+    "car": "El coche",
+    "rates": "Tarifas",
+    "shareTour": "Tour compartido",
+    "tagline": "Chófer privado · Corea"
+  }
+}

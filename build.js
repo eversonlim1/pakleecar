@@ -13,6 +13,8 @@ const guide = require('./templates/guide');
 const guideHub = require('./templates/guide-hub');
 const videos = require('./templates/videos');
 const shareTour = require('./templates/share-tour');
+const book = require('./templates/book');
+const thanks = require('./templates/thanks');
 const reels = require('./content/reels.json');
 
 const ROOT = __dirname;
@@ -114,6 +116,27 @@ function build() {
         ? `${lang}/index.html`
         : `${lang}/${page.slug}/index.html`;
       write(out, html);
+    }
+  }
+
+  // Booking form + its completion page. Kept out of PAGES on purpose: they
+  // are a conversion funnel (the thanks URL is what Google Ads counts), not
+  // content for the sitemap or llms.txt, and the thanks page is noindex so
+  // organic visits never land on it and inflate conversions.
+  const funnel = [
+    { slug: 'book', tpl: book, headExtra: '' },
+    { slug: 'thanks', tpl: thanks, headExtra: '\n<meta name="robots" content="noindex, nofollow">' }
+  ];
+  for (const page of funnel) {
+    for (const lang of LANGS) {
+      const data = load(lang, page.slug);
+      const html = layout({
+        lang, slug: page.slug, seo: data.seo,
+        schema: [S.organization()],
+        body: page.tpl({ lang, data }), nav: data.nav,
+        cssHref, navJsHref, headExtra: page.headExtra
+      });
+      write(`${lang}/${page.slug}/index.html`, html);
     }
   }
 
