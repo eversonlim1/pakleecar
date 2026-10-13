@@ -39,5 +39,7 @@
   "to": "Destination",
   "price": "Price",
   "quote": "Pak Lee will send you a quote",
-  "priceNote": "Per vehicle · fuel, tolls & insurance included"
+  "priceNote": "Per vehicle · fuel, tolls & insurance included",
+  "askWa": "Have a question first? Ask on WhatsApp",
+  "or": "or"
 }
