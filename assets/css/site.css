@@ -800,3 +800,13 @@ button.stask.btn{border:0;font:inherit;cursor:pointer;font-size:13.5px;padding:1
 .bk-done .bk-wa{display:inline-flex;width:auto;margin:14px auto 0}
 .bk-done .pbtn{margin-left:auto;margin-right:auto}
 .bk-done{display:flex;flex-direction:column;align-items:center}
+
+/* /thanks/ booking summary (shown for LINE languages, to copy & paste) */
+.bk-sum{width:100%;max-width:460px;margin:4px auto 18px;background:#fff;border:1.5px solid #C9D2CD;border-radius:8px;text-align:left;overflow:hidden}
+.bk-sum[hidden]{display:none}
+.bk-sum pre{margin:0;padding:16px 18px;font:500 14.5px/1.6 'Figtree',system-ui,sans-serif;color:#16211C;white-space:pre-wrap;word-break:break-word}
+.bk-copy{display:block;width:100%;border:0;border-top:1.5px solid #C9D2CD;background:#E7F5EE;color:#0C7A49;
+  font:800 15px 'Figtree',system-ui,sans-serif;padding:13px;cursor:pointer}
+.bk-copy:hover{background:#d8efe3}
+.bk-line svg{color:#06C755}
+.bk-line{color:#06A04A}
