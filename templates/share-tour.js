@@ -1,4 +1,7 @@
 const { esc, img } = require('../src/html');
+const { contact } = require('../src/contact');
+// LINE links can't carry a message, so it is copied and this toast says to paste it.
+const PASTE_HINT = { ja: 'メッセージをコピーしました。LINEのトークに貼り付けて送ってください。', th: 'คัดลอกข้อความแล้ว วางในแชท LINE แล้วกดส่งได้เลย' };
 
 module.exports = function shareTour({ lang, data }) {
   const stats = data.hero.stats.map(s =>
@@ -107,6 +110,17 @@ ${img({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', wid
 <script>
 (function () {
   var WA_MESSAGES = ${waJson};
+  var CONTACT = ${JSON.stringify({ ...contact(lang), hint: PASTE_HINT[lang] || '' })};
+  function send(msg) {
+    if (!CONTACT.line) { window.open(CONTACT.url + '?text=' + encodeURIComponent(msg), '_blank'); return; }
+    try { navigator.clipboard.writeText(msg); } catch (x) {}
+    window.open(CONTACT.url, '_blank');
+    var t = document.createElement('div');
+    t.textContent = CONTACT.hint;
+    t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:90vw;background:#06c755;color:#fff;padding:12px 18px;border-radius:12px;font-weight:700;z-index:9999;box-shadow:0 6px 20px rgba(0,0,0,.2)';
+    document.body.appendChild(t);
+    setTimeout(function () { t.remove(); }, 6000);
+  }
   var ROUTES = ${routesJson};
   var CAL_ROUTES = ROUTES.map(function (r) { return r.id; });
   var calState = {};
@@ -198,7 +212,7 @@ ${img({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', wid
     var routeInfo = ROUTES.find(function (r) { return r.id === route; });
     var label = routeInfo ? routeInfo.waLabel : route;
     var msg = WA_MESSAGES.join.replace('{route}', label).replace('{date}', date);
-    window.open('https://wa.me/821094157859?text=' + encodeURIComponent(msg), '_blank');
+    send(msg);
   }
 
   CAL_ROUTES.forEach(loadCalendar);
@@ -206,7 +220,7 @@ ${img({ src: '/assets/img/staria-int3.jpg', alt: 'Staria Lounge rear seats', wid
   document.querySelectorAll('.stask').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var msg = WA_MESSAGES.ask.replace('{name}', btn.dataset.label);
-      window.open('https://wa.me/821094157859?text=' + encodeURIComponent(msg), '_blank');
+      send(msg);
     });
   });
 })();

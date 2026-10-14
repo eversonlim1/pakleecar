@@ -3,6 +3,7 @@ const { pageUrl } = require('../build.config');
 const chat = require('./partials/chat');
 const { reelStrip } = require('./partials/reels');
 
+const { contact } = require('../src/contact');
 const WA = 'https://wa.me/821094157859';
 const EN_IG = 'https://www.instagram.com/mr.lee_private_car_in_korea/';
 const TH_IG = 'https://www.instagram.com/pakleecar_th/';
@@ -123,7 +124,7 @@ ${chat(data.message.chat, { id: heroReel.id, thumb: heroReel.thumb, title: heroT
 <blockquote>&ldquo;${esc(data.quote.text)}&rdquo;</blockquote>
 <div class="h-who"><img src="/assets/img/paklee-avatar.jpg" alt="" width="40" height="40"><div><b>Pak Lee</b><span>${esc(data.nav.tagline)}</span></div></div>
 <div class="h-talk-btns">
-<a class="pbtn pbtn-or" href="${WA}" target="_blank" rel="noopener">${esc(data.message.link)} &rsaquo;</a>
+<a class="pbtn pbtn-or" href="${contact(lang).url}" target="_blank" rel="noopener">${esc(data.message.link)} &rsaquo;</a>
 <a class="pbtn" href="mailto:pakleecar@gmail.com">&#9993; ${esc(data.message.email)}</a>
 </div>
 </div>

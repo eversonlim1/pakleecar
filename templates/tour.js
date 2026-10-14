@@ -2,7 +2,7 @@ const { esc, picture } = require('../src/html');
 const { pageUrl } = require('../build.config');
 const { reelStrip } = require('./partials/reels');
 
-const WA = 'https://wa.me/821094157859';
+const { contact } = require('../src/contact');
 
 module.exports = function tour({ lang, data, reels }) {
   const h = data.hero;
@@ -27,7 +27,7 @@ module.exports = function tour({ lang, data, reels }) {
 <h1>${esc(h.h1)}</h1>
 <p class="ld">${esc(h.lede)}</p>
 <div class="tmeta"><span><b>${esc(h.price)}</b> · ${esc(h.duration)}</span></div>
-<div class="cta"><a class="a" href="${WA}" target="_blank" rel="noopener">${esc(data.cta.button)}</a></div>
+<div class="cta"><a class="a" href="${contact(lang).url}" target="_blank" rel="noopener">${esc(data.cta.button)}</a></div>
 </div>
 <div class="frame"><div class="clipwrap">
 ${picture({ src: h.heroImage, alt: h.heroAlt, width: 720, height: 900, eager: true })}

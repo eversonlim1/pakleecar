@@ -105,7 +105,7 @@ function build() {
     if (!tpl) continue; // 아직 구현되지 않은 페이지 타입은 건너뛴다
     for (const lang of LANGS) {
       const data = load(lang, page.slug);
-      const body = tpl({ lang, data, reels }) + cta(data.cta);
+      const body = tpl({ lang, data, reels }) + cta(data.cta, lang);
       const html = layout({
         lang, slug: page.slug, seo: data.seo,
         schema: schemaFor(page.type, lang, page.slug, data),

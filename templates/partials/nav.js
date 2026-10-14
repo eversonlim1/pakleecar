@@ -1,7 +1,7 @@
 const { esc, img } = require('../../src/html');
 const { pageUrl } = require('../../build.config');
 
-const WA = 'https://wa.me/821094157859';
+const { contact } = require('../../src/contact');
 const BOOK = { en: 'Book now', id: 'Booking', es: 'Reservar', ja: '予約する', th: 'จองเลย' };
 
 const mascot = () => img({
@@ -50,6 +50,6 @@ ${mascot()}
 ${mobileLinks}
 </ul>
 <a class="btn" href="${l('book')}">${esc(BOOK[lang] || BOOK.en)}</a>
-<a class="btn mm-wa" href="${WA}" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn mm-wa" href="${contact(lang).url}" target="_blank" rel="noopener">${contact(lang).name}</a>
 </div>`;
 };
